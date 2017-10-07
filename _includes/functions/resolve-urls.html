@@ -1,0 +1,5 @@
+{% assign target = include.target %}
+{% assign target_clean = target | lstrip %}
+{% assign name = site.data.urls[target_clean].name %}
+{% assign url = site.data.urls[target_clean].url %}
+{% capture link %}[{{name}}]({{url}}){%endcapture%}

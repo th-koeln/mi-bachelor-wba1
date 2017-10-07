@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+{% assign faqs = (site.faq | sort: 'title')) %}
+
+{{faqs}}
+<section class="section">
+	
+	<div class="container">
+		<div class="content">
+			<h1>{{ page.titel }}</h1>
+		</div>
+	</div>
+</section>
+
+<section class="section">
+	<div class="modulbeschreibung">
+		<div class="container">
+			<div class="content">
+				
+			{% for faq in faqs %}
+			{{ faq.titel }}
+	  	{% endfor %}
+	  	</div>
+		</div>
+	</div>
+</section>

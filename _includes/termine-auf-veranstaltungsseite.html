@@ -1,0 +1,33 @@
+{% assign termine = include.termine | split: ","  %}
+{% assign default-raum = include.default-raum %}
+
+
+<ul>
+
+{% for entry in termine %}
+
+{% assign entry-data = entry | split: "|" %}
+{% assign termin = entry-data[0] %}
+{% assign termin-raum = entry-data[1] %}
+{% assign anmeldung = entry-data[2] %}
+
+{% assign new_termin = termin | date: '%s' | minus: 3600 %}
+{% assign t = termin | date: '%d. %B %Y, %H:%M Uhr' | replace:"January","Januar" | replace:"Februar","February" | replace:"March","März" | replace:"May","Mai" | replace:"June","Juni" | replace:"July","Juli"  | replace:"October","Oktober" | replace:"December","Dezember"  %}
+
+{% if termin-raum == "" or termin-raum == nil %}
+{% assign raum = default-raum %}
+{% else %}
+{% assign raum = termin-raum %}
+{% endif %}
+
+<li>
+{% if anmeldung == "" or anmeldung == nil %}
+{{t}}, Raum {{raum}}
+{% else %}
+<a href="{{anmeldung}}">{{t}}, Raum {{raum}}</a>
+{% endif %}
+</li>
+
+{% endfor %}
+
+</ul>

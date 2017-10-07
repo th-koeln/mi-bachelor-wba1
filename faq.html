@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+{% assign faqs = (site.faq | sort: 'title')) %}
+
+<section class="section">
+	<div class="container">
+
+		<h1 class="title is-1">Frequently Asked Questions</h1>
+		<h2 class="subtitle">Fragen rund um das Modul.</h2>
+		
+	</div>
+	
+	<div class="container">
+		<hr>
+
+		<ul>
+		{% for faq in faqs %}
+			<li><a href="#{{ faq.id }}">{{ faq.titel }}</a></li>
+		{% endfor %}
+		</ul>
+
+	</div>
+</section>
+<section class="section">
+	<div class="container zweispalter">
+	
+		{% for faq in faqs %}
+			<div class="content faq">	
+				<h2 class="title is-2" id="{{ faq.id }}">{{ faq.titel }}</h2>
+			
+				{{ faq.content }}
+			</div>
+		{% endfor %}
+
+	</div>
+</section>

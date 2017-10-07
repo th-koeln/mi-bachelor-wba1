@@ -1,0 +1,18 @@
+{% assign voraussetzungen = include.voraussetzungen %}
+{% assign ausgabe = "" | split:"|"  %}
+
+{% comment %}  Veranstaltungen auslesen und durch iterieren{% endcomment %} 
+{% assign lehrveranstaltungen = (site.lehrveranstaltungen) %}
+{% for lehrveranstaltung in lehrveranstaltungen %}
+
+{% comment %}  Wenn dies eine abhängige Lehrveranstaltung ist, dann selbiges speichern {% endcomment %} 
+{% if(voraussetzungen contains lehrveranstaltung.kuerzel) %}
+
+{% capture link %}<a href="{{site.baseurl}}{{lehrveranstaltung.url}}">{{lehrveranstaltung.titel}}</a>{% endcapture %}
+
+{% assign ausgabe = ausgabe | push: link %}
+{% endif %}
+{% endfor %}
+
+{% comment %}  Ausgabe vorbereiten {% endcomment %} 
+{% assign voraussetzungen = ausgabe | join: ", " %}

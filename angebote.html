@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+{% assign lehrveranstaltungen = (site.lehrveranstaltungen | sort: 'title')) %}
+{% assign cards = "" | split: "" %}
+
+{% for lehrveranstaltung in lehrveranstaltungen %}
+{% if lehrveranstaltung.typ != "other" %}
+{% capture card %}
+{% include veranstaltungsinfo-klein.html lehrveranstaltung=lehrveranstaltung %}
+{% endcapture %}
+{% assign cards = cards | push: card %}
+{% endif %}
+{% endfor %}
+
+{% assign introtext = (site.snippets | where:"kennung","angebote") %}
+
+
+<section class="section">
+	<div class="container">
+		
+		<h1 class="title is-1">Veranstaltungen</h1>
+		<h2 class="subtitle">Vorträge, Workshops, Trainings und Feedbacks</h2>
+		
+		<hr>
+		
+		<div class="content">
+		{{introtext[0].content}}
+		</div>
+		
+		<div class="tabs is-tab-navigation is-non-print">
+			<ul>
+				<li class="tab-item" data-tab="overview-item"><a >Alle</a></li>
+				<li class="tab-item" data-tab="vortrag"><a >Vorträge</a></li>
+				<li class="tab-item" data-tab="workshop"><a >Workshops</a></li>
+				<li class="tab-item" data-tab="training"><a >Trainings</a></li>
+				<li class="tab-item" data-tab="feedback"><a >Feedbacks</a></li>
+				<li class="tab-item" data-tab="pruefung"><a >Prüfungen & Präsentationen</a></li>
+				<li class="tab-item" data-tab="pflicht"><a >Pflichttermine</a></li>
+			</ul>
+		</div>
+		
+		<div class="is-tab-wrap">
+			{% for card in cards %}
+			{{card}}
+			{% endfor %}
+		</div>
+	</div>
+</section>

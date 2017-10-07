@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/favicon.ico">
+
+  </head>
+
+  <body>
+	  
+	<section class="hero is-info is-medium">
+	  <!-- Hero header: will stick at the top -->
+	  <div class="hero-head">
+	    <header class="nav">
+	      <div class="container">
+	        <div class="nav-left">
+	          <a href="{{ site.baseurl }}/" class="nav-item"><img src="{{ site.avatar }}" /></a>
+	        </div>
+	        <span class="nav-toggle">
+	          <span></span>
+	          <span></span>
+	          <span></span>
+	        </span>
+	        <div class="nav-right nav-menu">
+	          <a href="{{ site.baseurl }}/angebote/" class="nav-item">Veranstaltungen</a>
+	          <a href="{{ site.baseurl }}/timetable/" class="nav-item">Zeitplan</a>
+	          <!--a href="{{ site.baseurl }}/niveaustufen/" class="nav-item">Niveaustufen & Deliverables</a-->
+	          <a href="{{ site.baseurl }}/links/" class="nav-item">Links</a>
+	          <a href="{{ site.baseurl }}/faq/" class="nav-item">FAQ</a>
+	          <a href="https://github.com/th-koeln/mi-bachelor-gdvk/issues/new" class="nav-item">Frage stellen</a>
+	        </div>
+	      </div>
+	    </header>
+	  </div>
+	
+	  <!-- Hero content: will be in the middle -->
+	  <div class="hero-body">
+	    <div class="container">
+				<h1 class="title is-1">
+				{{ site.name }}
+    		</h1>
+				<h2 class="subtitle is-3">
+				{{ site.description }}
+    		</h2>
+	    </div>
+	  </div>
+	
+	  <!-- Hero footer: will stick at the bottom -->
+	  <!--div class="hero-foot">
+	    <nav class="tabs is-boxed is-fullwidth">
+	      <div class="container">
+	        <ul>
+	          <li class="is-active"><a>Overview</a></li>
+	          <li><a>Modifiers</a></li>
+	          <li><a>Grid</a></li>
+	          <li><a>Elements</a></li>
+	          <li><a>Components</a></li>
+	          <li><a>Layout</a></li>
+	        </ul>
+	      </div>
+	    </nav>
+	  </div-->
+	</section>
+  	
+
+    {{ content }}
+    
+	<footer class="footer is-non-print">
+		<div class="container">
+			<ul class="menu-list">
+	      <li><a href="{{ site.baseurl }}/angebote/" class="nav-item">Veranstaltungen</a></li>
+	      <li><a href="{{ site.baseurl }}/timetable/" class="nav-item">Zeitplan</a></li>
+	      <!--li><a href="{{ site.baseurl }}/niveaustufen/" class="nav-item">Niveaustufen & Deliverables</a></li-->
+	      <li><a href="{{ site.baseurl }}/links/" class="nav-item">Links</a></li>
+	      <li><a href="{{ site.baseurl }}/faq/" class="nav-item">FAQ</a></li>
+	      <li><a href="https://github.com/th-koeln/mi-bachelor-gdvk/issues/new" class="nav-item">Frage stellen</a></li>
+			</ul>
+		</div>
+	</footer>
+	
+
+  <script type="text/javascript" src="{{ site.baseurl }}/mi-2017.js"></script>
+
+  </body>
+
+</html>
