@@ -3,15 +3,17 @@ layout: default
 ---
 
 {% assign faqs = (site.faq | sort: 'title')) %}
+{% assign introtext = (site.snippets | where:"kennung","faq") %}
 
 <section class="section">
 	<div class="container">
-
 		<h1 class="title is-1">Frequently Asked Questions</h1>
-		<h2 class="subtitle">Fragen rund um das Modul.</h2>
 		
+		<div class="content">
+			<p>{{introtext[0].content}}</p>
+		</div>
 	</div>
-	
+
 	<div class="container">
 		<hr>
 

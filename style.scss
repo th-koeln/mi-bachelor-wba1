@@ -59,6 +59,19 @@ body, html{
 }
 
 
+
+/**************/
+/* Header  */
+/**************/
+
+.is-header{
+	.title{
+		font-weight: 100;
+		font-size: $bfs * 2;
+	}	
+}
+
+
 /**************/
 /* Timetable  */
 /**************/
