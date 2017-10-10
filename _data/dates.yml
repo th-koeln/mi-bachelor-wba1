@@ -1,0 +1,48 @@
+week-1:
+  day-1:
+    datum: 2017-10-19
+    start: "09:00"
+    end: "18:00"
+    name: Donnerstag
+week-2:
+  day-1:
+    datum: 2017-10-26
+    start: "09:00"
+    end: "18:00"
+    name: Donnerstag
+week-3:
+  day-1:
+    datum: 2017-11-02
+    start: "09:00"
+    end: "18:00"
+    name: Donnerstag
+week-4:
+  day-1:
+    datum: 2017-11-09
+    start: "09:00"
+    end: "18:00"
+    name: Donnerstag
+week-5:
+  day-1:
+    datum: 2017-11-16
+    start: "09:00"
+    end: "18:00"
+    name: Donnerstag
+week-6:
+  day-1:
+    datum: 2017-11-23
+    start: "09:00"
+    end: "18:00"
+    name: Donnerstag
+week-7:
+  day-1:
+    datum: 2017-11-30
+    start: "09:00"
+    end: "18:00"
+    name: Donnerstag
+week-8:
+  day-1:
+    datum: 2017-12-07
+    start: "09:00"
+    end: "18:00"
+    name: Donnerstag

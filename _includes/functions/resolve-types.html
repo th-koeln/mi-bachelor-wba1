@@ -1,0 +1,5 @@
+{% assign typ = include.typ %}
+{% assign typ_clean = typ | lstrip %}
+
+{% assign typ-name = site.data.typen[typ_clean].name %}
+{% assign typ-max-teilnehmer = site.data.typen[typ_clean].max-teilnehmer %}

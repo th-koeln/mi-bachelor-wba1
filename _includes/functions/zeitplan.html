@@ -1,0 +1,49 @@
+{% assign time-correction = 7200 %}
+{% assign week-count = 0 %}
+{% assign starttime = 09 %}
+{% assign endtime = 18 %}
+{% assign difftime = endtime | minus: starttime %}
+
+{% for week in site.data.dates %}
+{% assign week-count = week-count | plus: 1 %}
+
+<div class="timetable">
+	<h2 class="title is-2"><span class="tag is-info">Woche {{week-count}}</span></h2>
+{% for days in week %}
+
+{% assign check = days["day-1"].datum | strip_newlines %}
+{% if check != ""  %}
+
+{% assign date-start = days["day-1"].datum | append: " " | append: days["day-1"].start %}
+{% assign date-end = days["day-1"].datum | append: " " | append: days["day-1"].end %}
+
+{% assign sec-start = date-start | date: "%s" %}
+{% assign sec-end = date-end | date: "%s" %}
+{% assign sec-diff = sec-end | minus: sec-start %}
+{% assign hours-diff = sec-diff | divided_by:3600 %}
+
+{% comment %} 
+Date Start: {{date-start | date: "%d %m %Y %H:%M"}}<br>
+Date End: {{date-end | date: "%d %m %Y %H:%M"}}<br>
+Sec Start: {{sec-start}}<br>
+Sec End: {{sec-end}}<br>
+Hours Diff: {{hours-diff}}<hr>
+{% endcomment %} 
+
+<!--div class="columns"-->
+{% assign day1 = days["day-1"] %}
+{% include /timetable-day.html day=day1 starttime=starttime difftime=difftime time-correction=time-correction %}
+
+{% assign check = days["day-2"].datum | strip_newlines %}
+{% if check != ""  %}
+{% assign day2 = days["day-2"] %}
+{% include /timetable-day.html day=day2 starttime=starttime difftime=difftime time-correction=time-correction %}
+{% endif %}
+<!--/div-->
+
+{% endif %}
+		
+{% endfor %}
+</div>
+
+{% endfor %}

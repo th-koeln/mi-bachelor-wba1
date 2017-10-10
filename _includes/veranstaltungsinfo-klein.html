@@ -1,0 +1,55 @@
+{% assign lehrveranstaltung = include.lehrveranstaltung %}
+{% assign verbindlichkeit = "freiwillig" %}
+{% if lehrveranstaltung.pflicht == true %}
+{% assign verbindlichkeit = "pflicht" %}
+{% endif %}
+
+{% capture teilnehmer %}{{typ-max-teilnehmer}} Teilnehmer{% endcapture %}
+
+{% if lehrveranstaltung.anzahl != "" and lehrveranstaltung.anzahl != nil %}
+{% assign teilnehmer = lehrveranstaltung.anzahl %}
+{% endif %}
+
+<div class="is-tab-content card is-{{lehrveranstaltung.typ}} is-overview-item is-{{verbindlichkeit}}" id="{{lehrveranstaltung.typ}}">
+	
+	<div class="card-header">
+		<h3 class="card-header-title">{{lehrveranstaltung.titel}}</h3>
+	</div>
+	
+	<div class="card-content">
+		<div class="content">
+			{% include /functions/resolve-types.html typ=lehrveranstaltung.typ %}
+			
+			<p>
+				{% assign termine = lehrveranstaltung.termine | split: "," %}
+				{% assign anzahl-angebote = "einmal" %}
+				{% if termine.size > 1 %}
+				{% assign anzahl-angebote = termine.size | append: " mal" %}
+				{% endif %}
+				{{typ-name}} für {{teilnehmer}}, wird {{ anzahl-angebote }} angeboten.
+			</p>
+			<p>
+				{% assign check = lehrveranstaltung.info | strip_newlines %}
+				{% if check != ""  %}
+				{{lehrveranstaltung.info}}
+				{% endif %}
+			</p>
+			
+			<dl class="overview-card">
+				{% assign check = lehrveranstaltung.dauer | strip_newlines %}
+				{% if check != ""  %}
+				<dt>Dauer</dt><dd>{{lehrveranstaltung.dauer}} min</dd>
+				{% endif %}
+		
+				{% include /functions/resolve-names.html verantwortlich=lehrveranstaltung.verantwortlich %}
+				<dt>Verantwortlich</dt><dd>{{verantwortliche}}</dd>
+		
+			</dl>
+		
+
+		</div>
+	</div>
+	<div class="card-footer">
+		<p><a class="card-footer-item" href="{{site.baseurl}}{{lehrveranstaltung.url}}">mehr zu {{lehrveranstaltung.titel}}</a></p>
+	</div>
+</div>
