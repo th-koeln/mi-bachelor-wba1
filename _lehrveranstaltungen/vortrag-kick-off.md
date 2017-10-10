@@ -18,4 +18,4 @@ In dieser Session wird das Modul und dessen Spielregeln erläutert. Darüber hin
 
 ## Material
 
-<p><a href="https://th-koeln.github.io/mi-bachelor-gdvk/download/inputs/about-gdvk.pdf">Download der Kick-Off Slides als PDF</a></p>
+
