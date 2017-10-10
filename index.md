@@ -45,7 +45,7 @@ Weitere Modulziele sind:
 
 ## Notwendige Voraussetzungen
 
-Um in WBA1 agieren zu können sind einige Kenntnisse und Fertigkeiten aus anderen Modulen notwendig. Darüber hinaus benötigen Sie möglichst einen eigenen Rechner, einige Tools, einen ADV Zugang sowie ein [GitHub](https://github.com/) Account. Sie müssen die wichtigsten Befehle in der Kommandozeile kennen und anwenden können: aktuelles Verzeichnis zeigen, Verzeichnisübersicht anzeigen, Verzeichnisse wechseln, Rechte setzten, Verzeichnis anlegen, Verzeichnis löschen, etc.
+Um in WBA1 agieren zu können sind einige Kenntnisse und Fertigkeiten aus anderen Modulen notwendig. Darüber hinaus benötigen Sie möglichst einen eigenen Rechner, einige Tools, einen ADV Zugang sowie ein [GitHub](https://github.com/) Account. Sie müssen die wichtigsten Befehle in der Kommandozeile kennen und anwenden können: aktuelles Verzeichnis zeigen, Verzeichnisübersicht anzeigen, Verzeichnisse wechseln, Rechte setzen, Verzeichnis anlegen, Verzeichnis löschen, etc.
 
 
 ### Tools
@@ -72,7 +72,7 @@ Hier finden Sie eine [Übersicht über alle angebotenen Veranstaltung](angebote/
 
 ## Prüfung
 
-Zum Bestehen des Moduls sind zwei Prüfungsteile erforderlich: ein praktischer und ein theoretischer Prüfungsteil. Die Hälfte der **insgesamt 200 Punkte** können im Rahmen einer einstündigen Klausur(theoretischer Prüfungsteil) erworben werden. Die andere Hälfte kann im praktischen Prüfungsteil entweder über das Durchführen eines Workshops, oder durch die Teilnahme an der finalen Challenge erworben werden. Die **Punkte** aus den praktischen und theoretischen Prüfungsteil werden **aufsummiert**. Bestanden hat, wer insgesamt mindestens 100 Punkte erzielt hat.
+Zum Bestehen des Moduls sind zwei Prüfungsteile erforderlich: ein praktischer und ein theoretischer Prüfungsteil. Die Hälfte der **insgesamt 200 Punkte** können im Rahmen einer einstündigen Klausur(theoretischer Prüfungsteil) erworben werden. Die andere Hälfte kann im praktischen Prüfungsteil entweder über das Durchführen eines Workshops, oder durch die Teilnahme an der finalen Challenge erworben werden. Die **Punkte** aus dem praktischen und theoretischen Prüfungsteil werden **aufsummiert**. Bestanden hat, wer insgesamt mindestens 100 Punkte erzielt hat.
 
 ### Theoretischer Prüfungsteil: Klausur
 
@@ -80,7 +80,7 @@ Die Klausur findet während der Prüfungsphase statt und dauert eine Stunde. Wir
 
 ### Praktischer Prüfungsteil: Challenge oder Workshop
 
-Für den praktischen Prüfungsteil müssen Sie sich explizit im PSSO anmelden. Es gibt es zwei Optionen für diesen Prüfungsteil. Entweder die Entwicklung und Durchführung eines Workshops, oder die Teilnahme an der Challenge.
+Für den praktischen Prüfungsteil müssen Sie sich explizit im PSSO anmelden. Es gibt zwei Optionen für diesen Prüfungsteil. Entweder die Entwicklung und Durchführung eines Workshops, oder die Teilnahme an der Challenge.
 
 #### Entwicklung und Durchführung eines Workshops
 
