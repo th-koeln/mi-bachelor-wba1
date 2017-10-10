@@ -1,0 +1,354 @@
+/**
+ * Renewed Medieninformatik theme for reveal.js.
+ * This templete file was created to not mess up with the existing presentations
+ * while developing the new theme.
+ *
+ * Copyright (C) 2015 TH Köln http://www.medieninformatik.fh-koeln.de
+ *
+ * Designguide: http://www.medieninformatik.fh-koeln.de/website/general/general/designguide_3/de/de_designguide_articl_1.php
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Web Fonts -----------------------------------
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
+//----------------------------------------------
+
+// MI Colors:
+$green: #77cc00;
+$blue: #4952e1;
+$magenta: #dd1166;
+$purple: #9313c3;
+$black: #231f20;
+
+// Background of the presentation
+$backgroundColor: #fbfbfb;
+
+// Primary/body text
+$mainFont: 'PT Sans', Arial, Helvetica, Tahoma, sans-serif;
+$mainFontSize: 29px;
+$mainColor: $black;
+
+// Headings
+$headingMargin: 0 0 30px 0;
+$headingFont: 'PT Sans', Arial, Helvetica, Tahoma, sans-serif;
+$headingColor: $black;
+$headingLineHeight: 0.9em;
+$headingLetterSpacing: 0.02em;
+$headingTextTransform: none;
+$headingTextShadow: none;
+$heading1TextShadow: $headingTextShadow;
+
+// Links and actions
+$linkColor: $blue;
+$linkColorHover: lighten( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: $green;
+$selectionColor: #fff;
+
+// Generates the presentation background, can be overridden
+// to return a background image or gradient
+@mixin bodyBackground() {
+  background-color: $backgroundColor;
+  background-image: url( '../../images/mi-box.png');
+  background-position: 20px 95%;
+  background-repeat: no-repeat;
+  background-size: 5%;
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+// Custom Styles -------------------------------
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal section:first-child h1 {
+  font-size: 2em;
+  margin-bottom: 0;
+  margin-top: 20px;
+
+}
+
+.reveal section:first-child h2 {
+
+  font-size: 1.5em;
+  color: $magenta;
+  /*background-color: $magenta;*/
+  /*color: #fff;*/
+  line-height: 1em;
+  padding: 0.3em 0 0.1em 0;
+  margin-bottom: 30px;
+
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-weight: 100;
+}
+
+.reveal h1 {
+  font-size: 1.5em;
+}
+
+.reveal h2 {
+  font-size: 1.5em;
+}
+
+.reveal h2.u{
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: solid 1px $magenta;
+}
+.reveal h3 {
+  font-size: 1.2em;
+  color: $magenta;
+}
+
+.reveal h3.subline {
+  margin-top: -0.7em;
+}
+
+.reveal h4 {
+  font-size: 1em;
+}
+
+.reveal h1.inverse,
+.reveal h2.inverse,
+.reveal h3.inverse,
+.reveal h4.inverse,
+.reveal h5.inverse,
+.reveal h6.inverse, {
+  color: #fff;
+  background: $purple;
+  padding: 0.3em;
+  display: inline-block;
+}
+
+.reveal img,
+.reveal video,
+.reveal iframe {
+  max-width: 95%;
+  max-height: 80%;
+}
+
+.reveal img.align-center {
+  display: block;
+  margin: 0 auto;
+}
+
+.reveal img.align-left {
+  float: left;
+}
+
+.reveal img.align-right {
+  float: right;
+}
+
+.reveal li,
+.reveal p {
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.reveal blockquote {
+  background-color: $magenta;
+  color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 1em;
+  font-style: normal;
+  width: 100%;
+}
+
+.reveal blockquote:before {
+  content: none;
+}
+
+.reveal blockquote:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid $magenta;
+  position: absolute;
+  right: 30px;
+  bottom: -19px;
+}
+
+.reveal section img {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.reveal strong {
+  color: $black;
+  text-decoration: underline;
+}
+
+.reveal .invers *{
+	color: white;
+}
+
+.reveal h1 strong,
+.reveal h2 strong,
+.reveal h3 strong{
+  color: $black;
+  text-decoration: none;
+}
+
+.reveal .slides section .fragment.highlight-red.visible,
+.reveal .magenta {
+  color: $magenta;
+}
+
+.reveal .slides section .fragment.highlight-green.visible,
+.reveal .green {
+  color: $green;
+}
+
+// Brown color does not exist anymore, has been swapped for purple.
+// This class only exists for purposes of backwards compability.
+// The naming is really ugly and I'm sorry.
+.reveal .brown {
+  color: $purple;
+}
+
+.reveal .purple {
+  color: $purple;
+}
+
+.reveal .slides section .fragment.highlight-blue.visible,
+.reveal .highlight-blue.visible,
+.reveal .blue {
+  color: $blue;
+}
+
+.reveal table {
+  border-bottom: 1px solid $green;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 0 20px;
+  width: 100%;
+}
+
+.reveal caption,
+.reveal th,
+.reveal td {
+  font-weight: normal;
+  text-align: left;
+  text-shadow: none;
+}
+
+.reveal caption {
+  font-size: 1.5em;
+  margin: 20px 0;
+}
+
+.reveal th {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.reveal td {
+  border-top: 1px solid $green;
+  padding: 6px 10px 6px 0;
+}
+
+.reveal pre {
+  font-size: .6em;
+  tab-size: 4;
+  width: 100%;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.reveal pre code {
+  padding: .2em .4em;
+}
+
+
+/*********************************************
+ * HELPER
+ *********************************************/
+
+._violett {
+    color: #9313c3 !important;
+}
+
+._pink {
+    color: #dd1166 !important;
+}
+
+._xl-fontsize {
+    font-size: 4rem !important;
+}
+
+._l-fontsize {
+    font-size: 3rem !important;
+}
+._m-fontsize {
+    font-size: 2rem !important;
+}
+
+._center { 
+    text-align: center !important; 
+}
+
+._margin-bottom-50 {
+    margin-bottom: 50px !important;
+}
+
+    ._fullscreen-image .reveal .slides {
+      height: 100% !important;
+      left: 0;
+      margin: 0 auto;
+      padding: 0;
+      top: 0;
+      width: 100% !important;
+    }
+    ._fullscreen-image .reveal .slides > section {
+      background-position-x: center;
+      background-position-y: 10px;
+      background-repeat: no-repeat;
+      background-size: auto 90%;
+      height: 100%;
+      left: 0;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+    ._fullscreen-image .reveal .slides > section .bu {
+      background-color: rgba(221, 17, 102, 0.8);
+      top: 30px;
+      display: inline-block;
+      color: white;
+      padding: 0 10px 0 100px;
+      position: absolute;
+    }
+    ._fullscreen-image .reveal .slides > section .quelle {
+      bottom: 40px;
+      color: black;
+      display: inline-block;
+      font-size: 10px;
+            left: 10px;
+      position: absolute;
+    }

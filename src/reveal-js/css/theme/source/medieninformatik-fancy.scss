@@ -1,0 +1,329 @@
+/**
+ * Renewed Medieninformatik theme for reveal.js.
+ * This templete file was created to not mess up with the existing presentations
+ * while developing the new theme.
+ *
+ * Copyright (C) 2015 TH Köln http://www.medieninformatik.fh-koeln.de
+ *
+ * Designguide: http://www.medieninformatik.fh-koeln.de/website/general/general/designguide_3/de/de_designguide_articl_1.php
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Web Fonts -----------------------------------
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
+//----------------------------------------------
+
+// MI Colors:
+$green: #77cc00;
+$blue: #4952e1;
+$magenta: #dd1166;
+$purple: #9313c3;
+$black: #231f20;
+
+// Background of the presentation
+$backgroundColor: #fbfbfb;
+
+// Primary/body text
+$mainFont: 'PT Sans', Arial, Helvetica, Tahoma, sans-serif;
+$mainFontSize: 29px;
+$mainColor: $black;
+
+// Headings
+$headingMargin: 0 0 30px 0;
+$headingFont: 'PT Sans', Arial, Helvetica, Tahoma, sans-serif;
+$headingColor: $black;
+$headingLineHeight: 0.9em;
+$headingLetterSpacing: 0.02em;
+$headingTextTransform: none;
+$headingTextShadow: none;
+$heading1TextShadow: $headingTextShadow;
+
+// Links and actions
+$linkColor: $blue;
+$linkColorHover: lighten( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: $green;
+$selectionColor: #fff;
+
+// Generates the presentation background, can be overridden
+// to return a background image or gradient
+@mixin bodyBackground() {
+  background-color: $backgroundColor;
+  background-image: url( '../../images/vieldrin-black.png');
+  background-position: 20px 95%;
+  background-repeat: no-repeat;
+  background-size: 15%;
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+// Custom Styles -------------------------------
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal section:first-child h1 {
+
+}
+
+.reveal section:first-child h2 {
+
+}
+
+
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-weight: bold;
+}
+
+.reveal h1 {
+  font-size: 1.5em;
+}
+
+.reveal h2 {
+  font-size: 1.5em;
+  color: $magenta;
+}
+
+.reveal h3 {
+  font-size: 1.2em;
+  margin-top: -0.6em;
+  font-weight: 300;
+}
+
+.reveal h4 {
+  font-size: 1em;
+}
+
+.reveal h1.inverse,
+.reveal h2.inverse,
+.reveal h3.inverse,
+.reveal h4.inverse,
+.reveal h5.inverse,
+.reveal h6.inverse, {
+  color: #fff;
+  background: $purple;
+  padding: 0.3em;
+  display: inline-block;
+}
+
+.title {
+  h1 {
+    color: $black;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 10%;
+  }
+
+  h2 {
+    color: $black;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2em;
+    color: $magenta;
+    margin-bottom: 10%;
+  }
+
+  .meta {
+    font-size: .8em;
+    border-top: 1px dotted #ddd;
+    
+    span {
+      margin-top: 1%;
+    }
+    .date {
+      float: left;
+    }
+
+    .author {
+      float: right;
+    }
+  }
+}
+
+.light-font {
+  color: #f8f8f8;
+
+  h2 {
+    color: #f8f8f8;
+
+    strong {
+      background-color: #f8f8f8;
+      color: transparent;
+      padding: 0 5px;
+    }    
+  }
+
+}
+
+.image-bg {
+  h2 {
+    background-color: $magenta;
+    padding: 10px 20px;
+    color: #f8f8f8;
+    display: inline;
+  }
+}
+
+.reveal img,
+.reveal video,
+.reveal iframe {
+  max-width: 95%;
+  max-height: 80%;
+}
+
+.reveal a {
+  border-bottom: 1px dotted $blue;
+}
+
+.reveal img.align-center {
+  display: block;
+  margin: 0 auto;
+}
+
+.reveal img.align-left {
+  float: left;
+}
+
+.reveal img.align-right {
+  float: right;
+}
+
+.reveal li,
+.reveal p {
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.reveal blockquote {
+  background-color: $magenta;
+  color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 1em;
+  font-style: normal;
+  width: 100%;
+}
+
+.reveal blockquote:before {
+  content: none;
+}
+
+.reveal blockquote:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid $magenta;
+  position: absolute;
+  right: 30px;
+  bottom: -19px;
+}
+
+.reveal section img {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.reveal strong {
+  color: $black;
+  text-decoration: underline;
+}
+
+.reveal h1 strong,
+.reveal h2 strong,
+.reveal h3 strong{
+  color: $black;
+  text-decoration: none;
+}
+
+.reveal .slides section .fragment.highlight-red.visible,
+.reveal .magenta {
+  color: $magenta;
+}
+
+.reveal .slides section .fragment.highlight-green.visible,
+.reveal .green {
+  color: $green;
+}
+
+// Brown color does not exist anymore, has been swapped for purple.
+// This class only exists for purposes of backwards compability.
+// The naming is really ugly and I'm sorry.
+.reveal .brown {
+  color: $purple;
+}
+
+.reveal .purple {
+  color: $purple;
+}
+
+.reveal .slides section .fragment.highlight-blue.visible,
+.reveal .highlight-blue.visible,
+.reveal .blue {
+  color: $blue;
+}
+
+.reveal table {
+  border-bottom: 1px solid $green;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 0 20px;
+  width: 100%;
+}
+
+.reveal caption,
+.reveal th,
+.reveal td {
+  font-weight: normal;
+  text-align: left;
+  text-shadow: none;
+}
+
+.reveal caption {
+  font-size: 1.5em;
+  margin: 20px 0;
+}
+
+.reveal th {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.reveal td {
+  border-top: 1px solid $green;
+  padding: 6px 10px 6px 0;
+}
+
+.reveal pre {
+  font-size: .6em;
+  tab-size: 4;
+  width: 100%;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.reveal pre code {
+  padding: .2em .4em;
+}
+
+
