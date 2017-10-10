@@ -1,0 +1,258 @@
+/**
+ * Medieninformatik theme for reveal.js.
+ *
+ * Copyright (C) 2013 FH Köln http://www.medieninformatik.fh-koeln.de
+ *
+ * Designguide: http://www.medieninformatik.fh-koeln.de/website/general/general/designguide_3/de/de_designguide_articl_1.php
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// MI Colors:
+$green: #77cc00;
+$blue: #77aabb;
+$brown: #442211;
+$magenta: #dd1166;
+
+// Background of the presentation
+$backgroundColor: #000;
+
+// Primary/body text
+$mainFont: 'Myriad Pro', Arial, Helvetica, Tahoma, sans-serif;
+$mainFontSize: 29px;
+$mainColor: #fff;
+
+// Headings
+$headingMargin: 0 0 30px 0;
+$headingFont: 'Myriad Pro', Arial, Helvetica, Tahoma, sans-serif;
+$headingColor: $green;
+$headingLineHeight: 0.9em;
+$headingLetterSpacing: 0.02em;
+$headingTextTransform: none;
+$headingTextShadow: none;
+$heading1TextShadow: $headingTextShadow;
+
+// Links and actions
+$linkColor: #77cc00;
+$linkColorHover: lighten( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: #77cc00;
+$selectionColor: #fff;
+
+// Generates the presentation background, can be overridden
+// to return a background image or gradient
+@mixin bodyBackground() {
+	background-color: $backgroundColor;
+	background-image: url( '../../images/vieldrin.png');
+	background-position: 20px 95%;
+	background-repeat: no-repeat;
+	background-size: 15%;
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+// Custom Styles -------------------------------
+.reveal .slides {
+	text-align: left;
+}
+
+.reveal section:first-child h1 {
+	text-transform: uppercase;
+	font-size: 1.9em;
+	margin-bottom: 0;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.reveal section:first-child h2 {
+	text-transform: uppercase;
+	font-size: 1.7em;
+	text-align: center;
+	background-color: $magenta;
+	color: #fff;
+	line-height: 1em;
+	padding: 0.3em 0 0.1em 0;
+	margin-bottom: 30px;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+	font-weight: bold;
+}
+
+.reveal h1 {
+	font-size: 1.5em;
+}
+
+.reveal h2 {
+	font-size: 1.5em;
+}
+
+.reveal h3 {
+	font-size: 1.2em;
+	color: $magenta;
+}
+
+.reveal h3.subline {
+	margin-top: -1em;
+}
+
+.reveal h4 {
+	font-size: 1em;
+}
+
+.reveal h1.inverse,
+.reveal h2.inverse,
+.reveal h3.inverse,
+.reveal h4.inverse,
+.reveal h5.inverse,
+.reveal h6.inverse, {
+	color: #fff;
+	background: #000;
+	padding: 0.3em;
+	display: inline-block;
+}
+
+.reveal img,
+.reveal video,
+.reveal iframe {
+	max-width: 95%;
+	max-height: 80%;
+}
+
+.reveal img.align-center {
+	display: block;
+	margin: 0 auto;
+}
+
+.reveal img.align-left {
+	float: left;
+}
+
+.reveal img.align-right {
+	float: right;
+}
+
+.reveal li,
+.reveal p {
+	font-size: 0.9em;
+	margin-bottom: 15px;
+}
+
+.reveal blockquote {
+	background-color: $magenta;
+	color: #fff;
+	padding: 30px;
+	border-radius: 5px;
+	position: relative;
+	margin-bottom: 1em;
+	font-style: normal;
+	width: 100%;
+}
+
+.reveal blockquote:before {
+	content: none;
+}
+
+.reveal blockquote:after {
+	content: "";
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid $magenta;
+	position: absolute;
+	right: 30px;
+	bottom: -19px;
+}
+
+.reveal section img {
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+
+.reveal strong {
+ 	color: $magenta;
+}
+
+.reveal h1 strong,
+.reveal h2 strong,
+.reveal h3 strong{
+	color: #fff;
+}
+
+.reveal .slides section .fragment.highlight-red.visible,
+.reveal .magenta {
+	color: $magenta;
+}
+
+.reveal .slides section .fragment.highlight-green.visible,
+.reveal .green {
+	color: $green;
+}
+
+.reveal .brown {
+	color: $brown;
+}
+
+.reveal .slides section .fragment.highlight-blue.visible,
+.reveal .highlight-blue.visible,
+.reveal .blue {
+	color: $blue;
+}
+
+.reveal table {
+	border-bottom: 1px solid $green;
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0 0 20px;
+	width: 100%;
+}
+
+.reveal caption,
+.reveal th,
+.reveal td {
+	font-weight: normal;
+	text-align: left;
+	text-shadow: none;
+}
+
+.reveal caption {
+	font-size: 1.5em;
+	margin: 20px 0;
+}
+
+.reveal th {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.reveal td {
+	border-top: 1px solid $green;
+	padding: 6px 10px 6px 0;
+}
+
+.reveal pre {
+	font-size: .6em;
+	tab-size: 4;
+	width: 100%;
+}
+
+.reveal pre code {
+	padding: .2em .4em;
+}
