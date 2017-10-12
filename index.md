@@ -90,8 +90,7 @@ Wir werden einige Workshopthemen vorschlagen, die von Studierenden vorbereitet u
 
 #### Teilnahme an der Challenge
 
-In der letzten Woche werden wir eine ganztägige Challenge als praktischen Prüfungsteil anbieten. Hiermit können Sie **maximal 100 Punkte** erzielen. Bei der Challenge werden wir Ihnen eine Aufgabe stellen, die Sie in einem 5-er Team lösen müssen. Dafür haben Sie den ganzen Tag Zeit. Jedes Team bekommt drei Supportgutscheine, die bei jemanden aus dem Betreuerteam eingelöst werden können. 
-
+In der letzten Woche werden wir eine ganztägige Challenge als praktischen Prüfungsteil anbieten. Hiermit können Sie **maximal 100 Punkte** erzielen. Bei der Challenge werden wir Ihnen eine Aufgabe stellen, die Sie in einem 5-er Team lösen müssen. Dafür haben Sie den ganzen Tag Zeit. 
 
 
 ## Wer macht es?

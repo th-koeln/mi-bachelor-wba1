@@ -22,3 +22,4 @@ Kennenlernen von HTML, Semantischem Markup und dem Schreiben von einfachen HTML 
 Eigenen Computer mit Web-Editor, FTP Client, Zugang zum eigenen ADV Account.
 
 ## Material
+- [HTML Basics - Folien](../../download/html-basics.pdf)
