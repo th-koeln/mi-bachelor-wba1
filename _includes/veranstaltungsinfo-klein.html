@@ -28,12 +28,12 @@
 				{% endif %}
 				{{typ-name}} für {{teilnehmer}}, wird {{ anzahl-angebote }} angeboten.
 			</p>
-			<p>
+			<p><strong>
 				{% assign check = lehrveranstaltung.info | strip_newlines %}
 				{% if check != ""  %}
 				{{lehrveranstaltung.info}}
 				{% endif %}
-			</p>
+			</strong></p>
 			
 			<dl class="overview-card">
 				{% assign check = lehrveranstaltung.dauer | strip_newlines %}

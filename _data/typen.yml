@@ -15,8 +15,9 @@ support-all:
   
 feedback:
   name: Feedback & Support 
-  max-teilnehmer: 20
+  max-teilnehmer: 25
 
 pruefung:
-  name: Prüfung/ Präsentation 
-  max-teilnehmer: 20
+  name: Prüfung 
+  max-teilnehmer: 120
+  

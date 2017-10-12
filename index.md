@@ -45,7 +45,9 @@ Weitere Modulziele sind:
 
 ## Notwendige Voraussetzungen
 
-Um in WBA1 agieren zu können sind einige Kenntnisse und Fertigkeiten aus anderen Modulen notwendig. Darüber hinaus benötigen Sie möglichst einen eigenen Rechner, einige Tools, einen ADV Zugang sowie ein [GitHub](https://github.com/) Account. Sie müssen die wichtigsten Befehle in der Kommandozeile kennen und anwenden können: aktuelles Verzeichnis zeigen, Verzeichnisübersicht anzeigen, Verzeichnisse wechseln, Rechte setzen, Verzeichnis anlegen, Verzeichnis löschen, etc.
+Um in WBA1 agieren zu können sind einige Kenntnisse und Fertigkeiten aus anderen Modulen notwendig. Sie sollten unter anderem mit den folgenden Begriffen und Konzepten vertraut sein: Datentypen & Variablen, Operatoren, Anweisungen, Funktionen, this-Referenz.
+
+Darüber hinaus benötigen Sie möglichst einen eigenen Rechner, einige Tools, einen ADV Zugang sowie ein [GitHub](https://github.com/) Account. Sie müssen die wichtigsten Befehle in der Kommandozeile kennen und anwenden können: aktuelles Verzeichnis zeigen, Verzeichnisübersicht anzeigen, Verzeichnisse wechseln, Rechte setzen, Verzeichnis anlegen, Verzeichnis löschen, etc.
 
 
 ### Tools

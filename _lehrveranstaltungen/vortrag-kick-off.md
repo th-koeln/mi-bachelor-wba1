@@ -12,9 +12,9 @@ raum: 3.102
 info: Worum geht es in dem Modul und wie funktioniert es?
 ---
 
-## Worum geht es?
+## An wen richtet sich der Vortrag?
 
-In dieser Session wird das Modul und dessen Spielregeln erläutert. Darüber hinaus sprechen wir über wesentliche Grundfragen der visuellen Kommunikation, stellen das Team vor und klären wesentlichen organisatorische Fragen.
+## Worum geht es?
 
 ## Material
 
