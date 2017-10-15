@@ -4,7 +4,7 @@ kuerzel: t-tooling
 verantwortlich: vs, fj, mk
 typ: training
 pflicht: false
-termine: 2017-10-19 13:30|3.217, 2017-10-19 13:30|3.216, 2017-10-19 13:30|0.502, 2017-00-00
+termine: 2017-10-19 13:30|3.217|http://bit.ly/2g6Zdf1, 2017-10-19 13:30|3.216|http://bit.ly/2gBaKUx, 2017-10-19 13:30|0.502|http://bit.ly/2yllNui, 2017-00-00
 empfohlene-voraussetzungen: 
 published: true
 dauer: 120

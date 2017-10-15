@@ -4,7 +4,7 @@ kuerzel: s-workshop
 verantwortlich: cn, jk
 typ: feedback
 pflicht: false
-termine: 2017-10-19 13:30|0.501, 2017-00-00
+termine: 2017-10-19 13:30|0.501|http://bit.ly/2kLqysF, 2017-00-00
 empfohlene-voraussetzungen: 
 published: true
 dauer: 120
