@@ -82,7 +82,7 @@ Die Klausur findet während der Prüfungsphase statt und dauert eine Stunde. Wir
 
 ### Praktischer Prüfungsteil: Challenge oder Workshop
 
-Für den praktischen Prüfungsteil müssen Sie sich explizit im PSSO anmelden. Es gibt zwei Optionen für diesen Prüfungsteil. Entweder die Entwicklung und Durchführung eines Workshops, oder die Teilnahme an der Challenge.
+Für diesen Prüfungsteil gibt es zwei Optionen: entweder die Entwicklung und Durchführung eines Workshops, oder die Teilnahme an der Challenge.
 
 #### Entwicklung und Durchführung eines Workshops
 
@@ -90,7 +90,11 @@ Wir werden einige Workshopthemen vorschlagen, die von Studierenden vorbereitet u
 
 #### Teilnahme an der Challenge
 
-In der letzten Woche werden wir eine ganztägige Challenge als praktischen Prüfungsteil anbieten. Hiermit können Sie **maximal 100 Punkte** erzielen. Bei der Challenge werden wir Ihnen eine Aufgabe stellen, die Sie in einem 5-er Team lösen müssen. Dafür haben Sie den ganzen Tag Zeit. 
+In der letzten Woche werden wir eine ganztägige Challenge als praktischen Prüfungsteil anbieten. Hiermit können Sie **maximal 100 Punkte** erzielen. Bei der Challenge werden wir Ihnen eine Aufgabe stellen, die Sie in einem 5-er Team lösen müssen. Dafür haben Sie den ganzen Tag Zeit.
+
+## Literatur und Material
+
+Wesentliche Teile der Workshops und Vortäge basieren auf dem Buch ["Fundamentals of Web Development"](http://bit.ly/2xGSoHI) von Randy Connolly und Ricardo Hoar. In der Bibliothek am Campus Gummersbach stehen einige Expemplare zur Ausleihe bereit. Weitere Materialien finden Sie auf den jeweilen Veranstaltungsseiten.
 
 
 ## Wer macht es?
