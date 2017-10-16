@@ -52,3 +52,7 @@ Bitte legen Sie ein Verzeichnis mit dem Namen "rheinpark-spielplatz" an und erze
 
 Laden Sie die zugehörigen Bilder herunter und legen diese in ein Unterverzeichnis unterhalb von "rheinpark-spielplatz". Bitte nennen Sie das Unterverzeichnis "img" und binden Sie die Bilder via relativer Referenzierung in ihr HTML Dokument ein.
 
+## Übung 2: Nutzung von Strukturelementen
+
+
+
