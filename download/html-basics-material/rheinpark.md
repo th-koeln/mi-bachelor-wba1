@@ -47,15 +47,13 @@ Schöner Spielplatz für alle.
 
 [Eigene Fotos hinzufügen](/add-image.htm)
 
-![Super Rutsche](spielplatz-rheinpark-spielplatz-in-koeln_1269266122775.jpg "Super Rutsche")
-![Kletterhaus](spielplatz-rheinpark-spielplatz-in-koeln_1269266137466.jpg "Kletterhaus")
-![Übersicht über deb Spielplatz](spielplatz-rheinpark-spielplatz-in-koeln_1269266247350.jpg "Übersicht über deb Spielplatz")
-![Park](spielplatz-rheinpark-spielplatz-in-koeln_1269266341192.jpg "Der Rheinpark")
+![Super Rutsche](https://th-koeln.github.io/mi-bachelor-wba1/material/spielplatztreff/images/spielplatz-rheinpark-spielplatz-in-koeln_1269266122775.jpg "Super Rutsche")
+![Kletterhaus](https://th-koeln.github.io/mi-bachelor-wba1/material/spielplatztreff/images/spielplatz-rheinpark-spielplatz-in-koeln_1269266137466.jpg "Kletterhaus")
+![Übersicht über deb Spielplatz](https://th-koeln.github.io/mi-bachelor-wba1/material/spielplatztreff/images/spielplatz-rheinpark-spielplatz-in-koeln_1269266247350.jpg "Übersicht über deb Spielplatz")
+![Park](https://th-koeln.github.io/mi-bachelor-wba1/material/spielplatztreff/images/spielplatz-rheinpark-spielplatz-in-koeln_1269266341192.jpg "Der Rheinpark")
 
 
-## Eingetragen von:
-
-### Bettina aus Köln
+## Eingetragen von Bettina aus Köln
 Bettina hat:
 - 38 Spielplätze eingetragen
 - 535 Fotos hochgeladen
@@ -86,9 +84,6 @@ Bettina hat:
 - 3 Erlebnis- /Tierparks
 - 2 Spielpunkte
 - 2 Waldspielplätze
-
-
-## Spielplatz suchen
 
 
  
