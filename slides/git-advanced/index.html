@@ -1,0 +1,824 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Title of presentation -->
+    <title>Git Advanced und Advanced Hands On</title>
+    <!-- Short description of presentation -->
+    <meta name="description" content="Kickoff Web-basierte Anwendungen 1">
+    <!-- Author of presentation -->
+    <meta name="author" content="Stephan Pavlovic">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="../../src/reveal-js/css/reveal.min.css">
+    <link rel="stylesheet" href="../../src/reveal-js/css/theme/medieninformatik.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="../../src/reveal-js/lib/css/solarized_light.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="../../src/reveal-js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+    <style type="text/css">
+      .tabelle {
+        table-layout: fixed;
+      }
+      .tabelle td {
+        background-color: #404040;
+      }
+      .tabelle td,
+      .tabelle th {
+        font-size: 0.8em;
+        border: 4px solid black;
+        text-align: center !important;
+      }
+      .tabelle th {
+        font-weight: normal;
+      }
+      .kaestchen {
+        margin: 30px 0 0 30px !important;
+      }
+      .kaestchen li {
+        background-color: #DD1166;
+        color: white;
+        display: inline-bock;
+        float: left;
+        list-style-type: none;
+        margin: 0 15px 15px 0;
+        padding: 10px;
+        text-align: center;
+        width: 230px;
+      }
+      .fullscreenImage .reveal .slides {
+        height: 100% !important;
+        left: 0;
+        margin: 0 auto;
+        padding: 0;
+        top: 0;
+        width: 100% !important;
+      }
+      .fullscreenImage .reveal .slides > section {
+        background-position-x: center;
+        background-position-y: 10px;
+        background-repeat: no-repeat;
+        background-size: auto 90%;
+        height: 100%;
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+      .fullscreenImage .reveal .slides > section .bu {
+        background-color: rgba(221, 17, 102, 0.8);
+        top: 100px;
+        display: inline-block;
+        color: white;
+        padding: 0 10px 0 100px;
+        position: absolute;
+      }
+      .fullscreenImage .reveal .slides > section .quelle {
+        bottom: 10px;
+        color: white;
+        display: inline-block;
+        font-size: 14px;
+        margin: 0 0 0 10px;
+        position: absolute;
+      }
+      .fullscreenImage .reveal .slides > section p {
+        margin: 0;
+      }
+      .nobackground .reveal .slides > section {
+        background-image: none;
+      }
+      .whiteBackground .state-background {
+        background-color: white;
+      }
+    </style>
+    <!--[if lt IE 9]>
+    <script src="../../src/reveal-js/lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+
+        <section>
+          <h1>Web-basierte Anwendungen 1</h1>
+          <h2 class="menu">Git-Advanced</h2>
+          <p>16. Oktober 2015</p>
+
+          <p>Studiengang Medieninformatik an der Fachhochschule Köln<br>
+          Campus Gummersbach</p>
+
+          <p style="margin-top:10%">Prof. Christian Noss, M.Sc. Jan Kus, Volker Schäfer</p>
+        </section>
+
+        <section>
+          <h2 class="menu">Ziele dieses Abschnitts</h2>
+          <ul>
+            <li class="fragment">Git Basics auffrischen</li>
+            <li class="fragment">Komplexere Git Workflows verstehen</li>
+            <li class="fragment">Branches, Merging, Konflikte verstehen und lösen</li>            
+            <li class="fragment">Hands On</li>            
+          </ul>
+        </section>
+        <section>
+          <h2>Aufbau dieser Session</h2>
+            <li class="fragment">Recap von letzter Woche</li>
+            <li class="fragment">Wie sieht die Wirklichkeit aus?</li>
+            <li class="fragment">Struktur von Git</li>
+            <li class="fragment">Branches: <code>git branch</code> / <code>git checkout</code> / <code>git merge</code></li>
+            <li class="fragment">Merging von Branches: <code>git merge</code></li>
+            <li class="fragment">Konflikte</li>
+            <li class="fragment">Pull requests</li>
+            <li class="fragment">Repository inspecten: <code>git status</code> / <code>git log</code></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Recap von letzter Woche</h2>
+          <ul>
+            <li class="fragment">Git Setup durchführen <code>git config</code></li>
+            <li class="fragment">Github Setup durchführen & Github Account erstellen</li>
+            <li class="fragment">Repository auf Github erstellen</li>
+            <li class="fragment">Repository lokal erstellen: <code>git init</code></li>
+            <li class="fragment">Repositories miteinander verbinden: <code>git config</code> / <code>git clone</code></li>
+            <li class="fragment">Gitworkflow: <code>git status</code> / <code>git add</code> / <code>git commit</code></li>
+            <li class="fragment">Gitworkflow: <code>git push</code> / <code>git pull</code></li>
+          </ul>
+          <h3 class="fragment">>Wer hat dazu noch Fragen?</h3>          
+        </section>
+        <section>
+          <h2>Wie sieht die Wirklichkeit aus?</h2>
+          <p>
+            <img src="images/git-flow-1.png" alt="Git Flow" style="height:100%;">
+          </p>
+        </section>
+        <section>
+          <h2>Wie sieht die Wirklichkeit aus?</h2>
+          <p>
+            <img src="images/git-flow-2.png" alt="Git Flow" style="height:100%;">
+          </p>
+        </section>
+        <section>
+          <h2>Wie sieht die Wirklichkeit aus?</h2>
+          <ul>
+            <li class="fragment">Man sollte nicht im <code>master</code>-Branch arbeiten</li>
+            <li class="fragment">Der <code>master</code>-Branch sollte idealerweise immer "clean" sein und deployfähig bleiben</li>
+            <li class="fragment">Features entwickelt man im Feature-Branch z.B.: <code>feature_x</code></li>
+            <li class="fragment">Das zu entwicklende System testet man auf einem staging- bzw. release-Server und dadurch wird es im <code>staging-</code>-Branch entwickelt</li>
+            <li class="fragment">Im <code>release</code>-Branch werden ggf. kleinere Bugfixes durchgeführt</li>
+            <li class="fragment">Im <code>master</code>-Branch werden ggf. Hotfixes durchgeführt</li>            
+          </ul>
+        </section>
+        <section>
+          <h2>Struktur von Git</h2>
+          <ul>
+            <li class="fragment"><strong>Working Directory</strong> - mit <code>git add</code> fügt man Änderungen in den</li>
+            <li class="fragment"><strong>Index</strong> - mit <code>git commit</code> versioniert man in den</li>
+            <li class="fragment"><strong>Head</strong> - mit <code>git push</code> läd man Änderungen in ein remote Repository</li>
+          </ul>
+          <p class="fragment">
+            <img src="images/trees.png" alt="Workflow" style="height:100%;">
+          </p>  
+          <p><small>Quelle: http://rogerdudler.github.io/git-guide/, Stand: 14.10.2015</small></p>        
+        </section>
+        <section>
+          <h2>Lokal vs. Remote</h2>
+          <ul>
+            <li class="fragment"><strong>Lokaler Head</strong> - mit <code>git push</code> läd man Änderungen in den</li>
+            <li class="fragment"><strong>Remote Head</strong> - mit <code>git pull</code> läd man Änderungen in den</li>
+            <li class="fragment"><strong>Lokalen Head</strong></li>
+          </ul>
+          <p class="fragment">
+            <img src="images/trees.png" alt="Workflow" style="height:100%;">
+          </p>  
+          <p><small>Quelle: http://rogerdudler.github.io/git-guide/, Stand: 14.10.2015</small></p>        
+        </section>        
+        <section>
+          <h2>Was sind Branches?</h2>
+          <blockquote>
+            Branches are used to develop features isolated from each other. The master branch is the "default" branch when you create a repository. Use other branches for development and merge them back to the master branch upon completion.
+          </blockquote>
+          <p class="fragment">
+            <img src="images/branches.png" alt="Branches" style="height:100%;">
+          </p>  
+          <p><small>Quelle: http://rogerdudler.github.io/git-guide/, Stand: 14.10.2015</small></p>        
+        </section>
+        <section>
+          <h2>Arbeiten mit Branches?</h2>
+          <ul>
+            <li class="fragment">Branch erstellen: <code>git checkout -b feature_x</code></li>          
+            <li class="fragment">Branch wechseln: <code>git checkout</code></li>
+            <li class="fragment">In den Master Branch wechseln: <code>git checkout master</code></li>
+            <li class="fragment">Einen Branch löschen: <code>git branch -d feature_x</code></li>
+          </ul>    
+          <blockquote class="fragment">
+            So lange man einen Branch nicht zum remote Repository <code>push</code>t ist dieser nur lokal verfügbar und kein anderer hat darauf Zugriff
+          </blockquote>  
+          <p class="fragment"><code>git push origin feature_x</code></p>              
+        </section>
+        <section>
+          <h2>Zwei Branches zusammenführen</h2>
+          <ul>
+            <li class="fragment"><code>git pull feature_x</code></li>          
+            <li class="fragment"><code>git checkout master</code></li>          
+            <li class="fragment"><code>git merge feature_x</code></li>          
+          </ul>    
+          <blockquote class="fragment">
+            Git versucht alle Änderungen automatisch zusammen zu führen. Wenn dies nicht möglich ist entsteht ein so genannter <strong>Konflikt</strong>.
+          </blockquote>
+          <p class="fragment">Dieser muss manuell gelöst werden (im Editor) und anschließend wird der Index (<code>git add</code>) aktualisiert und dem lokalen Head hinzugefügt (<code>git commit</code>).</p>
+          <p class="fragment">Bevor man den Branch merged können mit <code>git diff [source_branch] [target_branch]</code> die zu mergenden Unterschiede eingesehen werden</p>
+          <p class="fragment">Das Zusammenführen von Branches soll in der Regel nur im Feature-Branch passieren</p>
+        </section>        
+        <section>
+          <h2>Konflikte</h2>
+          <blockquote>
+            This is the most common type of conflict. It happens when two branches have changed the same part of the same file, and then those branches are merged together.
+          </blockquote>
+          <pre>
+            <code>
+              git status
+              # # On branch branch-b
+              # # You have unmerged paths.
+              # #   (fix conflicts and run "git commit")
+              # #
+              # # Unmerged paths:
+              # #   (use "git add ..." to mark resolution)
+              # #
+              # # both modified:      planets.md
+              # #
+              # no changes added to commit (use "git add" and/or "git commit -a")
+            </code>
+          </pre> 
+        </section>
+        <section>
+          <h2>Konflikte</h2>
+          <blockquote>
+            This is the most common type of conflict. It happens when two branches have changed the same part of the same file, and then those branches are merged together.
+          </blockquote>
+          <pre>
+            <code>
+              1 # planets.md
+
+              2 the number of planets are
+              <<<<<<< HEAD
+              3 nine
+              =======
+              3 eight
+              >>>>>>> branch-a
+            </code>
+          </pre> 
+          <p>Im master-Branch hat jemand die Zeile 3 mit dem Wort "nine" editiert und im branch-a mit dem Wort "eight". Es entsteht ein Konflikt der mit den Markern <code>'<<<<<<<'</code>, <code>'======='</code>, <code>'>>>>>>>'</code> ausgezeichnet ist.
+        </section>        
+        <section>
+          <h2>Tagen von Software-Releases</h2>
+          <blockquote>
+            Releases are based on Git tags. Tags mark a specific point in the history of your project. Releases are GitHub's way of packaging and providing software to your users. You can think of it as a replacement to using downloads to provide software.
+          </blockquote>
+          <ul>
+            <li class="fragment">In manchen Fällen möchte man bestimmte Releases als solche Taggen bzw. Kennzeichnen</li>          
+            <li class="fragment">Man benutzt das Konzept des Semantic Versioning</li>          
+            <li class="fragment">z.B.: <code>2.4.1.beta2</code></li>          
+            <li class="fragment">z.B.: <code>[Major].[Minor].[Patch].[Additional]</code></li>          
+            <li class="fragment"><code>git tag 1.0.0 1b2e1d63ff</code></li>          
+          </ul>  
+        </section>
+        <section>
+          <h2>Pull requests</h2>
+          <blockquote>
+            Pull requests let you tell others about changes you've pushed to a GitHub repository. Once a pull request is sent, interested parties can review the set of changes, discuss potential modifications, and even push follow-up commits if necessary.
+          </blockquote>
+          <ul>
+            <li>Einen pull request macht man aus einem Branch heraus mit dem Ziel, dass dieser vom Team gereviewed wird und in den master Branch gemerged wird</li>
+           <li>Es ist ein wichtiger Bestandteil im Entwicklungsteam um <strong>Softwarequalität</strong> hoch zu halten</li>
+           <li>Pull-Requests ermöglichen Feedback vom Team über den eigenen Softwarecode zu erhalten und somit <strong>selber zu lernen und sich stätig zu verbessern</strong></li>            
+           <li>Pull-Requests geben die Möglichkeit an anderen Open Source Projekten mit zu entwickeln und somit ein <strong>gutes Standing in der Community zu erhalten</strong></li>            
+           <li><strong>Arbeitgeber schauen sich github-Accounts an</strong></li>            
+          </ul>
+        </section>
+        <section>
+          <h2>Repository inspecten: <code>git status</code></h2>
+          <blockquote>
+            <code>git-status</code> - zeigt den Status des Working-Trees (Git-Orders) an
+          </blockquote>
+          <ul>
+            <li>Zeigt die Differenz zwischen dem <strong>Index</strong> und dem <strong>HEAD</strong> an</li>
+            <li>Zeigt die Differenz zwischen dem <strong>Working Tree</strong> und dem <strong>Index</strong> an</li>
+            <li>Zeigt die Dateien die <strong>nicht im Working Tree enthalten sind</strong> und auch nicht ignoriert wurden</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Repository inspecten: <code>git log</code></h2>
+          <blockquote>
+            <code>git-log</code> - ist die einfachste Form die History anzuzeigen
+          </blockquote>          
+          <ul>
+            <li><code>git log</code></li>
+            <li><code>git log --author=bob</code>: Ausgabe des Logs nur mit Einträgen vom User "bob"</li>
+            <li><code>git log --pretty=oneline</code>: Einzeilige Ausgabe des Logs</li>
+            <li><code>git log --graph --oneline --decorate --all</code>: Ausgabe aller Branches in einer Baumstruktur</li>
+            <li><code>git log --name-status</code>: Ausgabe des Logs mit Dateinamen die sich in der jeweiligen Version geändert haben</li>                        
+            <li><code>git log --help</code>: Hilfe wie man <code>git log</code> noch aufrufen kann</li>
+          </ul>          
+        </section>
+        <section data-state="fullscreenImage" style="background-image: url(images/git-log-0.png)">
+          <p class="bu fragment">
+            Git Log Beispiel
+          </p>
+        </section> 
+        <section data-state="fullscreenImage" style="background-image: url(images/git-log-1.png)">
+          <p class="bu fragment">
+            Git Log Beispiel
+          </p>
+        </section>         
+        <section data-state="fullscreenImage" style="background-image: url(images/pause.png)">
+          <p class="bu fragment">
+            Pause
+          </p>
+        </section>        
+        <section>
+          <h1>Web-basierte Anwendungen 1</h1>
+          <h2>Git-Advanced Hands on</h2>
+          <p>16. Oktober 2015</p>
+
+          <p>Studiengang Medieninformatik an der Fachhochschule Köln<br>
+          Campus Gummersbach</p>
+
+          <p style="margin-top:10%">Prof. Christian Noss, M.Sc. Jan Kus, Volker Schäfer</p>
+        </section>        
+        <section>
+          <h2>Aufbau dieser Session</h2>
+            <li class="fragment">Recap</li>
+            <li class="fragment">Branches: <code>git branch</code> / <code>git checkout</code></li>
+            <li class="fragment">Merging von Branches: <code>git merge</code></li>
+            <li class="fragment">Konflikte</li>
+            <li class="fragment">Pull requests</li>
+            <li class="fragment">Repository inspecten: <code>git status</code> / <code>git log</code></li>
+          </ul>
+        </section> 
+        <section>
+          <h2>Recap - neues Git Repository anlegen</h2>
+          <blockquote>
+            Bitte Ordner anlegen, Git-Repository initieieren und Datei erstellen, dem Index hinzufügen und ins Repository commiten
+          </blockquote>
+          <pre>
+            <code>
+              ➜  code  mkdir test-git-project
+              ➜  code  cd test-git-project
+              ➜  test-git-project  git init
+              Initialized empty Git repository in /Volumes/code/test-git-project/.git/
+              ➜  test-git-project git:(master) echo "hello world" >> lorem.ipsum
+              ➜  test-git-project git:(master) ✗ git add lorem.ipsum
+              ➜  test-git-project git:(master) ✗ git commit -a -m 'Added Lorem Ipsum'
+              [master (root-commit) dfc6c4d] Added Lorem Ipsum
+               1 file changed, 1 insertion(+)
+               create mode 100644 lorem.ipsum
+              ➜  test-git-project git:(master)
+            </code>
+          </pre>
+        </section>  
+        <section>
+          <h2>Einen Branch anlegen: <code>git branch</code></h2>
+          <blockquote>
+            Bitte einen Branch erstellen mit <code>git branch feature_x</code> und in diesen Branch mit <code>git checkout feature_x</code> wechseln.
+          </blockquote>
+          <pre>
+            <code>
+            ➜  test-git-project git:(master) git branch feature_x
+            ➜  test-git-project git:(master) git checkout feature_x
+            Switched to branch 'feature_x'
+            </code>
+          </pre>
+        </section>
+        <section>
+          <h2>Einen Branch anlegen - Alternative: <code>git checkout</code></h2>
+          <blockquote>
+            Mit <code>git checkout -b feature_x</code> wird ein Branch erstellt und direkt ausgecheckt
+          </blockquote>
+          <pre>
+            <code>
+            ➜  test-git-project git:(testbranch) git checkout -b feature_x
+            Switched to a new branch 'feature_x'
+            </code>
+          </pre>
+        </section>        
+        <section>
+          <h2>Einen Branch löschen</h2>
+          <blockquote>
+            Mit <code>git branch -d feature_x</code> wird ein Branch gelöscht
+          </blockquote>
+          <pre>
+            <code>
+              ➜  test-git-project git:(testb) git checkout master
+              Switched to branch 'master'
+              ➜  test-git-project git:(master) git branch -d feature_x
+              Deleted branch feature_x (was dfc6c4d).
+              ➜  test-git-project git:(master)
+            </code>
+          </pre>
+        </section> 
+        <section>
+          <h2>Einen Branch in ein Remote Repository pushen</h2>
+          <blockquote>
+            Mit <code>git push origin feature_x</code> wird ein Branch in ein remote Repository gepushed
+          </blockquote>
+          <pre>
+            <code>
+              ➜  testproject git:(master) git checkout -b feature_x
+              Switched to a new branch 'feature_x'
+              ➜  testproject git:(feature_x) git push origin feature_x
+              Total 0 (delta 0), reused 0 (delta 0)
+              To git@github.com:koos/testproject.git
+               * [new branch]      feature_x -> feature_x
+              ➜  testproject git:(feature_x)
+            </code>
+          </pre>
+        </section>         
+        <section>
+          <h2>Einen Branch mergen: <code>git merge</code></h2>
+          <blockquote>
+            Mit <code>git merge feature_x</code> wird ein Branch in einen anderen Zusammengeführt
+          </blockquote>
+          <pre>
+            <code>
+              ➜  testproject git:(master) git checkout -b feature_x            
+              ➜  testproject git:(feature_x) echo "ein file" >> test.ipsum
+              ➜  testproject git:(feature_x) ✗ git add .
+              ➜  testproject git:(feature_x) ✗ git commit -a -m 'added test.ipsum'
+              [feature_x ab9402e] added test.ipsum
+               1 file changed, 1 insertion(+)
+               create mode 100644 test.ipsum
+              ➜  testproject git:(feature_x) git checkout master
+              Switched to branch 'master'
+              Your branch is up-to-date with 'origin/master'.
+              ➜  testproject git:(master) git merge feature_x
+              Updating c6f9fe4..ab9402e
+              Fast-forward
+               test.ipsum | 1 +
+               1 file changed, 1 insertion(+)
+               create mode 100644 test.ipsum
+              ➜  testproject git:(master)
+            </code>
+          </pre>          
+        </section>
+        <section>
+          <h2>Einen Konflikt erstellen und lösen</h2>
+          <pre>
+            <code>
+              ➜  testproject git:(master) git checkout -b feature_x
+              Switched to a new branch 'feature_x'
+              ➜  testproject git:(feature_x) echo "erste zeile" >> test.txt
+              ➜  testproject git:(feature_x) ✗ cat test.txt
+              erste zeile%                                                                                         ➜  testproject git:(feature_x) ✗ git add .
+              ➜  testproject git:(feature_x) ✗ git commit -a -m 'added erste zeile'
+              [feature_x 2a16d85] added erste zeile
+               1 file changed, 1 insertion(+)
+               create mode 100644 test.txt
+              ➜  testproject git:(feature_x) git checkout master
+              Switched to branch 'master'
+              Your branch is ahead of 'origin/master' by 1 commit.
+                (use "git push" to publish your local commits)
+              ➜  testproject git:(master) git merge feature_x
+              Updating ab9402e..2a16d85
+              Fast-forward
+               test.txt | 1 +
+               1 file changed, 1 insertion(+)
+               create mode 100644 test.txt
+              ➜  testproject git:(master) git checkout -b feature_y
+              Switched to a new branch 'feature_y'
+              ➜  testproject git:(feature_y) subl .
+              ➜  testproject git:(feature_y) git add .
+              ➜  testproject git:(feature_y) ✗ git commit -a -m 'added something else to erste zeile'
+              [feature_y 65b5aa3] added something else to erste zeile
+               1 file changed, 1 insertion(+), 1 deletion(-)
+              ➜  testproject git:(feature_y) git checkout feature_x
+              Switched to branch 'feature_x'
+              ➜  testproject git:(feature_x) subl .
+              ➜  testproject git:(feature_x) git status
+              On branch feature_x
+              Changes not staged for commit:
+                (use "git add <file>..." to update what will be committed)
+                (use "git checkout -- <file>..." to discard changes in working directory)
+
+                modified:   test.txt
+
+              no changes added to commit (use "git add" and/or "git commit -a")
+              ➜  testproject git:(feature_x) ✗ git add .
+              ➜  testproject git:(feature_x) ✗ git commit -a -m 'adedd something else to erste zeile'
+              [feature_x b68fd60] adedd something else to erste zeile
+               1 file changed, 1 insertion(+), 1 deletion(-)
+              ➜  testproject git:(feature_x) git checkout master
+              Switched to branch 'master'
+              Your branch is ahead of 'origin/master' by 2 commits.
+                (use "git push" to publish your local commits)
+              ➜  testproject git:(master) git merge feature_x
+              Updating 2a16d85..b68fd60
+              Fast-forward
+               test.txt | 2 +-
+               1 file changed, 1 insertion(+), 1 deletion(-)
+              ➜  testproject git:(master) git merge feature_y
+              Auto-merging test.txt
+              CONFLICT (content): Merge conflict in test.txt
+              Automatic merge failed; fix conflicts and then commit the result.
+              ➜  testproject git:(master) ✗ git status
+              On branch master
+              Your branch is ahead of 'origin/master' by 3 commits.
+                (use "git push" to publish your local commits)
+              You have unmerged paths.
+                (fix conflicts and run "git commit")
+
+              Unmerged paths:
+                (use "git add <file>..." to mark resolution)
+
+                both modified:   test.txt
+
+              no changes added to commit (use "git add" and/or "git commit -a")
+              ➜  testproject git:(master) ✗ git diff feature_x feature_y
+            </code>
+          </pre>          
+        </section>  
+        <section>
+          <h2>Einen Konflikt erstellen und lösen</h2>
+          <pre>
+            <code>
+              ➜  testproject git:(master) ✗ git status
+              On branch master
+              Your branch is ahead of 'origin/master' by 3 commits.
+                (use "git push" to publish your local commits)
+              You have unmerged paths.
+                (fix conflicts and run "git commit")
+
+              Unmerged paths:
+                (use "git add <file>..." to mark resolution)
+
+                both modified:   test.txt
+
+              no changes added to commit (use "git add" and/or "git commit -a")
+              ➜  testproject git:(master) ✗ cat test.txt
+              <<<<<<< HEAD
+              erste zeile hello world wide web
+              =======
+              erste zeile hello world
+              >>>>>>> feature_y
+              ➜  testproject git:(master) ✗ git add .
+              ➜  testproject git:(master) ✗ git commit -a -m 'resolved conflict'
+              [master 2dc5735] resolved conflict
+              ➜  testproject git:(master)
+            </code>
+          </pre>          
+        </section>          
+        <section>
+          <h2>git diff [branch_1] [branch_2]</h2>
+          <pre>
+            <code>
+              ➜  testproject git:(master) ✗ git diff feature_x feature_y
+              diff --git a/test.txt b/test.txt
+              index 56b8a01..484e5ce 100644
+              --- a/test.txt
+              +++ b/test.txt
+              @@ -1 +1 @@
+              -erste zeile hello world wide web
+              \ No newline at end of file
+              +erste zeile hello world
+              \ No newline at end of file
+              (END)
+            </code>
+          </pre>          
+        </section>    
+        <section>
+          <h2>git tag</h2>
+          <blockquote>
+            Mit <code>git tag [version] [hash]</code> wird ein Release als solcher getagged
+          </blockquote>          
+          <pre>
+            <code>
+              ➜  testproject git:(master) git tag 1.1.2-rc2.1.1 2dc57356428f6576d037d706c10ceb5202a921f7
+              ➜  testproject git:(master) git tag
+              1.1.2-rc2.1.1
+              ➜  testproject git:(master)
+            </code>
+          </pre>          
+        </section> 
+        <section>
+          <h2>git status</h2>
+          <blockquote>
+            Mit <code>git status</code> zeigt den status der Working Tree an
+          </blockquote>          
+          <pre>
+            <code>
+              git status
+              # # On branch branch-b
+              # # You have unmerged paths.
+              # #   (fix conflicts and run "git commit")
+              # #
+              # # Unmerged paths:
+              # #   (use "git add ..." to mark resolution)
+              # #
+              # # both modified:      planets.md
+              # #
+              # no changes added to commit (use "git add" and/or "git commit -a")
+            </code>
+          </pre>          
+        </section>  
+        <section>
+          <h2>git log</h2>
+          <blockquote>
+            Mit <code>git log</code> kann man auf einfache Weise die History aufrufen
+          </blockquote>          
+          <pre>
+            <code>
+              ➜  wba1-2015 git:(gh-pages) ✗ git log --oneline
+              b45b548 Neuigkeiteneinträge im mi-onepager in articles überführt
+              7461ee5 Merge branch 'gh-pages' of https://github.com/th-koeln/wba1-2015 into gh-pages
+              c6d7644 Kommentar im JS-Code zum mi-onepager ergänzt
+              374b3a2 MK behoben
+              d513612 CSS weiter entwickelt.
+            </code>
+          </pre>          
+        </section>   
+        <section>
+          <h2>git log</h2>
+          <blockquote>
+            Mit <code>git log</code> kann man auf einfache Weise die History aufrufen
+          </blockquote>          
+          <ul>
+            <li><code>git log --author=bob</code>: Ausgabe des Logs nur mit Einträgen vom User "bob"</li>
+            <li><code>git log --pretty=oneline</code>: Einzeilige Ausgabe des Logs</li>
+            <li><code>git log --graph --oneline --decorate --all</code>: Ausgabe aller Branches in einer Baumstruktur</li>
+            <li><code>git log --name-status</code>: Ausgabe des Logs mit Dateinamen die sich in der jeweiligen Version geändert haben</li>                        
+            <li><code>git log --help</code>: Hilfe wie man <code>git log</code> noch aufrufen kann</li>
+          </ul>        
+        </section>  
+        <section>
+          <h2>git log</h2>
+          <blockquote>
+            Mit <code>git log</code> kann man auf einfache Weise die History aufrufen
+          </blockquote>          
+          <pre>
+            <code>
+              ➜  wba1-2015 git:(gh-pages) ✗ git log --graph --oneline --decorate --all
+              * 42974af (HEAD -> gh-pages, origin/gh-pages, origin/HEAD) Git Advanced Finished
+              *   a2c8b1f Merge branch 'gh-pages' of github.com:th-koeln/wba1-2015 into gh-pages
+              |\
+              | * 4bc40d3 Replaced old logo with new one in presentations
+              | * e000ba4 Added new box as image
+              | * 8672d10 Moved Helpers from .css to .scss
+              | * c50f1a8 Aded fancy template, still WIP
+              | *   55240dd Merge branch 'gh-pages' of github.com:fh-koeln/wba1-2015 into gh-pages
+              | |\
+              | | * 8c879ba Fragment identifier und mailto-Link im mi-onepager korrigiert
+              | * | 824bb94 SVG Grafik hinzugefügt
+              | * | c48a27c Folie Übersicht HTML CSS JS hinzugefügt
+              | * | c8119f3 Link repariert
+              | |/
+              | * 2803984 Korrekturen an Slides für HTML Basics
+              | *   2ad1774 Merge branch 'gh-pages' of github.com:fh-koeln/wba1-2015 into gh-pages
+              | |\
+              | | *   190301a Merge branch 'gh-pages' of https://github.com/th-koeln/wba1-2015 into gh-pages
+              | | |\
+              | | * | 47f359b Formular-Validierung im mi-onepager nun per JS
+              | | * | 80d85a3 Formular-Buttons als solche gekennzeichnet (hover)
+              | * | | 9b19e2c Folien für HTML-Workshop ergänzt.
+              | | |/
+              | |/|
+              | * | 7795026 Workshop HTML-Basics hinzugefügt
+            </code>
+          </pre>          
+        </section>                           
+        <section>
+          <h2>Literatur</h2>
+          <ul>
+            <li><a href="https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/">Resolving a merge conflict from the command line</a></li>
+            <li><a href="http://rogerdudler.github.io/git-guide/">git - the simple guide</a></li>                      
+            <li><a href="http://semver.org/">Semantic Versioning 2.0.0</a></li>                      
+            <li><a href="http://readwrite.com/2014/07/02/github-pull-request-etiquette">How To Win Friends And Make Pull Requests On GitHub</a></li>                      
+            <li><a href="http://git-scm.com/book/en/v2">Pro Git book</a></li>                      
+            <li><a href="http://think-like-a-git.net/">http://think-like-a-git.net/</a></li>                      
+            <li><a href="https://help.github.com/">Git Help</a></li>                      
+            <li><a href="https://groups.google.com/forum/#!forum/git-users">Google Forum</a></li>                      
+            <li><a href="http://jk.gs/git/">#git: an introduction</a></li>                      
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="../../src/reveal-js/lib/js/head.min.js"></script>
+    <script src="../../src/reveal-js/js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: false,
+        width: 1000,
+
+        transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+        transitionSpeed: 'fast', // default/fast/slow
+        backgroundTransition: 'none', // default/linear/none
+        
+        menu: {
+					// Specifies which side of the presentation the menu will 
+					// be shown. Use 'left' or 'right'.
+					side: 'left',
+			
+					// Add slide numbers to the titles in the slide list.
+					// Use 'true' or format string (same as reveal.js slide numbers)
+					numbers: false,
+			
+					// Specifies which slide elements will be used for generating
+					// the slide titles in the menu. The default selects the first
+					// heading element found in the slide, but you can specify any
+					// valid css selector and the text from the first matching
+					// element will be used.
+					// Note: that a section data-menu-title attribute or an element
+					// with a menu-title class will take precedence over this option
+					titleSelector: '.menu',
+			
+					// If slides do not have a matching title, attempt to use the
+					// start of the text content as the title instead
+					useTextContentForMissingTitles: false,
+			
+					// Hide slides from the menu that do not have a title.
+					// Set to 'true' to only list slides with titles.
+					hideMissingTitles: true,
+			
+					// Add markers to the slide titles to indicate the 
+					// progress through the presentation
+					markers: false,
+			
+					// Specify custom panels to be included in the menu, by
+					// providing an array of objects with 'title', 'icon'
+					// properties, and either a 'src' or 'content' property.
+					custom: false,
+			
+					// Specifies the themes that will be available in the themes
+					// menu panel. Set to 'false' to hide themes panel.
+					themes: false,
+			
+					// Specifies if the transitions menu panel will be shown.
+					transitions: false,
+			
+					// Adds a menu button to the slides to open the menu panel.
+					// Set to 'false' to hide the button.
+					openButton: true,
+			
+					// If 'true' allows the slide number in the presentation to
+					// open the menu panel. The reveal.js slideNumber option must 
+					// be displayed for this to take effect
+					openSlideNumber: false,
+			
+					// If true allows the user to open and navigate the menu using
+					// the keyboard. Standard keyboard interaction with reveal
+					// will be disabled while the menu is open.
+					keyboard: true,
+			
+					// Normally the menu will close on user actions such as
+					// selecting a menu item, or clicking the presentation area.
+					// If 'true', the sticky option will leave the menu open
+					// until it is explicitly closed, that is, using the close
+					// button or pressing the ESC or m key (when the keyboard 
+					// interaction option is enabled).
+					sticky: false,
+			
+					// If 'true' standard menu items will be automatically opened
+					// when navigating using the keyboard. Note: this only takes 
+					// effect when both the 'keyboard' and 'sticky' options are enabled.
+					autoOpen: true,
+			
+					// If 'true' the menu will not be created until it is explicitly
+					// requested by calling RevealMenu.init(). Note this will delay
+					// the creation of all menu panels, including custom panels, and
+					// the menu button.
+					delayInit: false
+				},
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: '../../src/reveal-js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../../src/reveal-js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../../src/reveal-js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../../src/reveal-js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '../../src/reveal-js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../../src/reveal-js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>

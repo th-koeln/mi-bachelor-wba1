@@ -19,3 +19,7 @@ info: Was ist verteilte Versionsverwaltung und wie setze ich es ein?
 ## Was muss ich mitbringen?
 
 ## Material
+- [Folien Git Basics](../../slides/git-basics/index.html)
+- [Folien Git Basics Hand-On](../../slides/git-basics-hands-on/index.html)
+- [Folien Git Advanced](../../slides/git-advanced/index.html)
+

@@ -47,10 +47,10 @@ Schöner Spielplatz für alle.
 
 [Eigene Fotos hinzufügen](/add-image.htm)
 
-![Super Rutsche](https://th-koeln.github.io/mi-bachelor-wba1/material/spielplatztreff/images/spielplatz-rheinpark-spielplatz-in-koeln_1269266122775.jpg "Super Rutsche")
-![Kletterhaus](https://th-koeln.github.io/mi-bachelor-wba1/material/spielplatztreff/images/spielplatz-rheinpark-spielplatz-in-koeln_1269266137466.jpg "Kletterhaus")
-![Übersicht über deb Spielplatz](https://th-koeln.github.io/mi-bachelor-wba1/material/spielplatztreff/images/spielplatz-rheinpark-spielplatz-in-koeln_1269266247350.jpg "Übersicht über deb Spielplatz")
-![Park](https://th-koeln.github.io/mi-bachelor-wba1/material/spielplatztreff/images/spielplatz-rheinpark-spielplatz-in-koeln_1269266341192.jpg "Der Rheinpark")
+![Klettertürme mit Brücke](https://th-koeln.github.io/mi-bachelor-wba1/material/spielplatztreff/images/DSC_0004.JPG "Klettertürme mit Brücke")
+![Kletterseile](https://th-koeln.github.io/mi-bachelor-wba1/material/spielplatztreff/images/DSC_0015.JPG "Kletterseile")
+![Übersicht über deb Spielplatz](https://th-koeln.github.io/mi-bachelor-wba1/material/spielplatztreff/images/DSC_0024.JPG "Übersicht über deb Spielplatz")
+![Park](https://th-koeln.github.io/mi-bachelor-wba1/material/spielplatztreff/images/DSC_9996.JPG "Der Rheinpark")
 
 
 ## Eingetragen von Bettina aus Köln
