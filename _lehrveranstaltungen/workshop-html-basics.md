@@ -25,6 +25,7 @@ Eigenen Computer mit Web-Editor, FTP Client, Zugang zum eigenen ADV Account.
 
 ### Material
 - [HTML Basics - Folien](../../download/html-basics.pdf)
+- [Introduction to HTML - Folien](../../download/Chapter03-IntroductionToHTML.pdf)
 - [HTML Tutorial bei w3schools.com](https://www.w3schools.com/html/default.asp)
 - [Learn HTML bei codecademy.com](https://www.codecademy.com/learn/learn-html)
 - [Codebeispiele in Codepen](http://codepen.io/collection/DJGrme/)
@@ -53,6 +54,19 @@ Bitte legen Sie ein Verzeichnis mit dem Namen "rheinpark-spielplatz" an und erze
 Laden Sie die zugehörigen Bilder herunter und legen diese in ein Unterverzeichnis unterhalb von "rheinpark-spielplatz". Bitte nennen Sie das Unterverzeichnis "img" und binden Sie die Bilder via relativer Referenzierung in ihr HTML Dokument ein.
 
 ## Übung 2: Nutzung von Strukturelementen
+
+Strukturieren Sie nun das Dokument mit semantischen Strukturelementen wie *nav*, *section* und *header*.
+
+## Übung 3: Hyperlinks
+
+Ergänzen Sie Ihr Dokument um eine Navigation mit den folgenden Links:
+
+| Linkname  | Linkziel | Art | 
+|---|---|---|
+| Spielplatz Eintragen  | eintragen.htm  | Link auf der Website |
+| Bewertungen anzeigen  | #bewertungen  |  Link innerhalb der Seite |
+| Facebookseite | http://facebook.de/spielplatztreff | Externer Link |
+
 
 
 
