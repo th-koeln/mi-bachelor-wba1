@@ -82,7 +82,7 @@ Die Klausur findet während der Prüfungsphase statt und dauert eine Stunde. Wir
 
 ### Praktischer Prüfungsteil: Challenge oder Workshop
 
-Für diesen Prüfungsteil gibt es zwei Optionen: entweder die Entwicklung und Durchführung eines Workshops, oder die Teilnahme an der Challenge.
+Für diesen Prüfungsteil gibt es zwei Optionen: entweder die Entwicklung und Durchführung eines Workshops, oder die Teilnahme an der Challenge. Auch dazu müssen Sie sich explizit im PSSO anmelden.
 
 #### Entwicklung und Durchführung eines Workshops
 
