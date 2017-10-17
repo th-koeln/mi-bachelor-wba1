@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<!-- Title of presentation -->
+	<title>Git Advanced und Advanced Hands On</title>
+	<!-- Short description of presentation -->
+	<meta name="description" content="Kickoff Web-basierte Anwendungen 1">
+	<!-- Author of presentation -->
+	<meta name="author" content="Volker Schaefer">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../src/reveal-js/css/reveal.min.css">
+	<link rel="stylesheet" href="../../src/reveal-js/css/theme/medieninformatik.css" id="theme">
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="../../src/reveal-js/lib/css/solarized_light.css">
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
+		document.write('<link rel="stylesheet" href="../../src/reveal-js/css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+	</script>
+	<style type="text/css">
+		.drei-spalten div {
+			display: inline-block;
+			width: 30%;
+			
+		}
+		
+		.drei-spalten div img.app-icon {
+			margin-right: 30% !important;
+			width: 70%;
+		}
+		
+		.pink {
+			color: #dd1166 !important;
+		}
+		
+		
+		.tabelle {
+			table-layout: fixed;
+		}
+		
+		.tabelle td {
+			background-color: #404040;
+		}
+		
+		.tabelle td,
+		.tabelle th {
+			font-size: 0.8em;
+			border: 4px solid black;
+			text-align: center !important;
+		}
+		
+		.tabelle th {
+			font-weight: normal;
+		}
+		
+		.kaestchen {
+			margin: 30px 0 0 30px !important;
+		}
+		
+		.kaestchen li {
+			background-color: #DD1166;
+			color: white;
+			display: inline-bock;
+			float: left;
+			list-style-type: none;
+			margin: 0 15px 15px 0;
+			padding: 10px;
+			text-align: center;
+			width: 230px;
+		}
+		
+		
+		.fullscreenImage .reveal .slides > section .bu {
+			background-color: rgba(221, 17, 102, 0.8);
+			top: 100px;
+			display: inline-block;
+			color: white;
+			padding: 0 10px 0 100px;
+			position: absolute;
+		}
+		
+		.fullscreenImage .reveal .slides > section .quelle {
+			bottom: 10px;
+			color: white;
+			display: inline-block;
+			font-size: 14px;
+			margin: 0 0 0 10px;
+			position: absolute;
+		}
+		
+		.fullscreenImage .reveal .slides > section p {
+			margin: 0;
+		}
+		
+	</style>
+	<!--[if lt IE 9]>
+    <script src="../../src/reveal-js/lib/js/html5shiv.js"></script>
+    <![endif]-->
+	</head>
+
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+
+		<section>
+			<h1>Web-basierte Anwendungen 1</h1>
+			<h2 class="menu">Tooling</h2>
+			<p>19. Oktober 2017</p>
+			<p>Studiengang Medieninformatik an der Technischen Hochschule Köln
+				<br> Campus Gummersbach</p>
+			<!--          <p style="margin-top:10%">Volker Schaefer</p>-->
+		</section>
+		<section>
+			<h2 class="menu">Ziele des Trainings</h2>
+			<ul>
+				<li class="fragment">Tools kennenleren einrichten, die für das Web Development (fast) unverzichtbar sind</li>
+				<li class="fragment">Den Workflow vom Erstellen bis zum Deployen einer Website kennen und verstehen</li>
+				<li class="fragment">Eine individuell angepasste Über-mich Seite über den ADV-Server online stellen</li>
+			</ul>        
+		</section>
+  
+		<section data-background-image="images/a-complicated-ecosystem.jpg" data-background-size="contain">
+			<aside class="notes">
+				<ul>
+					<li>Das Eco System rund um das Webdevelopment ist ziemlich groß</li>
+					<li>Es gibt viele unterschiedliche Bereiche / Abteilungen, die benötigt werden, um eine Web-basierte Anwendung zu erstellen, online zu stellen und zu administrieren </li>
+					<li>In dieser Session beschäftigen wir uns mit einem kleinen Bereich davon: Server, Configuration und HTML</li>
+				</ul>
+			</aside>
+		</section>
+		
+		<section data-background-image="images/request-response.jpg" data-background-size="contain">
+			<aside class="notes">
+				<ul>
+					<li>Ablauf zum Aufruf einer Website über den Browser von einem Server</li>
+				</ul>
+			</aside>
+		</section>
+		<section>
+			<h2>Wir brauchen ein paar Tools um arbeitsfähig werden</h2>
+			<ul>
+				<li class="fragment">Browser</li>
+				<li class="fragment">Web Develpopment Tools</li>
+				<li class="fragment">Editor</li>
+				<li class="fragment">Terminal / SSH Client</li>
+				<li class="fragment">FTP Client</li>
+			</ul>
+			
+		</section>
+		<section>
+			<h2>Editoren</h2>
+			<div class="drei-spalten">
+				<div>
+					<img src="images/atom-icon.png" class="app-icon" alt="Atom Icon">
+					<p>Atom</p>
+					<a href="http://atom.io">http://atom.io</a>
+				</div>
+				<div>
+					<img src="images/brackets-icon.png" class="app-icon" alt="Brackets Icon">
+					<p>Brackets</p>
+					<a href="http://brackets.io">http://brackets.io</a>
+					
+				</div>
+				<div>
+					<img src="images/visual-studio-code-icon.png" class="app-icon" alt="Visual Studio Code Icon">
+					<p>Visual Studio Code</p>
+					<a href="https://code.visualstudio.com">https://code.visualstudio.com</a>
+				</div>
+			</div>
+		</section>
+		
+		
+		<section>
+			<h2>Terminal // SSH Client</h2>
+			<h3>macOS und Linux</h3>
+			<ul>
+				<li class="fragment">Bordmittel können verwendet werden</li>
+				<li class="fragment">macOS: Terminal</li>
+				<li class="fragment">Linux: Bash-Shell</li>
+			</ul>
+			<h3 class="fragment">Windows</h3>
+			<ul>
+				<li class="fragment">Putty<br><a href="http://www.putty.org">http://www.putty.org</a></li>
+			</ul>
+			<h3 class="fragment">ab Windows 10</h3>
+			<ul>
+				<li class="fragment">Linux-Bash ist als Subsystem verfügar</li>
+				<li class="fragment">Ist in der Standartkonfiguration nicht aktiviert</li>
+				<li class="fragment"><a href="https://www.heise.de/newsticker/meldung/Hands-on-Das-neue-Linux-Subsystem-in-Windows-10-3163994.html">Anleitung</a> zur Aktivierung der Linux Bash</li>
+			</ul>
+		</section>
+		
+		<section>
+			<h2>FTP-Client</h2>
+			<img src="images/cyberduck-icon.png" style="width: 15%; display: block;margin-top: 50px" alt="Cyberduck Icon">
+			<p>Cyberduck</p>
+			<a href="https://cyberduck.io">https://cyberduck.io</a>
+		</section>
+		
+		<section>
+			<h2 class="pink">Hands-on!</h2>
+			<ul>
+				<li class="fragment">Laden Sie sich alle benötigten Tools herunter,<br> installieren und richten Sie diese ein.</li>
+				<li class="fragment">Laden Sie sich das Arbeitspaket aus von der GitHub Seite herunter</li>
+				<li class="fragment">Passen Sie die gegebene HTML-Datei an</li>
+				<li class="fragment">Fügen Sie ein Profilfoto in das vorgesehen Verzeichnis hinzu</li>
+				<li class="fragment">Verifizieren Sie ihre Änderungen an der HTML-Datei zwischendurch im Browser</li>
+			</ul>
+			<p></p>
+		</section>
+		
+		<section>
+			<h2>Dateien auf dem Server deployen</h2>
+			<ul>
+				<li class="fragment">Das ADV-Labor stellt für jeden Nutzer mit einer GMID ein Homeverzeichnis zur Verfügung, der auch als Webspace genutzt werden kann.</li>
+				<li class="fragment">Zugangsdaten für FTP-Programm und Konsole:</li>
+				<ul class="fragment">
+					<li>Server: advm1.gm.fh-koeln.de</li>
+					<li>Username und Passwort: GMID</li>
+				</ul>
+				<li class="fragment">
+					Webspace muss zunächst eingerichtet werden, damit die Webseiten von außerhalb des Servers aufgerufen werden können.
+				</li>
+				<li class="fragment">Dazu gibt es eine <a href="http://www.gm.fh-koeln.de/advlabor/dienste/homepage.shtml">Anleitung</a> auf der Website vom ADV Labor</li>
+			</ul>
+		</section>
+		
+			
+		<section>
+			<h2 class="pink">Hands-on!</h2>
+			<ul>
+				<li>Richten Sie Ihr FTP-Programm ein, so dass Sie auf die ADV-Maschine Zugriff haben</li>
+				<li>Richten Sie anschließend ihren Webspace ein und übertragen Sie die Daten für die Website auf den Webspace</li>
+				<li>Rufen Sie die HTML-Datei im Browser auf</li>
+			</ul>
+		</section>
+
+      </div>
+    </div>
+
+    <script src="../../src/reveal-js/lib/js/head.min.js"></script>
+    <script src="../../src/reveal-js/js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: false,
+		width: 1000,
+
+		transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+		transitionSpeed: 'fast', // default/fast/slow
+		backgroundTransition: 'none', // default/linear/none
+
+		menu: {
+				// Specifies which side of the presentation the menu will 
+				// be shown. Use 'left' or 'right'.
+				side: 'left',
+
+				// Add slide numbers to the titles in the slide list.
+				// Use 'true' or format string (same as reveal.js slide numbers)
+				numbers: false,
+
+				// Specifies which slide elements will be used for generating
+				// the slide titles in the menu. The default selects the first
+				// heading element found in the slide, but you can specify any
+				// valid css selector and the text from the first matching
+				// element will be used.
+				// Note: that a section data-menu-title attribute or an element
+				// with a menu-title class will take precedence over this option
+				titleSelector: '.menu',
+
+				// If slides do not have a matching title, attempt to use the
+				// start of the text content as the title instead
+				useTextContentForMissingTitles: false,
+
+				// Hide slides from the menu that do not have a title.
+				// Set to 'true' to only list slides with titles.
+				hideMissingTitles: true,
+
+				// Add markers to the slide titles to indicate the 
+				// progress through the presentation
+				markers: false,
+
+				// Specify custom panels to be included in the menu, by
+				// providing an array of objects with 'title', 'icon'
+				// properties, and either a 'src' or 'content' property.
+				custom: false,
+
+				// Specifies the themes that will be available in the themes
+				// menu panel. Set to 'false' to hide themes panel.
+				themes: false,
+
+				// Specifies if the transitions menu panel will be shown.
+				transitions: false,
+
+				// Adds a menu button to the slides to open the menu panel.
+				// Set to 'false' to hide the button.
+				openButton: true,
+
+				// If 'true' allows the slide number in the presentation to
+				// open the menu panel. The reveal.js slideNumber option must 
+				// be displayed for this to take effect
+				openSlideNumber: false,
+
+				// If true allows the user to open and navigate the menu using
+				// the keyboard. Standard keyboard interaction with reveal
+				// will be disabled while the menu is open.
+				keyboard: true,
+
+				// Normally the menu will close on user actions such as
+				// selecting a menu item, or clicking the presentation area.
+				// If 'true', the sticky option will leave the menu open
+				// until it is explicitly closed, that is, using the close
+				// button or pressing the ESC or m key (when the keyboard 
+				// interaction option is enabled).
+				sticky: false,
+
+				// If 'true' standard menu items will be automatically opened
+				// when navigating using the keyboard. Note: this only takes 
+				// effect when both the 'keyboard' and 'sticky' options are enabled.
+				autoOpen: true,
+
+				// If 'true' the menu will not be created until it is explicitly
+				// requested by calling RevealMenu.init(). Note this will delay
+				// the creation of all menu panels, including custom panels, and
+				// the menu button.
+				delayInit: false
+			},
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: '../../src/reveal-js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../../src/reveal-js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../../src/reveal-js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../../src/reveal-js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '../../src/reveal-js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../../src/reveal-js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
