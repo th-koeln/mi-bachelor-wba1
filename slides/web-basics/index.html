@@ -1,0 +1,921 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+	<meta charset="utf-8">
+
+	<!-- Title of presentation -->
+	<title>Vortrag - Web-basics</title>
+	<!-- Short description of presentation -->
+	<meta name="description" content="Vortrag - Web-basics">
+	<!-- Author of presentation -->
+	<meta name="author" content="Volker Schaefer">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="../../src/reveal-js/css/reveal.min.css">
+	<link rel="stylesheet" href="../../src/reveal-js/css/theme/medieninformatik.css" id="theme">
+
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="../../src/reveal-js/lib/css/zenburn.css">
+
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
+		document.write('<link rel="stylesheet" href="../../src/reveal-js/css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+	</script>
+	<style type="text/css">
+		.tabelle {
+			table-layout: fixed;
+		}
+		.tabelle td {
+			background-color: #404040;
+		}
+		.tabelle td,
+		.tabelle th {
+			font-size: 0.8em;
+			border: 4px solid black;
+			text-align: center !important;
+		}
+		.tabelle th {
+			font-weight: normal;
+		}
+		.kaestchen {
+			margin: 30px 0 0 30px !important;
+		}
+		.kaestchen li {
+			background-color: #DD1166;
+			color: white;
+			display: inline-bock;
+			float: left;
+			list-style-type: none;
+			margin: 0 15px 15px 0;
+			padding: 10px;
+			text-align: center;
+			width: 230px;
+		}
+		.fullscreenImage .reveal .slides {
+			height: 100vh !important;
+			left: 0;
+			margin: 0 auto;
+			padding: 0;
+			top: 0;
+			width: 100vw !important;
+		}
+		.fullscreenImage .reveal .slides > section {
+			background-position-x: center;
+			background-position-y: 10px;
+			background-repeat: no-repeat;
+			background-size: auto 90%;
+			height: 100vh;
+			left: 0;
+			margin: 0;
+			position: absolute;
+			top: 0;
+			width: 100vw;
+		}
+		.fullscreenImage .reveal .slides > section .bu {
+			background-color: rgba(221, 17, 102, 0.8);
+			top: 100px;
+			display: inline-block;
+			color: white;
+			padding: 0 10px 0 100px;
+			position: absolute;
+		}
+		.fullscreenImage .reveal .slides > section .quelle {
+			bottom: 10px;
+			color: white;
+			display: inline-block;
+			font-size: 14px;
+			margin: 0 0 0 10px;
+			position: absolute;
+		}
+		.fullscreenImage .reveal .slides > section p {
+			margin: 0;
+		}
+		.nobackground .reveal .slides > section {
+			background-image: none;
+		}
+		.whiteBackground .state-background {
+			background-color: white;
+		}
+	</style>
+	<!--[if lt IE 9]>
+		<script src="../../src/reveal-js/lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+
+			<section>
+				<h1>Web-basierte Anwendungen 1</h1>
+				<h2 class="u">Web-Basics</h2>
+
+				<p>Oktober 2017</p>
+
+				<p>Studiengang Medieninformatik an der TH Köln
+					<br>Campus Gummersbach</p>
+
+				<p style="margin-top:10%">Christian Noss</p>
+			</section>
+
+            <section>
+				<h2 class="u">Inhalt</h2>
+				<ul>
+                    <li class="fragment">Historie</li>
+					<li class="fragment">Grundlegende Konzepte & Begriffe</li>
+                    <li class="fragment">Ausblick</li>
+				</ul>
+			</section>
+
+
+
+
+
+			<section data-background="images/TimBernersLee.jpg">
+				<p class="bu fragment">
+					Tim Berners-Lee, Gründer des W3C
+				</p>
+			</section>
+
+
+
+
+
+			<section>
+				<h2  class="u">
+                        Das Web ist ein <strong>Hypertext</strong>-Informationssystem
+                    </h2>
+				<blockquote>
+					Hypertext ermöglicht es Ihnen, Texte und visuelle Informationen auf nicht lineare Weise zu lesen und durch sie zu navigieren, indem sie das auswählen, was Sie als nächstes wissen wollen.
+				</blockquote>
+				<p>
+					<small>Quelle: Lemay, Laura; Tyler, Denise: HTML 4 in 21 Tagen, 1. Aufl.,  Markt+Technik, 2000, S. 15</small>
+				</p>
+			</section>
+
+			<section data-background="images/roussel_lesemaschine.jpg">
+				<p class="bu">Roussels Lesemaschine</p>
+			</section>
+
+
+
+
+
+			<section data-background="images/buecherrad_ramelli.jpg">
+				<p class="bu">Buecherrad von Agostino Ramelli (16. Jahrhundert)</p>
+			</section>
+
+
+
+
+
+			<section data-background="images/erste_website.png">
+				<p class="bu fragment" style="width: 720px;">Die erste Website, verfasst und veröffentlicht von Tim Berners-Lee am 13. November 1990 auf einem NeXT-Rechner</p>
+				<p class="quelle">
+					Quelle: <a href="http://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html">http://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html</a> (04.12.2012)
+				</p>
+
+			</section>
+
+
+
+
+
+			<section>
+				<blockquote style="margin-bottom: 80px;">
+					Das Web editieren zu können ist genauso wichtig, wie durch das Web zu browsen.
+				</blockquote>
+
+				<div class="fragment">
+					<blockquote>
+						Computer können genutzt werden, um im Hintergrund Aufgaben zu erledigen, damit Gruppen besser zusammenarbeiten können.
+					</blockquote>
+					<small>Quelle: Berners-Lee, Tim: Weaving the Web, 1. Aufl., HarperOne, 1999</small>
+				</div>
+			</section>
+
+
+
+
+
+			<section>
+				<blockquote style="margin-bottom: 80px;">
+					Jeder Bereich des Internets sollte eher eine Netzstruktur als eine Baumstruktur haben. Erwähnenswerte Ausnahmen sind das Domain Name System und die Regeln für die Vergabe von Domainnamen durch die ICANN.
+				</blockquote>
+				<div class="fragment">
+					<blockquote>
+						Informatiker tragen nicht nur eine technische, sondern auch eine moralische Verantwortung.
+					</blockquote>
+					<small>Quelle: Berners-Lee, Tim: Weaving the Web, 1. Aufl., HarperOne, 1999</small>
+				</div>
+			</section>
+
+
+
+
+
+			<section>
+				<h2  class="u">Die <strong>drei</strong> Säulen des <strong>WWW</strong></h2>
+				<ul>
+					<li class="fragment"><strong>URI</strong>
+						<br /><strong>U</strong>niform <strong>R</strong>esource <strong>I</strong>dentifier</li>
+					<li class="fragment"><strong>HTTP</strong>
+						<br /> <strong>H</strong>yper<strong>T</strong>ext <strong>T</strong>ransfer <strong>P</strong>rotocol</li>
+					<li class="fragment"><strong>HTML</strong>
+						<br /><strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage</li>
+				</ul>
+			</section>
+
+
+
+
+
+			<section data-background="#000" class="invers" data-background-transition="zoom">
+				<h2 class="u">
+                        <strong>U</strong>niform <strong>R</strong>esource <strong>I</strong>dentifier
+                    </h2>
+				<p style="font-size: 24px; margin-bottom: 0px">
+					http://hans:geheim@example.org:80/demo/example.cgi?land=de&amp;stadt=aa#geschichte
+				</p>
+				<embed class="fragment" type="image/svg+xml" src="images/aufbau_url_bezeichnungen.svg" />
+			</section>
+
+
+
+
+
+			<section data-background="#000" class="invers" data-background-transition="zoom">
+				<embed type="image/svg+xml" src="images/client_server.svg" />
+				<embed class="fragment" style="position: absolute; top: 250px; left: 0px;" type="image/svg+xml" src="images/request.svg" />
+				<embed class="fragment" style="position: absolute; top: 295px; right: 165px;" type="image/svg+xml" src="images/response.svg" />
+			</section>
+
+
+
+
+
+			<section data-background="#000" class="invers" data-background-transition="zoom">
+				<embed type="image/svg+xml" src="images/client_server_proxy.svg" />
+				<embed class="fragment" style="position: absolute; top: 220px; left: 170px;" type="image/svg+xml" src="images/cache.svg" />
+			</section>
+
+
+
+
+
+			<section>
+				<h2 class="u">HTTP-Statuscodes</h2>
+				<p>Die Antwort- oder Statuscodes von HTTP bestimmen direkt die Bedeutung der Antwort auf eine HTTP-Anfrage. Sie werden stets in der ersten Zeile der Response (= Server-Antwort) in der Form</p>
+				<pre><code>HTTP/1.1 &lt;Statuscode&gt; </code></pre>
+				<p>übermittelt, wobei der Statuscode aus einer dreistelligen Zahl und einer kurzen Beschreibung besteht. Die Statuscodes werden nach ihrer ersten Ziffer in Gruppen von unterschiedlicher Bedeutung eingeteilt.
+				</p>
+				<p>
+					<small>Quelle: <a href="http://wiki.selfhtml.org/wiki/Referenz:HTTP/Antwortcodes">http://wiki.selfhtml.org/wiki/Referenz:HTTP/Antwortcodes</a> (04.12.2012)</small>
+				</p>
+			</section>
+
+
+
+
+
+			<section>
+				<h2 class="u">HTTP-Statuscodes</h2>
+				<ul>
+					<li><strong>100+ </strong>Informationen</li>
+					<li><strong>200+ </strong>Erfolg</li>
+					<li><strong>300+ </strong>Umleitung</li>
+					<li><strong>400+ </strong>Fehler beim Client</li>
+					<li><strong>500+ </strong>Fehler beim Server</li>
+					<a class='fragment' href='https://sportabzeichen.splink.de/404' , target='_blank'> Beispiel für eine 404 Seite</a>
+				</ul>
+
+			</section>
+
+
+
+
+
+			<section>
+				<h2 class="u">MIME-Types</h2>
+				<p>
+					Der Internet Media Type, auch MIME-Type (<strong>M</strong>ultipurpose <strong>I</strong>nternet <strong>M</strong>ail <strong>E</strong>xtension) oder Content-Type (nach dem Namen des Feldes), klassifiziert die Daten im Rumpf einer Nachricht im Internet. Wie im MIME-Standard erläutert, wird z. B. bei einer HTTP-Übertragung einem Browser mitgeteilt, welche Daten der Webserver sendet
+				</p>
+				<p>
+					<small>Quelle: <a href="http://de.wikipedia.org/wiki/Internet_Media_Type">http://de.wikipedia.org/wiki/Internet_Media_Type</a> (04.12.2012)</small>
+				</p>
+			</section>
+
+
+
+
+
+			<section>
+				<h2 class="u">MIME-Types</h2>
+				<ul>
+					<li>application/pdf</li>
+					<li>audio/mp3</li>
+					<li>image/jpeg</li>
+					<li>text/html</li>
+					<li>video/mpeg</li>
+				</ul>
+			</section>
+
+
+
+
+
+			<section>
+				<h2 class="u">HTML - <strong>H</strong>yper<strong>t</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage</h2>
+				<blockquote>
+					Die Hypertext Markup Language (deutsch: Hypertext-Auszeichnungssprache) ist eine textbasierte Auszeichnungssprache zur Strukturierung von Inhalten wie Texten, Bildern und Hyperlinks in Dokumenten. HTML-Dokumente sind die Grundlage des World Wide Web und werden von einem Webbrowser dargestellt.
+				</blockquote>
+				<p>
+					<small>Quelle: <a href="http://de.wikipedia.org/wiki/Hypertext_Markup_Language">http://de.wikipedia.org/wiki/Hypertext_Markup_Language</a> (04.12.2012)</small>
+				</p>
+
+			</section>
+
+
+
+
+
+			<section data-state="nobackground">
+				<div style="text-align: center">
+
+					<embed type="image/svg+xml" src="images/sgml.svg" />
+					<embed style="position:absolute; top:39px; left: 334px" type="image/svg+xml" src="images/xml.svg" />
+					<embed style="margin-top:-10px" type="image/svg+xml" src="images/dtd.svg" />
+					<embed style="margin-top:-10px" type="image/svg+xml" src="images/auszeichnungssprachen.svg" />
+				</div>
+
+			</section>
+
+
+
+            <section>
+                <h2 class="u">Markup Languages<br><br></h2>
+				<div style="text-align: center">
+                    <pre><code>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="691px" height="401px" viewBox="0 0 691 401" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+  <g id="Artboard-1" sketch:type="MSArtboardGroup" stroke-width="11">
+    <circle id="Oval-1" stroke="#4990E2" sketch:type="MSShapeGroup" cx="118" cy="140" r="94"></circle>
+    <circle id="Oval-1-Copy" stroke="#000000" sketch:type="MSShapeGroup" cx="338" cy="140" r="94"></circle>
+    <circle id="Oval-1-Copy-2" stroke="#D03A01" sketch:type="MSShapeGroup" cx="568" cy="140" r="94"></circle>
+    <circle id="Oval-1-Copy-4" stroke="#F6A623" sketch:type="MSShapeGroup" cx="228" cy="260" r="94"></circle>
+    <circle id="Oval-1-Copy-3" stroke="#417505" sketch:type="MSShapeGroup" cx="458" cy="260" r="94"></circle>
+  </g>
+</svg>
+                    </pre></code>
+		</div>
+
+			</section>
+
+
+
+
+            <section>
+                <h2 class="u">Markup Languages<br><br></h2>
+				<div style="text-align: center">
+
+                    <svg width="691px" height="401px" viewBox="0 0 691 401" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                            <g id="Artboard-1" sketch:type="MSArtboardGroup" stroke-width="20">
+                                <circle id="Oval-1" stroke="#4990E2" sketch:type="MSShapeGroup" cx="118" cy="140" r="94"></circle>
+                                <circle id="Oval-1-Copy" stroke="#000000" sketch:type="MSShapeGroup" cx="338" cy="140" r="94"></circle>
+                                <circle id="Oval-1-Copy-2" stroke="#D03A01" sketch:type="MSShapeGroup" cx="568" cy="140" r="94"></circle>
+                                <circle id="Oval-1-Copy-4" stroke="#F6A623" sketch:type="MSShapeGroup" cx="228" cy="260" r="94"></circle>
+                                <circle id="Oval-1-Copy-3" stroke="#417505" sketch:type="MSShapeGroup" cx="458" cy="260" r="94"></circle>
+                            </g>
+                        </g>
+                    </svg>
+				</div>
+
+			</section>
+
+
+
+
+
+
+
+			<!--section>
+				<h2>Zeichencodierung, Sonderzeichen & Co.</h2>
+				<blockquote>Eine Zeichenkodierung (englisch Character encoding, kurz Encoding) erlaubt die eindeutige Zuordnung von Schriftzeichen (Buchstaben oder Ziffern) und Symbolen innerhalb eines Zeichensatzes. In der Elektronischen Datenverarbeitung werden Zeichen über einen Zahlenwert kodiert und eignen sich damit für Übertragungen oder Speicherungen.</blockquote>
+				<p>
+					<small>Quelle: <a href="http://de.wikipedia.org/wiki/Zeichensatz">http://de.wikipedia.org/wiki/Zeichensatz</a> (23.11.2013)</small>
+				</p>
+
+			</section-->
+
+
+
+
+
+			<!--section>
+				<h2>Zeichencodierung, Sonderzeichen & Co.</h2>
+				<p>Zeichenkodierung für ein HTML-Dokument festlegen:</p>
+				<pre>
+                        <code class="xml">
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=ISO-8859-1&quot;&gt;
+&lt;/head&gt;
+                        </code>
+                    </pre>
+
+				<div class="fragment">
+					<p>Wird in HTML5 ersetzt durch:</p>
+					<pre>
+                        <code class="xml">
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;/head&gt;
+                        </code>
+                    </pre>
+				</div>
+
+			</section-->
+
+
+
+
+
+			<!--section>
+				<h2>Zeichencodierung, Sonderzeichen & Co.</h2>
+				<table class="tabelle">
+					<tbody>
+						<tr>
+							<th>Code</th>
+							<th>0</th>
+							<th>1</th>
+							<th>2</th>
+							<th>3</th>
+							<th>4</th>
+							<th>5</th>
+							<th>6</th>
+							<th>7</th>
+							<th>8</th>
+							<th>9</th>
+							<th>A</th>
+							<th>B</th>
+							<th>C</th>
+							<th>D</th>
+							<th>E</th>
+							<th>F</th>
+						</tr>
+						<tr>
+							<th>0</th>
+							<td>NUL</td>
+							<td>SOH</td>
+							<td>STX</td>
+							<td>ETX</td>
+							<td>EOT</td>
+							<td>ENQ</td>
+							<td>ACK</td>
+							<td>BEL</td>
+							<td>BS</td>
+							<td>HT</td>
+							<td>LF</td>
+							<td>VT</td>
+							<td>FF</td>
+							<td>CR</td>
+							<td>SO</td>
+							<td>SI</td>
+						</tr>
+						<tr>
+							<th>1</th>
+							<td>DLE</td>
+							<td>DC1</td>
+							<td>DC2</td>
+							<td>DC3</td>
+							<td>DC4</td>
+							<td>NAK</td>
+							<td>SYN</td>
+							<td>ETB</td>
+							<td>CAN</td>
+							<td>EM</td>
+							<td>SUB</td>
+							<td>ESC</td>
+							<td>FS</td>
+							<td>GS</td>
+							<td>RS</td>
+							<td>US</td>
+						</tr>
+						<tr>
+							<th>2</th>
+							<td>SP</td>
+							<td>!</td>
+							<td>"</td>
+							<td>#</td>
+							<td>$</td>
+							<td>%</td>
+							<td>&amp;</td>
+							<td>'</td>
+							<td>(</td>
+							<td>)</td>
+							<td>*</td>
+							<td>+</td>
+							<td>,</td>
+							<td>-</td>
+							<td>.</td>
+							<td>/</td>
+						</tr>
+						<tr>
+							<th>3</th>
+							<td>0</td>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+							<td>:</td>
+							<td>;</td>
+							<td>&lt;</td>
+							<td>=</td>
+							<td>&gt;</td>
+							<td>?</td>
+						</tr>
+						<tr>
+							<th>4</th>
+							<td>@</td>
+							<td>A</td>
+							<td>B</td>
+							<td>C</td>
+							<td>D</td>
+							<td>E</td>
+							<td>F</td>
+							<td>G</td>
+							<td>H</td>
+							<td>I</td>
+							<td>J</td>
+							<td>K</td>
+							<td>L</td>
+							<td>M</td>
+							<td>N</td>
+							<td>O</td>
+						</tr>
+						<tr>
+							<th>5</th>
+							<td>P</td>
+							<td>Q</td>
+							<td>R</td>
+							<td>S</td>
+							<td>T</td>
+							<td>U</td>
+							<td>V</td>
+							<td>W</td>
+							<td>X</td>
+							<td>Y</td>
+							<td>Z</td>
+							<td>[</td>
+							<td>\</td>
+							<td>]</td>
+							<td>^</td>
+							<td>_</td>
+						</tr>
+						<tr>
+							<th>6</th>
+							<td>`</td>
+							<td>a</td>
+							<td>b</td>
+							<td>c</td>
+							<td>d</td>
+							<td>e</td>
+							<td>f</td>
+							<td>g</td>
+							<td>h</td>
+							<td>i</td>
+							<td>j</td>
+							<td>k</td>
+							<td>l</td>
+							<td>m</td>
+							<td>n</td>
+							<td>o</td>
+						</tr>
+						<tr>
+							<th>7</th>
+							<td>p</td>
+							<td>q</td>
+							<td>r</td>
+							<td>s</td>
+							<td>t</td>
+							<td>u</td>
+							<td>v</td>
+							<td>w</td>
+							<td>x</td>
+							<td>y</td>
+							<td>z</td>
+							<td>{</td>
+							<td>|</td>
+							<td>}</td>
+							<td>~</td>
+							<td>DEL</td>
+						</tr>
+
+					</tbody>
+				</table>
+				<p style="text-align: center">ASCII-Zeichentabelle, hexadezimale Nummerierung</p>
+				<blockquote class="fragment" style="max-width: 400px; position: absolute; top: 80px; left: 0px;">
+					Was fällt auf?
+				</blockquote>
+
+			</section-->
+			<!--section>
+				<h2>Wie lösen wir das Problem?</h2>
+				<div class="fragment">
+					<table class="tabelle" style="width: 350px;">
+						<tbody>
+							<tr>
+								<th>Zeichen</th>
+								<th>Ersetzung</th>
+							</tr>
+							<tr>
+								<td>ä</td>
+								<td>&amp;auml;</td>
+							</tr>
+							<tr>
+								<td>Ä</td>
+								<td>&amp;Auml;</td>
+							</tr>
+							<tr>
+								<td>ö</td>
+								<td>&amp;ouml;</td>
+							</tr>
+							<tr>
+								<td>Ö</td>
+								<td>&amp;Ouml;</td>
+							</tr>
+							<tr>
+								<td>ü</td>
+								<td>&amp;uuml;</td>
+							</tr>
+							<tr>
+								<td>Ü</td>
+								<td>&amp;Uuml;</td>
+							</tr>
+							<tr>
+								<td>ß</td>
+								<td>&amp;szlig;</td>
+							</tr>
+						</tbody>
+					</table>
+					<br>
+					<p>Alle Sonderzeichen, die im Content verwendet werden, müssen durch entsprechende Zeichen ersetzt werden. Das gilt auch für Zeichen die zur HTML-Syntax gehören</p>
+				</div>
+
+			</section-->
+			
+			
+			<section class="center">
+				<h2 class="u">W3C</h2>
+				<p>Das World Wide Web Consortium (W3C) ist ein internationales Konsortium, in dem Mitgliedsorganisationen, ein fest angestelltes Team, und die Öffentlichkeit gemeinsam daran arbeiten, Web-Standards zu entwickeln. Ziel des W3C ist: Dem World Wide Web dadurch seine vollen Möglichkeiten zu erschließen, dass Protokolle und Richtlinien entwickelt werden, die ein langfristiges Wachstum des Web sichern.
+				</p>
+			</section>
+			
+			<section class="center">
+				<h2 class="u">RFC</h2>
+				<p>Die Requests for Comments sind eine Reihe technischer und organisatorischer Dokumente des RFC-Editors zum Internet, die am 7. April 1969 begonnen wurden. 
+				</p>
+				<p><a href="https://tools.ietf.org/html/rfc2821">RFC 2821: Simple Mail Transfer Protocol</a></p>
+			</section>
+			
+			<section>
+				<h2 class="u">Protokoll</h2>
+
+				<blockquote class="fragment">
+					Ein Protokoll ist ein Satz von Regeln, nach denen Daten zwischen Computern bzw. Prozessen ausgetauscht werden, die durch ein Netzwerk miteinander verbunden sind.
+				</blockquote>
+			</section>
+
+
+
+
+
+			<section>
+				<h2 class="u">Dienst</h2>
+
+				<blockquote class="fragment">
+					Ein Dienst ist eine Funktion, die von einem Rechner anderen Teilnehmern in einem Computernetzwerk bereitgestellt wird
+				</blockquote>
+			</section>
+
+
+
+
+
+			<section>
+				<h2 class="u">Format</h2>
+
+				<blockquote class="fragment">
+					Ein Format ist eine oft standardisierte Beschreibung, wie Informationen in einer Datei gespeichert werden.
+				</blockquote>
+			</section>
+
+
+
+
+			<!--section>
+				<h2><strong>Wer</strong> von Ihnen nutzt:</h2>
+
+				<ul class="kaestchen">
+					<li class="fragment">World Wide Web</li>
+					<li class="fragment">Pinterest</li>
+					<li class="fragment">Skype</li>
+					<li class="fragment">Twitter</li>
+					<li class="fragment">ICQ</li>
+					<li class="fragment">Instagram</li>
+					<li class="fragment">Facebook</li>
+					<li class="fragment">Flickr</li>
+					<li class="fragment">YouTube</li>
+					<li class="fragment">Xing</li>
+					<li class="fragment">Tumblr</li>
+					<li class="fragment">Amazon</li>
+				</ul>
+			</section-->
+
+
+
+
+
+			<section>
+				<h2 class="u">Was sind die Vor- und Nachteile von Web-basierten Anwendungen?</h2>
+				<div class="fragment" style="float: left !important; margin-right: 70px;">
+					<h3>Vorteile</h3>
+					<ul>
+						<li>Aktualisierbarkeit</li>
+						<li>Zugänglichkeit</li>
+						<li>Kostenstruktur</li>
+						<li>Plattformunabhängigkeit</li>
+						<li>Frei von Redundanzen</li>
+						<li>Personalisierbarkeit</li>
+						<li>Weniger Medienbrüche</li>
+						<li>Messbarkeit</li>
+					</ul>
+				</div>
+				<div class="fragment">
+					<h3>Nachteile</h3>
+					<ul>
+						<li>Keine Haptik</li>
+						<li>Technisches Equipment erforderlich</li>
+						<li>Sicherheit (gläserner User)</li>
+						<li>Interaktivität/Geschwindgkeit</li>
+					</ul>
+				</div>
+			</section>
+
+
+
+
+            <!--section>
+				<h2 class="u">Have Fun with Links</h2>
+
+				<ul>
+					<li><a target="_blank" href="http://www.digitalattackmap.com/#anim=1&color=0&country=ALL&list=0&time=16722&view=map">Digital Attacks</a></li>
+                    <li><a href="http://pennystocks.la/internet-in-real-time/" target="_blank">Realtime</a></li>
+                    <li><a href="https://twitter.com/micologne" target="_blank">twitter.com/micologne</a></li>
+                    <li><a href="https://twitter.com/cnoss" target="_blank">twitter.com/cnoss</a></li>
+                    <li><a target="_blank" href="http://docs.webplatform.org/wiki/concepts/Internet_and_Web/The_History_of_the_Web">History of the Web</a></li>
+                    <li><a target="_blank" href="http://docs.webplatform.org/wiki/concepts/Internet_and_Web/The_Web_Standards_Model">The Web Standards Model</a></li>
+                    <li><a target="_blank" href="http://docs.webplatform.org/wiki/concepts/Internet_and_Web/How_does_the_Internet_Work">How does the Internet Work</a></li>
+                    <li><a target="_blank" href="../web-basics-2/index.html" target="_blank">Web Basics +</a></li>
+				</ul>
+			</section-->
+
+
+
+
+			<section data-background="images/bill_gates.jpg">
+				<blockquote style="max-width: 400px; position: absolute; top: 80px; left: 100px;">
+					Das Internet ist nur ein Hype.
+					<p class="quelle">Quelle: <a href="http://www.thirdage.com">http://www.thirdage.com</a> (04.12.2012)</p>
+				</blockquote>
+				
+			</section>
+			<!-- End of slides container. -->
+
+		</div>
+
+	</div>
+
+	<script src="../../src/reveal-js/lib/js/head.min.js"></script>
+	<script src="../../src/reveal-js/js/reveal.min.js"></script>
+
+	<script>
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: false,
+            width: 1000,
+
+            transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+            transitionSpeed: 'fast', // default/fast/slow
+            backgroundTransition: 'none', // default/linear/none
+
+				menu: {
+					// Specifies which side of the presentation the menu will 
+					// be shown. Use 'left' or 'right'.
+					side: 'left',
+			
+					// Add slide numbers to the titles in the slide list.
+					// Use 'true' or format string (same as reveal.js slide numbers)
+					numbers: false,
+			
+					// Specifies which slide elements will be used for generating
+					// the slide titles in the menu. The default selects the first
+					// heading element found in the slide, but you can specify any
+					// valid css selector and the text from the first matching
+					// element will be used.
+					// Note: that a section data-menu-title attribute or an element
+					// with a menu-title class will take precedence over this option
+					titleSelector: '.menu',
+			
+					// If slides do not have a matching title, attempt to use the
+					// start of the text content as the title instead
+					useTextContentForMissingTitles: false,
+			
+					// Hide slides from the menu that do not have a title.
+					// Set to 'true' to only list slides with titles.
+					hideMissingTitles: true,
+			
+					// Add markers to the slide titles to indicate the 
+					// progress through the presentation
+					markers: false,
+			
+					// Specify custom panels to be included in the menu, by
+					// providing an array of objects with 'title', 'icon'
+					// properties, and either a 'src' or 'content' property.
+					custom: false,
+			
+					// Specifies the themes that will be available in the themes
+					// menu panel. Set to 'false' to hide themes panel.
+					themes: false,
+			
+					// Specifies if the transitions menu panel will be shown.
+					transitions: false,
+			
+					// Adds a menu button to the slides to open the menu panel.
+					// Set to 'false' to hide the button.
+					openButton: true,
+			
+					// If 'true' allows the slide number in the presentation to
+					// open the menu panel. The reveal.js slideNumber option must 
+					// be displayed for this to take effect
+					openSlideNumber: false,
+			
+					// If true allows the user to open and navigate the menu using
+					// the keyboard. Standard keyboard interaction with reveal
+					// will be disabled while the menu is open.
+					keyboard: true,
+			
+					// Normally the menu will close on user actions such as
+					// selecting a menu item, or clicking the presentation area.
+					// If 'true', the sticky option will leave the menu open
+					// until it is explicitly closed, that is, using the close
+					// button or pressing the ESC or m key (when the keyboard 
+					// interaction option is enabled).
+					sticky: false,
+			
+					// If 'true' standard menu items will be automatically opened
+					// when navigating using the keyboard. Note: this only takes 
+					// effect when both the 'keyboard' and 'sticky' options are enabled.
+					autoOpen: true,
+			
+					// If 'true' the menu will not be created until it is explicitly
+					// requested by calling RevealMenu.init(). Note this will delay
+					// the creation of all menu panels, including custom panels, and
+					// the menu button.
+					delayInit: false
+				},
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '../../src/reveal-js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../../src/reveal-js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../../src/reveal-js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../../src/reveal-js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../../src/reveal-js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '../../src/reveal-js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '../../src/reveal-js/plugin/menu/menu.js' }
+				]
+        });
+    </script>
+
+</body>
+
+</html>
