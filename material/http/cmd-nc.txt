@@ -1,0 +1,1 @@
+cat minimal-http-header.txt | nc www.erco.com 80 |more
