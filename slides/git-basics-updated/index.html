@@ -16,11 +16,10 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="../../src/reveal-js/css/reveal.min.css">
-    <link rel="stylesheet" href="../../src/reveal-js/css/theme/medieninformatik.css" id="theme">
-
+		<link rel="stylesheet" href="../../src/reveal-js-2015/css/reveal.min.css">
+		<link rel="stylesheet" href="../../src/reveal-js-2015/css/theme/medieninformatik.css" id="theme">
 		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="../../src/reveal-js/lib/css/solarized_light.css">
+		<link rel="stylesheet" href="../../src/reveal-js-2015/lib/css/solarized_light.css">
 
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<script>
@@ -115,12 +114,15 @@
         <section>
           <h1>Web-basierte Anwendungen 1</h1>
           <h2 class="menu">Git-Basics</h2>
-          <p>08. Oktober 2015</p>
+          <p>19. Oktober 2015</p>
 
-          <p>Studiengang Medieninformatik an der Fachhochschule Köln<br>
+          <p>Studiengang Medieninformatik an der Technischen Hochschule Köln<br>
           Campus Gummersbach</p>
 
-          <p style="margin-top:10%">M.Sc. Jan Kus</p>
+          <p style="margin-top:10%">Sascha Lemke B.Sc.</p>
+		  <p>
+			  <small>Basierend auf den Folien von Jan Kus M.Sc.</small>
+		  </p>
         </section>
 
         <section>
@@ -130,19 +132,19 @@
             <li class="fragment">Zu wissen was ein Versionierungssystem ist</li>
             <li class="fragment">Den Unterschied zwischen Git und Github verstehen</li>
             <li class="fragment">Zu verstehen wie ein Git Workflow funktioniert</li>
-            <li class="fragment">Was Commit Messages sind und wie man welche schreibt</li>
+            <li class="fragment">Was Commit Messages sind</li>
           </ul>
         </section>
         <section>
-    			<h2 class="menu">Aufbau dieser Session</h2>
+		  <h2 class="menu">Aufbau dieser Session</h2>
           <ul>
           	<li class="fragment">Was ist ein Versionierungssystem</li>
-          	<li class="fragment">Geschichte - Historie von Versionierungssystemen</li>
             <li class="fragment">Entstehung von Git</li>
           	<li class="fragment">Unterschied zwischen Git & Github</li>
             <li class="fragment">Worschatz beim Umgang mit Versionierungssystemen</li>
-            <li class="fragment">Git Grundlagen & Basisbefehle</li>
+			<li class="fragment">Praktische Übung</li>
             <li class="fragment">Der einfachste Git Workflow</li>
+            <li class="fragment">Git Grundlagen & Basisbefehle</li>
           </ul>
     		</section>
         <section>
@@ -193,7 +195,7 @@
           </blockquote>
           <p>Ein Beispiel für Versionierung ist z.B.: Time Machine auf dem Mac oder z.B. Reinigungsprotokolle auf Toiletten die im nachhinein archiviert werden</p>
           <p>
-            <small>Quelle: https://en.wikipedia.org/wiki/Version_control, Stand: 04.10.2015</small>
+            <small>Quelle: https://en.wikipedia.org/wiki/Version_control, Stand: 18.10.2017</small>
           </p>
         </section>
         <section>
@@ -207,26 +209,7 @@
             <li>We want to archive every version of everything that has ever existed — ever. And who did it. And when. And why.</li>
           </ol>
           <p>
-            <small>Quelle: Version Control by Example, Eric Sink, Stand: 04.10.2015</small>
-          </p>
-        </section>
-        <section data-state="fullscreenImage" style="background-image: url(images/evolution.png)">
-          <p class="bu fragment">
-            Evolution von Versionierungssystemen
-          </p>
-        </section>
-        <section>
-          <h2 class="menu">Evolution von Versionierungssystemen</h2>
-          <blockquote>
-            Wie sich Versionierungssysteme mit der Zeit verändert haben
-          </blockquote>
-          <ul>
-            <li class="fragment"><strong>Local VCS:</strong> In first generation tools, concurrent development was handled solely with locks. Only one person could be working on a file at a time. E.g.: <code>RCS</code></li>
-            <li class="fragment"><strong>Centrelized VCS:</strong> The second generation tools are a fair bit more permissive about simultaneous modifications, with one notable restriction. Users must merge the current revisions into their work before they are allowed to commit. E.g.: <code>Subversion</code></li>
-            <li class="fragment"><strong>Distributed VCS:</strong> The third generation tools allow merge and commit to be separated. E.g.: <code>git</code></li>
-          </ul>
-          <p>
-            <small>Quelle: Version Control by Example, Eric Sink, Stand: 04.10.2015</small>
+            <small>Quelle: Version Control by Example, Eric Sink, Stand: 18.10.2017</small>
           </p>
         </section>
         <section>
@@ -306,26 +289,52 @@
           </p>
         </section>
         <section>
-          <h2 class="menu">Wortschatz beim Umgang mit Versionierungssystemen (1/2)</h2>
+          <h2 class="menu">Wortschatz beim Umgang mit Versionierungssystemen</h2>
           <ul>
             <li><strong>Command Line:</strong> The computer program we use to input Git commands. On a Mac, it’s called Terminal. In both cases, you type text-based commands, known as prompts, into the screen, instead of using a mouse.</li>
             <li><strong>Repository:</strong> A directory or storage space where your projects can live. It can be local to a folder on your computer, or it can be a storage space on GitHub or another online host. You can keep code files, text files, image files, you name it, inside a repository.</li>
-            <li><strong>Version Control:</strong> Basically, the purpose Git was designed to serve. When you have a Microsoft Word file, you either overwrite every saved file with a new save, or you save multiple versions. With Git, you don’t have to. It keeps “snapshots” of every point in time in the project’s history, so you can never lose or overwrite it.</li>
-          </ul>
+			<li><strong>Commit:</strong> This is the command that gives Git its power. When you commit, you are taking a “snapshot” of your repository at that point in time, giving you a checkpoint to which you can reevaluate or restore your project to any previous state.</li>
+		  </ul>
           <p>
-            <small>Quelle: <a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1">GitHub For Beginners: Don't Get Scared, Get Started</a>, 07.10.2015</small>
+            <small>Quelle: <a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1">GitHub For Beginners: Don't Get Scared, Get Started</a>, 18.10.2017</small>
           </p>
         </section>
+		<section>
+			<h2 class="menu">Praktische Übung</h2>
+            <blockquote>
+              https://th-koeln.sciebo.de/index.php/s/QsZDomtF9OnjwsT
+            </blockquote>
+			<ol>
+				<li>Setup git</li>
+				<li>Clone Repository</li>
+				<li>Make Changes</li>
+				<li>Commit Changes</li>
+			</ol>
+		</section>
         <section>
-          <h2>Wortschatz beim Umgang mit Versionierungssystemen (2/2)</h2>
-          <ul>
-            <li><strong>Commit:</strong> This is the command that gives Git its power. When you commit, you are taking a “snapshot” of your repository at that point in time, giving you a checkpoint to which you can reevaluate or restore your project to any previous state.</li>
-            <li><strong>Branch:</strong> How do multiple people work on a project at the same time without Git getting them confused? Usually, they “branch off” of the main project with their own versions full of changes they themselves have made. After they’re done, it’s time to “merge” that branch back with the “master,” the main directory of the project.</li>
-          </ul>
+          <h2>Github Repository</h2>
+          <blockquote>
+            Wie erstelle ich ein Repository auf Github?
+          </blockquote>
           <p>
-            <small>Quelle: <a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1">GitHub For Beginners: Don't Get Scared, Get Started</a>, 07.10.2015</small>
+            Bitte <code><a href="https://github.com/new">https://github.com/new</a></code> besuchen und wir gehen diese Schritte gemeinsam durch.
+          </p>
+          <p>
+            <img src="images/github-new.png" alt="Gitub" style="width:100%">
           </p>
         </section>
+	  <section>
+		<h2 class="menu">Der einfachste git Workflow</h2>
+		<ul>
+		  <li><strong><code>git init</code></strong> oder <strong><code>git clone</code></strong>: Initieeren eines lokalen git-Repository oder das kopieren eines Remote-Repository in ein lokales Verzeichnis (z.B.: ein Github Repository)</li>
+		</ul>
+		  <p style="margin-bottom: 40px; margin-left: 220px">[Änderungen am Code vornehmen]</p>
+		<ul>
+		  <li><strong><code>git add</code></strong>: das Bekanntmachen der Veränderungen oder neuen Dateien an git. Ein so genanntes Snapshot. Es ist noch nicht fester Bestandteil der Repository.
+		  <li><strong><code>git commit</code></strong>: Hinzufügen der Snapshots in die Repository.
+		  <li><strong><code>git push</code></strong> : Eine Kopie der Repository an das Remote-Repository laden. Nur im Falle das ein existiert (wie z.B.: Github)
+		</ul>
+	  </section>
         <section>
           <h2 class="menu">Git Basisbefehle (1/4)</h2>
           <ul>
@@ -356,18 +365,6 @@
             <li><strong><code>git branch:</code></strong> Working with multiple collaborators and want to make changes on your own? This command will let you build a new branch, or timeline of commits, of changes and file additions that are completely your own. Your title goes after the command. If you wanted a new branch called "cats" you’d type <code>git branch cats</code>
             <li><strong><code>git merge:</code></strong> When you’re done working on a branch, you can merge your changes back to the master branch, which is visible to all collaborators. <code>git merge cats</code> would take all the changes you made to the "cats" branch and add them to the master.
             <li><strong><code>git checkout:</code></strong> Literally allows you to "check out" a repository that you are not currently inside. This is a navigational command that lets you move to the repository you want to check. You can use this command as <code>git checkout master</code> to look at the master branch, or <code>git checkout cats</code> to look at another branch.
-          </ul>
-        </section>
-        <section>
-          <h2 class="menu">Der einfachste git Workflow</h2>
-          <ul>
-            <li><strong><code>git init</code></strong> oder <strong><code>git clone</code></strong>: Initieeren eines lokalen git-Repository oder das kopieren eines Remote-Repository in ein lokales Verzeichnis (z.B.: ein Github Repository)</li>
-          </ul>
-            <p style="margin-bottom: 40px; margin-left: 220px">[Änderungen am Code vornehmen]</p>
-          <ul>
-            <li><strong><code>git add</code></strong>: das Bekanntmachen der Veränderungen oder neuen Dateien an git. Ein so genanntes Snapshot. Es ist noch nicht fester Bestandteil der Repository.
-            <li><strong><code>git commit</code></strong>: Hinzufügen der Snapshots in die Repository.
-            <li><strong><code>git push</code></strong> : Eine kopie der Repository an das Remote-Repository laden. Nur im Falle das ein existiert (wie z.B.: Github)
           </ul>
         </section>
         <section data-state="fullscreenImage" style="background-image: url(images/commit-messages.png)">
@@ -404,7 +401,7 @@
             </code>
           </p>
         </section>
-        <section>
+        <!--<section>
           <h2>Git Commit und Messages</h2>
           <blockquote>
             The contributors to these repositories know that a well-crafted git commit message is the best way to communicate context about a change to fellow developers (and indeed to their future selves). <strong>A diff will tell you what changed, but only the commit message can properly tell you why</strong>.
@@ -432,9 +429,9 @@
             <li>Wrap the body at 72 characters</li>
             <li>Use the body to explain what and why vs. how</li>
           </ol>
-        </section>
+	  </section>
         <section data-state="fullscreenImage" style="background-image: url(images/commit-messages.png)">
-        </section>
+        </section>-->
         <section>
           <h2>Literatur</h2>
           <ul>
@@ -442,11 +439,11 @@
             <li><a href="https://www.atlassian.com/git">Getting Git Right</a></li>
             <li><a href="https://guides.github.com/activities/hello-world/">Hello World</a></li>
             <li><a href="https://git-scm.com/book/en/v2">https://git-scm.com/book/en/v2</a></li>
-            <li><a href="http://chris.beams.io/posts/git-commit/"></a>How to Write a Git Commit Message</li>
+            <li><a href="http://chris.beams.io/posts/git-commit/">How to Write a Git Commit Message</a></li>
             <li><a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1">GitHub For Beginners</a></li>
             <li><a href="http://ericsink.com/vcbe/html/index.html">Version Control by Example</a></li>
-            <li><a href="http://boxysystems.com/index.php/5-fundamental-differences-between-git-svn/">5 Fundamental differences between GIT & SVN</a></li>
-            <li><a href="http://biz30.timedoctor.com/git-mecurial-and-cvs-comparison-of-svn-software/"></a>SVN, Git, Mercurial – Comparison of Version Control Software</li>
+            <!--<li><a href="http://boxysystems.com/index.php/5-fundamental-differences-between-git-svn/">5 Fundamental differences between GIT & SVN</a></li>-->
+            <li><a href="http://biz30.timedoctor.com/git-mecurial-and-cvs-comparison-of-svn-software/">SVN, Git, Mercurial – Comparison of Version Control Software</a></li>
             <li><a href="https://help.github.com/articles/good-resources-for-learning-git-and-github/">Good Resources for Learning Git and GitHub</a></li>
           </ul>
         </section>

@@ -25,6 +25,7 @@ In diesem Workshop geht es darum einfache Grundlagen im Umgang mit dem Versionsv
 Einen eigenen Computer mit installiertem [Git](https://git-scm.com/) und einen [Github Account](https://github.com/).
 
 ## Material
-- [Folien Git Basics](../../slides/git-basics/index.html)
-- [Folien Git Basics Hand-On](../../slides/git-basics-hands-on/index.html)
-- [Folien Git Advanced](../../slides/git-advanced/index.html)
+- [Folien Git Basics 2017](../../slides/git-basics-updated/index.html)
+- [Folien Git Basics 2015](../../slides/git-basics/index.html)
+- [Folien Git Basics Hand-On 2015](../../slides/git-basics-hands-on/index.html)
+- [Folien Git Advanced 2015](../../slides/git-advanced/index.html)
