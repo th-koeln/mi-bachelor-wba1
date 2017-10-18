@@ -22,7 +22,8 @@ Wir befassen uns mit den Tools die für das Web Development benötigt werden und
 Zudem stellen wir eine erste kleine Webseite auf dem ADV-Server online, die wir vorher individuell angepasst haben.
 
 ## Material
-- [Folien zu Tooling](../../slides/training-tooling/index.html)​
+- [Folien zu Tooling](../../slides/training-tooling/index.html)
+- [Arbeitspaket](../../download/arbeitspaket_tooling.zip)
 - [Kommandozeilen Basics](https://github.com/th-koeln/mi-bachelor-wba1/wiki/Kommandozeilen-Basics)
 - [Shell Befehlsübersicht](https://wiki.ubuntuusers.de/Shell/Befehlsübersicht/)
 - [Anleitung Webspace einrichten auf ADV-Maschine](http://www.gm.fh-koeln.de/advlabor/dienste/homepage.shtml)
