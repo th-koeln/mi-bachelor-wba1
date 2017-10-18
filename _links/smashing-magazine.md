@@ -5,5 +5,5 @@ src: https://www.smashingmagazine.com/
 text: Blog um die Themen Design und Web, aber auch andere Meta-Themen.
 tags:
   - Vertiefungen
-  - Inspiration
+  - Inspirationen
 ---
