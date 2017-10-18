@@ -61,11 +61,11 @@ Strukturieren Sie nun das Dokument mit semantischen Strukturelementen wie *nav*,
 
 Ergänzen Sie Ihr Dokument um eine Navigation mit den folgenden Links:
 
-| Linkname  | Linkziel | Art | 
-|---|---|---|
-| Spielplatz Eintragen  | eintragen.htm  | Link auf der Website |
-| Bewertungen anzeigen  | #bewertungen  |  Link innerhalb der Seite |
-| Facebookseite | http://facebook.de/spielplatztreff | Externer Link |
+| Linkname             | Linkziel                           | Art                      |
+| -------------------- | ---------------------------------- | ------------------------ |
+| Spielplatz eintragen | eintragen.htm                      | Link auf der Website     |
+| Bewertungen anzeigen | #bewertungen                       | Link innerhalb der Seite |
+| Facebookseite        | http://facebook.de/spielplatztreff | Externer Link            |
 
 ## Übung 4: Deployment
 
