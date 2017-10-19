@@ -32,6 +32,7 @@ Eigenen Computer mit Web-Editor, FTP Client, Zugang zum eigenen ADV Account.
 - [HTML Elemente nach Kategorie](http://www.w3schools.com/tags/ref_byfunc.asp)
 - [Liste der HTML Attribute](http://www.w3schools.com/tags/ref_standardattributes.asp)
 - [Mozilla Developer Network](https://developer.mozilla.org/de/)
+- [HTML Workshop W3Schools](https://www.w3schools.com/html/default.asp)
 - [Mozilla HTML Element Referenz](https://developer.mozilla.org/de/docs/Web/HTML/Element)
 - [W3C](http://www.w3.org)
 - [W3C - HTML5 Spezifikation](http://www.w3.org/TR/html5/)
