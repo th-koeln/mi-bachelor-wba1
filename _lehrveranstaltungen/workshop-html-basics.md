@@ -24,7 +24,6 @@ Kennenlernen von HTML, Semantischem Markup und dem Schreiben von einfachen HTML 
 Eigenen Computer mit Web-Editor, FTP Client, Zugang zum eigenen ADV Account.
 
 ### Material
-- [HTML Basics - Folien](../../download/html-basics.pdf)
 - [Introduction to HTML - Folien](../../download/Chapter03-IntroductionToHTML.pdf)
 - [HTML Tutorial bei w3schools.com](https://www.w3schools.com/html/default.asp)
 - [Learn HTML bei codecademy.com](https://www.codecademy.com/learn/learn-html)
