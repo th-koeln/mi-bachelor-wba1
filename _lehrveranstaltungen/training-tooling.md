@@ -4,7 +4,7 @@ kuerzel: t-tooling
 verantwortlich: vs, fj, mk
 typ: training
 pflicht: false
-termine: 2017-10-19 13:30|3.217|http://bit.ly/2g6Zdf1, 2017-10-19 13:30|3.216|http://bit.ly/2gBaKUx, 2017-10-19 13:30|0.502|http://bit.ly/2yllNui, 2017-00-00
+termine: 2017-10-19 13:30|3.217|http://bit.ly/2g6Zdf1, 2017-10-19 13:30|3.216|http://bit.ly/2gBaKUx, 2017-10-19 13:30|0.502|http://bit.ly/2yllNui
 empfohlene-voraussetzungen: 
 published: true
 dauer: 120
@@ -22,7 +22,8 @@ Wir befassen uns mit den Tools die für das Web Development benötigt werden und
 Zudem stellen wir eine erste kleine Webseite auf dem ADV-Server online, die wir vorher individuell angepasst haben.
 
 ## Material
-- [Folien zu Tooling](../../slides/training-tooling/index.html)​
+- [Folien zu Tooling](../../slides/training-tooling/index.html)
+- [Arbeitspaket](../../download/arbeitspaket_tooling.zip)
 - [Kommandozeilen Basics](https://github.com/th-koeln/mi-bachelor-wba1/wiki/Kommandozeilen-Basics)
 - [Shell Befehlsübersicht](https://wiki.ubuntuusers.de/Shell/Befehlsübersicht/)
 - [Anleitung Webspace einrichten auf ADV-Maschine](http://www.gm.fh-koeln.de/advlabor/dienste/homepage.shtml)
