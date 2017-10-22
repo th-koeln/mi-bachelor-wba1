@@ -1,0 +1,111 @@
+{% assign day             = include.day %}
+{% assign difftime        = include.difftime %}
+{% assign starttime       = include.starttime %}
+{% assign time-correction = include.time-correction %}
+
+{% assign lehrveranstaltungen = (site.lehrveranstaltungen | sort: 'dauer,typ')) %}
+{% assign overlap-0 = 0 %}
+{% assign overlap-1 = 0 %}
+{% assign overlap-2 = 0 %}
+{% assign overlap-3 = 0 %}
+{% assign overlap-4 = 0 %}
+{% assign overlap-5 = 0 %}
+{% assign overlap-6 = 0 %}
+{% assign overlap-7 = 0 %}
+{% assign overlap-8 = 0 %}
+{% assign overlap-9 = 0 %}
+
+<!--div class="column"-->
+	<h3 class="datum is-3 title">{{day.name}}, {{day.datum | date: '%d. %B %Y'  | replace:"January","Januar" | replace:"Februar","February" | replace:"March","März" | replace:"May","Mai" | replace:"June","Juni" | replace:"July","Juli" | replace:"December","Dezember" | replace:"October","Oktober" }}</h3>
+	<div class="timetable-wrap">
+		
+		{% for i in (0..difftime) %}
+
+		<div class="timetable-grid">
+			<div class="columns is-gapless">
+				<div class="column is-1">
+					{% assign stunde = i | plus: starttime | append: "" %}
+					<p class="grid-time">{{stunde | append: ":00"}}</p>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+		
+		<div class="veranstaltungen-wrap">
+		{% for i in (0..difftime) %}
+		
+			{% assign stunde = i | plus: starttime | append: "" %}
+			{% for veranstaltung in lehrveranstaltungen %}
+			
+				{% assign termine = veranstaltung.termine | split: "," %}
+								
+				{% for entry in termine %}
+					
+					{% assign entry-data = entry | split: "|" %}
+					{% assign termin = entry-data[0] %}
+					{% assign raum = entry-data[1] %}
+					{% assign termin-start-min = termin | date: '%M'  %}
+					{% assign startzeit = termin | date: "%H" | append: "" %}
+					{% assign termin-zone = termin | date: '%s' | minus: time-correction %}
+					{% assign termin-to-check = termin-zone | date: '%Y-%m-%d' %}
+					{% assign aktueller-tag = day.datum | date: '%Y-%m-%d' %}
+					
+					{% if stunde == "8" %}{% assign stunde = "08" %}{% endif %}				
+					{% if stunde == "9" %}{% assign stunde = "09" %}{% endif %}				
+			
+					{% if startzeit == stunde %}
+						
+						{% if termin-to-check == aktueller-tag %}
+						{% assign raumnummer = "" %}
+						<div class="veranstaltung-wrap">
+							{% include /functions/resolve-types.html typ=veranstaltung.typ %}
+							<a href="{{site.baseurl}}{{veranstaltung.url}}">
+							<div class="veranstaltung {{veranstaltung.typ}}" style="margin-top: {{termin-start-min}}px;  height: {{veranstaltung.dauer}}px">
+								{% include /functions/resolve-names.html verantwortlich=veranstaltung.verantwortlich %}
+								<p class="title"><span class="is-hidden-tablet">{{termin | date: '%d. %B %Y, %H:%M Uhr'}}: </span>{{veranstaltung.titel}}</p>
+
+								{% if (veranstaltung.raum | append: "") != "" %}
+								{% assign raumnummer = veranstaltung.raum | append: "" %}
+								{% endif %}
+								
+								{% if raum.size > 1 %}
+								{% assign raumnummer = raum | append: "" %}
+								{% endif %}
+
+								
+
+								{% assign check = typ-max-teilnehmer | strip_newlines %}
+								{% if check != ""  %}
+								<p class="subtitle">{{verantwortliche}} // {{typ-name}} für {{typ-max-teilnehmer}} Teilnehmer{% if termine.size > 1 %} ({{termine.size}} Termine){% endif %}{% if raumnummer.size > 1 %} // Raum {{raumnummer}}{% endif %}</p>
+								{% endif %}
+								
+							</div>
+							</a>
+						</div>
+						
+						{% assign dauer-in-std = veranstaltung.dauer | divided_by: 60 %}
+						{% assign i2 = dauer-in-std | plus: i | minus: 1 %}
+						{% for ol in (i..i2) %}
+							{% if ol==0 %}{% assign overlap-0 = overlap-0 | plus: 1 %}{% endif %}
+							{% if ol==1 %}{% assign overlap-1 = overlap-1 | plus: 1 %}{% endif %}
+							{% if ol==2 %}{% assign overlap-2 = overlap-2 | plus: 1 %}{% endif %}
+							{% if ol==3 %}{% assign overlap-3 = overlap-3 | plus: 1 %}{% endif %}
+							{% if ol==4 %}{% assign overlap-4 = overlap-4 | plus: 1 %}{% endif %}
+							{% if ol==5 %}{% assign overlap-5 = overlap-5 | plus: 1 %}{% endif %}
+							{% if ol==6 %}{% assign overlap-6 = overlap-6 | plus: 1 %}{% endif %}
+							{% if ol==7 %}{% assign overlap-7 = overlap-7 | plus: 1 %}{% endif %}
+							{% if ol==8 %}{% assign overlap-8 = overlap-8 | plus: 1 %}{% endif %}
+							{% if ol==9 %}{% assign overlap-9 = overlap-9 | plus: 1 %}{% endif %}
+						{% endfor %}
+						
+						{% endif %} 
+					{% endif %} 
+				{% endfor %}
+				
+				
+			{% endfor %}
+		{% endfor %}
+		</div>
+		
+	</div>
+<!--/div-->
