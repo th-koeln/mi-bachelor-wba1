@@ -21,5 +21,6 @@ info: What is JavaScript; JavaScript Design; Using JavaScript; Syntax; Objects; 
 ### Was muss ich mitbringen?
 
 ### Material
+- [JavaScript Language Fundamentals - Folien](../../download/Chapter08-JavaScript1LanguageFundamentals.pdf)
 
 ## Übungen

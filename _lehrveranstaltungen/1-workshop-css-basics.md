@@ -15,14 +15,13 @@ info: What is CSS?; CSS Syntax; Location of Styles; Selectors; The Cascade - How
 ## Über den Workshop
 
 ### An wen richtet sich der Workshop?
-Anfänger im Bereich Web-Technologien mit Basiskenntnissen in HTML. Sie sollten in der Lage sein gutes semantisches Markup zu schreiben und Ihre Website auf Ihrem ADV Account zu deployen.
+Anfänger im Bereich Web-Technologien mit Basiskenntnissen in HTML. Sie sollten in der Lage sein, gutes semantisches Markup zu schreiben und Ihre Website auf Ihrem ADV Account zu deployen.
 
 ### Worum geht es?
-Kennenlernen von CSS, Selektoren und dem Gestalten von semantischem Markup mit Hilfe von CSS.
+Kennenlernen von CSS, Selektoren und dem Gestalten von semantischem Markup mit Hilfe von Cascading Stylesheets.
 
 ### Was muss ich mitbringen?
-Eigenen Computer mit Web-Editor, FTP Client, Zugang zum eigenen ADV Account, gutes semantisches HTML Markup aus dem Workshop HTML Basics
+Eigenen Computer mit Web-Editor, FTP Client, Zugang zum eigenen ADV Account, gutes semantisches HTML Markup aus dem Workshop HTML Basics Workshop.
 
 ### Material
-
-
+- [Introduction to CSS - Folien](../../download/Chapter04-IntroductionToCSS.pdf)
