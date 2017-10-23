@@ -4,7 +4,7 @@ kuerzel: t-git-2
 verantwortlich: sl
 typ: workshop
 pflicht: false
-termine: 2017-11-02 14:00|3.100, 2017-11-02 14:00|3.217
+termine: 2017-11-02 14:00|3.100|http://bit.ly/2xZGqJ3, 2017-11-02 14:00|3.217
 empfohlene-voraussetzungen:
 published: true
 dauer: 120

@@ -4,7 +4,7 @@ kuerzel: w-htmlbadvanced
 verantwortlich: cn,jk,fj,vs
 typ: workshop
 pflicht: false
-termine: 2017-10-26 14:00|0.501,2017-10-26 14:00|0.502,2017-11-02 09:00|0.501,2017-11-02 09:00|0.502
+termine: 2017-10-26 14:00|0.501|http://bit.ly/2hZk3xp,2017-10-26 14:00|0.502|http://bit.ly/2yGCGhB,2017-11-02 09:00|0.501|http://bit.ly/2xXTZh7,2017-11-02 09:00|0.502|http://bit.ly/2xZJJF1
 empfohlene-voraussetzungen: t-tooling, w-htmlbasics, w-cssbasics
 published: true
 dauer: 240
