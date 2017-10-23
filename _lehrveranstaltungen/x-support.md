@@ -4,7 +4,7 @@ kuerzel: s-glob
 verantwortlich: cn, jk
 typ: feedback
 pflicht: false
-termine: 2017-11-02 14:00|3.217
+termine: 2017-11-02 16:00|3.100
 empfohlene-voraussetzungen: 
 published: true
 dauer: 120
