@@ -31,4 +31,38 @@ Eigenen Computer mit Web-Editor, FTP Client, Zugang zum eigenen ADV Account, gut
 - [Learn HTML bei codecademy.com](https://www.codecademy.com/learn/learn-css)
 - [CSS Lernbereich bei Mozilla](https://developer.mozilla.org/de/Learn/CSS)
 
+## Übung 1
+Binden Sie im <head> Ihrer HTML Datei ein Stylesheet ein und definieren Sie folgende Regeln mit Hilfe von Elementselektoren und ggf. Kombinatoren:
+- der Body soll einen Innenabstand von 3rem haben
+- das komplette Dokument soll eine serifenlose Schrift verwenden
+- alle Headlines sollen eine Serifenschrift verwenden
+- alle Texte sollen einen sinnvollen Zeilenabstand verwenden
+- alle Headlines sollen einen Zeilenabstand von 100% haben
+
+## Übung 2
+Verschieben Sie die CSS Angaben in eine externe CSS Datei mit dem Namen *style.css* und binden Sie diese CSS Datei ein. Binden Sie vor Ihrer CSS Datei eine "reset.css" oder "normalize.css" aus einem Content Delivery Network ein.
+
+Definieren Sie sinnvolle Regeln mit Hilfe von Elementselektoren und ggf. Kombinatoren für Ihr Markup.
+
+## Übung 3
+Binden Sie via Google Fonts die Schriften **Permanent Marker** und **Open Sans** in Ihr Dokument ein. Definieren Sie folgende Regeln mit Hilfe von Elementselektoren und ggf. Kombinatoren:
+- alle Texte sollen die Schrift **Open Sans** verwenden
+- alle Headlines verwenden die Schrift **Permanent Marker**
+- definieren Sie sinnvolle Schriftgrößen für die Headlines
+- definieren Sie sinnvolle Abstände
+- bringen Sie die Bilder auf die selbe Breite wie die Texte
+
+## Übung 4
+Erweitern Sie Ihr HTML dahingehend, dass semantisch zusammengehörige Elemente in Container eingeschlossen sind. Ergänzen Sie Ihr CSS dahingehend, dass zwischen den einzelnen Containern horizontale Trennlinien angezeigt werden.
+
+## Übung 6
+Ergänzen Sie Ihr Stylesheet um einen Regelsatz, mit dessen Hilfe die Navigation in einer Zeile und mit einer Hintergrundfarbe angezeigt wird.
+
+## Übung 7
+Definieren Sie ein CSS Klasse, die Textblöcke hevorhebt. Die Hervorhebung soll folgende Eigenschaften haben:
+- hellgrauer Hintergrund
+- dunkle Linie an der linken Seite des Blocks
+
+Nutzen Sie die Klasse an zwei Textblöcke.
+
 
