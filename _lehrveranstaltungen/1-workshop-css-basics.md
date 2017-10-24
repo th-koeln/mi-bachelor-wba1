@@ -20,8 +20,15 @@ Anfänger im Bereich Web-Technologien mit Basiskenntnissen in HTML. Sie sollten 
 ### Worum geht es?
 Kennenlernen von CSS, Selektoren und dem Gestalten von semantischem Markup mit Hilfe von Cascading Stylesheets.
 
+![HTML to CSS](../../images/html-to-css.jpg)
+
 ### Was muss ich mitbringen?
 Eigenen Computer mit Web-Editor, FTP Client, Zugang zum eigenen ADV Account, gutes semantisches HTML Markup aus dem Workshop HTML Basics Workshop.
 
 ### Material
 - [Introduction to CSS - Folien](../../download/Chapter04-IntroductionToCSS.pdf)
+- [CSS Tutorial bei w3schools.com](https://www.w3schools.com/css/default.asp)
+- [Learn HTML bei codecademy.com](https://www.codecademy.com/learn/learn-css)
+- [CSS Lernbereich bei Mozilla](https://developer.mozilla.org/de/Learn/CSS)
+
+
