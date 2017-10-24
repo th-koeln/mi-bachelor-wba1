@@ -4,11 +4,12 @@ kuerzel: w-htmlbasics
 verantwortlich: cn,jk,fj,vs
 typ: workshop
 pflicht: false
-termine: 2017-10-19 15:30|0.501|http://bit.ly/2hECiIt, 2017-10-19 15:30|0.502|http://bit.ly/2g6TpCt, 2017-10-26 14:00|3.216, 2017-10-26 14:00|3.100
+termine: 2017-10-19 15:30|0.501|http://bit.ly/2hECiIt, 2017-10-19 15:30|0.502|http://bit.ly/2g6TpCt, 2017-10-26 14:00|3.216|http://bit.ly/2xZm6Ym, 2017-10-26 14:00|3.100|http://bit.ly/2yCqBfW
 empfohlene-voraussetzungen: t-tooling
 published: true
 dauer: 240
 raum: 3.102
+
 info: HTML Defined and its History; HTML Syntax; Semantic Markup; Structure of HTML; Quick Tour of HTML; HTML Semantic Elements; Validation.
 --- 
 

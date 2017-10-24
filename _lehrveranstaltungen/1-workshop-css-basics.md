@@ -4,7 +4,7 @@ kuerzel: w-cssbasics
 verantwortlich: cn,jk,fj,vs
 typ: workshop
 pflicht: false
-termine: 2017-10-26 09:00|0.501, 2017-10-26 09:00|0.502,2017-11-02 09:00|3.217, 2017-11-02 09:00|3.100
+termine: 2017-10-26 09:00|0.501|http://bit.ly/2isZb5A, 2017-10-26 09:00|0.502|http://bit.ly/2xf9Bby, 2017-11-02 09:00|3.217|http://bit.ly/2z2OduE, 2017-11-02 09:00|3.100|http://bit.ly/2xZbiJY
 empfohlene-voraussetzungen: t-tooling, w-htmlbasics
 published: true
 dauer: 240
