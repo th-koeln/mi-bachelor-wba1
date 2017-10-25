@@ -65,13 +65,13 @@ Erzeugen Sie am Ende der HTML-Datei eine Sektion mit der Headline „Spielplatz 
 
 Fügen Sie in diese Sektion ein Formular zum Eintragen eines Spielplatzes hinzu. Setzen Sie dazu das folgende Wireframe in möglichst semantisch reichhaltigem Markup um.
 
-![Spielplatz eintragen](../../images/spielplatz-eintragen.png)
+![Spielplatz eintragen](https://raw.githubusercontent.com/th-koeln/mi-bachelor-wba1/master/images/spielplatz-eintragen.png)
 
 ## Übung 4
 
 Fügen Sie dem Formular nun weitere Elemente zum Eintragen eines Ansprechpartners hinzu und gruppieren Sie die Elemente entsprechend, wie auf dem folgenden Wireframe zu sehen.
 
-![Spielplatz eintragen](../../images/spielplatz-eintragen-ansprechpartner.png)
+![Spielplatz eintragen](https://raw.githubusercontent.com/th-koeln/mi-bachelor-wba1/master/images/spielplatz-eintragen-ansprechpartner.png)
 
 
 
