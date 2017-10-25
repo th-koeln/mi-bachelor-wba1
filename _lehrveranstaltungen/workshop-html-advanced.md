@@ -39,7 +39,7 @@ Erzeugen Sie ein ein möglichst reichhaltiges semantsiches Markup.
 
 ## Übung 2
 
-Erzeugen Sie eine Datei mit dem Namen `style.less` in dem heruntergeladenen Ordner und binden Sie diese in der HTML-Datei ein.
+Erzeugen Sie eine Datei mit dem Namen `style.css` in dem heruntergeladenen Ordner und binden Sie diese in der HTML-Datei ein.
 
 Definieren in dieser Datei, für die aus Übung 1 erzeugten Tabelle, folgende CSS-Regeln:
 
