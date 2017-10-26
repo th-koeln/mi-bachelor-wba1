@@ -25,9 +25,10 @@ Eigenen Computer mit Web-Editor, FTP Client, Zugang zum eigenen ADV Account, gut
 
 ### Material
 - [HTML Tables and Forms - Folien](../../download/Chapter05-HTMLTablesAndForms.pdf)
+- [Material CSS Basics](../../download/css-basics-material.zip)
+- [Material für eine kleine Referenzierungsübung](../../download/html-verlinkungen-material.zip)
 
-
-## Übung 1 
+## Übung 1
 
 Laden Sie sich folgendes  [Verzeichnis](../../download/html-basics-material/rheinpark-marpkup) herunter. In diesem befindet sich das Markup von der Übung aus dem Workshop „HTML Basics”. Es soll als Basis für diese und die folgenden Übungen dienen.
 
@@ -72,8 +73,3 @@ Fügen Sie in diese Sektion ein Formular zum Eintragen eines Spielplatzes hinzu.
 Fügen Sie dem Formular nun weitere Elemente zum Eintragen eines Ansprechpartners hinzu und gruppieren Sie die Elemente entsprechend, wie auf dem folgenden Wireframe zu sehen.
 
 ![Spielplatz eintragen](https://raw.githubusercontent.com/th-koeln/mi-bachelor-wba1/master/images/spielplatz-eintragen-ansprechpartner.png)
-
-
-
-
-
