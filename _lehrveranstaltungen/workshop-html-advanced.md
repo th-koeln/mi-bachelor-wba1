@@ -25,7 +25,7 @@ Eigenen Computer mit Web-Editor, FTP Client, Zugang zum eigenen ADV Account, gut
 
 ### Material
 - [HTML Tables and Forms - Folien](../../download/Chapter05-HTMLTablesAndForms.pdf)
-- [Material CSS Basics](../../download/css-basics-material.zip)
+- [Material HTML Basics](../../download/html-basics-material.zip)
 - [Material für eine kleine Referenzierungsübung](../../download/html-verlinkungen-material.zip)
 
 
