@@ -27,9 +27,9 @@ Eigenen Computer mit Web-Editor, FTP Client, Zugang zum eigenen ADV Account, gut
 - [HTML Tables and Forms - Folien](../../download/Chapter05-HTMLTablesAndForms.pdf)
 
 
-## Übung 1 
+## Übung 1
 
-Laden Sie sich folgendes  [Verzeichnis](../../download/html-basics-material/rheinpark-marpkup) herunter. In diesem befindet sich das Markup von der Übung aus dem Workshop „HTML Basics”. Es soll als Basis für diese und die folgenden Übungen dienen.
+Laden Sie sich folgendes  [Verzeichnis](../../download/html-basics-material/rheinpark-markup) herunter. In diesem befindet sich das Markup von der Übung aus dem Workshop „HTML Basics”. Es soll als Basis für diese und die folgenden Übungen dienen.
 
 Öffnen Sie die Datei `index.html` und erzeugen Sie aus der Liste mit der Headline „Spielplätze in der Nähe” eine Tabelle. Die erste Spalte soll ein kleines Vorschaubild zu dem Spielplatz enthalten. Referenzieren Sie dazu auf die Bilder von *spielplatztreff.de*. Die zweite Spalte soll die Bezeichung des Spielplatzes und die dritte Spalte die Entfernung in km enthalten.
 
@@ -72,8 +72,3 @@ Fügen Sie in diese Sektion ein Formular zum Eintragen eines Spielplatzes hinzu.
 Fügen Sie dem Formular nun weitere Elemente zum Eintragen eines Ansprechpartners hinzu und gruppieren Sie die Elemente entsprechend, wie auf dem folgenden Wireframe zu sehen.
 
 ![Spielplatz eintragen](https://raw.githubusercontent.com/th-koeln/mi-bachelor-wba1/master/images/spielplatz-eintragen-ansprechpartner.png)
-
-
-
-
-
