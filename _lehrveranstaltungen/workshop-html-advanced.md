@@ -28,9 +28,10 @@ Eigenen Computer mit Web-Editor, FTP Client, Zugang zum eigenen ADV Account, gut
 - [Material CSS Basics](../../download/css-basics-material.zip)
 - [Material für eine kleine Referenzierungsübung](../../download/html-verlinkungen-material.zip)
 
+
 ## Übung 1
 
-Laden Sie sich folgendes  [Verzeichnis](../../download/html-basics-material/rheinpark-marpkup) herunter. In diesem befindet sich das Markup von der Übung aus dem Workshop „HTML Basics”. Es soll als Basis für diese und die folgenden Übungen dienen.
+Laden Sie sich folgendes  [Verzeichnis](../../download/html-basics-material/rheinpark-markup) herunter. In diesem befindet sich das Markup von der Übung aus dem Workshop „HTML Basics”. Es soll als Basis für diese und die folgenden Übungen dienen.
 
 Öffnen Sie die Datei `index.html` und erzeugen Sie aus der Liste mit der Headline „Spielplätze in der Nähe” eine Tabelle. Die erste Spalte soll ein kleines Vorschaubild zu dem Spielplatz enthalten. Referenzieren Sie dazu auf die Bilder von *spielplatztreff.de*. Die zweite Spalte soll die Bezeichung des Spielplatzes und die dritte Spalte die Entfernung in km enthalten.
 
