@@ -37,6 +37,7 @@ Eigenen Computer mit Web-Editor, FTP Client, Zugang zum eigenen ADV Account.
 - [Mozilla HTML Element Referenz](https://developer.mozilla.org/de/docs/Web/HTML/Element)
 - [W3C](http://www.w3.org)
 - [W3C - HTML5 Spezifikation](http://www.w3.org/TR/html5/)
+- [Material für eine kleine Referenzierungsübung](../../download/html-verlinkungen-material.zip)
 
 ### Editoren
 - [Brackets](http://brackets.io/)
