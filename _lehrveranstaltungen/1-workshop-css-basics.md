@@ -30,7 +30,7 @@ Eigenen Computer mit Web-Editor, FTP Client, Zugang zum eigenen ADV Account, gut
 - [CSS Tutorial bei w3schools.com](https://www.w3schools.com/css/default.asp)
 - [Learn HTML bei codecademy.com](https://www.codecademy.com/learn/learn-css)
 - [CSS Lernbereich bei Mozilla](https://developer.mozilla.org/de/Learn/CSS)
-
+- [Beispiel Markup](../../download/css-basics-material/markup.zip)
 ## Übung 1
 Binden Sie im <head> Ihrer HTML Datei ein Stylesheet ein und definieren Sie folgende Regeln mit Hilfe von Elementselektoren und ggf. Kombinatoren:
 - der Body soll einen Innenabstand von 3rem haben
@@ -55,14 +55,22 @@ Binden Sie via Google Fonts die Schriften **Permanent Marker** und **Open Sans**
 ## Übung 4
 Erweitern Sie Ihr HTML dahingehend, dass semantisch zusammengehörige Elemente in Container eingeschlossen sind. Ergänzen Sie Ihr CSS dahingehend, dass zwischen den einzelnen Containern horizontale Trennlinien angezeigt werden.
 
-## Übung 6
+## Übung 5
 Ergänzen Sie Ihr Stylesheet um einen Regelsatz, mit dessen Hilfe die Navigation in einer Zeile und mit einer Hintergrundfarbe angezeigt wird.
 
-## Übung 7
+## Übung 6
 Definieren Sie ein CSS Klasse, die Textblöcke hevorhebt. Die Hervorhebung soll folgende Eigenschaften haben:
 - hellgrauer Hintergrund
 - dunkle Linie an der linken Seite des Blocks
 
-Nutzen Sie die Klasse an zwei Textblöcke.
+Nutzen Sie die Klasse für zwei Textblöcke.
+
+## Übung 7: Deployment
+
+Machen Sie die Seite jetzt über den ADV Server unter dem Verzeichnis **wba1/rheinpark-spielplatz/index.htm** verfügbar. Eine Hilfe dazu finden Sie auf der [ADV Website](http://www.gm.fh-koeln.de/advlabor/dienste/homepage.shtml). 
+
+## Übung 8: Passwortschutz
+
+Schützen Sie die Seite jetzt mit Hilfe einer **.htaccess** Datei. Verwenden Sie bitte als Nutzername und Passwort **wba1**. Eine Hilfe dazu finden Sie auf der [Bingo e.V. Website](https://www.bingo-ev.de/~ub304/htaccess.htm)
 
 

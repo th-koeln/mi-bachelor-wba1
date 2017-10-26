@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+	
+html, body {
+	font-family: "Helvetica Neue", "Helvetica", "Arial", "Tahoma", sans-serif;
+	line-height: 140%;
+	font-size: 16px;
+	padding: 5rem;
+}
+
+
