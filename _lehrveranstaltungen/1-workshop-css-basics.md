@@ -31,8 +31,10 @@ Eigenen Computer mit Web-Editor, FTP Client, Zugang zum eigenen ADV Account, gut
 - [Learn HTML bei codecademy.com](https://www.codecademy.com/learn/learn-css)
 - [CSS Lernbereich bei Mozilla](https://developer.mozilla.org/de/Learn/CSS)
 - [Beispiel Markup](../../download/css-basics-material/markup.zip)
+- [weitere Beispiele](../../download/css-basics-material.zip)
 - [CSS Referenz nach Kategorien](https://www.w3schools.com/CSSref/)
 - [CSS Referenz alphabetisch](https://developer.mozilla.org/de/docs/Web/CSS/CSS_Referenz)
+
 
 ## Übung 1
 Binden Sie im <head> Ihrer HTML Datei ein Stylesheet ein und definieren Sie folgende Regeln mit Hilfe von Elementselektoren und ggf. Kombinatoren:
