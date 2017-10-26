@@ -1,0 +1,42 @@
+table {
+	border-collapse: collapse;
+	width: 70%;
+}
+
+thead th {
+	font-weight: bold;
+	background-color: #BAC750;
+	padding: 0.8rem;
+	text-align: center;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #2D3540;
+	color: white;
+}
+
+tbody tr:hover {
+	background-color: #A1B7C2;
+}
+
+tbody td {
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	padding: 0.8rem;
+}
+
+tbody td.entfernung {
+	text-align: right;
+}
+
+form {
+	width: 70%;
+}
+
+form .alter, .bewertung {
+	float: left;
+}
+
+form .foto {
+	clear: both;
+}
