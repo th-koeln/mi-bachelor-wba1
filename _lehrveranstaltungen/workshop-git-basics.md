@@ -4,7 +4,7 @@ kuerzel: v-wb
 verantwortlich: sl
 typ: workshop
 pflicht: false
-termine: 2017-10-19 15:30|3.216|http://bit.ly/2xCprwy,2017-10-26 11:00|3.217|http://bit.ly/2zvOToA, 2017-10-26 11:00|3.100|http://bit.ly/2gBY57d
+termine: 2017-10-19 15:30|3.216|http://bit.ly/2xCprwy,2017-10-26 11:00|3.217|http://bit.ly/2zvOToA, 2017-10-26 11:00|3.100|http://bit.ly/2gBY57d, 2017-11-02|3.100|http://bit.ly/2lnto7w
 empfohlene-voraussetzungen:
 published: true
 dauer: 120
