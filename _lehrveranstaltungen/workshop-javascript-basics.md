@@ -52,4 +52,4 @@ Definieren Sie eine Funktion `readInputs`, die ein JavaScript-Objekt zurückgibt
 
 ### Übung 3
 
-Lagern Sie Ihr aktuelles Skript in eine externe `.js`-Datei aus und prüfen Sie, ob Ihr Skript weiterhin funktioniert. Definieren Sie nun eine Funktion, die den Inhalt der Formularfelder als neue Zeile in die vorhandene, aber leere Tabelle einfügt. Verwenden Sie dabei Ihre bereits definierten Funktionen aus **Aufgabe 2**. Die Funktion soll aufgerufen werden, sobald der Benutzer den Button des Formulars klickt. Auch hier gilt: ändern Sie nicht das Markup, sondern nur Ihre Skriptdatei!
+Lagern Sie Ihr aktuelles Skript in eine externe `.js`-Datei aus und prüfen Sie, ob Ihr Skript weiterhin funktioniert. Definieren Sie nun eine Funktion, die den Inhalt der Formularfelder als neue Zeile in die vorhandene, aber leere Tabelle einfügt. Aktualisieren Sie dabei auch die Anzeige der Anzahl der angezeigten Spielplätze im Tabellen-Footer. Verwenden Sie dabei Ihre bereits definierten Funktionen aus **Aufgabe 2**. Die Funktion soll aufgerufen werden, sobald der Benutzer den Button des Formulars klickt. Auch hier gilt: ändern Sie nicht das Markup, sondern nur Ihre Skriptdatei!
