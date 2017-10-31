@@ -32,7 +32,7 @@ Folgendes muss zum Workshop mitgebracht werden:
 * Eigener Rechner mit Browser (inkl. Web Development Tools, z.B. Chrome, Safari), Code Editor, Internetzugang (z.B. VPN, eduroam)
 
 ### Material
-- [Arbeitspaket (Link folgt)]()
+- [Arbeitspaket (Link folgt)](../../download/js-basics-material.zip)
 - [JavaScript Language Fundamentals - Folien](../../download/Chapter08-JavaScript1LanguageFundamentals.pdf)
 - [W3: JavaScript and HTML DOM Reference - Dokumentation](https://www.w3schools.com/jsref/default.asp)
 
@@ -48,8 +48,8 @@ Laden Sie die Dateien aus dem Arbeitspaket auf die ADVM1 in Ihren Unterordner `/
 
 ### Übung 2
 
-Definieren Sie eine Funktion `readInputs`, die ein JavaScript-Objekt zurückgibt, welches alle Werte des Formulars enthält. Definieren Sie dann eine Funktion `resetForm`, die das Formular zurücksetzt (Hierbei gibt es mehr als eine Lösung - sehen sie mal in die JavaScript-Dokumentation!). Rufen Sie diese Funktionen auf, zum Beispiel über die Konsole, um ihre korrekte Arbeitsweise zu prüfen. Verändern Sie bei dieser Aufgabe nicht das HTML, sondern passen Sie das Dokument nur innerhalb der `script`-Tags an.
+Definieren Sie eine Funktion `readInputs`, die ein JavaScript-Objekt zurückgibt, welches alle Werte des Formulars enthält. Zahlenwerte sollen als Zahlen repräsentatiert werden! Definieren Sie dann eine Funktion `resetForm`, die das Formular zurücksetzt (Hierbei gibt es mehr als eine Lösung - sehen sie mal in die JavaScript-Dokumentation!). Rufen Sie diese Funktionen auf, zum Beispiel über die Konsole, um ihre korrekte Arbeitsweise zu prüfen. Benutzen Sie Variablen im globalen Scope, um wiederkehrend anzusprechende HTML-Nodes schneller zu referenzieren. Verändern Sie bei dieser Aufgabe nicht das HTML, sondern passen Sie das Dokument nur innerhalb der `script`-Tags an.
 
 ### Übung 3
 
-Lagern Sie Ihr aktuelles Skript in eine externe `.js`-Datei aus und prüfen Sie, ob Ihr Skript weiterhin funktioniert. Definieren Sie nun eine Funktion, die den Inhalt der Formularfelder als neue Zeile in die vorhandene, aber leere Tabelle einfügt. Ersetzen Sie den Typ-Wert eines Spielplatzes beim Einfügen mit einem „lesbaren“ String. Aktualisieren Sie dabei auch die Anzeige der Anzahl der angezeigten Spielplätze im Tabellen-Footer. Verwenden Sie Ihre bereits definierten Funktionen aus **Aufgabe 2**. Der Ablauf soll aufgerufen werden, sobald der Benutzer den Button des Formulars klickt. Auch hier gilt: ändern Sie nicht das Markup, sondern nur Ihre Skriptdatei!
+Lagern Sie Ihr aktuelles Skript in eine externe `.js`-Datei aus und prüfen Sie, ob Ihr Skript weiterhin funktioniert. Definieren Sie nun eine Funktion `insertIntoTable(object)`, die den Inhalt der Formularfelder (in Form des erzeugten Objekts) als neue Zeile in die vorhandene, aber leere Tabelle einfügt. Ersetzen Sie den Wert des `select`-Felds (`playground-type`) eines Spielplatzes beim Einfügen mit einem „lesbaren“ String (hierfür gibt es einen langen und einen sehr kurzen Weg). Aktualisieren Sie dabei auch die Anzeige der Anzahl der angezeigten Spielplätze im Tabellen-Footer. Verwenden Sie Ihre bereits definierten Funktionen aus **Aufgabe 2**. Der Ablauf soll aufgerufen werden, sobald der Benutzer den Button des Formulars klickt. Auch hier gilt: ändern Sie nicht das Markup, sondern nur Ihre Skriptdatei! Machen Sie sich dazu u.a. mit `window.onload` bekannt.
