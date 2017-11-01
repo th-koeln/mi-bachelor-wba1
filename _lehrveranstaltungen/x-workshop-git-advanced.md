@@ -1,5 +1,5 @@
 ---
-titel: Git Advanced
+titel: Git Advanced, Github Pages & Jekyll
 kuerzel: t-git-2
 verantwortlich: sl
 typ: workshop
@@ -14,7 +14,7 @@ info:
 
 ## An wen richtet sich der Workshop?
 
-Anfänger im Bereich Webdevelopment und Versionsverwaltung
+Anfänger im Bereich Webdevelopment und Versionsverwaltung und das erstellen einer eigenen Webpage mit Github Pages und Jekyll.
 
 ## Vorraussetzungen
 
@@ -22,7 +22,7 @@ Vorherige Teilnahme an den Git-Basics Workshops. Laufende git- und Github-Umgebu
 
 ## Worum geht es?
 
-In diesem Workshop geht es darum die Grundlagen von git-Bascis zu erweitern und den Umgang mit dem Versionsverwaltungsystem Git zu erlernen und umsetzen zu können.
+In diesem Workshop geht es darum die Grundlagen von git-Bascis zu erweitern und den Umgang mit dem Versionsverwaltungsystem Git zu erlernen und umsetzen zu können. Weiterhin sollte jeder eine Jekyll Page erstellt haben als Vorbereitung für die finale Challenge.
 
 ## Was muss ich mitbringen?
 
@@ -46,8 +46,11 @@ Einen eigenen Computer mit installiertem [Git](https://git-scm.com/) und einen [
 <iframe src="https://player.vimeo.com/video/41516942" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 <div class="js-video [vimeo, widescreen]">
-<iframe width="1220" height="686" src="https://www.youtube.com/embed/Ao1beK2rEIY" frameborder="0" gesture="media" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/Ao1beK2rEIY" frameborder="0" gesture="media" allowfullscreen></iframe>
 </div>
 <div class="js-video [vimeo, widescreen]">
-<iframe width="1220" height="686" src="https://www.youtube.com/embed/3iO4jxTtGbw" frameborder="0" gesture="media" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/3iO4jxTtGbw" frameborder="0" gesture="media" allowfullscreen></iframe>
+</div>
+<div class="js-video [vimeo, widescreen]">
+<iframe src="https://www.youtube.com/embed/nN6QuNqmAwk" frameborder="0" allowfullscreen></iframe>
 </div>
