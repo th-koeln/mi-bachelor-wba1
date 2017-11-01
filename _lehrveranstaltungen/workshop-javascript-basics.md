@@ -32,7 +32,7 @@ Folgendes muss zum Workshop mitgebracht werden:
 * Eigener Rechner mit Browser (inkl. Web Development Tools, z.B. Chrome, Safari), Code Editor, Internetzugang (z.B. VPN, eduroam)
 
 ### Material
-- [Arbeitspaket (Link folgt)](../../download/js-basics-material.zip)
+- [Arbeitspaket](../../download/js-basics-material.zip)
 - [JavaScript Language Fundamentals - Folien](../../download/Chapter08-JavaScript1LanguageFundamentals.pdf)
 - [Using Javascript - Folien](../../download/Chapter09-JavaScript2UsingJavaScript.pdf)
 - [JavaScript Guide bei MDN](https://developer.mozilla.org/de/docs/Web/JavaScript/Guide)
@@ -54,7 +54,7 @@ Laden Sie die Dateien aus dem Arbeitspaket herunter und öffnen Sie die Datei *u
 
 ### Übung 3
 
- Öffnen Sie die Seite im Browser und danach die Web Development Tools Ihres Browser. Navigieren Sie zur Konsole dieser. Erreichen Sie nun mit JavaScript-Befehlen folgende Ziele und dokumentieren Sie Ihre Eingaben:
+Öffnen Sie die Datei `index.html` im Browser und die Web Development Tools Ihres Browser. Navigieren Sie zur Konsole. Erreichen Sie nun mit JavaScript-Befehlen folgende Ziele und dokumentieren Sie Ihre Eingaben:
 * Ändern Sie den Titel der Seite in *„You have been hacked!“*
 * Ändern Sie die erste Überschrift im Inhalt der Seite auf *„You have been hacked!“*. Es kann sinnvoll sein, mehrere Befehle und die Verwendung von Variablen dafür auszunutzen.
 * Berechnen Sie die Summe aus den Zeichen der jetzigen Überschrift mit 42 und schreiben Sie das Ergebnis ans Ende des Inhalts der Seite. 
@@ -73,4 +73,7 @@ Rufen Sie diese Funktionen auf, zum Beispiel über die Konsole, um ihre korrekte
 * Definieren Sie nun eine Funktion `insertIntoTable(object)`, die den Inhalt der Formularfelder (in Form des erzeugten Objekts) als neue Zeile in die vorhandene, aber leere Tabelle einfügt. Ersetzen Sie den Wert des `select`-Felds (`playground-type`) eines Spielplatzes beim Einfügen mit einem „lesbaren“ String (hierfür gibt es einen langen und einen sehr kurzen Weg).
 * Aktualisieren Sie dabei auch die Anzeige der Anzahl der angezeigten Spielplätze im Tabellen-Footer.
 
-Verwenden Sie Ihre bereits definierten Funktionen aus **Aufgabe 2**. Der Ablauf soll aufgerufen werden, sobald der Benutzer den Button des Formulars klickt. Auch hier gilt: ändern Sie nicht das Markup, sondern nur Ihre Skriptdatei! Machen Sie sich dazu u.a. mit `window.onload` bekannt.
+### Übung 6
+
+* Erzeugen Sie einen Eventlistener, so dass bei einem Mausklick auf die Schalfläche „Spielplatz eintragen”, die Werte aus dem Formular in eine neue Reihe in der Tabelle eingetragen werden und das Formular zurückgesetzt wird. Verwenden Sie dazu ihre bereits definierten Funktionen.
+* Stellen Sie sicher, dass das DOM geladen ist, wenn Sie den Eventlistener hinzufügen. Ändern Sie bitte dazu nicht das Markup, sondern nur ihre Skriptdatei.
