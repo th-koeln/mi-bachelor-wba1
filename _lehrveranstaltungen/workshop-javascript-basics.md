@@ -34,9 +34,23 @@ Folgendes muss zum Workshop mitgebracht werden:
 ### Material
 - [Arbeitspaket (Link folgt)](../../download/js-basics-material.zip)
 - [JavaScript Language Fundamentals - Folien](../../download/Chapter08-JavaScript1LanguageFundamentals.pdf)
+- [Using Javascript - Folien](../../download/Chapter09-JavaScript2UsingJavaScript.pdf)
+- [JavaScript Guide bei MDN](https://developer.mozilla.org/de/docs/Web/JavaScript/Guide)
 - [W3: JavaScript and HTML DOM Reference - Dokumentation](https://www.w3schools.com/jsref/default.asp)
 
 ## Übungen
+
+### Übung n
+Irgendwas mit:
+* Variabeln, Array & Objekten
+* Schleifen
+* Bedingungen
+
+Ausgabe erfolgt in der Console, via Alert oder document.write();
+
+### Übung n1
+Eine Variante von der ersten Übung, diesmal mit einer Funktionsdeklaration.
+
 
 ### Übung 1
 
