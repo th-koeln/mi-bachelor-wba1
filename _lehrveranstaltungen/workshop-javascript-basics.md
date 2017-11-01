@@ -40,34 +40,34 @@ Folgendes muss zum Workshop mitgebracht werden:
 
 ## Übungen
 
-### Übung n
-Irgendwas mit:
-* Variabeln, Array & Objekten
-* Schleifen
-* Bedingungen
-
-Ausgabe erfolgt in der Console, via Alert oder document.write();
-
-### Übung n1
-Eine Variante von der ersten Übung, diesmal mit einer Funktionsdeklaration.
-
-
 ### Übung 1
+Öffnen Sie für diese Übung die Konsole der Web Development Tools Ihres Browsers.
 
-Laden Sie die Dateien aus dem Arbeitspaket auf die ADVM1 in Ihren Unterordner `/public_html/jsbasics/`. Öffnen Sie die Seite im Browser und danach die Web Development Tools Ihres Browser. Navigieren Sie zur Konsole dieser. Erreichen Sie nun mit JavaScript-Befehlen folgende Ziele und dokumentieren Sie Ihre Eingaben:
+* Deklarieren Sie Variablen mit unterschiedlichen Werten via `var` und lassen Sie sich diese ausgeben. Bilden Sie Summen von Zahlen und probieren Sie String zusammenzufügen.
+* Definieren Sie ein Array aus Strings und lassen Sie sich mit `forEach` für jeden Wert einen Dialog anzeigen
+* Definieren Sie ein Objekt für einen Spielplatz mit mindestens zwei Attributen. Lassen Sie sich einen Satz in der Konsole ausgeben, in dem diese beiden Werte eingefügt werden.
+* Definieren Sie ein Array aus Spielplatz-Objekten für unterschiedliche Spielplätze und lassen Sie sich den Spielplatz mit einem bestimmten Namen ausgeben. Iterieren Sie dafür über das Array und erzeugen Sie eine Ausgabe, wenn der Name übereinstimmt.
+
+### Übung 2
+* Definieren Sie eine Funktion, die den letzten Punkt aus Aufgabe 1 übernimmt und als Parameter ein Array aus Objekten verwendet. 
+
+
+### Übung 3
+
+Laden Sie die Dateien aus dem Arbeitspaket herunter. Öffnen Sie die Seite im Browser und danach die Web Development Tools Ihres Browser. Navigieren Sie zur Konsole dieser. Erreichen Sie nun mit JavaScript-Befehlen folgende Ziele und dokumentieren Sie Ihre Eingaben:
 * Ändern Sie den Titel der Seite in *„You have been hacked!“*
 * Ändern Sie die erste Überschrift im Inhalt der Seite auf *„You have been hacked!“*. Es kann sinnvoll sein, mehrere Befehle und die Verwendung von Variablen dafür auszunutzen.
 * Berechnen Sie die Summe aus den Zeichen der jetzigen Überschrift mit 42 und schreiben Sie das Ergebnis ans Ende des Inhalts der Seite. 
 * Definieren Sie eine Funktion `tableRowCount` die einen Dialog mit der aktuellen Anzahl an Tabellenzeilen ausgibt und rufen Sie diese auf.
 
-### Übung 2
+### Übung 4
 
-* Definieren Sie eine Funktion `readInputs`, die ein JavaScript-Objekt zurückgibt, welches die Eingaben des Formulars enthält. Zahlenwerte sollen als Zahlen repräsentatiert werden!
+* Definieren Sie eine Funktion `readInputs` die ein JavaScript-Objekt zurückgibt, welches die Eingaben des Formulars enthält. Zahlenwerte wie die Größe sollen als Zahlen repräsentiert werden und müssen daher geparst werden.
 * Definieren Sie dann eine Funktion `resetForm`, die das Formular zurücksetzt (Hierbei gibt es mehr als eine Lösung - sehen sie mal in die JavaScript-Dokumentation!).
 
 Rufen Sie diese Funktionen auf, zum Beispiel über die Konsole, um ihre korrekte Arbeitsweise zu prüfen. Benutzen Sie Variablen im globalen Scope, um wiederkehrend anzusprechende HTML-Nodes schneller zu referenzieren. Verändern Sie bei dieser Aufgabe nicht das HTML, sondern passen Sie das Dokument nur innerhalb der `script`-Tags an.
 
-### Übung 3
+### Übung 5
 
 * Lagern Sie Ihr aktuelles Skript in eine externe `.js`-Datei aus und prüfen Sie, ob Ihr Skript weiterhin funktioniert.
 * Definieren Sie nun eine Funktion `insertIntoTable(object)`, die den Inhalt der Formularfelder (in Form des erzeugten Objekts) als neue Zeile in die vorhandene, aber leere Tabelle einfügt. Ersetzen Sie den Wert des `select`-Felds (`playground-type`) eines Spielplatzes beim Einfügen mit einem „lesbaren“ String (hierfür gibt es einen langen und einen sehr kurzen Weg).
