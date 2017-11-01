@@ -72,6 +72,74 @@ var spielplaetze = {
 	}
 };
 
+var spielplaetze2 = [
+	
+	{
+		name: "Spielplatz am Hexenbusch",
+		stadt: "Gummersbach",
+		bewertung: 5,
+		spielgeraete: [
+			"Nestschaukel", 
+			"Rutsche", 
+			"Seilbahn", 
+			"Federwippgerät", 
+			"Tischtennisplatte"
+		]
+	},
+	
+	{
+		name: "Thaler Siedlung Spielplatz",
+		stadt: "Gummersbach",
+		bewertung: 4,
+		spielgeraete: [
+			"Reckstange", 
+			"Rutsche", 
+			"Fußball-Tore", 
+			"Hangelgerät", 
+			"Karussell"
+		]
+	},
+	
+	{
+		name: "Spielplatz Lippmannstraße",
+		stadt: "Hamburg",
+		bewertung: 2,
+		spielgeraete: [
+			"Kleinkindschaukel", 
+			"Rutsche", 
+			"Spielhaus", 
+			"Wasserspiele / Matschanlage", 
+			"Sandfläche", 
+			"Schaukel"
+		]
+	},
+	
+	{
+		name: "Abenteuer- und Bauspielplatz SPIO e.V.",
+		stadt: "Hamburg",
+		bewertung: 3,
+		spielgeraete: [
+			"Basketballkorb", 
+			"Matschanlage", 
+			"Tischtennisplatte", 
+			"Fußball-Tore", 
+			"Wackelbrücke"
+		]
+	}
+];
+	
+for(var i in spielplaetze) {
+	if(spielplaetze[i].stadt == aktuelleStadt){
+		console.log(spielplaetze[i].name);
+	}
+   
+}
+
+function showData(elem, index) {
+	console.log (index + ' ' + elem.name);
+}
+
+spielplaetze2.forEach(showData);
 
 </script>
 
