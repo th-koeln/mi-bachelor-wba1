@@ -57,12 +57,14 @@
 					{% assign entry-data = entry | split: "|" %}
 					{% assign termin = entry-data[0] %}
 					{% assign raum = entry-data[1] %}
+					{% assign dozent = entry-data[3] %}
 					{% assign termin-start-min = termin | date: '%M'  %}
 					{% assign startzeit = termin | date: "%H" | append: "" %}
 					{% assign termin-zone = termin | date: '%s' | minus: time-correction %}
 					{% assign termin-to-check = termin-zone | date: '%Y-%m-%d' %}
 					{% assign aktueller-tag = day.datum | date: '%Y-%m-%d' %}
 					
+									
 					{% if stunde == "8" %}{% assign stunde = "08" %}{% endif %}				
 					{% if stunde == "9" %}{% assign stunde = "09" %}{% endif %}				
 			
@@ -74,7 +76,11 @@
 							{% include /functions/resolve-types.html typ=veranstaltung.typ %}
 							<a href="{{site.baseurl}}{{veranstaltung.url}}">
 							<div class="veranstaltung {{veranstaltung.typ}}" style="margin-top: {{termin-start-min}}px;  height: {{veranstaltung.dauer}}px">
-								{% include /functions/resolve-names.html verantwortlich=veranstaltung.verantwortlich %}
+								{% assign verantwortlich = veranstaltung.verantwortlich %}
+								{% if dozent != "" and dozent != nil %}
+								{% assign verantwortlich = dozent %}
+								{% endif %}
+								{% include /functions/resolve-names.html verantwortlich=verantwortlich %}
 								<p class="title"><span class="is-hidden-tablet">{{termin | date: '%d. %B %Y, %H:%M Uhr'}}: </span>{{veranstaltung.titel}}</p>
 
 								{% if (veranstaltung.raum | append: "") != "" %}
