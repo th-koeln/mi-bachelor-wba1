@@ -12,14 +12,42 @@ raum: 3.102
 info: 
 ---
 
-## Über das Training
+## An wen richtet sich der Workshop?
 
-### An wen richtet sich das Training?
+Anfänger im Bereich Webdevelopment und Versionsverwaltung
 
-### Worum geht es?
+## Vorraussetzungen
 
-### Was muss ich mitbringen?
+Vorherige Teilnahme an den Git-Basics Workshops. Laufende git- und Github-Umgebung auf dem Rechner, ein Github-Account.
 
-### Material
+## Worum geht es?
 
-## Übungen
+In diesem Workshop geht es darum die Grundlagen von git-Bascis zu erweitern und den Umgang mit dem Versionsverwaltungsystem Git zu erlernen und umsetzen zu können.
+
+## Was muss ich mitbringen?
+
+Einen eigenen Computer mit installiertem [Git](https://git-scm.com/) und einen [Github Account](https://github.com/).
+
+## Material
+- [Folien Git Advanced 2015](../../slides/git-advanced/index.html)
+
+## Video Tutorials
+
+<div class="js-video [vimeo, widescreen]">
+<iframe src="https://player.vimeo.com/video/41027679" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+<div class="js-video [vimeo, widescreen]">
+<iframe src="https://player.vimeo.com/video/41381741" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+<div class="js-video [vimeo, widescreen]">
+<iframe src="https://player.vimeo.com/video/41493906" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+<div class="js-video [vimeo, widescreen]">
+<iframe src="https://player.vimeo.com/video/41516942" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+<div class="js-video [vimeo, widescreen]">
+<iframe width="1220" height="686" src="https://www.youtube.com/embed/Ao1beK2rEIY" frameborder="0" gesture="media" allowfullscreen></iframe>
+</div>
+<div class="js-video [vimeo, widescreen]">
+<iframe width="1220" height="686" src="https://www.youtube.com/embed/3iO4jxTtGbw" frameborder="0" gesture="media" allowfullscreen></iframe>
+</div>
