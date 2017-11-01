@@ -41,20 +41,20 @@ Folgendes muss zum Workshop mitgebracht werden:
 ## Übungen
 
 ### Übung 1
-Öffnen Sie für diese Übung die Konsole der Web Development Tools Ihres Browsers.
+Laden Sie die Dateien aus dem Arbeitspaket herunter und öffnen Sie die Datei *uebung-1-2.htm* im Editor und im Browser. Öffnen Sie bitte auch die Web Development Tools Ihres Browsers.
 
-* Deklarieren Sie Variablen mit unterschiedlichen Werten via `var` und lassen Sie sich diese ausgeben. Bilden Sie Summen von Zahlen und probieren Sie String zusammenzufügen.
-* Definieren Sie ein Array aus Strings und lassen Sie sich mit `forEach` für jeden Wert einen Dialog anzeigen
-* Definieren Sie ein Objekt für einen Spielplatz mit mindestens zwei Attributen. Lassen Sie sich einen Satz in der Konsole ausgeben, in dem diese beiden Werte eingefügt werden.
-* Definieren Sie ein Array aus Spielplatz-Objekten für unterschiedliche Spielplätze und lassen Sie sich den Spielplatz mit einem bestimmten Namen ausgeben. Iterieren Sie dafür über das Array und erzeugen Sie eine Ausgabe, wenn der Name übereinstimmt.
+* Lassen Sie sich den Inhalte von *aktuelleStadt* und *prefix* ausgeben. Lassen Sie die Strings in einer Zeile ausgeben.
+* Lassen Sie sich mit Hilfe von `forEach` jeden Wert des Arrays *staedte* ins Browserfenster ausgeben.
+* Iterieren Sie durch das Objekt *spielplaetze* und lassen Sie für jeden Spielplatz den Namen, die Bewertung und die Spielgeräte anzeigen.
 
 ### Übung 2
-* Definieren Sie eine Funktion, die den letzten Punkt aus Aufgabe 1 übernimmt und als Parameter ein Array aus Objekten verwendet. 
 
+* Erzeugen Sie eine Funktion, übergeben Sie das Objekt *spielplaetze* und lassen Sie wieder für jeden Spielplatz den Namen, die Bewertung und die Spielgeräte anzeigen.
+* Erweitern Sie Ihre Funktion dahingehend, dass als zweiter Parameter *aktuelleStadt* übergeben wird und dass die Funktion nur die Spielplätze ausgibt, bei denen *aktuelleStadt* mit der Stadt des Spielplatzes übereinstimmt.
 
 ### Übung 3
 
-Laden Sie die Dateien aus dem Arbeitspaket herunter. Öffnen Sie die Seite im Browser und danach die Web Development Tools Ihres Browser. Navigieren Sie zur Konsole dieser. Erreichen Sie nun mit JavaScript-Befehlen folgende Ziele und dokumentieren Sie Ihre Eingaben:
+ Öffnen Sie die Seite im Browser und danach die Web Development Tools Ihres Browser. Navigieren Sie zur Konsole dieser. Erreichen Sie nun mit JavaScript-Befehlen folgende Ziele und dokumentieren Sie Ihre Eingaben:
 * Ändern Sie den Titel der Seite in *„You have been hacked!“*
 * Ändern Sie die erste Überschrift im Inhalt der Seite auf *„You have been hacked!“*. Es kann sinnvoll sein, mehrere Befehle und die Verwendung von Variablen dafür auszunutzen.
 * Berechnen Sie die Summe aus den Zeichen der jetzigen Überschrift mit 42 und schreiben Sie das Ergebnis ans Ende des Inhalts der Seite. 
