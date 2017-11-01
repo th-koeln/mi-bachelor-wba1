@@ -20,29 +20,29 @@ week-4:
   day-1:
     datum: 2017-11-09
     start: "09:00"
-    end: "18:00"
+    end: "20:00"
     name: Donnerstag
 week-5:
   day-1:
     datum: 2017-11-16
     start: "09:00"
-    end: "18:00"
+    end: "20:00"
     name: Donnerstag
 week-6:
   day-1:
     datum: 2017-11-23
     start: "09:00"
-    end: "18:00"
+    end: "20:00"
     name: Donnerstag
 week-7:
   day-1:
     datum: 2017-11-30
     start: "09:00"
-    end: "18:00"
+    end: "20:00"
     name: Donnerstag
 week-8:
   day-1:
     datum: 2017-12-07
     start: "09:00"
-    end: "18:00"
+    end: "22:00"
     name: Donnerstag
