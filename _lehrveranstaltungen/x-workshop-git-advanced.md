@@ -30,6 +30,16 @@ Einen eigenen Computer mit installiertem [Git](https://git-scm.com/) und einen [
 
 ## Material
 - [Folien Git Advanced 2015](../../slides/git-advanced/index.html)
+- [Quick Start Guide Jekyll](https://jekyllrb.com/docs/quickstart/)
+- [Resolving a merge conflict using the command line
+](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
+- [git - the simple guide](http://rogerdudler.github.io/git-guide/)
+- [Semantic Versioning 2.0.0](http://semver.org/)
+- [How To Win Friends And Make Pull Requests On GitHub](http://readwrite.com/2014/07/02/github-pull-request-etiquette/)
+- [Git Book](https://git-scm.com/book/en/v2)
+- [Think Like a Git](http://think-like-a-git.net/)
+- [Github Help](https://help.github.com/)
+- [Git an Introduction](https://gitirc.eu/)
 
 ## Video Tutorials
 
