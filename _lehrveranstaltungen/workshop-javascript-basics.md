@@ -63,9 +63,9 @@ Laden Sie die Dateien aus dem Arbeitspaket herunter und öffnen Sie die Datei *u
 ### Übung 4
 
 * Definieren Sie eine Funktion `readInputs` die ein JavaScript-Objekt zurückgibt, welches die Eingaben des Formulars enthält. Zahlenwerte wie die Größe sollen als Zahlen repräsentiert werden und müssen daher geparst werden.
-* Definieren Sie dann eine Funktion `resetForm`, die das Formular zurücksetzt (Hierbei gibt es mehr als eine Lösung - sehen sie mal in die JavaScript-Dokumentation!).
+* Definieren Sie dann eine Funktion `resetForm`, die das Formular zurücksetzt (Hierbei gibt es mehr als eine Lösung - schauen Sie dazu in die JavaScript-Dokumentation).
 
-Rufen Sie diese Funktionen auf, zum Beispiel über die Konsole, um ihre korrekte Arbeitsweise zu prüfen. Benutzen Sie Variablen im globalen Scope, um wiederkehrend anzusprechende HTML-Nodes schneller zu referenzieren. Verändern Sie bei dieser Aufgabe nicht das HTML, sondern passen Sie das Dokument nur innerhalb der `script`-Tags an.
+Verändern Sie bei dieser Aufgabe nicht das HTML, sondern passen Sie das Dokument nur innerhalb der `script`-Tags an.
 
 ### Übung 5
 
