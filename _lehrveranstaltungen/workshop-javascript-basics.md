@@ -37,6 +37,8 @@ Folgendes muss zum Workshop mitgebracht werden:
 - [Using Javascript - Folien](../../download/Chapter09-JavaScript2UsingJavaScript.pdf)
 - [JavaScript Guide bei MDN](https://developer.mozilla.org/de/docs/Web/JavaScript/Guide)
 - [W3: JavaScript and HTML DOM Reference - Dokumentation](https://www.w3schools.com/jsref/default.asp)
+- [Javascript Tutorial von w3schools](https://www.w3schools.com/js/default.asp)
+- [Javascript Video Tutorial](https://www.youtube.com/watch?v=fju9ii8YsGs)
 
 ## Übungen
 
