@@ -46,7 +46,7 @@ Folgendes muss zum Workshop mitgebracht werden:
 Laden Sie die Dateien aus dem Arbeitspaket herunter und öffnen Sie die Datei *uebung-1-2.htm* im Editor und im Browser. Öffnen Sie bitte auch die Web Development Tools Ihres Browsers.
 
 * Lassen Sie sich den Inhalte von *aktuelleStadt* und *prefix* ausgeben. Lassen Sie die Strings in einer Zeile ausgeben.
-* Lassen Sie sich mit Hilfe von `forEach` jeden Wert des Arrays *staedte* ins Browserfenster ausgeben.
+* Lassen Sie sich mit Hilfe einer Schleife jeden Wert des Arrays *staedte* ins Browserfenster ausgeben.
 * Iterieren Sie durch das Objekt *spielplaetze* und lassen Sie für jeden Spielplatz den Namen, die Bewertung und die Spielgeräte anzeigen.
 
 ### Übung 2
