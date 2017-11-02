@@ -4,7 +4,7 @@ kuerzel: w-jsbasics
 verantwortlich: cn,jk,fj,vs
 typ: workshop
 pflicht: false
-termine: 2017-11-02 14:00|0.501|http://bit.ly/2h1jXFS|vs,2017-11-02 14:00|0.502|http://bit.ly/2z2PSjS|fj,2017-11-09 09:00|3.100||fj, 2017-11-09 09:00|3.217|0.501||vs
+termine: 2017-11-02 14:00|0.501|http://bit.ly/2h1jXFS|vs,2017-11-02 14:00|0.502|http://bit.ly/2z2PSjS|fj,2017-11-09 09:00|3.100|http://bit.ly/2lImOIy|fj, 2017-11-09 09:00|3.217|http://bit.ly/2zcSISL|vs
 empfohlene-voraussetzungen: t-tooling, w-htmlbasics, w-htmlbadvanced
 published: true
 dauer: 240
