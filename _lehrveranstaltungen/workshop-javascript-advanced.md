@@ -10,7 +10,7 @@ published: true
 dauer: 240
 raum: 3.102
 
-info: Functions; Callbacks; AJAX; JSON; APIs
+info: Promises, Functions; Callbacks; AJAX; JSON; APIs
 --- 
 
 ## Über den Workshop
