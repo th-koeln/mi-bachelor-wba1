@@ -31,6 +31,7 @@ Eigenen Computer mit Web-Editor, FTP Client, Zugang zum eigenen ADV Account, gut
 - [Learn HTML bei codecademy.com](https://www.codecademy.com/learn/learn-css)
 - [CSS Lernbereich bei Mozilla](https://developer.mozilla.org/de/Learn/CSS)
 - [Beispiel Markup](../../download/css-basics-material/markup.zip)
+- [Bilder für das Markup](../../download/css-basics-material/images.zip)
 - [weitere Beispiele](../../download/css-basics-material.zip)
 - [CSS Referenz nach Kategorien](https://www.w3schools.com/CSSref/)
 - [CSS Referenz alphabetisch](https://developer.mozilla.org/de/docs/Web/CSS/CSS_Referenz)
