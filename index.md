@@ -105,3 +105,8 @@ Verantwortlicher Dozent des Moduls ist Prof. Christian Noss. Das komplette Betre
 - {{betreuer[1].name}}
 {% endif %}
 {% endfor %}
+
+
+## Zur Aufarbeitung
+
+Wir haben und "Links" aber auch bei den Workshopinfos stets Material verlinkt, mit dem Inhalte Nach- und/oder Vorgearbeitet werden können. Wer sich noch mal in die wesentlichen Grundlagen einlesen möchte, dem sei der [Anfängerguide vom Mozilla Development Network](https://developer.mozilla.org/de/Learn) sehr sehr warm ans Herz gelegt.

@@ -35,6 +35,7 @@ Folgendes muss zum Workshop mitgebracht werden:
 - [Arbeitspaket](../../download/js-basics-material.zip)
 - [JavaScript Language Fundamentals - Folien](../../download/Chapter08-JavaScript1LanguageFundamentals.pdf)
 - [Using Javascript - Folien](../../download/Chapter09-JavaScript2UsingJavaScript.pdf)
+- [JavaScript Basics bei MDN](https://developer.mozilla.org/de/Learn/Getting_started_with_the_web/JavaScript_basis)
 - [JavaScript Guide bei MDN](https://developer.mozilla.org/de/docs/Web/JavaScript/Guide)
 - [W3: JavaScript and HTML DOM Reference - Dokumentation](https://www.w3schools.com/jsref/default.asp)
 - [Javascript Tutorial von w3schools](https://www.w3schools.com/js/default.asp)

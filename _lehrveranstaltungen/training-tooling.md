@@ -27,7 +27,7 @@ Zudem stellen wir eine erste kleine Webseite auf dem ADV-Server online, die wir 
 - [Kommandozeilen Basics](https://github.com/th-koeln/mi-bachelor-wba1/wiki/Kommandozeilen-Basics)
 - [Shell Befehlsübersicht](https://wiki.ubuntuusers.de/Shell/Befehlsübersicht/)
 - [Anleitung Webspace einrichten auf ADV-Maschine](http://www.gm.fh-koeln.de/advlabor/dienste/homepage.shtml)
-
+- [Dateien nutzen](https://developer.mozilla.org/de/Learn/Getting_started_with_the_web/dateien_nutzen)
 
 ## Editoren
 - [Brackets](http://brackets.io/)
