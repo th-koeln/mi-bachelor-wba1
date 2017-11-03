@@ -4,7 +4,7 @@ kuerzel: t-git-2
 verantwortlich: sl
 typ: workshop
 pflicht: false
-termine: 2017-11-02 14:00|3.100|http://bit.ly/2xZGqJ3|sl, 2017-11-02 14:00|3.217||jk, 2017-11-09 16:00|3.217||mk, 2017-11-09 11:00|3.217||mk
+termine: 2017-11-02 14:00|3.100|http://bit.ly/2xZGqJ3|sl, 2017-11-02 14:00|3.217||jk, 2017-11-09 16:00|3.217||sl, 2017-11-09 11:00|3.217||mk
 empfohlene-voraussetzungen:
 published: true
 dauer: 120
@@ -31,8 +31,7 @@ Einen eigenen Computer mit installiertem [Git](https://git-scm.com/) und einen [
 ## Material
 - [Folien Git Advanced 2015](../../slides/git-advanced/index.html)
 - [Quick Start Guide Jekyll](https://jekyllrb.com/docs/quickstart/)
-- [Resolving a merge conflict using the command line
-](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
+- [Resolving a merge conflict using the command line](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
 - [git - the simple guide](http://rogerdudler.github.io/git-guide/)
 - [Semantic Versioning 2.0.0](http://semver.org/)
 - [How To Win Friends And Make Pull Requests On GitHub](http://readwrite.com/2014/07/02/github-pull-request-etiquette/)
