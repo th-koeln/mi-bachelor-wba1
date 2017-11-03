@@ -1,26 +1,25 @@
 ---
----
-
+--- 
 //
 // IMPORTS
 //
 @import "variables";
 @import "bulma";
-
-
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
 /* BASE RULES */
 /**************/
 
-.button{
-	font-size: $bfs;
+.button {
+    font-size: $bfs;
 }
 
-body, html{
-	line-height: 130%;
+body,
+html {
+    line-height: 130%;
 }
+
 
 /*hr{
 	-moz-border-bottom-colors: none;
@@ -36,8 +35,6 @@ body, html{
 }*/
 
 
-
-
 /**************/
 /* index     */
 /**************/
@@ -47,28 +44,26 @@ body, html{
 /* Footer     */
 /**************/
 
-.footer{
-	border-top: solid 1px $mi-pink;
-
-	.menu-list{
-		a{
-			padding-left: 0;
-			font-size: $bfs * 0.8;
-		}
-	}
+.footer {
+    border-top: solid 1px $mi-pink;
+    .menu-list {
+        a {
+            padding-left: 0;
+            font-size: $bfs * 0.8;
+        }
+    }
 }
-
 
 
 /**************/
 /* Header  */
 /**************/
 
-.is-header{
-	.title{
-		font-weight: 100;
-		font-size: $bfs * 2;
-	}	
+.is-header {
+    .title {
+        font-weight: 100;
+        font-size: $bfs * 2;
+    }
 }
 
 
@@ -77,206 +72,182 @@ body, html{
 /**************/
 
 $tt-grid-height: 60px;
+.timetable {
+    .datum {
+        height: $tt-grid-height;
+        @media (max-width: 999px) {
+            height: auto !important;
+        }
+    }
+    @media (max-width: 999px) {
+        .datum:nth-of-type(2) {
+            margin-top: $bfs *2;
+        }
+        h2 {
+            border-bottom: $dotted-line;
+            padding-bottom: $bfs /4;
+            padding-top: $bfs *2;
+        }
+    }
+    .timetable-wrap {
+        position: relative;
+        .timetable-grid {
+            height: $tt-grid-height;
+            border-top: $dotted-line;
+            @media (max-width: 999px) {
+                border-top: none;
+                height: auto;
+            }
+            .grid-time {
+                font-size: $bfs /2;
+                @media (max-width: 999px) {
+                    display: none;
+                }
+            }
+        }
+        .veranstaltung-wrap {
+            float: left;
+            width: 20%;
+        }
+        .veranstaltungen-wrap {
+            position: absolute;
+            top: 0;
+            left: 30px;
+            &:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+        }
+        .veranstaltung {
+            width: 100%;
+            background-color: #999;
 
-.timetable{
-
-	.datum{
-		height: $tt-grid-height;
-		@media (max-width: 999px) { height: auto !important; }
-	}
-
-	@media (max-width: 999px) {
-		.datum:nth-of-type(2){
-			margin-top: $bfs *2;
-		}
-
-		h2{
-			border-bottom: $dotted-line;
-			padding-bottom: $bfs /4;
-			padding-top: $bfs *2;
-		}
-	}
-	.timetable-wrap{
-
-		position: relative;
-
-		.timetable-grid{
-			height: $tt-grid-height;
-			border-top: $dotted-line;
-			@media (max-width: 999px) { border-top: none; height: auto; }
-			.grid-time{
-				font-size: $bfs /2;
-				@media (max-width: 999px) { display: none; }
-			}
-
-		}
-		
-		.veranstaltung-wrap{
-			float: left;
-			width: 20%;
-		}
-		
-		.veranstaltungen-wrap{
-			position: absolute;
-			top: 0; left: 30px;
-			&:after{
-				content: "";
-				display: block;
-				clear: both;
-			}
-		}
-		
-		.veranstaltung{
-			width: 100%;
-			background-color: #999;;
-			border-bottom: solid 1px rgba(255,255,255,0.7);
-			border-right: solid 1px rgba(255,255,255,0.7);
-			padding: $bfs /2;
-
-			@media (max-width: 999px) {
-				height: auto !important;
-				padding-top: $bfs;
-				padding-bottom: $bfs * 1.5;
-			}
-
-			.title, .subtitle{
-				color: #fff;
-				font-size: 0.9rem;
-				line-height: 110%;
-			}
-
-			.title + .subtitle{
-				margin-top: $bfs * -0.8;
-			}
-
-			.title{
-				font-weight: bold;
-			}
-
-			&.training{
-				background-color: $mi-lila;
-			}
-
-			&.workshop{
-				background-color: $mi-gruen;
-			}
-
-			&.vortrag{
-				background-color: $mi-pink;
-			}
-
-			&.feedback{
-				background-color: $mi-blau;
-			}
-
-			&.orga{
-				background-color: $mi-grau;
-			}
-		}
-
-	}
-
+            border-bottom: solid 1px rgba(255, 255, 255, 0.7);
+            border-right: solid 1px rgba(255, 255, 255, 0.7);
+            padding: $bfs /2;
+            @media (max-width: 999px) {
+                height: auto !important;
+                padding-top: $bfs;
+                padding-bottom: $bfs * 1.5;
+            }
+            .title,
+            .subtitle {
+                color: #fff;
+                font-size: 0.9rem;
+                line-height: 110%;
+            }
+            .title+.subtitle {
+                margin-top: $bfs * -0.8;
+            }
+            .title {
+                font-weight: bold;
+            }
+            &.training {
+                background-color: $mi-lila;
+            }
+            &.workshop {
+                background-color: $mi-gruen;
+            }
+            &.vortrag {
+                background-color: $mi-pink;
+            }
+            &.feedback {
+                background-color: $mi-blau;
+            }
+            &.orga {
+                background-color: $mi-grau;
+            }
+        }
+    }
 }
+
 
 /**************/
 /* Veranstaltungsübersicht
 /**************/
 
-.is-tab-wrap{
-	display: flex;
-	flex-wrap: wrap;
-
-	.card{
-
-		display: flex;
-    flex-direction: column;
-
-		&.is-training .card-header{
-			background-color: $mi-lila;
-			> .card-header-title{
-				color: #fff;
-			}
-		}
-
-		& .card-content{
-			flex-grow: 1;
-
-			dl.overview-card{
-				dd, dt{
-					display: inline-block;
-					float: none;
-				}
-
-				dd + dt:before{
-					content: " // ";
-					font-weight: 100;
-					color: #999;
-				}
-			}
-		}
-
-		&.is-workshop .card-header{
-			background-color: $mi-gruen;
-			> .card-header-title{
-				color: #fff;
-			}
-		}
-
-		&.is-vortrag .card-header{
-			background-color: $mi-pink;
-			> .card-header-title{
-				color: #fff;
-			}
-		}
-
-		&.is-feedback .card-header{
-			background-color: $mi-blau;
-			> .card-header-title{
-				color: #fff;
-			}
-		}
-
-		&.is-pruefung .card-header{
-			background-color: $mi-black;
-			> .card-header-title{
-				color: #fff;
-			}
-		}
-
-		&.is-support-all .card-header{
-			background-color: $mi-grau;
-			> .card-header-title{
-				color: #fff;
-			}
-		}
-
-	}
-
-	.is-tab-content{
-		flex-basis: 30%;
-		margin-right: 3%;
-
-		@media (max-width: 999px) {
-			flex-basis: 47%;
-			margin-right: 3%;
-		}
-
-		@media (max-width: 768px) {
-			flex-basis: 100%;
-			margin-right: 0;
-		}
-	}
+.is-tab-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    .card {
+        display: flex;
+        flex-direction: column;
+        &.is-training .card-header {
+            background-color: $mi-lila;
+            >.card-header-title {
+                color: #fff;
+            }
+        }
+        & .card-content {
+            flex-grow: 1;
+            dl.overview-card {
+                dd,
+                dt {
+                    display: inline-block;
+                    float: none;
+                }
+                dd+dt:before {
+                    content: " // ";
+                    font-weight: 100;
+                    color: #999;
+                }
+            }
+        }
+        &.is-workshop .card-header {
+            background-color: $mi-gruen;
+            >.card-header-title {
+                color: #fff;
+            }
+        }
+        &.is-vortrag .card-header {
+            background-color: $mi-pink;
+            >.card-header-title {
+                color: #fff;
+            }
+        }
+        &.is-feedback .card-header {
+            background-color: $mi-blau;
+            >.card-header-title {
+                color: #fff;
+            }
+        }
+        &.is-pruefung .card-header {
+            background-color: $mi-black;
+            >.card-header-title {
+                color: #fff;
+            }
+        }
+        &.is-support-all .card-header {
+            background-color: $mi-grau;
+            >.card-header-title {
+                color: #fff;
+            }
+        }
+    }
+    .is-tab-content {
+        flex-basis: 30%;
+        margin-right: 3%;
+        @media (max-width: 999px) {
+            flex-basis: 47%;
+            margin-right: 3%;
+        }
+        @media (max-width: 768px) {
+            flex-basis: 100%;
+            margin-right: 0;
+        }
+    }
 }
 
 //////////////
 // Link Panel
 //////////////
 .panel {
-	margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .panel-block.is-active {
-	color: $mi-pink;
+    color: $mi-pink;
 }
 
 
@@ -284,284 +255,295 @@ $tt-grid-height: 60px;
 /* Content    */
 /**************/
 
-*{
-	word-wrap: normal;
-	hyphens: auto;
+* {
+    word-wrap: normal;
+    hyphens: auto;
 }
 
-.section{
-	padding-top: $bfs;
+.section {
+    padding-top: $bfs;
 }
 
-.section:nth-of-type(2){
-	padding-top: $bfs *2;
+.section:nth-of-type(2) {
+    padding-top: $bfs *2;
 }
 
-.is-overview-item{
-	margin-bottom: $bfs *2;
+.is-overview-item {
+    margin-bottom: $bfs *2;
 }
 
-
-.content{
-
-	p, li, table{
-		max-width: $bfs * 36;
-	}
-
-	h1{ font-size: $bfs * 1.6; font-weight: 500;}
-	h2{ font-size: $bfs * 1.4; font-weight: 500;}
-	h3{ font-size: $bfs; font-weight: 600;}
-	h4{ font-size: $bfs; font-weight: 600;}
-	h5{ font-size: $bfs; font-weight: 600;}
-	h6{ font-size: $bfs; font-weight: 600; }
-
-	/*ul{
+.content {
+    p,
+    li,
+    table {
+        max-width: $bfs * 36;
+    }
+    h1 {
+        font-size: $bfs * 1.6;
+        font-weight: 500;
+    }
+    h2 {
+        font-size: $bfs * 1.4;
+        font-weight: 500;
+    }
+    h3 {
+        font-size: $bfs;
+        font-weight: 600;
+    }
+    h4 {
+        font-size: $bfs;
+        font-weight: 600;
+    }
+    h5 {
+        font-size: $bfs;
+        font-weight: 600;
+    }
+    h6 {
+        font-size: $bfs;
+        font-weight: 600;
+    }
+    /*ul{
 		margin-left: 1em;
 	}*/
-
-	dl{
-
-		margin-bottom: $bfs;
-
-		dt {
-			display: block;
-			float: left;
-			min-width: 10px;
-			padding: $bfs /8 0;
-			font-weight: bold;
-			color: $info;
-		}
-
-		dd{
-			/*border-bottom: solid 1px $grey-light; */
-			padding: $bfs /8 0;
-			margin-left: 0;
-
-		}
-
-		dt::after{
-			content: ":";
-			display: inline-block;
-			padding-right: $bfs /4;
-		}
-	}
-
-
-	table{
-		a, a:not(.button){ border: none; }
-		th{ font-weight: 600; }
-		.no-border{
-			th, td{
-				border: none;
-			}
-		}
-	}
-
-	table{
-		@extend .table;
-	}
-
-	table.tab-schwerpunktmodule{
-		th{
-			width: 40%;
-		}
-
-		th + th + th{
-			width: 20%;
-		}
-	}
-
-	.footnotes{
-		border-top: solid 1px #9313ce;
-		padding-bottom: $bfs;
-		border-bottom: solid 1px #9313ce;
-	}
-
-	.img-responsive{
-		width: 100%;
-	}
-
-	figure{
-		border-top: dotted 1px $mi-gruen;
-		padding-top: $bfs;
-		margin-top: $bfs;
-		figcaption{
-			display: block;
-			padding-bottom: $bfs /2;
-			padding-top: $bfs;
-			margin-bottom: $bfs;
-			font-style: normal;
-			color: $mi-gruen;
-			border-top: dotted 1px $mi-gruen;
-			text-align: left;
-		}
-	}
-
-
-	td.pm{
-		background-color: $mi-blau;
-	}
-
-	td.spp{
-		background-color: $mi-gruen;
-	}
-
-	td.spmw, td.spm{
-		background-color: $mi-pink;
-	}
-
-	td.pm-grau, td.wpm{
-		background-color: lighten($mi-black, 50%);
-	}
-
-	.lighten{
-		* {
-			color: #aaa;
-		}
-	}
-
+    dl {
+        margin-bottom: $bfs;
+        dt {
+            display: block;
+            float: left;
+            min-width: 10px;
+            padding: $bfs /8 0;
+            font-weight: bold;
+            color: $info;
+        }
+        dd {
+            /*border-bottom: solid 1px $grey-light; */
+            padding: $bfs /8 0;
+            margin-left: 0;
+        }
+        dt::after {
+            content: ":";
+            display: inline-block;
+            padding-right: $bfs /4;
+        }
+    }
+    table {
+        a,
+        a:not(.button) {
+            border: none;
+        }
+        th {
+            font-weight: 600;
+        }
+        .no-border {
+            th,
+            td {
+                border: none;
+            }
+        }
+    }
+    table {
+        @extend .table;
+    }
+    table.tab-schwerpunktmodule {
+        th {
+            width: 40%;
+        }
+        th+th+th {
+            width: 20%;
+        }
+    }
+    .footnotes {
+        border-top: solid 1px #9313ce;
+        padding-bottom: $bfs;
+        border-bottom: solid 1px #9313ce;
+    }
+    .img-responsive {
+        width: 100%;
+    }
+    figure {
+        border-top: dotted 1px $mi-gruen;
+        padding-top: $bfs;
+        margin-top: $bfs;
+        figcaption {
+            display: block;
+            padding-bottom: $bfs /2;
+            padding-top: $bfs;
+            margin-bottom: $bfs;
+            font-style: normal;
+            color: $mi-gruen;
+            border-top: dotted 1px $mi-gruen;
+            text-align: left;
+        }
+    }
+    td.pm {
+        background-color: $mi-blau;
+    }
+    td.spp {
+        background-color: $mi-gruen;
+    }
+    td.spmw,
+    td.spm {
+        background-color: $mi-pink;
+    }
+    td.pm-grau,
+    td.wpm {
+        background-color: lighten($mi-black, 50%);
+    }
+    .lighten {
+        * {
+            color: #aaa;
+        }
+    }
 }
 
-.zweispalter{
-	h2{
-		border-top: dotted 1px $grey-light;
-		padding-top: $bfs;
-	}
-
-	.content{
-
-		@media (min-width: 999px) {
-			> *{
-				margin-left: 50% !important;
-			}
-
-			h3{
-				font-size: $bfs;
-				font-weight: 700;
-				color: $mi-black;
-				line-height: 130%;
-			}
-
-			& > h1, & > h2, & > h3{
-				margin-left: 0 !important;
-				float: left;
-				width: 48%;
-				padding-left: 20%;
-				margin-top: 0 !important;
-				text-align: right;
-				hyphens: none;
-			}
-			
-			& > h4, & > h5, & > h6{
-				font-weight: 600;
-				margin-top: $bfs;
-				margin-bottom: $bfs /2;
-			}
-
-			& > h1, & > h2 {
-				/*border-top: dotted 1px #aaa; */
-				padding-top: $bfs;
-				text-align: left;
-				padding-right: 10%;
-				padding-left: 0;
-
-			}
-
-			& > h1 + p, & > h2 + p{
-				margin-top: $bfs * 4 !important;
-			}
-
-			& > h2:not(:first-child){
-				margin-top: $bfs *3 !important;
-			}
-		}
-	}
+.zweispalter {
+    h2 {
+        border-top: dotted 1px $grey-light;
+        padding-top: $bfs;
+    }
+    .content {
+        @media (min-width: 999px) {
+            > * {
+                margin-left: 50% !important;
+            }
+            h3 {
+                font-size: $bfs;
+                font-weight: 700;
+                color: $mi-black;
+                line-height: 130%;
+            }
+            &>h1,
+            &>h2,
+            &>h3 {
+                margin-left: 0 !important;
+                float: left;
+                width: 48%;
+                padding-left: 20%;
+                margin-top: 0 !important;
+                text-align: right;
+                hyphens: none;
+            }
+            &>h4,
+            &>h5,
+            &>h6 {
+                font-weight: 600;
+                margin-top: $bfs;
+                margin-bottom: $bfs /2;
+            }
+            &>h1,
+            &>h2 {
+                /*border-top: dotted 1px #aaa; */
+                padding-top: $bfs;
+                text-align: left;
+                padding-right: 10%;
+                padding-left: 0;
+            }
+            &>h1+p,
+            &>h2+p {
+                margin-top: $bfs * 4 !important;
+            }
+            &>h2:not(:first-child) {
+                margin-top: $bfs *3 !important;
+            }
+        }
+    }
 }
 
-.modulbeschreibung{
-	h2{
-		border-top: dotted 1px $grey-light;
-		padding-top: $bfs;
-	}
-
-	.content{
-
-	}
+.modulbeschreibung {
+    h2 {
+        border-top: dotted 1px $grey-light;
+        padding-top: $bfs;
+    }
+    .content {}
 }
 
-.faq{
-	clear: both;
+.faq {
+    clear: both;
 }
 
-.toc{
-	border-left: solid 1px $mi-pink;
-
-	.menu-list{
-		padding-left: $bfs *2;
-	}
+.toc {
+    border-left: solid 1px $mi-pink;
+    .menu-list {
+        padding-left: $bfs *2;
+    }
 }
 
-.is-small{
-	font-size: 80%;
+.is-small {
+    font-size: 80%;
 }
 
-.is-less-important{
-	opacity: 0.7;
+.is-less-important {
+    opacity: 0.7;
 }
 
-.is-hidden{
-	display: none;
+.is-hidden {
+    display: none;
 }
 
-
-.more-button{
-	font-size: $bfs * 1.5 !important;
-	display: inline-block;
-	margin-left: $bfs /2;
-	transition: all 0.5s;
-	&:hover{
-		cursor: pointer;
-	}
-
-	&.active{
-		transform: rotate(180deg);
-	}
+.more-button {
+    font-size: $bfs * 1.5 !important;
+    display: inline-block;
+    margin-left: $bfs /2;
+    transition: all 0.5s;
+    &:hover {
+        cursor: pointer;
+    }
+    &.active {
+        transform: rotate(180deg);
+    }
 }
 
 @media (max-width: 999px) {
-	html, body{
-		/*font-size: 60%;
+    html,
+    body {
+        /*font-size: 60%;
 		line-height: 110%;*/
-
-		.content{
-			h1{ font-size: $bfs * 1.4; font-weight: 500;}
-			h2{ font-size: $bfs * 1.2; font-weight: 500;}
-			h3{ font-size: $bfs; font-weight: 700;}
-			h4{ font-size: $bfs; font-weight: 600;}
-			h5{ font-size: $bfs; font-weight: 600;}
-			h6{ font-size: $bfs; font-weight: 600; }
-		}
-	}
+        .content {
+            h1 {
+                font-size: $bfs * 1.4;
+                font-weight: 500;
+            }
+            h2 {
+                font-size: $bfs * 1.2;
+                font-weight: 500;
+            }
+            h3 {
+                font-size: $bfs;
+                font-weight: 700;
+            }
+            h4 {
+                font-size: $bfs;
+                font-weight: 600;
+            }
+            h5 {
+                font-size: $bfs;
+                font-weight: 600;
+            }
+            h6 {
+                font-size: $bfs;
+                font-weight: 600;
+            }
+        }
+    }
 }
 
 @media print {
-   section.hero, .is-non-print{
-	   display: none;
-   }
+    section.hero,
+    .is-non-print {
+        display: none;
+    }
 }
 
 @media screen {
-   .is-print{
-	   display: none;
-   }
+    .is-print {
+        display: none;
+    }
 }
-
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 //@import "highlights";
 @import "svg-icons";
-
 .highlight {
     background-color: $mi-pink;
     color: #fff;
@@ -572,34 +554,42 @@ $tt-grid-height: 60px;
     padding: 7px 7px 7px 10px;
 }
 
-pre code{
-	background-color: transparent;
-	color: #fff;
+pre code {
+    background-color: transparent;
+    color: #fff;
 }
 
+
 /* Für die fianle Version werden ein paar Angaben nicht gezeigt */
-.bearbeiten, .doc-status{
-	display: none;
+
+.bearbeiten,
+.doc-status {
+    display: none;
 }
 
 .js-video {
-	height: 0;
-	padding-top: 25px;
-	padding-bottom: 67.5%;
-	margin-bottom: 10px;
-	position: relative;
-	overflow: hidden;
+    height: 0;
+    padding-top: 25px;
+    padding-bottom: 67.5%;
+    position: relative;
+    overflow: hidden;
 }
+
 .js-video.widescreen {
-	padding-bottom: 56.34%;
+    padding-bottom: 56.34%;
 }
+
 .js-video.vimeo {
-	padding-top: 0;
+    padding-top: 0;
 }
-.js-video embed, .js-video iframe, .js-video object, .js-video video {
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	position: absolute;
+
+.js-video embed,
+.js-video iframe,
+.js-video object,
+.js-video video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
