@@ -1,0 +1,33 @@
+/* Main Navigation
+-----------------------------------------------------------------------------*/
+
+.main-navigation {
+    padding: 0;
+    margin: 0;
+}
+
+.main-navigation__item {
+    transition: all 0.5s;
+    display: block;
+    border-top: solid 1px hsla(0, 0%, 0%, 0.2);
+    padding: 0.5rem 0;
+}
+
+.main-navigation__item>* {
+    transition: color 0.5s;
+    color: black;
+    text-decoration: none;
+}
+
+.main-navigation__item:hover {
+    background-color: hsla(0, 0%, 0%, 0.4);
+    padding-left: 0.5rem;
+}
+
+.main-navigation__item:hover>* {
+    color: white;
+}
+
+
+/* Main Navigation
+-----------------------------------------------------------------------------*/
