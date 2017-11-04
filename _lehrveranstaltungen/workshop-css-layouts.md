@@ -18,7 +18,7 @@ info: Normal Flow; Positioning Elements; Floating Elements; Approaches to CSS La
 Dieser Workshop richtet sich an Teilnehmer, die bereits sicher im Umgang mit ihren Web-tools sind, die in der Lage sind sauberes und semantisches Markup zu schreiben und mit CSS ihr HTML gestalten können.
 
 ### Worum geht es?
-Erzeugen von strukturiertem, skalierbarem CSS; Kennenlernen von CSS-Layout Konzepten; Überblick über Erweiterungen und weiterführende Themen im CSS Kontext gewinnen; eignes Layout aufbauen. 
+Erzeugen von strukturiertem, skalierbarem CSS; Kennenlernen von CSS-Layout Konzepten; Überblick über Erweiterungen und weiterführende Themen im CSS Kontext gewinnen; eigenes Layout aufbauen. 
 
 ### Was muss ich mitbringen?
 Eigenen Computer mit Web-Editor, FTP Client, Zugang zum eigenen ADV Account, gutes semantisches HTML Markup aus den HTML Workshops, grundlegendes CSS für ihr Markup.

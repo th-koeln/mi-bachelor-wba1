@@ -29,5 +29,60 @@
 }
 
 
-/* Main Navigation
+/* Multicolumn Image Grid
 -----------------------------------------------------------------------------*/
+
+.multicolumn-image-grid {
+    column-count: 3;
+    column-gap: 1px;
+    background-color: #000;
+}
+
+.image-grid__item {
+    background-color: #666;
+    position: relative;
+}
+
+.image-grid__item>figcaption {
+    color: #fff;
+    padding: 0.5rem;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    right: 0;
+    background-color: rgba(7, 7, 7, 0.349);
+}
+
+
+/* CSS Image Grid
+-----------------------------------------------------------------------------*/
+
+.css-image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+}
+
+.image-grid__item {
+    background-color: #666;
+    position: relative;
+    height: 160px;
+    overflow: hidden;
+}
+
+.image-grid__item>img {
+    display: block;
+    margin-top: -50%;
+    padding-top: 50%;
+}
+
+.image-grid__item>figcaption {
+    color: #fff;
+    padding: 0.5rem;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    right: 0;
+    background-color: rgba(7, 7, 7, 0.349);
+}
