@@ -30,7 +30,6 @@ An alle, die sich und ihr Team auf die finale Challenge vorbereiten möchten. Bi
 - es gibt keine Abgabe
 - es gibt kein richtig oder falsch
  
-
 ## Unsere Empfehlung
 - nutzen Sie das Training, um mal eine freie Aufgabe im WBA Kontext zu bearbeiten
 - agieren Sie im Training schon als Team und lernen Sie die Stärken und Schwächen des Teams kennen
@@ -38,3 +37,4 @@ An alle, die sich und ihr Team auf die finale Challenge vorbereiten möchten. Bi
 
 ## Material
 - [What are the pre requisites to participating in a Hackathon?](https://www.quora.com/What-are-the-pre-requisites-to-participating-in-a-Hackathon?share=1)
+- [Vorlage für eine sinnvolles Projektverzeichnis](../../download/project-template.zip)
