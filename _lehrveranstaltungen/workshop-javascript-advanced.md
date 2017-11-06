@@ -10,7 +10,7 @@ published: true
 dauer: 240
 raum: 3.102
 
-info: Promises, Functions; Callbacks; AJAX; JSON; APIs
+info: Promises; Functions; Callbacks; AJAX; JSON; APIs
 --- 
 
 ## Über den Workshop
@@ -21,8 +21,6 @@ Der Workshop richtig sich an Teilnehmer die sicher im Umgang mit ihren Web Devel
 
 * Variablen
 * Arrays
-
-
 * Bedingungen
 * Schleifen
 * Funktionen
@@ -35,7 +33,7 @@ Kennenlernen von Events und Event-Handling, Aufbau und Verarbeitung von JSON-Obj
 ### Was muss ich mitbringen?
 
 * Eigener Rechner mit Browser (inkl. Web Development Tools, z.B. Chrome, Safari), Code Editor, Internetzugang z.B. via VPN oder Eduroam.
-* Sauberes semantisches HTML Markup aus den HTML Workshops,
+* Sauberes semantisches HTML Markup aus den HTML Workshops
 
 ### Material
 - [JavaScript Language Fundamentals - Folien](../../download/Chapter08-JavaScript1LanguageFundamentals.pdf)
