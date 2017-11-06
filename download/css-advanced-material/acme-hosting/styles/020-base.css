@@ -1,0 +1,9 @@
+/* Basic Styles 
+-----------------------------------------------------------------------------*/
+
+html,
+body {
+    font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: light;
+}
