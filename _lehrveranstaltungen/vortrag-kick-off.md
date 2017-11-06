@@ -12,7 +12,6 @@ raum: 3.102
 info: Worum geht es in dem Modul und wie funktioniert es?
 ---
 
-## Über den Vortrag
 
 ### An wen richtet sich der Vortrag?
 

@@ -8,8 +8,9 @@
     <meta name="description" content="HTML Blank">
     <meta name="author" content="Christian Noss">
 
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="lib/styles/normalize.css">
+    <link rel="stylesheet" href="lib/styles/main.css">
+    <link rel="stylesheet" href="styles/resets.css">
     <link rel="stylesheet" href="styles/base.css?v=1.0">
     <link rel="stylesheet" href="styles/layout.css?v=1.0">
     <link rel="stylesheet" href="styles/components.css?v=1.0">
@@ -106,30 +107,72 @@
         </section>
 
         <section>
-            <h2>Bilder</h2>
 
-            <p><a href="/add-image.htm">Eigene Fotos hinzufügen</a></p>
+            <header>
+                <h2>Bilder</h2>
+                <p><a href="/add-image.htm">Eigene Fotos hinzufügen</a></p>
+            </header>
 
-            <figure>
-                <img src="images/DSC_0004.JPG" alt="Klettertürme mit Brücke">
-                <figcaption>Klettertürme mit Brücke</figcaption>
-            </figure>
+            <div class="css-image-grid">
+                <figure class="image-grid__item">
+                    <img src="images/DSC_0004.jpg" alt="Hängebrücke">
+                    <figcaption>Hängebrücke</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/DSC_0015.JPG" alt="Kletterseile">
-                <figcaption>Kletterseile</figcaption>
-            </figure>
+                <figure class="image-grid__item">
+                    <img src="images/DSC_0015.jpg" alt="Kletterseile">
+                    <figcaption>Kletterseile</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/DSC_0024.JPG" alt="Übersicht über deb Spielplatz">
-                <figcaption>Übersicht über deb Spielplatz</figcaption>
-            </figure>
+                <figure class="image-grid__item">
+                    <img src="images/DSC_0024.jpg" alt="Übersicht über deb Spielplatz">
+                    <figcaption>Übersicht über deb Spielplatz</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/DSC_9996.JPG" alt="Park">
-                <figcaption>Der Rheinpark</figcaption>
-            </figure>
+                <figure class="image-grid__item">
+                    <img src="images/DSC_9996.jpg" alt="Park">
+                    <figcaption>Der Rheinpark</figcaption>
+                </figure>
 
+                <figure class="image-grid__item">
+                    <img src="images/DSC_0001.jpg" alt="Kletterseile">
+                    <figcaption>Kletterseile</figcaption>
+                </figure>
+
+                <figure class="image-grid__item">
+                    <img src="images/DSC_0002.jpg" alt="Kletterseile">
+                    <figcaption>Kletterseile</figcaption>
+                </figure>
+
+                <figure class="image-grid__item">
+                    <img src="images/DSC_0003.jpg" alt="Übersicht über deb Spielplatz">
+                    <figcaption>Übersicht über deb Spielplatz</figcaption>
+                </figure>
+
+                <figure class="image-grid__item">
+                    <img src="images/DSC_0012.jpg" alt="Lange Rutsche">
+                    <figcaption>Lange Rutsche</figcaption>
+                </figure>
+                <figure class="image-grid__item">
+                    <img src="images/DSC_0013.jpg" alt="Klettertürme mit Brücke">
+                    <figcaption>Klettertürme mit Brücke</figcaption>
+                </figure>
+
+                <figure class="image-grid__item">
+                    <img src="images/DSC_0014.jpg" alt="Kletterseile">
+                    <figcaption>Kletterseile</figcaption>
+                </figure>
+
+                <figure class="image-grid__item">
+                    <img src="images/DSC_0020.jpg" alt="Übersicht über deb Spielplatz">
+                    <figcaption>Übersicht über deb Spielplatz</figcaption>
+                </figure>
+
+                <figure class="image-grid__item">
+                    <img src="images/DSC_0023.jpg" alt="Park">
+                    <figcaption>Der Rheinpark</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
 
