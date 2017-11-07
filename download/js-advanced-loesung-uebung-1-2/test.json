@@ -1,0 +1,86 @@
+{
+	"us": [{
+			"left": 47,
+			"top": 55
+		}, {
+			"left": 7,
+			"top": 36
+			}
+		  ],
+	"eur": [{
+			"left": 47,
+			"top": 55
+		}, {
+			"left": 7,
+			"top": 36
+			}
+		  ]
+	
+	
+	
+}
+	
+	"hotspots": {
+			"hotspot1": {
+				"left": 47,
+				"top": 55
+			},
+			"hotspot6": {
+				"left": 7,
+				"top": 36
+			},
+			"hotspot5": {
+				"left": 49,
+				"top": 14
+			},
+			"hotspot3": {
+				"left": 38,
+				"top": 70
+			},
+			"hotspot2": {
+				"left": 54,
+				"top": 32
+			},
+			"hotspot4": {
+				"left": 28,
+				"top": 52
+			}
+		},
+		"FKM_PKM_PDB": "14525",
+		"S_de_Objekt": "Quintessence square",
+		"TU": "2",
+		"PKM_Objekt": "5493"
+	},
+	"eur": {
+		"hotspots": {
+			"hotspot1": {
+				"left": 47,
+				"top": 60
+			},
+			"hotspot6": {
+				"left": 6,
+				"top": 42
+			},
+			"hotspot5": {
+				"left": 49,
+				"top": 17
+			},
+			"hotspot3": {
+				"left": 33,
+				"top": 76
+			},
+			"hotspot2": {
+				"left": 53,
+				"top": 36
+			},
+			"hotspot4": {
+				"left": 27,
+				"top": 44
+			}
+		},
+		"FKM_PKM_PDB": "14525",
+		"S_de_Objekt": "Quintessence square",
+		"TU": "1",
+		"PKM_Objekt": "5493"
+	}
+}
