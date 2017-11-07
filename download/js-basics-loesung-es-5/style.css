@@ -1,0 +1,49 @@
+html, body{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+	padding: 40px;
+}
+
+h1, h2, h3 {
+	font-weight: lighter;
+}
+
+h2, h3 {
+	color: #474747;
+}
+
+label {
+	display: inline-block;
+	width: 180px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 70%;
+}
+
+thead th {
+	font-weight: bold;
+}
+
+td, th {
+	padding: 8px;
+	text-align: left;
+}
+
+input {
+	width: 16em;
+}
+
+input, select, label {
+	margin: 8px;
+}
+
+h1, section, #playground-form {
+	border-bottom: 0.5px solid lightblue;
+	margin-bottom: 1rem;
+	padding-bottom: 1rem;
+	
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>   
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Javascript Übung 1 & 2</title>
+</head>
+<body>
+<script>
+
+var aktuelleStadt = "Hamburg";
+var prefix = "Stadt";
+
+
+var staedte = [
+	"Aalen", "Bremen", "Berlin", "Gummersbach", "Hamburg", "Hoffenheim", 
+];
+
+/* Übung 1
+ ******************************/
+console.log(prefix + ' ' + aktuelleStadt);
+
+//Für die Iteration gibt es mehere Möglichkeiten
+for (var i in staedte) {
+	console.log(staedte[i]);
+}
+
+for (var i = 0; i < staedte.length; i++) {
+	console.log(staedte[i]);
+}
+
+staedte.forEach(function(element) {
+	console.log(element);
+})
+
+
+
+var spielplaetze = {
+	
+	hexenbusch: {
+		name: "Spielplatz am Hexenbusch",
+		stadt: "Gummersbach",
+		bewertung: 5,
+		spielgeraete: [
+			"Nestschaukel", 
+			"Rutsche", 
+			"Seilbahn", 
+			"Federwippgerät", 
+			"Tischtennisplatte"
+		]
+	},
+	
+	thalerSiedlung: {
+		name: "Thaler Siedlung Spielplatz",
+		stadt: "Gummersbach",
+		bewertung: 4,
+		spielgeraete: [
+			"Reckstange", 
+			"Rutsche", 
+			"Fußball-Tore", 
+			"Hangelgerät", 
+			"Karussell"
+		]
+	},
+	
+	lippmannstraße: {
+		name: "Spielplatz Lippmannstraße",
+		stadt: "Hamburg",
+		bewertung: 2,
+		spielgeraete: [
+			"Kleinkindschaukel", 
+			"Rutsche", 
+			"Spielhaus", 
+			"Wasserspiele / Matschanlage", 
+			"Sandfläche", 
+			"Schaukel"
+		]
+	},
+	
+	spio: {
+		name: "Abenteuer- und Bauspielplatz SPIO e.V.",
+		stadt: "Hamburg",
+		bewertung: 3,
+		spielgeraete: [
+			"Basketballkorb", 
+			"Matschanlage", 
+			"Tischtennisplatte", 
+			"Fußball-Tore", 
+			"Wackelbrücke"
+		]
+	}
+};
+
+/* Übung 2
+ ******************************/
+function spielplaetzeInStadtAusgeben(spielplaetze, aktuellerSpielatz) {
+	for (var spielplatz in spielplaetze) {
+		if (spielplaetze[spielplatz].stadt === aktuellerSpielatz) {
+			console.log(spielplaetze[spielplatz]);
+		}
+	}
+}
+
+spielplaetzeInStadtAusgeben(spielplaetze, aktuelleStadt)
+
+/*var spielplaetzeArray = [
+	
+	{
+		name: "Spielplatz am Hexenbusch",
+		stadt: "Gummersbach",
+		bewertung: 5,
+		spielgeraete: [
+			"Nestschaukel", 
+			"Rutsche", 
+			"Seilbahn", 
+			"Federwippgerät", 
+			"Tischtennisplatte"
+		]
+	},
+	
+	{
+		name: "Thaler Siedlung Spielplatz",
+		stadt: "Gummersbach",
+		bewertung: 4,
+		spielgeraete: [
+			"Reckstange", 
+			"Rutsche", 
+			"Fußball-Tore", 
+			"Hangelgerät", 
+			"Karussell"
+		]
+	},
+	
+	{
+		name: "Spielplatz Lippmannstraße",
+		stadt: "Hamburg",
+		bewertung: 2,
+		spielgeraete: [
+			"Kleinkindschaukel", 
+			"Rutsche", 
+			"Spielhaus", 
+			"Wasserspiele / Matschanlage", 
+			"Sandfläche", 
+			"Schaukel"
+		]
+	},
+	
+	{
+		name: "Abenteuer- und Bauspielplatz SPIO e.V.",
+		stadt: "Hamburg",
+		bewertung: 3,
+		spielgeraete: [
+			"Basketballkorb", 
+			"Matschanlage", 
+			"Tischtennisplatte", 
+			"Fußball-Tore", 
+			"Wackelbrücke"
+		]
+	}
+];*/
+
+
+</script>
+
+</body>
+</html>
