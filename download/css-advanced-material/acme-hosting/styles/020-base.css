@@ -1,0 +1,17 @@
+/*-----------------------------------------------------------------------------
+base.css                                                                  
+Enthält alle CSS Variabeln und grundlegende Regeln sowie zentrale helper. 
+
+Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
+----------------------------------------------------------------------------*/
+
+
+/* Basic Styles 
+-----------------------------------------------------------------------------*/
+
+html,
+body {
+    font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: light;
+}
