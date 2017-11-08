@@ -33,7 +33,7 @@ Eigenen Computer mit Web-Editor, FTP Client, Zugang zum eigenen ADV Account, gut
 - [Using CSS custom properties (variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables)
 
 ## Übung 1
-Laden Sie das Mockup für die [Dive.is About Seite](../../download/css-advanced-material/dive-blank/mockups/dive-is-about-us.png) herunter und versuchen Sie zusammen mit Ihrem Nachbarn sinnvolle Komponenten zu identifizieren. Vergeben Sie im nächsten Schritt passende, semantische Klassennamen für die Komponenten und deren Bausteine. Notieren Sie die Namen der Komponenten als Kommentare direkt in den [HTMl Code des Dokuments](../../download/css-advanced-material/dive-blank/index.html) einsehen. 
+Laden Sie das Mockup für die [Dive.is About Seite](../../download/css-advanced-material/dive-blank/mockups/dive-is-about-us.png) herunter und versuchen Sie, zusammen mit Ihrem Nachbarn, sinnvolle Komponenten zu identifizieren. Vergeben Sie im nächsten Schritt passende, semantische Klassennamen für die Komponenten und deren Bausteine. Notieren Sie die Namen der Komponenten als Kommentare direkt in den [HTML Code des Dokuments](../../download/css-advanced-material/dive-blank/index.html). 
 
 Für diese Übungen haben Sie **15 Minuten Zeit**.
 
