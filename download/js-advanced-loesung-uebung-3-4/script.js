@@ -26,7 +26,7 @@ function fillTable () {
 		 else {
 			 console.log(e);
 			// We reached our target server, but it returned an error
-			document.querySelector('[data-error]').innerHTML = 'Es ist ein Feheler aufgetreten';
+			document.querySelector('[data-error]').innerHTML = 'Es ist ein Fehler aufgetreten';
 
 		}
 	};
