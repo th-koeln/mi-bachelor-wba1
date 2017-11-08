@@ -85,7 +85,7 @@ sass:
 excerpt_separator: "<!--aufgabe-->"
 
 # Use the following plug-ins
-plugins:
+plugins_dir:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 

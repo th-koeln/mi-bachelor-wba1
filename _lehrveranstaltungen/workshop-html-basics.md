@@ -26,13 +26,13 @@ Eigenen Computer mit Web-Editor, FTP Client, Zugang zum eigenen ADV Account.
 
 ### Material
 - [Introduction to HTML - Folien](../../download/Chapter03-IntroductionToHTML.pdf)
+- [HTML-Grundlagen bei MDN](https://developer.mozilla.org/de/Learn/Getting_started_with_the_web/HTML_basics)
 - [HTML Tutorial bei w3schools.com](https://www.w3schools.com/html/default.asp)
 - [Learn HTML bei codecademy.com](https://www.codecademy.com/learn/learn-html)
 - [Codebeispiele in Codepen](http://codepen.io/collection/DJGrme/)
 - [HTML Elemente alphabetisch](http://www.w3schools.com/tags/default.asp)
 - [HTML Elemente nach Kategorie](http://www.w3schools.com/tags/ref_byfunc.asp)
 - [Liste der HTML Attribute](http://www.w3schools.com/tags/ref_standardattributes.asp)
-- [Mozilla Developer Network](https://developer.mozilla.org/de/)
 - [HTML Workshop W3Schools](https://www.w3schools.com/html/default.asp)
 - [Mozilla HTML Element Referenz](https://developer.mozilla.org/de/docs/Web/HTML/Element)
 - [W3C](http://www.w3.org)

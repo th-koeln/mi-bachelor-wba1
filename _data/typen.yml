@@ -1,5 +1,5 @@
 training:
-  name: Software Training
+  name: Training
   max-teilnehmer: 20
 
 workshop:
@@ -9,6 +9,7 @@ workshop:
 vortrag:
   name: Vortrag
   max-teilnehmer: beliebig viele
+
 support-all:
   name: Support 
   max-teilnehmer: beliebig viele
@@ -20,4 +21,5 @@ feedback:
 pruefung:
   name: Prüfung 
   max-teilnehmer: 120
+
   

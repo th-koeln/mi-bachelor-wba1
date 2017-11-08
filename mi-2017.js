@@ -184,3 +184,45 @@ if(!urlParams.has('media')){
 	tabs.func.init();
 	panelTabs.func.init();
 }
+
+/* Zwischenstand Video */
+var zwischenstand = document.getElementById("zwischenstand");
+
+function setVideoCookie(){
+	var now = new Date();
+	now.setTime(now.getTime() + 1 * 3600 * 1000 * 24 * 365);
+	document.cookie = "zwischenstand=watched; expires=" + now.toUTCString();
+}
+
+/* Close Video */
+if(zwischenstand){
+	zwischenstand.querySelector("[aria-label=close]").addEventListener("click", function(event) {
+		event.preventDefault();
+		zwischenstand.classList.toggle("is-active");
+		setVideoCookie();
+	}, false);
+}
+
+/* Trigger Video on start */
+var pairs = decodeURIComponent(document.cookie).split(";");
+var cookies = {};
+pairs.forEach(function(pair) {
+    pair = pair.split('=');
+    cookies[pair[0]] = decodeURIComponent(pair[1] || '');
+});
+
+var pageUrl = document.querySelector("[data-url]");
+if(pageUrl && zwischenstand && cookies.zwischenstand != "watched"){
+	if(pageUrl.dataset.url == "/"){
+		zwischenstand.classList.toggle("is-active");
+	}
+}
+
+/* Trigger Video via Button */
+var videoTrigger = document.querySelector("#zeige-zwischenstand");
+if(videoTrigger && zwischenstand){
+	videoTrigger.addEventListener("click", function(event) {
+		event.preventDefault();
+		zwischenstand.classList.toggle("is-active");
+	}, false);
+}

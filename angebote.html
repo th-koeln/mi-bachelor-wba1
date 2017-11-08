@@ -17,18 +17,18 @@ layout: default
 {% assign introtext = (site.snippets | where:"kennung","angebote") %}
 
 
-<section class="section">
+<section class="section" >
 	<div class="container">
-		
+
 		<h1 class="title is-1">Veranstaltungen</h1>
 		<h2 class="subtitle">Vorträge, Workshops, Trainings und Support</h2>
-		
+
 		<hr>
-		
+
 		<div class="content">
 		{{introtext[0].content}}
 		</div>
-		
+
 		<div class="tabs is-tab-navigation is-non-print">
 			<ul>
 				<li class="tab-item" data-tab="overview-item"><a >Alle</a></li>
@@ -40,7 +40,7 @@ layout: default
 				<li class="tab-item" data-tab="pflicht"><a >Pflichttermine</a></li>
 			</ul>
 		</div>
-		
+
 		<div class="is-tab-wrap">
 			{% for card in cards %}
 			{{card}}

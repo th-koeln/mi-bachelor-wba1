@@ -1,0 +1,30 @@
+/* Basis Raster
+-----------------------------------------------------------------------------*/
+
+.grid-wrap {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-rows: 200px 1fr 100px;
+    grid-template-columns: 25% 1fr 25%;
+    grid-column-gap: 20px;
+}
+
+.nav-column {
+    background-color: rgba(241, 220, 188, 0.616);
+    padding: 1rem;
+    grid-row: 1 / span 3;
+}
+
+.nav-column__content {}
+
+.main-column {
+    grid-column-start: 2;
+    background-color: #ccc;
+    padding: 1rem;
+}
+
+.additional-column {
+    background-color: #ccc;
+    padding: 1rem;
+}

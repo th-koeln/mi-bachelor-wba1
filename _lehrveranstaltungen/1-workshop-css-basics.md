@@ -27,6 +27,7 @@ Eigenen Computer mit Web-Editor, FTP Client, Zugang zum eigenen ADV Account, gut
 
 ### Material
 - [Introduction to CSS - Folien](../../download/Chapter04-IntroductionToCSS.pdf)
+- **[Dozentenempfehlung: CSS-Grundlagen bei MDN](https://developer.mozilla.org/de/Learn/Getting_started_with_the_web/CSS_basics)**
 - [CSS Tutorial bei w3schools.com](https://www.w3schools.com/css/default.asp)
 - [Learn HTML bei codecademy.com](https://www.codecademy.com/learn/learn-css)
 - [CSS Lernbereich bei Mozilla](https://developer.mozilla.org/de/Learn/CSS)
