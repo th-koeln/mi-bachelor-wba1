@@ -226,6 +226,10 @@ Die das Training und die finale Challenge soll auch Spaß machen - schauen Sie s
 <iframe width="560" height="315" src="https://www.youtube.com/embed/k6eZhdoRdZM" frameborder="0" allowfullscreen></iframe>
 </div>
 
+## Review der Ergebinsse
+
+Wir werden am Trainingstag nicht alle Ergebnisse reviewen können und auch nicht alle Fragen beantworten können. Daher bieten wir an, remote via Skype oder Google Hangout Review-Sessions zu machen. Termine dazu werden noch bekannt gegeben.
+
 ## Material
 - [What are the pre requisites to participating in a Hackathon?](https://www.quora.com/What-are-the-pre-requisites-to-participating-in-a-Hackathon?share=1)
 - [Vorlage für eine sinnvolles Projektverzeichnis](../../download/project-template.zip)
