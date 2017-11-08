@@ -1,0 +1,41 @@
+/*----------------------------------------------------------------------------
+typography.css                                                                  
+Enthält alle übergreifenden typographischen Regeln.  
+
+Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
+----------------------------------------------------------------------------*/
+
+
+/* Titles 
+-----------------------------------------------------------------------------*/
+
+.title,
+.subtitle {
+    font-size: var(--fs-xl);
+    font-family: var(--brand-font);
+    margin: 0;
+    line-height: 100%;
+    margin-bottom: var(--space-stack-xl);
+}
+
+.title {
+    color: var(--color-brand);
+}
+
+.subtitle {
+    font-size: var(--fs-l);
+}
+
+.title+.subtitle {
+    margin-top: calc(var(--space-stack-xs) - var(--space-stack-xl));
+}
+
+
+/* Text Class 
+-----------------------------------------------------------------------------*/
+
+.text p,
+.text cite {
+    margin-bottom: var(--space-stack-s);
+    display: block;
+}
