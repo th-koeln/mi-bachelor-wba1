@@ -67,7 +67,7 @@ Wir werden zunächst die Übungen 3 bis 6 aus dem Javascript Basics Workshop auf
 
 * Erzeugen Sie in der JavaScript-Datei eine Funktion mit der Bezeichnung `fillTable`. 
 * In dieser Funktion soll nun über einen AJAX-Request folgende Ressource abgerufen werden:
-https://rawgit.com/th-koeln/mi-bachelor-wba1/master/download/spielplatz-data.json
+  [https://rawgit.com/th-koeln/mi-bachelor-wba1/master/download/spielplatz-data.json](https://rawgit.com/th-koeln/mi-bachelor-wba1/master/download/spielplatz-data.json)
 * Beim erfolgreichen Absetzen des Request soll über einen Callback die Tabelle „Spielplätze in der Nähe”, auf Basis der Response aus dem AJAX-Request, befüllt werden.
 * Falls der AJAX-Request fehlschlägt, soll eine Fehlermeldung über der Tabelle ausgegeben werden.
 * Die Funktion soll nun aufgerufen werden, wenn das DOM in der HTML-Datei fertig initialisert ist.
