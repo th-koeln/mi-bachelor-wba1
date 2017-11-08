@@ -1,15 +1,10 @@
+/*----------------------------------------------------------------------------
+typography.css                                                                  
+Enthält alle übergreifenden typographischen Regeln.  
+
+Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
+----------------------------------------------------------------------------*/
+
+
 /* Titles 
 -----------------------------------------------------------------------------*/
-
-.title,
-.subtitle {
-    line-height: 100%;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 1rem;
-    color: #9313ce;
-}
-
-.title+.subtitle {
-    margin-top: -0.5rem;
-}
