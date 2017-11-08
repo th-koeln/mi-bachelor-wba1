@@ -35,6 +35,58 @@ An alle, die sich und ihr Team auf die finale Challenge vorbereiten möchten. Bi
 - agieren Sie im Training schon als Team und lernen Sie die Stärken und Schwächen des Teams kennen
 - nutzen Sie unbedingt GIT und GitHub, damit Sie hier Ihre Skills vertiefen können. In der finalen Challenge ist der Einsatz von GitHub erforderlich
 
+## Die Aufgabe
+
+Die Trainingsaufgabe besteht darin eine Team bzw. [Employer Branding Seite](https://de.wikipedia.org/wiki/Employer_Branding) für ein bestehendes oder fiktives Unternehmen zu erstellen. Die Seite kann sowohl statische als auch dynamische Inhalte beinhalten, wie z.B.:
+
+- interaktive Inhalte die über eine API via Javascript eingebunden werden (z.B. [Twitter](https://dev.twitter.com/web/javascript))
+- statische Inhalte in Form von Bildern und Texten
+- eine Kombination aus beidem
+
+Wie schon erwähnt, kann es eine fiktive Seite sein, oder sie benutzen eine bestehende Team-Page eines Unternehmens und programmieren diese nach erweitern diese sinnvoll. Der reverse-engenieering Ansatz ist ein Skillset, dass im späteren Berufsbild nicht unwichtig ist. Nutzen Sie z.B. Tools wie den Inspector im Browser.
+
+Anbei eine Auswahl von Seiten die sie z.B. verwenden können:
+
+- [https://karriere.pixum.com/mitarbeiter/](https://karriere.pixum.com/mitarbeiter/)
+- [https://www.railslove.com/team](https://www.railslove.com/team)
+- [http://www.klickmeister.de/klickmeister-website/about-us](http://www.klickmeister.de/klickmeister-website/about-us)
+- [https://www.solarisbank.de/en/careers/](https://www.solarisbank.de/en/careers/)
+- [https://giantswarm.io/company/](https://giantswarm.io/company/)
+- [https://about.travis-ci.com/](https://about.travis-ci.com/)
+
+**!!! Sehr sehr Wichtig: Wenn Sie eine bestehende Seite als Grundlage verwenden, ändern Sie bitte den Namen der Firma in einen fiktiven Namen (bitte überall im Quellcode ersetzen: Meta-Tags, Titel, usw.), bevor sie den ersten Commit machen, bzw. die Seite online stellen. Es kann im Nachhinein unangenehme SEO-Konsequenzen geben die wir vermeiden wollen !!!**
+
+### Weitere Hinweise:
+
+- Machen Sie sich bis kommende Woche Gedanken über die Seite, Umsetzung. Skribbeln Sie Ihre Ideen auf Papier, bringen Sie diese mit. 
+- Probieren Sie die Einbindung von APIs mal aus
+- Nutzen Sie [Google](http://google.com), [Stackoverflow](http://stackoverflow.com) wenn es Fragen gibt - das Netz ist eine sehr hilfreiche Ressource um viele Herausforderungen aus dem Weg zu räumen
+
+### Hinweise zum Einbinden von interaktiven Inhalten:
+
+Idealerweise nutzen Sie eine API (z.B.: Twitter) um z.B.: Tweets der Mitarbeiter auf der Seite zu integrieren. Eine andere Möglichkeit besteht darin, dass Sie sich 
+
+[folgende JSON-Datei](../../download/challenge-training/tweet.json)
+
+die einen Tweet darstellt, herunterladen und diese via Javascript Einbinden, falls die Nutzung von APIs Ihnen zu schwierig erscheint. Erweitern Sie diese JSON-Datei um weitere fiktive Tweets.
+
+### Weitere Hinweise
+
+- Schauen sie sich das [Jekyll-Tutorial](https://jekyllrb.com/docs/quickstart/) an: ein Bestandteil der finalen Challenge ist es eine Seite auf Github zu publizieren indem die Arbeit dokumentiert wird
+- Beschäftigen Sie sich mit [Reveal.js](http://lab.hakim.se/reveal-js/#/). Die Endpräsentation am Tag der Challenge sollte idealerweise damit erstellt werden.
+
+### Kreative Arbeit soll auch Spaß machen...
+
+Die das Training und die finale Challenge soll auch Spaß machen - schauen Sie sich Videos an wie ein typischer Hackathon/Challeng abläuft in dem man zusammen, in kurzer Zeit ein kreatives Ergebniss auf die Beine stellt. Ein paar Videos dazu finden Sie hier: [https://www.youtube.com/channel/UCW9cG_uqdaPPXRXGVaRqgyg/videos](https://www.youtube.com/channel/UCW9cG_uqdaPPXRXGVaRqgyg/videos)
+
+<div class="js-video [vimeo, widescreen]">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k6eZhdoRdZM" frameborder="0" allowfullscreen></iframe>
+</div>
+
+## Review der Ergebinsse
+
+Wir werden am Trainingstag nicht alle Ergebnisse reviewen können und auch nicht alle Fragen beantworten können. Daher bieten wir an, remote via Skype oder Google Hangout Review-Sessions zu machen. Termine dazu werden noch bekannt gegeben.
+
 ## Material
 - [What are the pre requisites to participating in a Hackathon?](https://www.quora.com/What-are-the-pre-requisites-to-participating-in-a-Hackathon?share=1)
 - [Vorlage für eine sinnvolles Projektverzeichnis](../../download/project-template.zip)
