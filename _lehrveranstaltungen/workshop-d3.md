@@ -4,11 +4,12 @@ kuerzel: w-d3
 verantwortlich: tm, jh
 typ: workshop
 pflicht: false
-termine: 2017-11-16 14:30|3.100||, 2017-11-23 11:00|3.100||
+termine: 2017-11-16 14:30|3.100|http://bit.ly/2zqFkIV|, 2017-11-23 11:00|3.100||
 empfohlene-voraussetzungen: t-tooling, w-htmlbasics, w-htmlbadvanced, w-jsbasics, w-jsadvanced
 published: true
 dauer: 240
 raum: 3.102
+
 info: 
 --- 
 
