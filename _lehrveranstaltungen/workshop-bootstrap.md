@@ -25,9 +25,8 @@ Anwendung vom Framework Bootstrap. Umgang mit einem Framework zur Erstellung ein
 Eigenen Computer mit Web-Editor und Browser zum HTML/CSS Debuggen. Links unter Material sollten vor dem Workshop angeschaut werden.
 
 ### Material
-[Bootstrap Seite](http://holdirbootstrap.de/)
-
-[Chome Developer Tools (Debugging)](https://www.youtube.com/watch?v=nV9PLPFTnkE)
+- [Bootstrap Seite](http://holdirbootstrap.de/)
+- [Chome Developer Tools (Debugging)](https://www.youtube.com/watch?v=nV9PLPFTnkE)
 
 
 
