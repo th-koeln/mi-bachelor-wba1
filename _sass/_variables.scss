@@ -1,8 +1,6 @@
-
 //
 // VARIABLES
 //
-
 // Colors
 $mi-blau: #4952e1;
 $mi-pink: #dd1166;
@@ -10,22 +8,18 @@ $mi-gruen: #00AD2F;
 $mi-lila: #9313ce;
 $mi-black: #231f20;
 $mi-grau: #aaaaaa;
-
 $family-primary: "PT Sans";
-$primary:  $mi-pink;
-$info:     $mi-lila;
-$success:  $mi-gruen;
-
+$primary: $mi-pink;
+$info: $mi-lila;
+$success: $mi-gruen;
 $bfs: 1rem;
 $size-normal: $bfs;
 $radius: 0;
-
 $size-1: $bfs *1.4;
 $size-2: $bfs *1.2;
 $size-3: $bfs;
 $size-4: $bfs;
-
-
 $dotted-line: dotted 1px #000;
 $modal-card-head-background-color: #000;
+$modal-card-body-background-color: #000;
 $modal-content-width: 80vw;
