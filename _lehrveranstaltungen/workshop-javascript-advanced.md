@@ -37,6 +37,7 @@ Kennenlernen von Events und Event-Handling, Aufbau und Verarbeitung von JSON-Obj
 
 ### Material
 - [JavaScript Language Fundamentals - Folien](../../download/Chapter08-JavaScript1LanguageFundamentals.pdf)
+- [Using Javascript - Folien](../../download/Chapter09-JavaScript2UsingJavaScript.pdf)
 - [plain JS - Vanilla JavaScript for building powerful web applications](https://plainjs.com)
 - [You might not need jQuery](http://youmightnotneedjquery.com)
 - [Airbnb JavaScript Style Guide](http://airbnb.io/javascript/)
