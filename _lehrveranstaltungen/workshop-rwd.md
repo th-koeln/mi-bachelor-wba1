@@ -1,7 +1,7 @@
 ---
 titel: Responsive Webdevelopment
 kuerzel: w-rwd
-verantwortlich: df
+verantwortlich: df, mk
 typ: workshop
 pflicht: false
 termine: 2017-11-16 14:30|3.217|http://bit.ly/2yfh3nM|, 2017-11-23 11:00|3.217||
