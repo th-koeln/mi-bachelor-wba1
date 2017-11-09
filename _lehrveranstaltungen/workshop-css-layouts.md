@@ -29,6 +29,7 @@ Eigenen Computer mit Web-Editor, FTP Client, Zugang zum eigenen ADV Account, gut
 - [CSS Grids – Einführung in Gestaltungsraster mit dem Grid Layout Module](https://blog.kulturbanause.de/2013/12/css-grid-layout-module/)
 - [CSS Grid Layout bei MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
 - [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [High-level advice and guidelines for writing sane, manageable, scalable CSS](https://cssguidelin.es/)
 - [Using CSS custom properties (variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables)
 - [Live View](http://christiannoss.de/playground/wba2017/dive-blank-live/)
