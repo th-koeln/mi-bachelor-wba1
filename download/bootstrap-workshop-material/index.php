@@ -158,8 +158,8 @@
 
 
       <footer class="footy">
-          <div class="container foot">
-              <ul>
+          <div class="container">
+              <ul class="nav nav-pills">
                   <li><a href="#"> Über uns </a></li>
                   <li><a href="#"> Blog </a></li>
                   <li><a href="#"> Über uns </a></li>
