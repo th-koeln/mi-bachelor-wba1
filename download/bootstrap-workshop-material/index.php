@@ -20,8 +20,8 @@
   <body>
 
 
-    <nav class="navbar navbar-default">
-    <div class="container-fluid">
+    <nav class="navbar navbar-static-top navbar-default">
+    <div class="container">
       <!-- Titel und Schalter werden für eine bessere mobile Ansicht zusammengefasst -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -57,32 +57,21 @@
         <div class="jumbotron eigenschaften">
             <h2> Willkommmen an der TH KÖLN </h2>
             <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                Hier befindet sich eine Subline, die die Headline erweitert und zum Weiterlesen animieren soll.
             </p>
             <p>
-                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
-                vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
-                qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem
-                ipsum dolor sit amet, consectetuer adipiscing elit,
-                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                Zusätzlich könnte ein kleiner Einleitungstext angezeigt werden, der eine Vorschau des kompletten Artikels zeigt.
             </p>
-
-
-
-            <span class="glyphicon glyphicon-user" aria-hidden="true"> Ilyas Ay </span><br>
-            <span class="glyphicon glyphicon-envelope" aria-hidden="true"> idevp.web@gmail.com </span>
+            <p><a class="btn btn-success" href="#" role="button">Mehr erfahren</a></p>
+            <strong>Weiter Informationen auch per Mail</strong><br>
+            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="#" >kontakt@th-koeln.de</a>
         </div>
     </div>
 
     <div class="container register">
       <div class="row">
           <h3> Registration </h3>
-            <div class="col-sm-4 col-md-4">
+            <div class="col-sm-5 col-md-5">
 
                 <form>
                     <div class="form-group">
@@ -106,7 +95,7 @@
                         <button type="submit" class="btn btn-default"> Konto erstellen </button>
                 </form>
             </div>
-            <div class="col-sm-8 col-md-8">
+            <div class="col-sm-6 col-md-6 col-md-offset-1">
                 <img src="images/campus_gm.jpg" class="img-responsive" alt="Responsives Bild">
             </div>
         </div>
