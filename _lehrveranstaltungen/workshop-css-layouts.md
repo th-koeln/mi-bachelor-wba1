@@ -4,7 +4,7 @@ kuerzel: w-cssadvanced
 verantwortlich: cn,jk,fj,vs
 typ: workshop
 pflicht: false
-termine: 2017-11-09 09:00|0.501|http://bit.ly/2z6uXMH|vs,2017-11-09 09:00|0.502|http://bit.ly/2h4WZkP|cn,2017-11-09 14:00|3.100|http://bit.ly/2inVVVH|cn
+termine: 2017-11-09 09:00|0.501|http://bit.ly/2z6uXMH|vs,2017-11-09 09:00|0.502|http://bit.ly/2h4WZkP|cn,2017-11-09 14:00|3.217|http://bit.ly/2inVVVH|cn
 empfohlene-voraussetzungen: t-tooling, w-htmlbasics, w-htmlbadvanced, w-cssbasics
 published: true
 dauer: 240
@@ -31,7 +31,23 @@ Eigenen Computer mit Web-Editor, FTP Client, Zugang zum eigenen ADV Account, gut
 - [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [High-level advice and guidelines for writing sane, manageable, scalable CSS](https://cssguidelin.es/)
 - [Using CSS custom properties (variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables)
+- [Live View](http://christiannoss.de/playground/wba2017/dive-blank-live/)
+- [CSS Layout Paket](../../download/css-advanced-material-pack.zip)
 
-### Code
-- [Project Template](../../download/project-template.zip)
-- [CSS Advanced Starterpack](../../download/project-template.zip)
+## Übung 1
+Laden Sie das Mockup für die [Dive.is About Seite](../../download/css-advanced-material/dive-blank/mockups/dive-is-about-us.png) herunter und versuchen Sie, zusammen mit Ihrem Nachbarn, sinnvolle Komponenten zu identifizieren. Vergeben Sie im nächsten Schritt passende, semantische Klassennamen für die Komponenten und deren Bausteine. Notieren Sie die Namen der Komponenten als Kommentare direkt in den [HTML Code des Dokuments](../../download/css-advanced-material/dive-blank/index.html). 
+
+Für diese Übungen haben Sie **15 Minuten Zeit**.
+
+## Übung 2
+Laden Sie das [Dive.is Paket](../../download/css-advanced-material/dive-blank.zip) herunter und versuchen Sie die gegebenen Klassen in den Stylesheets dem HTML zuzuordnen, so dass im Ergebnis die Seite im gewünschten Design dargestellt wird.
+
+Für diese Übungen haben Sie **30 Minuten Zeit**.
+
+## Übung 3
+Laden Sie das [Acme Hosting Paket](../../download/css-advanced-material/acme-hosting.zip). Im Verzeichnis "Mockup" finden Sie Design Mockups für die verschiedenen Seiten. Wählen Sie eines aus und gehen Sie die folgenden Schritte durch:
+
+- Step 1: Componenten identifizieren 
+- Step 2: sinnvolle semantische Klassennamen vergeben (ggf. BEM-style)
+- Step 3: versuchen das Design aus dem Mockup zu realisieren
+- Step 4: freuen :)
