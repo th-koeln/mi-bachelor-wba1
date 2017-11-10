@@ -1,0 +1,23 @@
+/*----------------------------------------------------------------------------
+layout.css                                                                  
+Enthält alle übergreifenden typographischen Regeln.  
+
+Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
+----------------------------------------------------------------------------*/
+
+
+/* Content
+-----------------------------------------------------------------------------*/
+
+.content {
+    max-width: var(--content-width);
+    margin: 0 auto;
+}
+
+
+/* Section
+-----------------------------------------------------------------------------*/
+
+.section {
+    padding-bottom: var(--space-stack-xl);
+}

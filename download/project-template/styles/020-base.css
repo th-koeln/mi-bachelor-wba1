@@ -1,0 +1,87 @@
+/*-----------------------------------------------------------------------------
+base.css                                                                  
+Enthält alle CSS Variabeln und grundlegende Regeln sowie zentrale helper. 
+
+Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
+----------------------------------------------------------------------------*/
+
+
+/* Variables
+-----------------------------------------------------------------------------*/
+
+:root {
+    /* 
+    Farben
+    ----------------------------------------*/
+    --color-brand: rgb(183, 68, 44);
+    --color-text: #000;
+    --color-headlines: #666;
+    --color-borders: rgba(0, 0, 0, 0.3);
+    /* 
+    Abstände. Hierzu gibt es auch ein schönes Konzept
+    https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62 */
+    --content-width: 960px;
+    /*
+    Innenabstände umlaufend, z.B. für Buttons.
+    ----------------------------------------*/
+    --space-inset: 1rem;
+    --space-inset-s: 0.5rem;
+    --space-inset-l: 1.5rem;
+    /* 
+    Vertikale Abstände von Stapeln, also
+    Elementen, die untereinander angeordnet 
+    werden.
+    ----------------------------------------*/
+    --space-stack: 1rem;
+    --space-stack-xs: 0.25rem;
+    --space-stack-s: 0.5rem;
+    --space-stack-l: 1.5rem;
+    --space-stack-xl: 2rem;
+    --space-stack-xxl: 4rem;
+    /* 
+    Horizontale Abstände von Reihen, also
+    Elementen, die nebeneinander angeordnet 
+    werden.
+    ----------------------------------------*/
+    --space-inline: 1rem;
+    --space-inline-xs: 0.25rem;
+    --space-inline-s: 0.5rem;
+    --space-inline-l: 1.5rem;
+    --space-inline-xl: 2rem;
+    /* 
+    Schrift
+    ----------------------------------------*/
+    --fontfamily: "Helvetica Neue", Helvetica, sans-serif;
+    --fontsize: 1rem;
+    --fontsize-s: 0.75rem;
+    --fontsize-l: 1.5rem;
+    --fontsize-xl: 2rem;
+    --fontsize-xxl: 3rem;
+}
+
+
+/* Basic Styles 
+-----------------------------------------------------------------------------*/
+
+html,
+body {
+    font-family: var(--fontfamily);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--color-headlines);
+}
+
+
+/* helper 
+-----------------------------------------------------------------------------*/
+
+.hidden {
+    display: none !important;
+}
