@@ -25,7 +25,7 @@ Eigener Rechner mit Browser (inkl. Web Development Tools, z.B. Chrome, Safari), 
 Sauberes semantisches HTML Markup aus den HTML Workshops.
 
 ### Material
-https://bradfrost.github.io/this-is-responsive/patterns.html
-https://wiki.selfhtml.org/wiki/HTML/Tutorials/responsive_Webdesign#Mobile_first.21
+[Verschiedene Responsive Designs auf einer Seite ](https://bradfrost.github.io/this-is-responsive/patterns.html)
 
+[Reponsive Design in einem Blick](https://www.responsive-webdesign.mobi/was-ist-responsive-webdesign/)
 
