@@ -22,7 +22,7 @@ Testen ob eine Webseite "Responsive" ist. Die Vor und Nachteile von Responsive D
 
 ### Was muss ich mitbringen?
 Eigener Rechner mit Browser (inkl. Web Development Tools, z.B. Chrome, Safari), Code Editor, Internetzugang z.B. via VPN oder Eduroam.
-Sauberes semantisches HTML Markup aus den HTML Workshops
+Sauberes semantisches HTML Markup aus den HTML Workshops.
 
 ### Material
 https://bradfrost.github.io/this-is-responsive/patterns.html
