@@ -27,7 +27,7 @@ Eigenen Computer mit Web-Editor und Browser zum HTML/CSS Debuggen. Links unter M
 ### Material
 - [Bootstrap Seite](http://holdirbootstrap.de/)
 - [Chome Developer Tools (Debugging)](https://www.youtube.com/watch?v=nV9PLPFTnkE)
-
+- [Aufgaben-Paket Bootstrap Workshop](https://th-koeln.github.io/mi-bachelor-wba1/download/bootstrap-workshop-material/arbeitspaket-bootstrap-workshop.zip)
 
 ### Aufgaben
 
