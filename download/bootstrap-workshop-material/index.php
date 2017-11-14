@@ -9,7 +9,6 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
     <!-- Unterstützung für Media Queries und HTML5-Elemente in IE8 über HTML5 shim und Respond.js -->
     <!-- ACHTUNG: Respond.js funktioniert nicht, wenn du die Seite über file:// aufrufst -->
     <!--[if lt IE 9]>
@@ -20,8 +19,8 @@
   <body>
 
 
-    <nav class="navbar navbar-default">
-    <div class="container-fluid">
+    <nav class="navbar navbar-static-top navbar-default">
+    <div class="container">
       <!-- Titel und Schalter werden für eine bessere mobile Ansicht zusammengefasst -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -56,33 +55,20 @@
     <div class="container">
         <div class="jumbotron eigenschaften">
             <h2> Willkommmen an der TH KÖLN </h2>
+            <br><br>
             <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-            </p>
-            <p>
-                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
-                vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
-                qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem
-                ipsum dolor sit amet, consectetuer adipiscing elit,
-                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                Dieser Workshop richtet sich an Teilnehmer, die bereits sicher im Umgang mit ihren Web-tools sind, die in der Lage sind sauberes und semantisches Markup zu schreiben und sicher in Arbeit mit IDs und Klassen sind.
             </p>
 
-
-
-            <span class="glyphicon glyphicon-user" aria-hidden="true"> Ilyas Ay </span><br>
-            <span class="glyphicon glyphicon-envelope" aria-hidden="true"> idevp.web@gmail.com </span>
+            <p><a class="btn btn-success" href="#" role="button">Mehr erfahren</a></p>
+            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><strong> Weitere Informationen auch <a href="mailto:kontakt@th-koeln.de">per Mail</a></strong><br>
         </div>
     </div>
 
     <div class="container register">
       <div class="row">
           <h3> Registration </h3>
-            <div class="col-sm-4 col-md-4">
+            <div class="col-sm-5 col-md-5">
 
                 <form>
                     <div class="form-group">
@@ -106,14 +92,14 @@
                         <button type="submit" class="btn btn-default"> Konto erstellen </button>
                 </form>
             </div>
-            <div class="col-sm-8 col-md-8">
+            <div class="col-sm-6 col-md-6 col-md-offset-1">
                 <img src="images/campus_gm.jpg" class="img-responsive" alt="Responsives Bild">
             </div>
         </div>
     </div>
 
 
-        <div class="container blogeintrag">
+        <div class="container">
 
         <div class="page-header text-center">
             <h1> Blogeinträge </h1>
@@ -122,12 +108,13 @@
         <div class="row">
             <div class="col-sm-4 col-md-4">
                 <div class="thumbnail">
-                    <img src="images/1.jpg" alt="...">
+                    <img src="images/3.jpg" alt="...">
                     <div class="caption">
-                      <h3> Artikel-Header 1 </h3>
+                      <h3> Die Bachelorarbeit </h3>
                       <p>
-                          Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                          sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat...
+                          Den Abschluss des Studiums bildet die Bachelorarbeit. In dieser bearbeiten die Studierenden selbstständig
+                          eine praxisorientierte Aufgabe aus einem gewünschten Fachgebiet. Diese können sie in Kooperation mit einem
+                          Unternehmen schreiben.
                       </p>
                       <p><button type="button" class="btn btn-info"> weiter </button></p>
                     </div>
@@ -137,9 +124,12 @@
                 <div class="thumbnail">
                     <img src="images/2.jpg" alt="...">
                     <div class="caption">
-                      <h3> Artikel-Header 2 </h3>
+                      <h3> Das Bachelor-Studium </h3>
                       <p>
-                          Sadipscing elitr, sed diam Lorem ipsum dolor sit amet, eirmod tempor  nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat...
+                          Das Bachelor-Studium der Medieninformatik hat drei Ziele:
+                          Kommunikations- und Methodenkompetenz aufbauen,
+                          ein umfassendes Technologieverständnis vermitteln und
+                          Geschäftsprozesse und Kernaktivitäten der Medienwirtschaft kennenlernen.
                       </p>
                       <p><button type="button" class="btn btn-info"> weiter </button></p>
                     </div>
@@ -147,11 +137,13 @@
             </div>
             <div class="col-sm-4 col-md-4">
                 <div class="thumbnail">
-                    <img src="images/3.jpg" alt="...">
+                    <img src="images/1.jpg" alt="...">
                     <div class="caption">
-                      <h3> Artikel-Header 3 </h3>
+                      <h3> Das Grundstudium </h3>
                        <p>
-                         sit amet Lorem ipsum dolor, sed diam nonumy eirmod tempor invidunt sdfdsfdsfdf dsfdsfsdfdsfsdf sfddsf ut labore et dolore magna aliquyam erat...
+                           Das Grundstudium der Medieninformatik vermittelt in den ersten beiden Semester die mathematischen,
+                           theoretischen und technischen Grundlagen mit Lehrveranstaltungen wie Mathematik, Algorithmen und
+                           Programmierung und Theoretische Informatik.
                       </p>
                       <p><button type="button" class="btn btn-info"> weiter </button></p>
                     </div>
@@ -169,8 +161,8 @@
 
 
       <footer class="footy">
-          <div class="container foot">
-              <ul>
+          <div class="container">
+              <ul class="nav nav-pills">
                   <li><a href="#"> Über uns </a></li>
                   <li><a href="#"> Blog </a></li>
                   <li><a href="#"> Über uns </a></li>

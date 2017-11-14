@@ -22,6 +22,8 @@
     <!-- For syntax highlighting -->
     <link rel="stylesheet" href="../../src/reveal-js-2015/lib/css/solarized_light.css">
 
+
+    <link rel="stylesheet" href="style.css">
     <!-- If the query includes 'print-pdf', use the PDF print sheet -->
     <script>
         document.write('<link rel="stylesheet" href="../../src/reveal-js-2015/css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
@@ -31,10 +33,9 @@
 		<script src="../../src/reveal-js-2015/lib/js/html5shiv.js"></script>
 		<![endif]-->
 </head>
-
 <body>
 <div class="reveal">
-<div class="slides">
+<div class="slides bootstrap-workshop">
 	
 <!-- Beginn of Content
 ################################################################################ -->
@@ -42,11 +43,11 @@
 
     <section>
         <h1 class="u">Web-basierte Anwendungen 1</h1>
-        <h2>Bootstrap Workshop</h2>
+        <h2>Working with Bootstrap</h2>
         <p>von Julian Schoemaker & Ilyas Ay</p>
         <p>Studiengang Medieninformatik an der TH Köln
             <br>Campus Gummersbach</p>
-        <p style="margin-top:10%">Prof. Christian Noss</p>
+        <p class="margin-top">Prof. Christian Noss</p>
     </section>
 
     <section>
@@ -54,8 +55,8 @@
         <ul>
             <li class="fragment">Einleitung</li>
             <li class="fragment">Ziel des Workshops</li>
-            <li class="fragment">Bootstrap Komponenten</li>
             <li class="fragment">Vor- und Nachteile</li>
+            <li class="fragment">Bootstrap Komponenten</li>
             <li class="fragment">Bootstrap an einem Beispiel</li>
             <li class="fragment">Aufgabe 1 - Vorgegebenes HTML bearbeiten</li>
             <li class="fragment">Aufgabe 2 - Layout umsetzen</li>
@@ -65,38 +66,124 @@
     </section>
 
     <section>
-        <h2 class="u menu">Einleitung </h2>
-        <h3>Was ist Responsive Design?</h3>
-
+        <div class="center-box">
+            <h3> Was ist ein Framework? </h3>
+            <div class="margin-top">
+                <h4 class=" fragment">Bewertungskriterien:</h4>
+                <div class="rounded-box fragment">
+                    <span>
+                        Doku<br>vorhanden
+                    </span>
+                </div>
+                <div class="rounded-box fragment">
+                    <span>Nutzer <br>(GitHub)
+                    </span>
+                </div>
+                <div class="rounded-box fragment">
+                    <span>Umfang/<br>Größe</span>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section>
-        <h2 class="u menu">Einleitung </h2>
-        <h3> Was ist Bootstrap?</h3>
+        <div class="center-box">
+            <h3> Was ist Bootstrap?</h3>
+            <div class="margin-top">
+                <h4 class=" fragment">Interessante Infos:</h4>
+                <div class="rounded-box fragment">
+                    <span>
+                        Entwickler: <br>
+                    Twitter
+                    </span>
+                </div>
+                <div class="rounded-box fragment">
+                    <span>Contributors<br>
+                        ca. 1000
+                    </span>
+                </div>
+                <div class="rounded-box fragment">
+                    <span>Version<br>
+                    3.3.7</span>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section>
-        <h2 class="u menu">Einleitung </h2>
-        <h3> Was ist ein Framework? </h3>
+        <div class="center-box">
+            <h3>Was ist Responsive Design?</h3>
+            <div class="margin-top">
+                <h4 class=" fragment">Gestalterische und technische Paradigmen:</h4>
+                <div class="rounded-box fragment">
+                    <span>
+                        Für "alle"<br>Devices
+                    </span>
+                </div>
+                <div class="rounded-box fragment">
+                    <span>Eine <br> Webseite</span>
+                </div>
+                <div class="rounded-box fragment">
+                    <span>Optimierte<br> Eingaben
+                    </span>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section>
         <h2 class="u menu"> Ziel des Workshops </h2>
         <ul>
-            <li class="fragment"></li>
-            <li class="fragment"></li>
-            <li class="fragment"></li>
-            <li class="fragment"></li>
-            <li class="fragment"></li>
+            <li class="fragment">Funktion von Frameworks verstehen</li>
+            <li class="fragment">Anwendung von Bootstrap</li>
+            <li class="fragment">Umgang mit Browser Developer Tools</li>
+            <li class="fragment">Responsiven Webauftritt umsetzen</li>
+            <li class="fragment">Vor- und Nachteile von Frameworks erkennen</li>
         </ul>
     </section>
 
     <section>
-        <h2 class="u menu">Bootstrap Komponenten </h2>
+        <h2 class="u menu"> Vor- und Nachteile </h2>
+        <table class="margin-top" style="width:100%;">
+            <tr>
+                <th>Vorteile</th>
+                <th>Nachteile</th>
+            </tr>
+            <tr>
+                <td style="width:50%">
+                    <p class="fragment">Schnelle Umsetzung</p>
+                    <p class="fragment">Getestet</p>
+                    <p class="fragment">Umfangreich</p>
+                    <p class="fragment">Einheitlich</p>
+                    <p class="fragment">Gewohnter Aufbau</p>
+                    <p class="fragment">Konventionen</p>
+                    <p class="fragment">Dokumentation</p>
+                </td>
+                <td style="width:50%">
+                    <p class="fragment">Konventionell</p>
+                    <p class="fragment">Umfangreich</p>
+                    <p class="fragment">Nachträgliche Einbindung</p>
+                </td>
+            </tr>
+        </table>
+
     </section>
 
     <section>
-        <h2 class="u menu"> Vor- und Nachteile </h2>
+        <h2 class="u menu">Bootstrap Komponenten </h2>
+        <p class="center margin-top" >
+            <a href="http://holdirbootstrap.de/" target="_blank" title="Deutsche Bootstrap Doku">Deutsche Bootstrap Doku</a>
+        </p>
+    </section>
+
+    <section>
+        <h2 class="u menu">Bootstrap an einem Beispiel</h2>
+        <p class="fragment center margin-top" >
+            <a href="https://psso.fh-koeln.de/" target="_blank">Statischer Webauftritt</a>
+        </p>
+        <p class="fragment center margin-top" >
+            <a href="http://www.vfl-lingen.de/sportklub/" target="_blank">Responsiver Webauftritt mit Bootstrap</a>
+        </p>
     </section>
 
     <section>
@@ -140,23 +227,34 @@
         <h3 class="fragment">In Gruppen von 2-3 Studenten</h3>
 
         <ol>
-            <li class="fragment">Wählt eine von drei Firmen aus</li>
-            <li class="fragment">Schaut euch das Material an</li>
+            <li class="fragment">Firme wählen</li>
+            <li class="fragment">Material sichten</li>
             <li class="fragment">Design Konzept überlegen</li>
-            <li class="fragment">Aufgabenteilung</li>
-            <li class="fragment">Umsetzung des Webauftritts</li>
+            <li class="fragment">Aufgabenteilung vornehmen</li>
+            <li class="fragment">Webauftritt umsetzen (nur Startseite)</li>
             <li class="fragment">Gruppen präsentieren</li>
         </ol>
     </section>
 
     <section>
-        <h2 class="u menu"> Hilfreiche Informationen und Links </h2><br>
-        <a href="https://startbootstrap.com/template-categories/all/"> Bootstrap-Vorlagen </a><br>
-        <a href="https://bootstrapmade.com/"> Bootstrap-Vorlagen </a>
-        <div class="fragment">
-            <h2>Auch diese Slides wurden mit einem Framework erstellt ;)</h2>
-            <a href="https://slides.com/explore"> Slides.com </a>
-        </div>
+        <h2 class="u menu"> Hilfreiche Informationen und Links </h2>
+        <p class="fragment">
+            <a href="https://startbootstrap.com/template-categories/all/" target="_blank">startbootstrap.com</a><br>
+        </p>
+        <p class="fragment margin-top">
+            <a href="https://bootstrapmade.com/" target="_blank">bootstrapmade.com</a>
+        </p>
+        <p class="fragment margin-top">
+            Auch diese Slides wurden mit einem <a href="https://slides.com/explore" target="_blank">Framework</a> erstellt ;)
+        </p>
+    </section>
+
+    <section>
+        <h2 style="margin-top: 30vh; text-align: center; font-size: 2em">Fragen?</h2>
+    </section>
+
+    <section>
+        <h2 style="margin-top: 30vh; text-align: center; font-size: 2em">Danke! :)</h2>
     </section>
 
 
