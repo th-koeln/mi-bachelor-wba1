@@ -61,8 +61,7 @@
             </p>
 
             <p><a class="btn btn-success" href="#" role="button">Mehr erfahren</a></p>
-            <strong>Weiter Informationen auch per Mail</strong><br>
-            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="#" >kontakt@th-koeln.de</a>
+            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><strong> Weitere Informationen auch <a href="mailto:kontakt@th-koeln.de">per Mail</a></strong><br>
         </div>
     </div>
 
@@ -100,7 +99,7 @@
     </div>
 
 
-        <div class="container blogeintrag">
+        <div class="container">
 
         <div class="page-header text-center">
             <h1> Blogeinträge </h1>
