@@ -7,16 +7,12 @@
 }
 
 .reveal .center-box {
-    margin-top: 20vh !important;
+    margin-top: 15vh !important;
     text-align: center !important;
 }
 
 .reveal .center-box h3 {
     font-size: 2em !important;
-}
-
-.reveal .center-box > div {
-
 }
 
 .reveal .rounded-box {
