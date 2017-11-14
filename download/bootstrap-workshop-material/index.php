@@ -55,12 +55,11 @@
     <div class="container">
         <div class="jumbotron eigenschaften">
             <h2> Willkommmen an der TH KÖLN </h2>
+            <br><br>
             <p>
                 Dieser Workshop richtet sich an Teilnehmer, die bereits sicher im Umgang mit ihren Web-tools sind, die in der Lage sind sauberes und semantisches Markup zu schreiben und sicher in Arbeit mit IDs und Klassen sind.
             </p>
-            <p>
-                Anwendung vom Framework Bootstrap. Umgang mit einem Framework zur Erstellung eines Responsive Designs erlernen. Umsetzung verschiedener Komponenten zum einfachen Aufbauen einer Webseite.
-            </p>
+
             <p><a class="btn btn-success" href="#" role="button">Mehr erfahren</a></p>
             <strong>Weiter Informationen auch per Mail</strong><br>
             <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="#" >kontakt@th-koeln.de</a>
