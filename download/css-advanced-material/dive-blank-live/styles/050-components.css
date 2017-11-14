@@ -1,0 +1,91 @@
+/* ----------------------------------------------------------------------------
+components.css                                                                  
+Enthält alle Regeln zu Komponenten.  
+
+Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
+----------------------------------------------------------------------------*/
+
+
+/* Site Header
+-----------------------------------------------------------------------------*/
+
+.site-header {
+    background-color: var(--color-head);
+    margin-bottom: var(--space-stack-xl);
+    text-align: center;
+}
+
+.site-header__content {
+    max-width: var(--site-width);
+    margin: 0 auto;
+}
+
+.brand-logo {
+    width: calc(var(--site-width)/10);
+    padding-top: var(--space-stack-m);
+    padding-bottom: var(--space-stack-xl);
+    display: inline-block;
+}
+
+
+/* Navigation
+-----------------------------------------------------------------------------*/
+
+.nav {
+    padding: 0;
+    margin: 0;
+    margin-top: var(--space-stack-xl);
+}
+
+.nav__item {
+    display: block;
+}
+
+.nav__item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav__horizontal {
+    padding-bottom: var(--space-stack-s);
+}
+
+.nav__horizontal .nav__item {
+    display: inline-block;
+    padding-right: var(--space-inset-xs);
+}
+
+.nav__horizontal .nav__item+.nav__item {
+    border-left: solid 1px var(--color-border);
+    padding-left: var(--space-inset-xs);
+}
+
+
+/* Staff 
+----------------------------------------------------------------------------*/
+
+.staff__member {
+    margin-bottom: 20px;
+    background-color: #eee;
+}
+
+.staff__member:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.member__avatar {
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+    margin-right: 20px;
+}
+
+.staff__member .text {
+    box-sizing: border-box;
+    width: 70%;
+    float: left;
+}
+
+.person__image {}

@@ -35,6 +35,12 @@ An alle, die sich und ihr Team auf die finale Challenge vorbereiten möchten. Bi
 - agieren Sie im Training schon als Team und lernen Sie die Stärken und Schwächen des Teams kennen
 - nutzen Sie unbedingt GIT und GitHub, damit Sie hier Ihre Skills vertiefen können. In der finalen Challenge ist der Einsatz von GitHub erforderlich
 
+## Ein paar Tipps
+<div class="js-video [vimeo, widescreen]">
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/OzRf45n1-GQ?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allowfullscreen></iframe>
+</div>
+
+
 ## Die Aufgabe
 
 Die Trainingsaufgabe besteht darin, eine Team bzw. [Employer Branding Seite](https://de.wikipedia.org/wiki/Employer_Branding) für ein bestehendes oder fiktives Unternehmen zu erstellen. Die Seite kann sowohl statische als auch dynamische Inhalte beinhalten, z.B.:

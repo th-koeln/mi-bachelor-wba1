@@ -29,3 +29,5 @@ Einen eigenen Computer mit installiertem [Git](https://git-scm.com/) und einen [
 - [Folien Git Basics 2015](../../slides/git-basics/index.html)
 - [Folien Git Basics Hand-On 2015](../../slides/git-basics-hands-on/index.html)
 - [Folien Git Advanced 2015](../../slides/git-advanced/index.html)
+
+- [git - Der einfache Einstieg](https://rogerdudler.github.io/git-guide/index.de.html)
