@@ -108,7 +108,7 @@
         <div class="row">
             <div class="col-sm-4 col-md-4">
                 <div class="thumbnail">
-                    <img src="images/1.jpg" alt="...">
+                    <img src="images/3.jpg" alt="...">
                     <div class="caption">
                       <h3> Die Bachelorarbeit </h3>
                       <p>
@@ -137,7 +137,7 @@
             </div>
             <div class="col-sm-4 col-md-4">
                 <div class="thumbnail">
-                    <img src="images/3.jpg" alt="...">
+                    <img src="images/1.jpg" alt="...">
                     <div class="caption">
                       <h3> Das Grundstudium </h3>
                        <p>
