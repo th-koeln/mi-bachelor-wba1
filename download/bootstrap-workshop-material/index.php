@@ -9,7 +9,6 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
     <!-- Unterstützung für Media Queries und HTML5-Elemente in IE8 über HTML5 shim und Respond.js -->
     <!-- ACHTUNG: Respond.js funktioniert nicht, wenn du die Seite über file:// aufrufst -->
     <!--[if lt IE 9]>
@@ -57,10 +56,10 @@
         <div class="jumbotron eigenschaften">
             <h2> Willkommmen an der TH KÖLN </h2>
             <p>
-                Hier befindet sich eine Subline, die die Headline erweitert und zum Weiterlesen animieren soll.
+                Dieser Workshop richtet sich an Teilnehmer, die bereits sicher im Umgang mit ihren Web-tools sind, die in der Lage sind sauberes und semantisches Markup zu schreiben und sicher in Arbeit mit IDs und Klassen sind.
             </p>
             <p>
-                Zusätzlich könnte ein kleiner Einleitungstext angezeigt werden, der eine Vorschau des kompletten Artikels zeigt.
+                Anwendung vom Framework Bootstrap. Umgang mit einem Framework zur Erstellung eines Responsive Designs erlernen. Umsetzung verschiedener Komponenten zum einfachen Aufbauen einer Webseite.
             </p>
             <p><a class="btn btn-success" href="#" role="button">Mehr erfahren</a></p>
             <strong>Weiter Informationen auch per Mail</strong><br>
@@ -113,10 +112,11 @@
                 <div class="thumbnail">
                     <img src="images/1.jpg" alt="...">
                     <div class="caption">
-                      <h3> Artikel-Header 1 </h3>
+                      <h3> Die Bachelorarbeit </h3>
                       <p>
-                          Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                          sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat...
+                          Den Abschluss des Studiums bildet die Bachelorarbeit. In dieser bearbeiten die Studierenden selbstständig
+                          eine praxisorientierte Aufgabe aus einem gewünschten Fachgebiet. Diese können sie in Kooperation mit einem
+                          Unternehmen schreiben.
                       </p>
                       <p><button type="button" class="btn btn-info"> weiter </button></p>
                     </div>
@@ -126,9 +126,12 @@
                 <div class="thumbnail">
                     <img src="images/2.jpg" alt="...">
                     <div class="caption">
-                      <h3> Artikel-Header 2 </h3>
+                      <h3> Das Bachelor-Studium </h3>
                       <p>
-                          Sadipscing elitr, sed diam Lorem ipsum dolor sit amet, eirmod tempor  nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat...
+                          Das Bachelor-Studium der Medieninformatik hat drei Ziele:
+                          Kommunikations- und Methodenkompetenz aufbauen,
+                          ein umfassendes Technologieverständnis vermitteln und
+                          Geschäftsprozesse und Kernaktivitäten der Medienwirtschaft kennenlernen.
                       </p>
                       <p><button type="button" class="btn btn-info"> weiter </button></p>
                     </div>
@@ -138,9 +141,11 @@
                 <div class="thumbnail">
                     <img src="images/3.jpg" alt="...">
                     <div class="caption">
-                      <h3> Artikel-Header 3 </h3>
+                      <h3> Das Grundstudium </h3>
                        <p>
-                         sit amet Lorem ipsum dolor, sed diam nonumy eirmod tempor invidunt sdfdsfdsfdf dsfdsfsdfdsfsdf sfddsf ut labore et dolore magna aliquyam erat...
+                           Das Grundstudium der Medieninformatik vermittelt in den ersten beiden Semester die mathematischen,
+                           theoretischen und technischen Grundlagen mit Lehrveranstaltungen wie Mathematik, Algorithmen und
+                           Programmierung und Theoretische Informatik.
                       </p>
                       <p><button type="button" class="btn btn-info"> weiter </button></p>
                     </div>
