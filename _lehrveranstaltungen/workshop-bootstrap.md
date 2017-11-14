@@ -29,6 +29,38 @@ Eigenen Computer mit Web-Editor und Browser zum HTML/CSS Debuggen. Links unter M
 - [Chome Developer Tools (Debugging)](https://www.youtube.com/watch?v=nV9PLPFTnkE)
 
 
+### Aufgaben
+
+####Aufgabe 1
+
+Vorgegebenes HTML bearbeiten - Erste Schritte mit Bootstrap
+1. Änderungswunsch
+2. In Bootstrap Doku recherchieren
+3. Selbst ausprobieren
+4. Ein Student präsentiert
 
 
+####Aufgabe 2
+Vorgegebenes Layout umsetzen - Komponenten finden und implementieren
 
+In Gruppen von 2-3 Studenten
+
+1. Komponenten erkennen
+2. Struktur der Komponente verstehen
+3. Komponente einsetzen
+4. Ggf. Code der Komponente anpassen
+5. Struktur der Seite optimieren
+6. Gruppen präsentieren
+
+####Aufgabe 3
+
+Eigenes Projekt - 3 Firmen wollen einen Webauftritt
+
+In Gruppen von 2-3 Studenten
+
+1. Firme wählen
+2. Material sichten
+3. Design Konzept überlegen
+4. Aufgabenteilung vornehmen
+5. Webauftritt umsetzen (nur Startseite)
+6. Gruppen präsentieren
