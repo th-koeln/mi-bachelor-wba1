@@ -1,0 +1,12 @@
+*   {
+    padding:0;
+    margin:0;
+    transition-duration: 0.233s; 
+}
+:root   {
+    font-size:10px;
+}
+
+.Box    {
+    font-size:2em;  //*Basiert auf Übergeordnetem Container*//
+}

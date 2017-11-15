@@ -1,0 +1,21 @@
+*   {
+    margin:0;
+    padding:0;
+}
+
+#box_rechts {
+    float:right;
+    background-color:red;
+    width: 50vw;
+    height:200px;
+}
+#box_links  {
+    float:left;
+    background-color:green;
+    width: 50vw;
+    height:200px;
+    
+}
+p   {
+    padding:20px;
+}
