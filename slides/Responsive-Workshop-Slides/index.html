@@ -1,0 +1,676 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Folien</title>
+
+    <link rel="stylesheet" href="../../src/reveal-js-2015/css/reveal.css">
+    <link rel="stylesheet" href="../../src/reveal-js-2015/css/theme/medieninformatik.css">
+
+    <!-- Theme used for syntax highlighting of code 
+		<link rel="stylesheet" href="lib/css/zenburn.css">-->
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Webbasierte Anwendung </h1>
+                <h2 class="u">Responsive Design Workshop</h2>
+                <p>16. November 2017</p>
+                <p>
+                    Studiengang Medieninformatik an der technischen Hochschule Köln
+                    <br> Campus Gummersbach
+                </p>
+                <p style="margin-top:15%"> Mike Klement und Daniel Franken</p>
+            </section>
+            <!-- EINLEITUNG Was ist Responsive Design ?  -->
+
+            <section>
+                <h2 class="u">Was bedeutet Responsive?</h2>
+                <ul>
+                    <li>
+                        <p> Anpassungsfähige Darstellung von Informationen</p>
+                    </li>
+                    <li>
+                        <p>Unterschiedliche Displaygrößen</p>
+                    </li>
+                    <li>
+                        <p>Flexibles Layout</p>
+                    </li>
+                    <li>
+                        <p>Elemente Positionieren sich Automatisch nach Blidschirmgröße</p>
+                    </li>
+                </ul>
+            </section>
+
+
+
+            <!-- EINLEITUNG Wie wird Responsive Design umgesetzt?  -->
+            <section>
+                <h2 class="u">Wie wird Responsive Design umgesetzt?</h2>
+                <ul>
+                    <li>
+                        <p>HTML5</p>
+                    </li>
+                    <li>
+                        <p>CSS3 Media Queries</p>
+                    </li>
+                    <li>
+                        <p>jQuery(nicht zwarsläufig))</p>
+                    </li>
+                    <li>
+                        <p>JavaScript(Nicht zwarsläufig)</p>
+                    </li>
+                    <li>
+                        <p>Nicht Pixelbasiert</p>
+                    </li>
+                </ul>
+            </section>
+
+
+            <section>
+                <h2 class="u">Was ist Tinytweaks?</h2>
+                <ul>
+                    <li>
+                        <p>~Kleine Verbesserung</p>
+                    </li>
+                    <li>
+                        <p>Dient in erster Linie dazu, die font-size zu aktualisieren, um einen konsistenten und einfach zu lesenden Inhalt zu gewährleisten </p>
+                    </li>
+                    <li>
+                        <p>Sowie die Auffüllung und den vertikalen Rhythmus beim Vergrößern des Darstellungsbereichs zu ändern</p>
+                    </li>
+                </ul>
+            </section>
+            <section data-background-image="Bilder/TinyTweaks.jpg" data-background-size="60%">
+                <h2 class="u">TinyTweaks</h2>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+            </section>
+            <section>
+                <h2 class="u">Tinytweaks Css Code</h2>
+                <ul>
+                    <div align="center"><img src="Bilder/TinyTweaksCss.png" width="520" height="500"></div>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="u">Was bedeutet Column Drop?</h2>
+                <ul>
+                    <li>
+                        <p>Ist ein Spalten-Drop-Layout stapelt jeweils eine Spalte, wenn das Ansichtsfenster verkleinert wird</p>
+                    </li>
+                    <li>
+                        <p>Dies ist eher ein adaptiver Designprozess und ein Schritt weg vom mostly float Layoutmuster</p>
+                    </li>
+                    <li>
+                        <p>Eins der Wichtigen Responsive Patterns</p>
+                    </li>
+                </ul>
+            </section>
+
+
+
+
+            <!-- EINLEITUNG Standards  -->
+
+            <section>
+                <h2 class="u">Standard Auflösungen von Smartphones und Tablets</h2>
+                <ul>
+                    <li>
+                        <p>Smartphones: 320px bis 480px</p>
+                    </li>
+                    <li>
+                        <p>Tablet: 768px bis 1024px</p>
+                    </li>
+                    <li>
+                        <p>Desktop: 1024px +</p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2 class="u">Standard Auflösungen von Smartphones und Tablets</h2>
+                <ul>
+                    <div align="center"><img src="Bilder/Aufloesung.gif" width="800" height="400"></div>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="u">Mobil First </h2>
+                <ul>
+                    <li>
+                        <p>Was ist das?</p>
+                    </li>
+                    <li>
+                        <p>Was bedeutet es?</p>
+                    </li>
+                    <li>
+                        <p>Hat es einen Einfluss auf den Suchalgorithmus von Google?</p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2 class="u">Mobil First </h2>
+                <ul>
+                    <li>
+                        <p> Der Begriff "Mobile First" ist ein Konzept für das Webdesign.</p>
+                    </li>
+                    <li>
+                        <p>Dieses Konzept sieht vor, dass die für mobile Endgeräte optimierte Version zuerst entsteht und sukzessive Erweiterungen stattfinden. Damit folgt die Strategie „Mobile First“ dem Trend, dass immer mehr Nutzer mit dem Smartphone
+                            oder Tablet im Internet surfen und nicht mit dem Desktop.</p>
+                    </li>
+                    <li>
+                        <p>Ja.</p>
+                    </li>
+                    <li>
+                        <p>90% Mobiltraffic in Japan.</p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2 class="u">Standard Auflösungen von Smartphones und Tablets</h2>
+                <ul>
+                    <div align="center"><img src="Bilder/surfenmobil.jpg" width="800" height="400"></div>
+                </ul>
+            </section>
+
+            <!-- EINLEITUNG Pro's?  -->
+            <section>
+                <h2 class="u">Vorteile des Responsive Design</h2>
+                <ul>
+                    <li>
+                        <p>Geräte übergreifende Flexibilität </p>
+                    </li>
+                    <li>
+                        <p> Google Ranking verbessern(Responsive Webdesign bedeutet auch, dass Sie nur eine Website mit einem einzigen Satz SEO-Optimierung erstellen und betreuen müssen. Das spart Zeit und Geld.Zusätzlich werden von Google Websites, die mobile
+                            optimiert wurden, besser bei lokalisierten Suchergebnissen angezeigt. Dies spielt natürlich eine große Bedeutung bei lokalen Unternehmen, aber auch bei Online-Händler.) </p>
+                    </li>
+                    <li>
+                        <p>Zeit und Kostengünstig der Mobilen App-Entwicklung</p>
+                    </li>
+                    <li>
+                        <p>Verbesserung des Offline-Browsers</p>
+                    </li>
+                </ul>
+            </section>
+            <!-- EINLEITUNG Con's?  -->
+            <section>
+                <h2 class="u">Nachteile des Responsive Designs</h2>
+                <ul>
+                    <li>
+                        <p>Verbraucht viel Datenvolumen </p>
+                    </li>
+                    <li>
+                        <p>Daher teurer für den Nutzer</p>
+                    </li>
+                    <li>
+                        <p>Längere Ladezeiten</p>
+                    </li>
+                    <li>
+                        <p>Mobile Ansichten sind komprimierter</p>
+                    </li>
+                    <li>
+                        <p>Komplexer zu konzipieren und entwicklen</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="u">Wie wird sah die Vergangenheit aus für Responsive Web ?</h2>
+                <div align="center"><img src="Bilder/Vergangenheit.png" width="420" height="400"></div>
+            </section>
+            <section>
+                <h2 class="u">Wie ist die Gegenwart von Responsive Web?</h2>
+                <div align="center"><img src="Bilder/Gegenwart.png" width="420" height="400"></div>
+            </section>
+            <section>
+                <h2 class="u">Wie wird die Zukuft für Responsive Web aussehen?</h2>
+                <div align="center"><img src="Bilder/Zukunft.png" width="420" height="400"></div>
+            </section>
+
+
+            <!-- EINLEITUNG wie?  -->
+            <section>
+                <h2 class="u"> Wird so die Zukuft für Responsive Web aussehen?</h2>
+                <ul>
+                    <li>
+                        <p>Wird Responsive Design wird sich durchsetzen ? </p>
+                    </li>
+                    <li>
+                        <p>Mobil First wird öfters angewendet</p>
+                    </li>
+                    <li>
+                        <p>Benutzerorientiert</p>
+                    </li>
+                    <li>
+                        <p>Viele Media Queries um alle Geräte anzusprechen</p>
+                    </li>
+                    <li>
+                        <p>@Media (Dives:Kühlschrank){}</p>
+                    </li>
+                </ul>
+            </section>
+
+
+
+            <section>
+                <h2 class="u">Wie wichtig ist Responsive Design für den Marketingbereich?</h2>
+                <ul>
+                    <li>
+                        <p> Ist in der heutigen Zeit nicht mehr aus dem Marketing wegzudenken</p>
+                    </li>
+                    <li>
+                        <p>Immer mehr Menschen surfen mobil auch unterwegs im Netz und haben in der Regel wenig Zeit und auch keine Lust, sich auf für sie umständlichen Seiten aufzuhalten.</p>
+                    </li>
+                    <li>
+                        <p>Heutzutage muss alles optimiert sein und eine schnelle Übersicht bieten </p>
+                    </li>
+                </ul>
+            </section>
+            <section data-background-image="Bilder/KaufabschluesseMobil.jpg" data-background-size="contain" data-background-repeat="No-repeat" height="70%">
+
+            </section>
+
+            <section>
+                <h2 class="u">Warum ist Responsive Design so wichtig für den Marketingbereich?</h2>
+                <ul>
+                    <li>
+                        <p>Eine bessere Conversion Rate</p>
+                    </li>
+                    <li>
+                        <p>Mehr Reichweite und Bekanntheit</p>
+                    </li>
+                    <li>
+                        <p>Deutlich höhere Leadgenerierung</p>
+                    </li>
+                    <li>
+                        <p>Geringere Absprungrate</p>
+                    </li>
+                    <li>
+                        <p>Erfolgreicheres Kunden gewinnen im Internet</p>
+                    </li>
+                    <li>
+                        <p>Verbessertes PPC Marketing(Ausgeschrieben bedeutet es „Pay Per Click“.Damit ist gemeint, es wird pro Klick gezahlt. Gut für KMU´s)</p>
+                    </li>
+                    <li>
+                        <p>Anstieg an Shares in Social Media Netzwerken</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- EINLEITUNG Developer tools  -->
+            <section>
+                <h2 class="u">Wie teste ich ob eine Webseite "Responsive" ist?</h2>
+                <ul>
+                    <li>
+                        <p>Developer Tools</p>
+                    </li>
+                    <li>
+                        <p>Bildschirmgrößen testen</p>
+                    </li>
+                    <img src="Bilder/GoogleChromeLogo.png" width="150" height="150">
+                    <img src="Bilder/OperaLogo.jpg" width="150" height="150">
+                </ul>
+            </section>
+
+            <!-- Media Queries Einleitung -->
+
+            <section>
+                <h2 class="u">Hauptbestandteile für Responsive Dev in CSS</h2>
+                <ul>
+                    <li>
+                        <p class="fragment fade-up">Pixelgrößen mit Vorsicht verwenden</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Verwendung von Media Queries</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Relative Größen verwenden</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Orientierung an der Bildschirmgröße (Meta-Tag)</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">meta name="viewport" content="width=device-width, initial-scale=1.0"</p>
+                    </li>
+                </ul>
+            </section>
+
+
+            <!-- Absolute Angaben -->
+
+            <section>
+                <h2 class="u">Absolute CSS Größen</h2>
+                <ul>
+                    <li>
+                        <p class="fragment fade-up">Welche statischen Angaben gibt es? (Sammeln)</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Inches(in)</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Pixels(px)</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Centimeters(cm)</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Millimeters(mm)</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Points(pt)</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Picas(pc)</p>
+                    </li>
+                </ul>
+                <aside class="notes">
+                    <p>
+
+                    </p>
+                </aside>
+            </section>
+
+            <!-- Relative Angaben -->
+
+            <section>
+                <h2 class="u">Relative CSS Größen</h2>
+                <ul>
+                    <li>
+                        <p class="fragment fade-up">Welche relativen Angaben gibt es? (Sammeln)</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Percentages(%)</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Font-Sizes(em, rem)</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Character-sizes(ex, ch)</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Viewport Dimensions(vw, vh)</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Viewport Max(vmax)</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Viewport Min(vmin)</p>
+                    </li>
+                </ul>
+                <aside class="notes">
+                    <p>
+
+                    </p>
+                </aside>
+            </section>
+            <!-- Relative Werte -->
+
+            <section>
+                <h2 class="u">Was sind Relative Größen</h2>
+                <ul>
+                    <li>
+                        <p class="fragment fade-up">Basieren auf anderen Größen und verhalten sich entsprechend</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Manche Basieren auf der Bildschirmgröße bzw. Fenstergröße</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Vor allem in der Breite Sinnvoll</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Coding mit %-Werten</p>
+                    </li>
+                </ul>
+                <aside class="notes">
+                    <p>
+
+                    </p>
+                </aside>
+            </section>
+
+            <!-- Relative Werte -->
+
+            <section>
+                <h2 class="u">Was sind Visual Größen - Vw, Vh</h2>
+                <ul>
+                    <li>
+                        <p class="fragment fade-up">Der Bildschirm wird ausgelesen </p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">100vw entsprechen der Breite des Bildschirms </p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">100vh entsprechen der Höhe des Bildschirms</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">vmin oder vmax wählen immer die kleinere(vmin)/größere(vmax) Länge aus (Höhe oder Breite)</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Coding Beispiel</p>
+                    </li>
+                </ul>
+                <aside class="notes">
+                    <p>
+
+                    </p>
+                </aside>
+            </section>
+
+            <!-- Schriftgrößen -->
+
+            <section>
+                <h2 class="u">Was sind Schrift basierende Größen</h2>
+                <ul>
+                    <li>
+                        <p class="fragment fade-up">Rem,Em,Ex,Ch</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Ch und Ex werden kaum verwendet</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Ex basiert auf dem 'x' der gewählten Schriftart</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">ch basiert auf der höhe der '0' (NULL) der ausgewählten Schriftart</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Coding Beispiel</p>
+                    </li>
+                </ul>
+                <aside class="notes">
+                    <p>
+
+                    </p>
+                </aside>
+            </section>
+
+            <!-- Schriftgrößen -->
+
+            <section>
+                <h2 class="u">Was sind absolute Größen</h2>
+                <ul>
+                    <li>
+                        <p class="fragment fade-up">Auf Physischen Werten basierend</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Statisch und unflexibel</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Pixel sind meist verwendete Größe</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Javascript "spricht" in Pixeln</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Coding Beispiel</p>
+                    </li>
+                </ul>
+                <aside class="notes">
+                    <p>
+
+                    </p>
+                </aside>
+            </section>
+
+
+
+            <!-- Relative Werte -->
+
+            <section>
+                <h2 class="u">Was sind Relative Größen</h2>
+                <ul>
+                    <li>
+                        <p class="fragment fade-up">Basieren auf anderen Größen und verhalten sich entsprechend</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Manche Basieren auf der Bildschirmgröße bzw. Fenstergröße</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Vor allem in der Breite sinnvoll</p>
+                    </li>
+                </ul>
+                <aside class="notes">
+                    <p>
+
+                    </p>
+                </aside>
+            </section>
+
+            <!-- Media-Queries Einleitung: -->
+
+            <section>
+                <h2 class="u">Media Queries</h2>
+                <ul>
+                    <li>
+                        <p class="fragment fade-up">Lesen eigenschaften des Anzeige gerätes aus</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Typ (TV,mobile)</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Liest die Bildschirmhöhe oder/und Breite aus</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Bietet die Möglichkeit anhand der Displaygröße das Standarddesign(Css) zu überschreiben</p>
+                    </li>
+                    <li>
+                        <p class="fragment fade-up">Coding Beispiel</p>
+                    </li>
+                </ul>
+                <aside class="notes">
+                    <p>
+
+                    </p>
+                </aside>
+            </section>
+
+            <!-- Elemente verschwinden lassen -->
+
+            <section>
+                <h2 class="u">Container verschwinden lassen</h2>
+                <ul>
+                    <li>
+                        <p>Sinnvoll um Elemente mit niedriger Priorität auf der Mobilen Ansicht zu entfernen</p>
+                    </li>
+                    <li>
+                        <p>Menüleiste oder Texte</p>
+                    </li>
+                    <li>
+                        <p>Display:none</p>
+                    </li>
+                    <li>
+                        <p>visible:hidden</p>
+                    </li>
+                    <li>
+                        <p>Coding Beispiel</p>
+                    </li>
+                </ul>
+            </section>
+            <!-- Aufgabe 1 -->
+
+            <section>
+                <h2 class="u">Aufgaben</h2>
+                <ul>
+                    <li>
+                        <p>A1) Sorgt dafür, dass die beiden Elemente, sobald der Text aus dem Rahmen läuft, untereinander stehen (Column Drop)</p>
+                    </li>
+                    <li>
+                        <p>A2) Der Text soll immer an die Breite angepasst werden und mittig stehen. Er darf nicht größer als die Ursprungsgröße werden</p>
+                    </li>
+                    <li>
+                        <p>A3) Die Katze soll in der Mitte bleiben. Tipp:sie ist genau in der Mitte des Bildes</p>
+                    </li>
+                    <li>
+                        <p>A4) Allgemein: Der Inhalt der Seite soll auf jeder Bildschirmgröße richtig angezeigt werden. Der Footer kann unsichtbar gemacht werden. </p>
+                    </li>
+                </ul>
+            </section>
+
+
+            <!--Cheat-Sheets:   -->
+
+            <section>
+                <h2 class="u">Cheat-Sheets:</h2>
+                <a href="http://www.codeply.com/responsive-design-cheatsheet.html">Codeply Responsive Design</a>
+                <br>
+                <a href="http://mac-blog.org.ua/css-3-media-queries-cheat-sheet/">Mac-Blog Media Queries</a>
+            </section>
+
+            <!--Quellen:   -->
+
+            <section>
+                <h2 class="u">Quellen:</h2>
+                <a href="#" class="navigate-left">http://www.responsive-webdesign.mobi/was-ist-responsive-webdesign/</a>
+                <a href="#" class="navigate-left">https://www.youtube.com/watch?v=g2taIe7ZFUA</a>
+                <a href="#" class="navigate-left">https://wiki.selfhtml.org/wiki/CSS</a>
+                <a href="#" class="navigate-left">https://kundenwachstum.de/responsive-design/</a>
+                <a href="#" class="navigate-left">https://wiki.selfhtml.org/wiki/CSS/Media_Queries</a>
+                <a href="#" class="navigate-left">https://www.responsive-webdesign.mobi/warum-responsive-webdesign/</a>
+                <a href="#" class="navigate-left">https://de.ryte.com/wiki/Mobile_First</a>
+                <a href="#" class="navigate-left">https://bradfrost.github.io/this-is-responsive/patterns.html</a>
+                <a href="#" class="navigate-left">http://t3n.de/news/html5-websites-offline-nutzen-372444/</a>
+                <a href="#" class="navigate-left">https://de.statista.com/infografik/3017/mobile-geraete-und-mobile-internetnutzung-in-deutschland/</a>
+            </section>
+        </div>
+    </div>
+
+    <script src="../../src/reveal-js-2015/lib/js/head.min.js"></script>
+    <script src="../../src/reveal-js-2015/js/reveal.js"></script>
+
+    <script>
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            dependencies: [{
+                src: 'plugin/markdown/marked.js'
+            }, {
+                src: 'plugin/markdown/markdown.js'
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }]
+        });
+    </script>
+</body>
+
+</html>

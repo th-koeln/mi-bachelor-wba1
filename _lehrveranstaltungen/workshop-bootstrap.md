@@ -31,7 +31,7 @@ Eigenen Computer mit Web-Editor und Browser zum HTML/CSS Debuggen. Links unter M
 
 ### Aufgaben
 
-####Aufgabe 1
+#### Aufgabe 1
 
 Vorgegebenes HTML bearbeiten - Erste Schritte mit Bootstrap
 1. Änderungswunsch
@@ -40,7 +40,7 @@ Vorgegebenes HTML bearbeiten - Erste Schritte mit Bootstrap
 4. Ein Student präsentiert
 
 
-####Aufgabe 2
+#### Aufgabe 2
 Vorgegebenes Layout umsetzen - Komponenten finden und implementieren
 
 In Gruppen von 2-3 Studenten
@@ -52,7 +52,7 @@ In Gruppen von 2-3 Studenten
 5. Struktur der Seite optimieren
 6. Gruppen präsentieren
 
-####Aufgabe 3
+#### Aufgabe 3
 
 Eigenes Projekt - 3 Firmen wollen einen Webauftritt
 
