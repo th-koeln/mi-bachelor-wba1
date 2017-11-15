@@ -28,4 +28,4 @@ Sauberes semantisches HTML Markup aus den HTML Workshops.
 [Verschiedene Responsive Designs auf einer Seite ](https://bradfrost.github.io/this-is-responsive/patterns.html)
 
 [Reponsive Design in einem Blick](https://www.responsive-webdesign.mobi/was-ist-responsive-webdesign/)
-
+Alle Aufgaben(https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/Aufgaben-Responsive.zip)
