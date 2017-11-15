@@ -1,0 +1,182 @@
+*   {
+    margin:0; padding:0;        /*alle Abstände auf 0 gesetzt.*/
+    text-decoration: none;      /*Link schriften werden jetzt als normale Schrift behandelt*/
+    list-style: none; /*Die Listenpunkte bei Listen deaktiviert*/
+    z-index:5;          /*Graue Schriftart für alle Schriften. Wird fürÜberschriften noch überschrieben*/
+    
+}
+/*#fix_bac {
+    position:fixed;
+    z-index:-1;
+    width:1263px;
+    height:900px;
+    background-color:grey;
+    background-image: url(Images/parallax.jpg);
+    background-size:cover;
+    top:0px;
+    left:0px;
+}*/
+h2  {
+    font-family: 'Satisfy', serif;
+    font-size: 40px;
+}
+h2, h3  {
+    color:white;
+}
+h3  {
+    font-family: 'Arvo', serif;
+}
+h4  {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:18px;
+    color:black;
+    margin:20px 0;
+    text-align: center;
+}
+a   {color:white;}
+p   {
+    font-family: 'Open Sans Condensed', sans-serif; /*Standard Schrift für die inhatichen Texte festgelegt*/
+    font-size:15px;             /*!!!!!!!!!!!!!!!!!!!!*/
+    color:#242424;   
+    margin:20px;
+    background-color:white;
+    
+}
+p img   {
+    overflow:hidden;
+}
+.logo   {
+    font-family: 'Satisfy', serif;
+    font-size:20px;
+    color:gold;
+    margin-left:40px;
+    position:absolute;
+    margin-top:5px;
+}
+nav {
+    position:fixed;
+    top:0px;
+    background-color:black;
+    width:1280px;
+    padding:9px 0;
+    color:white;
+    height:38px;
+}
+nav ul  {
+    margin-right:40px;
+}
+nav ul li  {
+    float:right;
+    color:white;
+    height:20px;
+    z-index:500;
+    margin:9px 20px;
+    text-align:center;
+    font-family:'Arvo', serif;
+    font-size:15px;
+}
+nav ul li a:hover {
+    color:gold;
+}
+
+
+/*----------------------------HEADER--------------------------------*/
+header  {
+    background-image: url(Images/Background_LP.jpeg);
+    width:1063px;
+    background-size: cover;
+    padding: 280px 0px 280px 200px;
+}
+
+/*---------------------------Willkommen-----------------------------*/
+#Willkomme_sec  {
+    width:1063px;
+    text-align:center;
+    background-color:white;
+}
+#Willkommen_sec p{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#Willkommen_sec h3   {
+    color:black;
+    padding:20px;
+    text-align: center;
+}
+/*-----------------------3 Spalten Bereich---------------------------*/
+.CS_column   {
+    width:381px;
+    height:250px;
+    overflow:hidden;
+    float:left;
+    padding:20px;
+    background-color:white;
+}
+.CS_column p {
+    text-align:justify;
+    float:right;
+    margin:0px;
+    width:271px;
+    margin-right: 30px;
+    margin-left:20px;
+}
+.CS_column li   {
+    float:left;
+}
+.CS_column img  {
+    width:40px;
+    height:40px;
+}
+#CS_NEWS_img    {
+    width:1263px;
+    height:500px;
+    background-color:grey;
+    background-size: cover;
+    background-image: url(Images/parallax.jpg);
+}
+/*------------------------News Bereich-------------------------------*/
+#news   {
+    width:1263px;
+    height: 500px;
+    background-color:white;
+}
+#news p {
+    text-align: justify;
+}
+#NS_left    {
+    float:left;
+    width:381px;
+    padding:20px;
+}
+#NS_right   {
+    float:right;
+    width:802px;
+    padding:20px;
+}
+#NS_image   {
+    width:802px;
+    height:160px;
+    background-image: url(Images/Newspic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*---------------------------footer----------------------------------*/
+footer  {
+    width:1263px;
+    height:40px;
+    text-align: center;
+    background-color: black;
+}
+footer li   {
+    float:right;
+    color: white;
+    height:10px;
+    font-size: 10px;
+    margin:15px 15px;
+}
+footer ul   {
+    margin:0 auto;
+    height:40px;
+    width:290px;
+}

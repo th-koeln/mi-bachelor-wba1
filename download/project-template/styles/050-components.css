@@ -1,0 +1,27 @@
+/* ----------------------------------------------------------------------------
+components.css                                                                  
+Enthält alle Regeln zu Komponenten.  
+
+Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
+----------------------------------------------------------------------------*/
+
+
+/* Site Header
+-----------------------------------------------------------------------------*/
+
+.site-header {
+    border-bottom: solid 1px var(--color-borders);
+    margin-bottom: var(--space-stack-xl);
+}
+
+
+/* Navigation
+-----------------------------------------------------------------------------*/
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+
+.footer {
+    border-top: solid 1px var(--color-borders);
+}

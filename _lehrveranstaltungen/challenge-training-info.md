@@ -35,6 +35,12 @@ An alle, die sich und ihr Team auf die finale Challenge vorbereiten möchten. Bi
 - agieren Sie im Training schon als Team und lernen Sie die Stärken und Schwächen des Teams kennen
 - nutzen Sie unbedingt GIT und GitHub, damit Sie hier Ihre Skills vertiefen können. In der finalen Challenge ist der Einsatz von GitHub erforderlich
 
+## Ein paar Tipps
+<div class="js-video [vimeo, widescreen]">
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/OzRf45n1-GQ?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allowfullscreen></iframe>
+</div>
+
+
 ## Die Aufgabe
 
 Die Trainingsaufgabe besteht darin, eine Team bzw. [Employer Branding Seite](https://de.wikipedia.org/wiki/Employer_Branding) für ein bestehendes oder fiktives Unternehmen zu erstellen. Die Seite kann sowohl statische als auch dynamische Inhalte beinhalten, z.B.:
@@ -56,13 +62,13 @@ Anbei eine Auswahl von Seiten die sie verwenden können:
 
 **!!! Sehr sehr Wichtig: Wenn Sie eine bestehende Seite als Grundlage verwenden, ändern Sie bitte den Namen der Firma in einen fiktiven Namen (bitte überall im Quellcode ersetzen: Meta-Tags, Titel, usw.), bevor sie den ersten Commit machen, bzw. die Seite online stellen. Es kann im Nachhinein unangenehme SEO-Konsequenzen geben die wir vermeiden wollen !!!**
 
-### Weitere Hinweise:
+### Weitere Hinweise
 
 - Machen Sie sich bis kommende Woche Gedanken über die Seite und Umsetzung. Skribbeln Sie Ihre Ideen auf Papier, bringen Sie diese mit. 
 - Probieren Sie die Einbindung von APIs mal aus
 - Nutzen Sie [Google](http://google.com), [Stackoverflow](http://stackoverflow.com) wenn es Fragen gibt - das Netz ist eine sehr hilfreiche Ressource um viele Herausforderungen aus dem Weg zu räumen
 
-### Hinweise zum Einbinden von interaktiven Inhalten:
+### Hinweise zum Einbinden von interaktiven Inhalten
 
 Idealerweise nutzen Sie eine API (z.B.: Twitter) um z.B.: Tweets der Mitarbeiter auf der Seite zu integrieren. Eine andere Möglichkeit besteht darin, dass Sie sich 
 
@@ -70,7 +76,7 @@ Idealerweise nutzen Sie eine API (z.B.: Twitter) um z.B.: Tweets der Mitarbeiter
 
 die einen Tweet darstellt, herunterladen und diese via Javascript einbinden, falls die Nutzung von APIs Ihnen zu schwierig erscheint. Erweitern Sie diese JSON-Datei um weitere fiktive Tweets.
 
-### Weitere Hinweise
+### Hilfen
 
 - Schauen sie sich das [Github Pages Tutorial](https://www.thinkful.com/learn/a-guide-to-using-github-pages/) an: ein Bestandteil der finalen Challenge ist es eine Seite auf Github zu publizieren indem die Arbeit dokumentiert wird
 - Beschäftigen Sie sich mit [Reveal.js](http://lab.hakim.se/reveal-js/#/). Die Endpräsentation am Tag der Challenge sollte idealerweise damit erstellt werden.
@@ -86,6 +92,11 @@ Das Training und die finale Challenge soll auch Spaß machen - schauen Sie sich 
 ## Review der Ergebinsse
 
 Wir werden am Trainingstag nicht alle Ergebnisse reviewen können und auch nicht alle Fragen beantworten können. Daher bieten wir an, remote via Skype oder Google Hangout Review-Sessions zu machen. Termine dazu werden noch bekannt gegeben.
+
+## Themen für die Info Session
+- Gruppenbildung
+- Eintrag ins Wiki
+- Anmeldung zur finalen Challenge
 
 ## Material
 - [What are the pre requisites to participating in a Hackathon?](https://www.quora.com/What-are-the-pre-requisites-to-participating-in-a-Hackathon?share=1)

@@ -4,6 +4,7 @@ _site
 .jekyll-metadata
 .bundle
 .sass-cache
+.vscode/
 .vscode
 Gemfile
 Gemfile.lock
