@@ -97,6 +97,7 @@ Wir werden am Trainingstag nicht alle Ergebnisse reviewen können und auch nicht
 - Gruppenbildung
 - Eintrag ins Wiki
 - Anmeldung zur finalen Challenge
+- Teilnehmerzahl Workshops
 
 ## Material
 - [What are the pre requisites to participating in a Hackathon?](https://www.quora.com/What-are-the-pre-requisites-to-participating-in-a-Hackathon?share=1)
