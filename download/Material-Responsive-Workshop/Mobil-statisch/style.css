@@ -1,0 +1,292 @@
+*   {
+    margin:0; padding:0;        /*alle Abstände auf 0 gesetzt.*/
+    text-decoration: none;      /*Link schriften werden jetzt als normale Schrift behandelt*/
+    list-style: none; /*Die Listenpunkte bei Listen deaktiviert*/
+    z-index:5;          /*Graue Schriftart für alle Schriften. Wird fürÜberschriften noch überschrieben*/
+    
+}
+/*#fix_bac {
+    position:fixed;
+    z-index:-1;
+    width:1263px;
+    height:900px;
+    background-color:grey;
+    background-image: url(Images/parallax.jpg);
+    background-size:cover;
+    top:0px;
+    left:0px;
+}*/
+h2  {
+    font-family: 'Satisfy', serif;
+    font-size: 30px;
+}
+h2, h3  {
+    color:white;
+}
+h3  {
+    font-family: 'Arvo', serif;
+    font-size:18px;
+}
+h4  {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:17px;
+    color:black;
+    margin:20px 0;
+    text-align: center;
+}
+a   {color:white;}
+p   {
+    font-family: 'Open Sans Condensed', sans-serif; /*Standard Schrift für die inhatichen Texte festgelegt*/
+    font-size:17px;             /*!!!!!!!!!!!!!!!!!!!!*/
+    color:#242424;   
+    margin:20px;
+    background-color:white;
+    
+}
+p img   {
+    overflow:hidden;
+}
+.logo   {
+    font-family: 'Satisfy', serif;
+    font-size:20px;
+    color:gold;
+    margin-top:5px;
+    display:none
+}
+nav {
+    position:fixed;
+    top:0px;
+    background-color:black;
+    width:100%;
+    padding:9px 0;
+    color:white;
+    height:38px;
+    visibility: hidden;
+}
+nav ul  {
+    margin-right:40px;
+}
+nav ul li  {
+    float:right;
+    color:white;
+    height:20px;
+    z-index:500;
+    margin:9px 20px;
+    text-align:center;
+    font-family:'Arvo', serif;
+    font-size:15px;
+}
+nav ul li a:hover {
+    color:gold;
+}
+#mobile {
+    width:260px;
+    background-color:black;
+    height:100%;
+    position:fixed;
+    left:0px;
+    top:0px;
+    z-index:5;
+    visibility: visible;
+    padding-top:70px;
+    transition-duration: 1s;
+}
+
+#mobile ul li   {
+    float:none;
+    width:100%;
+    text-align:center;
+    padding: 10px 0;
+    
+}
+#mobile .logo   {
+    font-family: 'Satisfy', serif;
+    font-size:20px;
+    color:gold;
+    margin-top:5px;
+    text-align:center;
+}
+
+#burgerbutton   {
+    width:50px;
+    height:50px;
+    position:fixed;
+    top:20px;
+    left:160px;
+    z-index:20;
+    visibility: visible;
+    margin:20px;
+    transition-duration: 1s;
+}
+#nav_check    {
+    z-index: 50;
+    position:absolute;
+    right:0px;
+    display: none;
+}
+
+input.hackbox:checked ~ #mobile    {
+    
+    transition-duration: 1s;
+    left:-260px;
+}
+input.hackbox:checked ~ #burgerbutton .label_c    {
+    background-color:black;
+    position:relative;
+    
+}
+input.hackbox:checked ~ #burgerbutton #label2   {
+    display:grid;
+    margin:5px 0;
+}
+input.hackbox:checked ~ #burgerbutton #label1   {
+    transform:rotate(0deg);
+}
+input.hackbox:checked ~ #burgerbutton #label3   {
+    transform:rotate(0deg);
+    margin-top:0px;
+}
+input.hackbox:checked ~ #burgerbutton   {
+    left:0;
+    top:0;
+    padding:20px;
+}
+#label1 {
+    transform:rotate(135deg);
+}
+#label2 {
+    display:none;
+}
+#label3 {
+    transform:rotate(45deg);
+}
+.label_c    {
+    width:100%;
+    height:22%;
+    z-index:20;
+    background-color:white;
+    position:absolute;
+    transition-duration: 1s;
+   
+}
+#label2 {
+    margin:5px 0;
+}
+
+/*----------------------------HEADER--------------------------------*/
+header  {
+    background-image: url(Images/Background_LP.jpeg);
+    width:100%;
+    background-size: cover;
+    background-position:center;
+    padding: 45vh 0px;
+    text-align: center;
+    overflow:hidden;
+}
+
+/*---------------------------Willkommen-----------------------------*/
+#Willkommen_sec  {
+    width:100%;
+    text-align:center;
+    background-color:white;
+}
+#Willkommen_sec p{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#Willkommen_sec h3   {
+    color:black;
+    padding:20px;
+    text-align: center;
+}
+/*-----------------------3 Spalten Bereich---------------------------*/
+#Columns {
+    width:90%;
+    overflow:hidden;
+    height:auto;
+}
+.CS_column   {
+    width:100%;
+    height:250px;
+    overflow:hidden;
+    float:left;
+    padding:0px;
+    background-color:white;
+    overflow:hidden;
+}
+.CS_column p {
+    text-align:justify;
+    float:right;
+    margin:0px;
+    width:80%;
+    margin-right: 0px;
+    padding: 0px;
+}
+.
+.CS_column li   {
+    float:left;
+    
+}
+.CS_column img  {
+    width:40px;
+    height:40px;
+    margin:0 20%;
+}
+.left_ico   {
+    float:left;
+    width:40px;
+    width:20%;
+}
+#CS_NEWS_img    {
+    width:100%;
+    height:00px;
+    background-color:grey;
+    background-size: cover;
+    background-image: url(Images/parallax.jpg);
+}
+/*------------------------News Bereich-------------------------------*/
+#news   {
+    width:100%;
+    overflow:hidden;
+    height: 500px;
+    background-color:white;
+}
+#news p {
+    text-align: justify;
+}
+#NS_left    {
+    float:left;
+    width:100%;
+}
+#NS_right   {
+    float:right;
+    width:100%;
+    padding:20px;
+}
+#NS_image   {
+    width:100%;
+    height:160px;
+    background-image: url(Images/Newspic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*---------------------------footer----------------------------------*/
+footer  {
+    width:100%;
+    height:50px;
+    text-align: center;
+    background-color: black;
+}
+footer li   {
+    float:right;
+    color: white;
+    height:10px;
+    margin:20px 0;
+    font-size: 10px;
+    width:20%
+}
+footer ul   {
+    margin:0 auto;
+    height:40px;
+}

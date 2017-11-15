@@ -1,0 +1,374 @@
+*   {
+    margin:0; padding:0;        /*alle Abstände auf 0 gesetzt.*/
+    text-decoration: none;      /*Link schriften werden jetzt als normale Schrift behandelt*/
+    list-style: none; /*Die Listenpunkte bei Listen deaktiviert*/
+    z-index:5;          /*Graue Schriftart für alle Schriften. Wird fürÜberschriften noch überschrieben*/
+    
+    
+}
+:root   {
+    font-size:18px;
+}
+
+h2  {
+    font-family: 'Satisfy', serif;
+    font-size: 3rem;
+}
+h2, h3  {
+    color:white;
+}
+h3  {
+    font-family: 'Arvo', serif;
+    font-size:1.5rem
+}
+h4  {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:1rem;
+    color:black;
+    margin:1em 0;
+    text-align: center;
+}
+a   {color:white;}
+p   {
+    font-family: 'Open Sans Condensed', sans-serif; /*Standard Schrift für die inhatichen Texte festgelegt*/
+    font-size:1rem;             /*!!!!!!!!!!!!!!!!!!!!*/
+    color:#242424;   
+    margin:2em;
+    background-color:white;
+    
+}
+p img   {
+    overflow:hidden;
+}
+.logo   {
+    font-family: 'Satisfy', serif;
+    font-size:1.2rem;
+    color:gold;
+    margin-left:2em;
+    position:absolute;
+    margin-top:5px;
+}
+nav {
+    position:fixed;
+    top:0px;
+    background-color:black;
+    width:100%;
+    padding:0.5em 0;
+    color:white;
+    z-index:50;
+}
+nav ul  {
+    margin-right:2em;
+}
+nav ul li  {
+    float:right;
+    color:white;
+    height:20px;
+    z-index:50;
+    margin:9px 20px;
+    text-align:center;
+    font-family:'Arvo', serif;
+    font-size:15px;
+}
+nav ul li a:hover {
+    color:gold;
+}
+
+
+/*----------------------------HEADER--------------------------------*/
+header  {
+    background-image: url(Images/Background_LP.jpeg);
+    width:100%;
+    background-size: cover;
+    height:80%;
+    position:relative;
+    z-index:4;
+}
+header #head_con    {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-50px -200px;
+}
+
+
+/*---------------------------Willkommen-----------------------------*/
+#Willkomme_sec  {
+    width:100%;
+    text-align:center;
+    background-color:white;
+}
+#Willkommen_sec p{
+    text-align: center;
+    margin-bottom: 50px;
+}
+/*-----------------------3 Spalten Bereich---------------------------*/
+.CS_column   {
+    width:33.32%;
+    height:300px;
+    margin-bottom: 20px;
+    overflow:hidden;
+    float:left;
+}
+.CS_column p {
+    text-align:justify;
+    float:right;
+    margin:0px;
+    width:271px;
+    margin-right: 30px;
+    margin-left:20px;
+}
+.CS_column li   {
+    float:left;
+}
+.CS_column img  {
+    width:40px;
+    height:40px;
+}
+#CS_NEWS_img    {
+    margin-top:330px;
+    width:100%;
+    height:300px;
+    background-color:grey;
+    background-size: cover;
+    background-image: url(Images/parallax.jpg);
+}
+/*------------------------News Bereich-------------------------------*/
+#news   {
+    width:100%;
+    height: 500px;
+    background-color:white;
+}
+#news p {
+    text-align: justify;
+}
+#NS_left    {
+    float:left;
+    width:33.32%;
+}
+#NS_right   {
+    float:right;
+    width:66.65%;
+}
+#NS_image   {
+    width:100%;
+    height:160px;
+    background-image: url(Images/Newspic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#news iframe    {
+    margin:0 auto;
+}
+
+/*---------------------------footer----------------------------------*/
+footer  {
+    width:100%;
+    height:40px;
+    text-align: center;
+    background-color: black;
+    display:none;
+}
+footer li   {
+    float:right;
+    color: white;
+    height:10px;
+    font-size: 10px;
+    margin:15px 15px;
+}
+footer ul   {
+    margin:0 auto;
+    height:40px;
+    width:290px;
+}
+
+
+
+
+@media only screen and (max-width: 1100px) {
+
+    .CS_column   {
+        float:none;
+        width:100%;
+        height:auto;
+    }
+    .CS_column p {
+        width:90%;
+        height:auto;
+        text-align:center;
+        margin:0 5%;
+    }
+    .CS_column img  {
+        width:100px;
+        height: 100px;
+        margin:0 30px;
+    }
+    .CS_column ul li   {
+        float:left;
+    }
+    #CS_NEWS_img    {
+        margin:30px 0;    
+    }
+    #ns_right   {
+        float:none;
+        width:100%
+    }
+    #ns_left    {
+        float:none;
+        width:80%;
+        margin:0 auto;
+        
+    }
+    .message1    {
+        float:left;
+        width:50%;
+    }    
+    .message2    {
+        float:left;
+        width:50%;
+    }
+}
+@media only screen and (max-width: 830px) {
+       
+    nav ul li {
+        float:none;
+        padding:10px 0;
+    }
+    nav {
+        height:100%;
+        width:300px;
+    }
+    nav ul  {
+        margin:200px auto;
+        
+    }
+    .logo    {
+        margin-left:40px;
+        margin-top:70px;
+    }
+    nav {
+    width:260px;
+    background-color:black;
+    height:100%;
+    position:fixed;
+    left:0px;
+    top:0px;
+    z-index:5;
+    visibility: visible;
+    padding-top:70px;
+    transition-duration: 1s;
+}
+
+
+#burgerbutton   {
+    width:50px;
+    height:50px;
+    position:fixed;
+    top:20px;
+    left:160px;
+    z-index:20;
+    visibility: visible;
+    margin:20px;
+    transition-duration: 1s;
+}
+#nav_check    {
+    z-index: 50;
+    position:absolute;
+    right:0px;
+    display: none;
+}
+
+input.hackbox:checked ~ nav    {
+    
+    transition-duration: 1s;
+    left:-260px;
+}
+input.hackbox:checked ~ #burgerbutton .label_c    {
+    background-color:black;
+    position:relative;
+    
+}
+input.hackbox:checked ~ #burgerbutton #label2   {
+    display:grid;
+    margin:5px 0;
+}
+input.hackbox:checked ~ #burgerbutton #label1   {
+    transform:rotate(0deg);
+}
+input.hackbox:checked ~ #burgerbutton #label3   {
+    transform:rotate(0deg);
+    margin-top:0px;
+}
+input.hackbox:checked ~ #burgerbutton   {
+    left:0;
+    top:0;
+    padding:20px;
+}
+#label1 {
+    transform:rotate(135deg);
+}
+#label2 {
+    display:none;
+}
+#label3 {
+    transform:rotate(45deg);
+}
+.label_c    {
+    width:100%;
+    height:22%;
+    z-index:100;
+    background-color:white;
+    position:absolute;
+    transition-duration: 1s;
+   
+}
+#label2 {
+    margin:5px 0;
+}
+#NS_left    {
+    float:left;
+    width:100%;
+}
+#NS_right   {
+}
+    :root   {
+        font-size:16px
+    }   
+}
+@media only screen and (max-width: 630px) {
+    
+
+    .message1   {
+        float:none;
+        width:100%;
+        padding:0;
+        margin:0;
+    }
+    .message2   {
+        float:none;
+        width:100%;
+        padding:0;
+        margin:0;
+    }
+    h2  {
+        font-size: 2rem;
+    }
+    h3  {
+        font-size:1rem;
+    }
+    #head_con    {
+        margin-left:60px;
+        
+    }
+    }
+@media only screen and (max-width: 430px) {
+    #head_con   {
+        left:0px;
+        position:absolute;
+        margin:0px;
+        
+    }   
+    
+}
+
+

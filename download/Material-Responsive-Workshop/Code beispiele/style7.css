@@ -1,0 +1,28 @@
+*   {
+    padding:0;
+    margin:0;
+    transition-duration: 0.233s; 
+}
+.container  {
+    width:80%;
+    height:50%;
+    background-color: grey;
+}
+.box_links  {
+    width:50%;
+    height:50%;
+    background-color: orange;
+    float:left;
+}
+.box_rechts {
+    background-color:red;
+    width:50%;
+    height:50%;
+    float:left;
+}
+
+@media (max-width:600px)    {
+    .box_rechts{
+        background-color:black;
+    }
+}
