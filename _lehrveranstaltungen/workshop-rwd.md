@@ -28,4 +28,26 @@ Sauberes semantisches HTML Markup aus den HTML Workshops.
 [Verschiedene Responsive Designs auf einer Seite ](https://bradfrost.github.io/this-is-responsive/patterns.html)
 
 [Reponsive Design in einem Blick](https://www.responsive-webdesign.mobi/was-ist-responsive-webdesign/)
-Alle Aufgaben(https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/Aufgaben-Responsive.zip)
+
+A1) Sorgt dafür, dass die beiden Elemente, sobald der Text aus dem Rahmen läuft, untereinander stehen (Column Drop)
+
+A2) Der Text soll immer an die Breite angepasst werden und mittig stehen. Er darf nicht größer als die Ursprungsgröße werden
+
+A3) Die Katze soll in der Mitte bleiben. Tipp:sie ist genau in der Mitte des Bildes
+
+A4) Allgemein: Der Inhalt der Seite soll auf jeder Bildschirmgröße richtig angezeigt werden. Der Footer kann unsichtbar gemacht werden.
+
+Zum Herunterladen aller Aufgaben bitte auf diesen Link gehen:
+(https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/Aufgaben-Responsive.zip)
+
+Zip Datei für Code Beispiele: 
+https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/Code-beispiele.zip
+
+Die Zip Datei für die statische Website:
+https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/desktop-static.zip
+
+Die Zip Datei für die Mobile statische Ansicht:
+ https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/mobile-static.zip
+
+
+
