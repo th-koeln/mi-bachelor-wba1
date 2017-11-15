@@ -96,7 +96,7 @@ Wir werden am Trainingstag nicht alle Ergebnisse reviewen können und auch nicht
 ## Themen für die Info Session
 - Gruppenbildung
 - Eintrag ins Wiki
-- Anmeldung zur finalen Challenge
+- Anmeldung zur finalen Challenge, [Probleme PSSO](../../download/pruefungsanmeldung.docx)
 - Teilnehmerzahl Workshops
 
 ## Material
