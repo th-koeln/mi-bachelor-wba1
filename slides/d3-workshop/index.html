@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- Title of presentation -->
+    <title>WBA1 D3.js</title>
+    <!-- Short description of presentation -->
+    <meta name="description" content="Kickoff Web-basierte Anwendungen 1">
+    <!-- Author of presentation -->
+    <meta name="author" content="Stephan Pavlovic">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="../../src/reveal-js/css/reveal.min.css">
+    <link rel="stylesheet" href="../../src/reveal-js/css/theme/medieninformatik.css" id="theme">
+
+    <link rel="stylesheet" href="vs2015.css">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="../../src/reveal-js/lib/css/solarized_light.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write('<link rel="stylesheet" href="../../src/reveal-js/css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+    </script>
+
+    <style>
+
+    .bar {
+      fill: #dd1166;
+    }
+
+    .bar:hover {
+      fill: #BC0E57;
+    }
+
+    .x-axis path, .y-axis path {
+      stroke: #292929;
+    }
+
+    </style>
+
+    <!--[if lt IE 9]>
+		<script src="../../src/reveal-js/lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+<div class="reveal">
+<div class="slides">
+
+<!-- Beginn of Content
+################################################################################ -->
+
+<!--section>
+<h2 class="pink u">Grundlagen der visuellen Kommunikation <strong>Review</strong></h2>
+<ul>
+<li class="frag">… viele gute Ergebnisse</li>
+<li class="frag">… Problem: Software</li>
+<li class="frag">… Problem: falsche Daten</li>
+<li class="frag">… Problem: zu wenig Freiheitsgrade </li>
+</ul>
+</section-->
+
+<!-- <blockquote class="fragment visible current-fragment" data-fragment-index="3">
+  D3 (or D3.js) is a JavaScript library for visualizing data using web standards. D3 helps you bring data to life using SVG, Canvas and HTML.
+  D3 combines powerful visualization and interaction techniques with a data-driven approach to DOM manipulation, giving you the full capabilities of
+  modern browsers and the freedom to design the right visual interface for your data.
+</blockquote>
+<small>
+  Quelle: https://d3js.org/
+</small> -->
+
+<!-- <pre><code class="js">document.getElementById('');</code></pre> -->
+
+<section>
+	<h1 class="u">Web-basierte Anwendungen 1</h1>
+	<h2>studentischer Workshop: D3.js</h2>
+	<p>November 2017</p>
+	<p>Studiengang Medieninformatik an der TH Köln
+	<br>Campus Gummersbach</p>
+	<p style="margin-top:10%">Jessica Herrmann, Tim Missal</p>
+</section>
+
+<section>
+  <h2 class="menu">Ziele dieses Workshops</h2>
+  <ul>
+    <li class="fragment">Scalable Vector Graphics (kurz SVG)</li>
+    <li class="fragment">Skalierung und dynamische Achsen mit D3.js</li>
+    <li class="fragment">D3.js und JSON</li>
+    <li class="fragment">eigenständige Entwicklung einer Visualisierung</li>
+  </ul>
+</section>
+
+<section>
+  <h2 class="u menu">JavaScript Grundlagen</h2>
+  <h3>Welche <b>Datentypen</b> gibt es in JavaScript?</h3>
+</section>
+
+<section>
+  <h2 class="u menu">JavaScript Grundlagen</h2>
+  <h3>Was ist ein <b>Funktionsausdruck</b>?</h3>
+</section>
+
+<section>
+  <h2 class="u menu">JavaScript Grundlagen</h2>
+  <h3>Was ist die <b>Objekt-Literal-Schreibweise</b>?</h3>
+</section>
+
+<section>
+	<h2 class="pink u">SVG</h2>
+  <h3>Was ist SVG?</h3>
+	<p>
+    SGV ist ein Standard des W3C und basiert auf XML.
+    Wie auch HTML handelt es sich bei SVG um eine Auszeichnungssprache.
+    Die Sprache wird zur Beschreibung von zweidimensionalen Vektorgrafiken genutzt.
+  </p>
+  <p>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/SVG">Dokumentation</a>
+  </p>
+</section>
+
+<section>
+	<h2 class="u">Beispiel</h2>
+	<h3>Code</h3>
+  <pre><code class="html">
+    <svg width="900" height="150">
+      <circle cx="50" cy="50" r="20" fill="#dd1166" />
+      <rect x="100" y="30" width="40" height="40" fill="#dd1166" />
+      <line x1="200" y1="30" x2="250" y2="100" stroke="#dd1166" stroke-width="2" />
+      <text x="300" y="50" fill="black">D3.js</text>
+    </svg>
+  </code></pre>
+  <h3>Ergebnis</h3>
+  <svg width="900" height="150">
+    <circle cx="50" cy="50" r="20" fill="#dd1166" />
+    <rect x="100" y="30" width="40" height="40" fill="#dd1166" />
+    <line x1="200" y1="30" x2="250" y2="100" stroke="#dd1166" stroke-width="2" />
+    <text x="300" y="50" fill="black">D3.js</text>
+  </svg>
+</section>
+
+<section class="center">
+  <h2>Übung</h2>
+  <img src="images/uebung_svg.png" style="height:400px;" alt="">
+</section>
+
+<section>
+  <h2 class="u">Was ist D3.js?</h2>
+  <blockquote>
+    D3 (or D3.js) is a JavaScript library for visualizing data using web standards. D3 helps you bring data to life using SVG, Canvas and HTML.
+    D3 combines powerful visualization and interaction techniques with a data-driven approach to DOM manipulation, giving you the full capabilities of
+    modern browsers and the freedom to design the right visual interface for your data.
+  </blockquote>
+  <small>
+    Quelle: https://d3js.org/
+  </small>
+</section>
+
+<section>
+	<h2 class="u menu">Einbinden von D3.js</h2>
+	<pre>
+
+    <code class="html">
+        <!-- Inhalt der Webseite -->
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    </code>
+
+  </pre>
+</section>
+
+<section>
+	<h2 class="u menu">Selections mit D3.js</h2>
+	<pre>
+    <code class="js">
+
+      // pures JavaScript, die Schriftfarbe aller p-Tags wird auf weiß gesetzt
+      var paragraphs = document.getElementsByTagName("p");
+      for (var i = 0; i < paragraphs.length; i++) {
+        var paragraph = paragraphs.item(i);
+        paragraph.style.color = 'white';
+      }
+
+      // D3.js wird genutzt um alle p-Tags auszuwählen und ihre Schriftfarbe
+      // auf weiß zu setzten
+      d3.selectAll("p").style("color", "white");
+
+      // auswahl eines einzelnen Elements mit mit D3.js
+      d3.select("body").style("background-color", "black");
+
+    </code>
+  </pre>
+</section>
+
+<section>
+  <h2 class="u">Skalierung mit D3.js</h2>
+  <p>Umwandlung der abstrakten Daten für die visuelle Darstellung.</p>
+  <ul>
+    <li><b>Continuous Scales: </b>zum Arbeiten mit Zahlen (z.B. <a href="https://github.com/d3/d3-scale/blob/master/README.md#scaleLinear">Linear Scales</a>)</li>
+    <li><b>Ordinal Scales: </b>für die Arbeit mit Beispielsweise Namen oder Kategorien (z.B. <a href="https://github.com/d3/d3-scale/blob/master/README.md#scaleBand">Band Scales</a>)</li>
+  </ul>
+</section>
+
+<section>
+	<h2 class="u">Lineare Skalierung</h2>
+
+  <p>
+    Die Bibliothek bietet Funktionen um das Interval der Daten die visualisiert werden sollen in ein neues Interval für die Ausgabe umzuwandeln. Das Interval der Daten wird als „domain“ bezeichnet und das neue Interval als „range“.
+  </p>
+
+  <center>
+    <img src="images/d3_scale.png" style="width: 600px; height: auto;">
+  </center>
+
+</section>
+
+<section>
+	<h2 class="u">Lineare Skalierung im Code</strong></h2>
+	<pre>
+    <code class="js">
+      var scaleDefault = d3.scaleLinear();
+
+      console.log(scaleDefault(50));
+      //Ausgabe: 50
+      console.log(scaleDefault(100));
+      //Ausgabe: 100
+
+      var scale = d3.scaleLinear().domain([0,10000]).range([0,100]);
+
+      console.log(scale(50));
+      //Ausgabe: 0.5
+      console.log(scale(100));
+      //Ausgabe: 1
+    </code>
+  </pre>
+</section>
+
+<section>
+	<h2 class="u">D3.min und D3.max</strong></h2>
+	<pre>
+    <code class="js">
+      var data = [10, 2, 5, 12, 9];
+
+      console.log(d3.max(data));
+      //Ausgabe: 12
+      console.log(d3.min(data));
+      //Ausgabe: 2
+
+      console.log(d3.extent(data));
+      //Ausgabe: [2, 12]
+    </code>
+  </pre>
+</section>
+
+<section>
+<h2 class="u">D3.parseTime und D3.timeFormat</strong></h2>
+<pre>
+  <code class="js">
+    var timeParse = d3.timeParse('%d.%m.%Y');
+    var time = timeParse('10.10.2017');
+
+    console.log(time);
+    //Ausgabe: Tue Oct 10 2017 00:00:00 GMT+0200 (Instanz des Objekts Date)
+    console.log(time instanceof Date);
+    //Ausgabe: true
+
+    var formatTime = d3.timeFormat('%d.%m.%y');
+
+    console.log(formatTime(time));
+    //Ausgabe: 10.10.17
+  </code>
+</pre>
+</section>
+
+<section>
+	<h2 class="u">D3.js dynamische Achsen</h2>
+  <h3>Code</h3>
+  <pre>
+    <code class="js">
+      // Auswahl eines Elements und einfügen eines SVG Elements als Kindelement
+      var canvas = d3.select('body').append('svg').attr('width', 500).attr('height', 100);
+      canvas.style('border', '1px solid black');
+      var x = d3.scaleLinear().domain([0,1000]).range([0,500]);
+      // erstellen der Achse, einziger notwendiger Parameter ist die Skalierung
+      var xAxis = d3.axisBottom(scale);
+      // aufrufen der Funktion welche die Achse erstellt
+      var xAxisGroup = canvas.append('g').call(xAxis);
+    </code>
+  </pre>
+  <h3>Ergebnis</h3>
+  <div id="js-dyn-axis">
+
+  </div>
+</section>
+
+<section>
+	<h2 class="u">D3.js dynamische Achsen</h2>
+  <ul>
+    <li>d3.axisTop(scale)</li>
+    <li>d3.axisRight(scale)</li>
+    <li>d3.axisBottom(scale)</li>
+    <li>d3.axisLeft(scale)</li>
+  </ul>
+  <p>
+    D3.js bietet mehrere Methoden für das erstellen einer Achse, diese unterscheiden sich in der Orientierung welche die Position der Beschriftung festlegt.
+  </p>
+</section>
+
+<section>
+	<h2 class="u">Transformieren einer Achse</h2>
+  <pre>
+    <code class="js">
+      var xAxisGroup = canvas.append("g").attr("transform", "translate(0,70)").call(Axis);
+    </code>
+  </pre>
+  <p>Transform ist eine CSS Eigenschaft die auch bei Animationen verwendet wird. Diese ermöglicht es ein Element zu verschieben.
+    Der erste übergebene Wert verschiebt das Element auf der x-Achse und der zweite auf der y-Achse.</p>
+  <pre>
+    <code class="js">
+      var xAxisGroup = canvas.append("g").call(newAxis).append("text")
+                              .attr("transform", „rotate(-90)");
+    </code>
+  </pre>
+  <p>Vorallem für die y-Achse ist es auch wichtig drehen zu können, das geht ebenfalls mit dem Attribut transform.
+    Als Wert wird rotate(Grad) übergeben. Eine positive Zahl bewirkt dabei eine Drehung mit dem Uhrzeiger und ein negativer Wert gegen den Uhrzeiger.</p>
+</section>
+
+<section>
+	<h2 class="u">Diagramm</h2>
+  <div id="js-b-diagramm">
+
+  </div>
+  <small>Quelle der Daten: FT Global 500</small>
+</section>
+
+<section>
+	<h2 class="u">D3.js und JSON</h2>
+  <pre>
+    <code class="js">
+      d3.json('example.json', function(error, data) {
+        if (error) throw error;
+        ...
+      });
+    </code>
+  </pre>
+</section>
+
+<section class="center">
+	<h3 style="font-size:64px;">Projekte</h3>
+</section>
+
+<section class="center">
+	<h3 style="font-size:64px;">Fragen?</h3>
+</section>
+
+<!-- End of Content
+################################################################################ -->
+        </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript">
+
+      document.addEventListener('DOMContentLoaded', initBspAxis);
+      document.addEventListener('DOMContentLoaded', initBDiagramm);
+
+      function initBspAxis() {
+
+        var canvas = d3.select('#js-dyn-axis').append('svg').attr('width', 500).attr('height', 100);
+        canvas.style('border', '1px solid black');
+        var x = d3.scaleLinear().domain([0,1000]).range([0,500]);
+        var xAxis = d3.axisBottom(x);
+        var xAxisGroup = canvas.append('g').call(xAxis);
+
+      }
+
+      function initBDiagramm() {
+
+        var data = [
+          { letter: 'Apple', frequency: 754 },
+          { letter: 'Alphabet', frequency: 579 },
+          { letter: 'Microsoft', frequency: 509 },
+          { letter: 'Amazon', frequency: 423 },
+        ];
+
+        var svg = d3.select("#js-b-diagramm").append('svg').attr('width', 960).attr('height', 500),
+            margin = { top: 20, right: 20, bottom: 30, left: 40 },
+            width = +svg.attr("width") - margin.left - margin.right,
+            height = +svg.attr("height") - margin.top - margin.bottom;
+
+        //Constructs a new band scale with the empty domain, the unit range [0, 1], no padding, no rounding and center alignment. (Dokumentation: https://github.com/d3/d3-scale/blob/master/README.md#scaleBand)
+        var x = d3.scaleBand().range([0, width]).padding(0.1),
+            y = d3.scaleLinear().range([height, 0]);
+
+        var g = svg.append("g").style('border', '1px solid black')
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+          x.domain(data.map(function(data) { return data.letter; }));
+          y.domain([0, d3.max(data, function(data) { return data.frequency; })]);
+
+          g.append("g")
+              .attr("class", "axis x-axis")
+              .attr("transform", "translate(0," + height + ")")
+              .call(d3.axisBottom(x));
+
+          g.append("g")
+              .attr("class", "axis y-axis")
+              .call(d3.axisLeft(y))
+            .append("text")
+              .attr("transform", "rotate(-90)")
+              .attr("y", 6)
+              .attr("dy", "0.71em")
+              .attr("text-anchor", "end")
+              .style('fill', 'black')
+              .text("Marktwert (Mrd. $)");
+
+          g.selectAll(".bar")
+            .data(data)
+            .enter().append("rect")
+              .attr("class", "bar")
+              .attr("x", function(d) { return x(d.letter); })
+              .attr("y", function(d) { return y(d.frequency); })
+              .attr("width", x.bandwidth()) //bandwidth() -> Returns the width of each band.
+              .attr("height", function(d) { return height - y(d.frequency); });
+
+      }
+
+    </script>
+
+    <script src="../../src/reveal-js/lib/js/head.min.js"></script>
+    <script src="../../src/reveal-js/js/reveal.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/languages/go.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <script>
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: false,
+            width: 1000,
+
+            transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+            transitionSpeed: 'fast', // default/fast/slow
+            backgroundTransition: 'none', // default/linear/none
+
+				menu: {
+					// Specifies which side of the presentation the menu will
+					// be shown. Use 'left' or 'right'.
+					side: 'left',
+
+					// Add slide numbers to the titles in the slide list.
+					// Use 'true' or format string (same as reveal.js slide numbers)
+					numbers: false,
+
+					// Specifies which slide elements will be used for generating
+					// the slide titles in the menu. The default selects the first
+					// heading element found in the slide, but you can specify any
+					// valid css selector and the text from the first matching
+					// element will be used.
+					// Note: that a section data-menu-title attribute or an element
+					// with a menu-title class will take precedence over this option
+					titleSelector: '.menu',
+
+					// If slides do not have a matching title, attempt to use the
+					// start of the text content as the title instead
+					useTextContentForMissingTitles: false,
+
+					// Hide slides from the menu that do not have a title.
+					// Set to 'true' to only list slides with titles.
+					hideMissingTitles: true,
+
+					// Add markers to the slide titles to indicate the
+					// progress through the presentation
+					markers: false,
+
+					// Specify custom panels to be included in the menu, by
+					// providing an array of objects with 'title', 'icon'
+					// properties, and either a 'src' or 'content' property.
+					custom: false,
+
+					// Specifies the themes that will be available in the themes
+					// menu panel. Set to 'false' to hide themes panel.
+					themes: false,
+
+					// Specifies if the transitions menu panel will be shown.
+					transitions: false,
+
+					// Adds a menu button to the slides to open the menu panel.
+					// Set to 'false' to hide the button.
+					openButton: true,
+
+					// If 'true' allows the slide number in the presentation to
+					// open the menu panel. The reveal.js slideNumber option must
+					// be displayed for this to take effect
+					openSlideNumber: false,
+
+					// If true allows the user to open and navigate the menu using
+					// the keyboard. Standard keyboard interaction with reveal
+					// will be disabled while the menu is open.
+					keyboard: true,
+
+					// Normally the menu will close on user actions such as
+					// selecting a menu item, or clicking the presentation area.
+					// If 'true', the sticky option will leave the menu open
+					// until it is explicitly closed, that is, using the close
+					// button or pressing the ESC or m key (when the keyboard
+					// interaction option is enabled).
+					sticky: false,
+
+					// If 'true' standard menu items will be automatically opened
+					// when navigating using the keyboard. Note: this only takes
+					// effect when both the 'keyboard' and 'sticky' options are enabled.
+					autoOpen: true,
+
+					// If 'true' the menu will not be created until it is explicitly
+					// requested by calling RevealMenu.init(). Note this will delay
+					// the creation of all menu panels, including custom panels, and
+					// the menu button.
+					delayInit: false
+				},
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '../../src/reveal-js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../../src/reveal-js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../../src/reveal-js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../../src/reveal-js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../../src/reveal-js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '../../src/reveal-js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '../../src/reveal-js/plugin/menu/menu.js' }
+				]
+        });
+    </script>
+
+</body>
+</html>
