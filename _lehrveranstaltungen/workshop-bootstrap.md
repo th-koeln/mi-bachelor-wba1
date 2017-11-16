@@ -29,9 +29,9 @@ Eigenen Computer mit Web-Editor und Browser zum HTML/CSS Debuggen. Links unter M
 - [Chome Developer Tools (Debugging)](https://www.youtube.com/watch?v=nV9PLPFTnkE)
 - [Aufgaben-Paket Bootstrap Workshop](https://th-koeln.github.io/mi-bachelor-wba1/download/bootstrap-workshop-material/arbeitspaket-bootstrap-workshop.zip)
 
-### Aufgaben
+## Aufgaben
 
-#### Aufgabe 1
+### Aufgabe 1
 
 Vorgegebenes HTML bearbeiten - Erste Schritte mit Bootstrap
 1. Änderungswunsch
@@ -40,7 +40,7 @@ Vorgegebenes HTML bearbeiten - Erste Schritte mit Bootstrap
 4. Ein Student präsentiert
 
 
-#### Aufgabe 2
+### Aufgabe 2
 Vorgegebenes Layout umsetzen - Komponenten finden und implementieren
 
 In Gruppen von 2-3 Studenten
@@ -52,7 +52,7 @@ In Gruppen von 2-3 Studenten
 5. Struktur der Seite optimieren
 6. Gruppen präsentieren
 
-#### Aufgabe 3
+### Aufgabe 3
 
 Eigenes Projekt - 3 Firmen wollen einen Webauftritt
 
