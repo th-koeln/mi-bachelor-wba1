@@ -4,7 +4,7 @@ kuerzel: p-challengetraining-support
 verantwortlich: alle
 typ: feedback
 pflicht: false
-termine: 2017-11-16 09:30|0.501|http://bit.ly/2Arovh2|vs, 2017-11-16 09:30|0.502|http://bit.ly/2yfqlAc|jk, 2017-11-16 09:30|3.217|http://bit.ly/2zEjN26|cn, 2017-11-16 09:30|3.100|http://bit.ly/2Ahe6nm|fj
+termine: 2017-11-16 09:30|0.501|http://bit.ly/2Arovh2|vs, 2017-11-16 09:30|0.502|http://bit.ly/2yfqlAc|jk, 2017-11-16 09:30|3.217|http://bit.ly/2zEjN26|cn, 2017-11-16 09:30|0.504|http://bit.ly/2Ahe6nm|fj
 empfohlene-voraussetzungen: p-challengetraining-info
 published: true
 anzahl: 30 Teilnehmer

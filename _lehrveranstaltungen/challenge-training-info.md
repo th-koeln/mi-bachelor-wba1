@@ -98,6 +98,8 @@ Wir werden am Trainingstag nicht alle Ergebnisse reviewen können und auch nicht
 - Eintrag ins Wiki
 - Anmeldung zur finalen Challenge, [Probleme PSSO](../../download/pruefungsanmeldung.docx)
 - Teilnehmerzahl Workshops
+- Doku auf github.io. Link zum Repo ins MI Wiki
+- Deployment auf Ihren ADV Account. Mit Passwortschutz. Link zum Projekt bitte in die Doku.
 
 ## Material
 - [What are the pre requisites to participating in a Hackathon?](https://www.quora.com/What-are-the-pre-requisites-to-participating-in-a-Hackathon?share=1)
