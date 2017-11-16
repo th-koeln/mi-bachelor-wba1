@@ -39,7 +39,7 @@ A4) Allgemein: Der Inhalt der Seite soll auf jeder Bildschirmgröße richtig ang
 
 [Zum Herunterladen aller Aufgaben hier draufgehen](https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/Aufgaben-Responsive.zip)
 
-[Zip Datei für Code Beispiele] (https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/Code-beispiele.zip)
+[Zip Datei für Code Beispiele](https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/Code-beispiele.zip)
 
 [Die Zip Datei für die statische Website](https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/desktop-static.zip)
 
