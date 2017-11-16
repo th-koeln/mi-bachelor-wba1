@@ -28,3 +28,22 @@ Eigenen Laptop mit einem Editor, FTP-Client und aktuellen Webbrowser.
 - [D3.js Webseite](https://d3js.org/)
 - [D3.js Dokumentation](https://github.com/d3/d3/blob/master/API.md)
 - [Informationen zu SVG](https://developer.mozilla.org/en-US/docs/Web/SVG)
+- [D3.js Folien](https://th-koeln.github.io/mi-bachelor-wba1/slides/d3-workshop/index.html)
+- [Material](https://th-koeln.github.io/mi-bachelor-wba1/download/d3_material.zip)
+
+### Praxisprojekte
+
+#### Projekt 1
+Vorgegebene Grafik in SVG nachbauen mit einfachen geometrischen Formen.
+
+#### Projekt 2
+Umsetzen einer Visualisierung mit allen Teilnehmern.
+
+#### Projekt 3
+Editieren des Codes aus Projekt 2, sodass der Code mit JSON Daten arbeitet.
+
+#### Projekt 4
+Selbstständiges erstellen der Teilnehmer einer mit 3 Dimensionen.
+
+#### Projekt 5
+Selbstständiges erstellen der Teilnehmer eines Kreisdiagramms.
