@@ -69,4 +69,4 @@ Werden in der Woche zwischen dem 30. November - 07. Dezember 2017 bekannt gegebe
 
 ### Material
 - [What are the pre requisites to participating in a Hackathon?](https://www.quora.com/What-are-the-pre-requisites-to-participating-in-a-Hackathon?share=1)
-- [Prüfungsanmeldung Vordruck](../../download/pruefungsanmeldung.docx)
+- Falls die Anmeldung via PSSO nicht möglich ist, verwenden Sie bitte folgenden [Prüfungsanmeldung Vordruck](../../download/pruefungsanmeldung.docx), komplettieren und unterschreiben ihn. Senden Sie diesen dann bis zum 24.11.2017 als PDF an studium-gm@th-koeln.de.
