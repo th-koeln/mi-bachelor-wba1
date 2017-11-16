@@ -1,7 +1,4 @@
---- 
-layout: default 
---- 
-{% assign links = (site.links | sort: 'title') %} {% assign tabtags = "Guides|Tools|Ressourcen|Inspirationen|Generell|Vertiefungen|Videotutorials|Helper" | split: "|" %}
+--- layout: default --- {% assign links = (site.links | sort: 'title') %} {% assign tabtags = "Guides|Tools|Ressourcen|Inspirationen|Generell|Vertiefungen|Videotutorials|Helper|Training" | split: "|" %}
 
 <section class="section">
     <div class="container">
@@ -50,15 +47,15 @@ layout: default
             {% for navEle in tabtags %}
             <div class="links is-tab-content column is-two-thirds is-{{navEle}}">
                 <div class="content link-overview">
-									
+
                     {% for link in links %} {% if link.tags contains navEle %}
                     <div class="link-overview__item">
-                    <h2 class="title is-2" id="{{ link.id }}">{{ link.titel }}</h2>
-                    <p>{{link.text}}<br><a href="{{link.src}}">{{link.src}}</a></p>
-                    <p style="color: #999999;">{{link.tags | array_to_sentence_string: ''}}</p>
+                        <h2 class="title is-2" id="{{ link.id }}">{{ link.titel }}</h2>
+                        <p>{{link.text}}<br><a href="{{link.src}}">{{link.src}}</a></p>
+                        <p style="color: #999999;">{{link.tags | array_to_sentence_string: ''}}</p>
                     </div>
                     {% endif %} {% endfor %}
-									
+
                 </div>
             </div>
             {% endfor %}
