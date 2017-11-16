@@ -37,17 +37,13 @@ A3) Die Katze soll in der Mitte bleiben. Tipp:sie ist genau in der Mitte des Bil
 
 A4) Allgemein: Der Inhalt der Seite soll auf jeder Bildschirmgröße richtig angezeigt werden. Der Footer kann unsichtbar gemacht werden.
 
-[Zum Herunterladen aller Aufgaben hier draufgehen]
-(https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/Aufgaben-Responsive.zip)
+[Zum Herunterladen aller Aufgaben hier draufgehen](https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/Aufgaben-Responsive.zip)
 
-[Zip Datei für Code Beispiele] 
-(https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/Code-beispiele.zip)
+[Zip Datei für Code Beispiele] (https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/Code-beispiele.zip)
 
-[Die Zip Datei für die statische Website]
-(https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/desktop-static.zip)
+[Die Zip Datei für die statische Website](https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/desktop-static.zip)
 
-[Die Zip Datei für die Mobile statische Ansicht]
-(https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/mobile-static.zip)
+[Die Zip Datei für die Mobile statische Ansicht](https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/mobile-static.zip)
 
 
 
