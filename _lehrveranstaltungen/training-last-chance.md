@@ -4,10 +4,11 @@ kuerzel: t-reissleine
 verantwortlich: alle
 typ: training
 pflicht: false
-termine: 2017-11-23 15:30|3.216
+termine: 2017-11-23 15:30|3.216|http://bit.ly/2z49a4S
 empfohlene-voraussetzungen: t-tooling, w-htmlbasics, w-htmlbadvanced, w-jsbasics, w-jsadvanced, w-cssbasics, w-cssadvanced, t-git-1, t-git-2
 published: true
 dauer: 180
+anzahl: 30 Teilnehmer
 info: Im Training werden wir gemeinsam die bisherigen Inhalte wiederholen und in den Kontext einer konkreten Problemstellung bringen.
 ---
 

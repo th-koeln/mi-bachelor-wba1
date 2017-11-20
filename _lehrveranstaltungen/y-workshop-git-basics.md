@@ -4,7 +4,7 @@ kuerzel: t-git-1
 verantwortlich: sl
 typ: workshop
 pflicht: false
-termine: 2017-10-19 15:30|3.216|http://bit.ly/2xCprwy,2017-10-26 11:00|3.217|http://bit.ly/2zvOToA, 2017-10-26 11:00|3.100|http://bit.ly/2gBY57d, 2017-11-02 16:00|3.100|http://bit.ly/2lnto7w,2017-11-09 09:00|3.100|http://bit.ly/2hbtQAs|mk,2017-11-09 14:00|3.100|http://bit.ly/2AhrEz0|sl, 2017-11-09 18:00|0.501|http://bit.ly/2ymaVy1|cn, 2017-11-16 18:30|0.501|http://bit.ly/2jpQ0Uj, 2017-11-23 15:30|3.217, 2017-11-23 17:30|3.217
+termine: 2017-10-19 15:30|3.216|http://bit.ly/2xCprwy,2017-10-26 11:00|3.217|http://bit.ly/2zvOToA, 2017-10-26 11:00|3.100|http://bit.ly/2gBY57d, 2017-11-02 16:00|3.100|http://bit.ly/2lnto7w,2017-11-09 09:00|3.100|http://bit.ly/2hbtQAs|mk,2017-11-09 14:00|3.100|http://bit.ly/2AhrEz0|sl, 2017-11-09 18:00|0.501|http://bit.ly/2ymaVy1|cn, 2017-11-16 18:30|0.501|http://bit.ly/2jpQ0Uj, 2017-11-23 15:30|3.217|http://bit.ly/2zT4S3z, 2017-11-23 17:30|3.217|http://bit.ly/2zUpM2b
 empfohlene-voraussetzungen:
 published: true
 dauer: 120
