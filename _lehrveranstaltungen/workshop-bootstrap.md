@@ -33,6 +33,8 @@ Eigenen Computer mit Web-Editor und Browser zum HTML/CSS Debuggen. Links unter M
 
 ### Aufgabe 1
 
+[Vorgegebene Website](http://holdirbootstrap.de/examples/jumbotron/)
+
 Vorgegebenes HTML bearbeiten - Erste Schritte mit Bootstrap
 1. Änderungswunsch
 2. In Bootstrap Doku recherchieren
