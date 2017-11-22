@@ -23,7 +23,7 @@ Zunächst wird bezogen auf das Challenge Training ein Resümee gezogen und ein p
 - Nutzung von GitHub.io für die Dokumentation
 - sinnvolle Dateistruktur
 - Vergabe von CSS Klassen
-- Einsatz von JS Eventhandlern
+- Einsatz von JS Eventlistenern
 
 Danach werden einige Themen und Technologien vorgestellt, von denen jeder WBA-ler mal gehört haben sollte, von denen wir aber nicht erwarten, dass sie in der Challenge angewendet werden, z.B.
 - Web-Media: Einsatz von JPG, SVG, PNG und mehr
@@ -35,4 +35,5 @@ Danach werden einige Themen und Technologien vorgestellt, von denen jeder WBA-le
 
 ### Material
 - [Folien Web-Media](../../download/Chapter06-Web Media.pdf)
+- [Folien Managing State](../../download/Chapter13-ManagingState.pdf)
 - [Web Development Map](https://coggle.it/diagram/Vz9LvW8byvN0I38x)
