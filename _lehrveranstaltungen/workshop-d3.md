@@ -24,6 +24,11 @@ In dem Workshops wollen wir Daten mithilfe gängiger Webstandards zum Leben erwe
 ### Was muss ich mitbringen?
 Eigenen Laptop mit einem Editor, FTP-Client und aktuellen Webbrowser.
 
+### Was kann D3.js?
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rJp_GDtLKjo" frameborder="0" gesture="media" allowfullscreen></iframe>
+
+Galerie mit Beispielen die mit D3.js erstellt wurden: [https://bl.ocks.org/mbostock](https://bl.ocks.org/mbostock)
+
 ### Material
 - [D3.js Webseite](https://d3js.org/)
 - [D3.js Dokumentation](https://github.com/d3/d3/blob/master/API.md)
