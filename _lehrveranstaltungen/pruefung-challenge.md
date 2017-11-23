@@ -5,7 +5,7 @@ verantwortlich: alle
 typ: pruefung
 pflicht: true
 termine: 2017-12-07 09:00
-empfohlene-voraussetzungen: 
+empfohlene-voraussetzungen:
 published: true
 anzahl: 120 Teilnehmer
 dauer: 600
@@ -16,7 +16,7 @@ info: Ganztägige Challenge als praktischer Prüfungsteil. Bei der Challenge wer
 
 ## Ziel der Challenge
 
-Ganztägige Challenge als praktischer Prüfungsteil. Bei der Challenge werden wir Ihnen eine Aufgabe stellen, die Sie in einem 5-er Team lösen müssen. Ziel dieser Challenge ist es die erlernten Inhalte von WBA1 eigenverantwortlich in einer **freien** und **kreativen** Art und Weise anzuwenden. Zur Abgrenzung zu einer normalen Hochschulprüfung soll die Challenge den Raum anbieten, neben den erworbenen fachlichen Skills, die soft-skills selber auszutesten, wie z.B.: Arbeit in der Gruppe, Nutzung des Webs für das Lösen von Fragestellungen, finden von kreativen Lösungsansetzen zu einem Problem usw.
+Ganztägige Challenge als praktischer Prüfungsteil. Bei der Challenge werden wir Ihnen eine Aufgabe stellen, die Sie in einem 5-er Team lösen müssen. Ziel dieser Challenge ist es die erlernten Inhalte von WBA1 eigenverantwortlich in einer **freien** und **kreativen** Art und Weise anzuwenden. Zur Abgrenzung zu einer normalen Hochschulprüfung soll die Challenge den Raum anbieten, neben den erworbenen fachlichen Skills, die soft-skills selber auszutesten, wie z.B.: Arbeit in der Gruppe, Nutzung des Webs für das Lösen von Fragestellungen, finden von kreativen Lösungsansätzen zu einem Problem usw.
 
 ### An wen richtet sich die Challenge?
 
@@ -26,9 +26,9 @@ An alle, die in diesem Semester das Modul "Web-basierte Anwendungen 1: WWW-Techn
 
 <img src="../../assets/images/tesla-screen.png">
 
-Richtig - es geht um den Tesla. Genauer genommen das Model "Tesla Model S 85". Wir ihr sicherlich wisst, hat dieses tolle Auto eine Reihe an innovativen Dingen eingebaut. Unter anderem einen großen Screen. Es handelt sich genauer genommen um einen 17-Zoll (43 cm) touchscreen. Und das ist unsere Ausgangslage für die Challenge!
+Richtig - es geht um den Tesla. Genauer genommen das Model "Tesla Model S 85". Wie ihr sicherlich wisst, hat dieses tolle Auto eine Reihe an innovativen Dingen eingebaut. Unter anderem einen großen Screen. Es handelt sich genauer genommen um einen 17-Zoll (43 cm) Touchscreen. Und das ist unsere Ausgangslage für die Challenge!
 
-Der Screen ist in verschiedene Bereiche unterteilt und Dient dem Fahrer eine Übersicht über das Auto zu behalten. Weiterhin dient der Bildschirm auch als Car-Infotainment-System mit dem der Fahrer seine Musik steuern kann. Weiterhin werden verschiedene andere Funktionalitäten angeboten, wie z.B.: eine Übersicht über den Ladezustand des Fahrzeugs, eine integrierte Kalenderübersicht mit Terminen, usw.
+Der Screen ist in verschiedene Bereiche unterteilt und Dient dem Fahrer dazu eine Übersicht über das Auto zu behalten. Weiterhin dient der Bildschirm auch als Car-Infotainment-System mit dem der Fahrer seine Musik steuern kann. Weiterhin werden verschiedene andere Funktionalitäten angeboten, wie z.B.: eine Übersicht über den Ladezustand des Fahrzeugs, eine integrierte Kalenderübersicht mit Terminen, usw.
 
 Die Aufgabe besteht darin, dass Ihr Euch eine Funktionalität überlegt.
 
@@ -40,14 +40,14 @@ Anbei ein paar Moods was so alles dargestellt werden kann:
 
 <script>
 
-document.getElementById("next").addEventListener("click", next()); 
-document.getElementById("previous").addEventListener("click", previous()); 
+document.getElementById("next").addEventListener("click", next());
+document.getElementById("previous").addEventListener("click", previous());
 
-var myImage= new Array(); 
+var myImage= new Array();
 myImage[0]="../../assets/images/moods-tesla.002.jpeg";
 myImage[1]="../../assets/images/moods-tesla.003.jpeg";
 myImage[2]="../../assets/images/moods-tesla.004.jpeg";
-myImage[3]="../../assets/images/moods-tesla.005.jpeg"; 
+myImage[3]="../../assets/images/moods-tesla.005.jpeg";
 myImage[4]="../../assets/images/moods-tesla.006.jpeg";       
 
 var ImageCnt = 0;
@@ -77,19 +77,35 @@ function previous(){
 
 ### Welche Funktionalitäten könnte der Screen beinhalten?
 
-Folgende Funktionen kann der Screen beinhalten. Wir haben Euch direkt auch Hinweise zur Anbindung bestimmter APIs gegeben. Ihr müsst nicht zwingend diese APIs verwenden und auch nicht genau die Funktionalitäten abbilden. Seid kreativ und baut was anderes, sinvolles oder auch was lustiges. Hauptsache ihr tobt Euch mit dem gelernten HTML, CSS und Javascript-Wissen aus.
+Folgende Funktionen kann der Screen beinhalten. Wir haben Euch direkt auch Hinweise zur Anbindung bestimmter APIs gegeben. Ihr müsst nicht zwingend diese APIs verwenden und auch nicht genau die Funktionalitäten abbilden. Seid kreativ und baut was anderes, sinnvolles oder auch was lustiges. Hauptsache ihr tobt Euch mit dem gelernten HTML, CSS und Javascript-Wissen aus.
 
-* ...
-* ...
-* ...
-* ...
-* ...
+#### Mögliche Funktionen
+
+* Medien (Audioplayer)
+  * API: [Soundcloud](https://developers.soundcloud.com/docs/api/guide)
+  * API: [iTunes (nur mit PreviewSongs)](https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/#lookup)
+  * API: https://www.last.fm/api
+* Navigation & Karte
+  * API: [OpenStreetMap](http://wiki.openstreetmap.org/wiki/API_v0.6)
+  * API: [GoogleMaps](https://developers.google.com/maps/documentation/javascript/?hl=de)
+* Kontaktmangement
+  * API: [Google People API](https://developers.google.com/people/quickstart/js)
+  * Telefon API: [Viber](https://developers.viber.com/docs/api/rest-bot-api/)
+* Kalender
+  * API: [Outlook Kalendar](https://msdn.microsoft.com/en-us/office/office365/api/calendar-rest-operations)
+  * API: [Google Calendar](https://developers.google.com/google-apps/calendar/quickstart/js)
+  * API: [Outlook](https://msdn.microsoft.com/en-us/office/office365/api/calendar-rest-operations)
+* Energieanzeige (Reichweitenkalkulation, Echtzeit-Graph zum Energieverbrauch, Graph zur Rekurpation, ...)
+  * [Framework: d3](https://d3js.org/)
+* [Steuerungsfunktionen (Klimaanlage, Innenraumsteuerungen, Abstandssensoren)]
+  * Wetter API: https://openweathermap.org/api
+  * Abstandssensoren: [d3 Framework](https://d3js.org/)
 
 ### Die Challenge eine Prüfung - where is the difference
 
-Die Challenge wird als praktischer Prüfungsteil gewertet. Jedoch haben die Studierenden viele Freiheiten und nur wenige Rahmenbedingungen die erfüllt werden müssen. 
+Die Challenge wird als praktischer Prüfungsteil gewertet. Jedoch haben die Studierenden viele Freiheiten und nur wenige Rahmenbedingungen die erfüllt werden müssen.
 
-Wir haben auch noch ein spannendes Board gefunden mit vielen Assets die so ein Screen beinhalten kann. Dort findet Ihr Icons, ganze Screens. Ihr könnt diese auch als .png, .svg exportieren und nutzen: [https://www.figma.com/file/OIVSH9zbbnAAyRvoFE0dmowA/Tesla-Model-3](https://www.figma.com/file/OIVSH9zbbnAAyRvoFE0dmowA/Tesla-Model-3)
+Wir haben auch noch ein spannendes Board gefunden mit vielen Assets die so ein Screen beinhalten kann. Dort findet Ihr Icons & ganze Screens. Ihr könnt diese auch als .png, .svg exportieren und nutzen: [https://www.figma.com/file/OIVSH9zbbnAAyRvoFE0dmowA/Tesla-Model-3](https://www.figma.com/file/OIVSH9zbbnAAyRvoFE0dmowA/Tesla-Model-3)
 
 <img src="../../assets/images/tesla-assets.png" width="500px"/>
 
@@ -109,7 +125,7 @@ Wer noch weitere Inspirationen sucht, kann auch auf der [offiziellen Tesla Seite
 * Austausch mit anderen Teams auf der Suche nach Lösungen
 * Es gibt nicht "die eine" finale und beste Lösung
 * Der Zugriff auf Mentoren und Experten
-* Sich aktiv mit Problemstellungen ausseinander zu setzen und nach Lösungen zu suchen
+* Sich aktiv mit Problemstellungen auseinander zu setzen und nach Lösungen zu suchen
 * Spass am Gerät haben ;)
 
 #### Darf ich schon vorher zu hause an dieser Aufgabe arbeiten und programmieren?
@@ -119,7 +135,7 @@ JA! Jedoch ist es sehr wichtig, dass ihr am Tag der Challenge dokumentiert was i
 ### Ablauf
 
 * **Donnerstag, 30. November 2017**: Challenge Announcement und Teambuilding
-* **Zwischen dem 30. November - 07. Dezember 2017**: 
+* **Zwischen dem 30. November - 07. Dezember 2017**:
 	* Teams machen sich Gedanken über einen Lösungsweg, gerne eigene Prototypen zum üben programmieren, Skizzen, Skribbles, etc.
 	* Announcement von 12 API's und Frameworks (HTML/CSS/Javascript, 6 pro Themenblock), mit dem ziel pro Themenblock 2 API's einzusetzen
 	* Bekanntgabe der Bewertungskriterien
