@@ -38,7 +38,8 @@ Galerie mit Beispielen die mit D3.js erstellt wurden: [https://bl.ocks.org/mbost
 
 ### Material zum Workshop am 23.11.2017
 - [Archiv Codes](https://th-koeln.github.io/mi-bachelor-wba1/download/Codes_D3_Workshop_23.11.2017.zip)
-Folgende Links können möglicherweise bei der Vorbereitung auf die Challenge hilfreich sein um die Grundkenntnisse in JavaScript zu verbessern:
+
+#### Folgende Links können möglicherweise bei der Vorbereitung auf die Challenge hilfreich sein um die Grundkenntnisse in JavaScript zu verbessern:
 - [Anleitung sauberer JS Code](https://github.com/rwaldron/idiomatic.js/tree/master/translations/de_DE)
 - [JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
 
