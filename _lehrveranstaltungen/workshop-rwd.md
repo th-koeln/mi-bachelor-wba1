@@ -25,6 +25,9 @@ Eigener Rechner mit Browser (inkl. Web Development Tools, z.B. Chrome, Safari), 
 Sauberes semantisches HTML Markup aus den HTML Workshops.
 
 ### Material
+
+[Vorlesungs Slides](https://th-koeln.github.io/mi-bachelor-wba1/slides/Responsive-Workshop-Slides/index.html)
+
 [Verschiedene Responsive Designs auf einer Seite ](https://bradfrost.github.io/this-is-responsive/patterns.html)
 
 [Reponsive Design in einem Blick](https://www.responsive-webdesign.mobi/was-ist-responsive-webdesign/)
