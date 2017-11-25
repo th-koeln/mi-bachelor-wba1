@@ -33,7 +33,55 @@ Danach werden einige Themen und Technologien vorgestellt, von denen jeder WBA-le
 - Nutzung von Frameworks
 - Nutzung von Präprozessoren am Beispiel von SASS und LESS
 
-### Material
+
+## Challenge Training Review
+- Wie ist es gelaufen? 
+- Wo waren die größten Schwierigkeiten?
+- Wie kommen wir weiter?
+
+### Was haben wir (nicht) gesehen?
+- Merge Konflikte müssen in jeder Datei direkt gelöst werden.
+- gutes semantisches Markup
+- Commit Meldungen müssen aussagekräftig sein
+- CSS Regeln für ein Element/Klasse nur einmal definieren
+- bitte Teamnamen eintragen
+- bitte GitRepo eintragen
+- GitHub Klartextnamen angeben
+
+### Ein Real-life Beispiel
+- sinnvolle Aufteilung von Arbeitspaketen
+- sinnvolle Dateistruktur
+- Definition von CSS Regeln
+- Einsatzmöglichkeiten von Javascript
+- Einsatz von JS Eventlistenern
+
+### Web-Development Map
+Wo stehen wir?
+- https://coggle.it/diagram/Vz9LvW8byvN0I38x
+- https://github.com/kamranahmedse/developer-roadmap
+
+## Was sollte man noch kennen?
+- Web-Media: Einsatz von JPG, SVG, PNG und mehr
+- Managing State: Wie speichere ich Daten im Client
+- CSS Transitions: Übergänge zwischen CSS States
+- Nutzung von Hintergrundbildern
+
+## Iconsets
+- Was ist ein Iconset?
+- Wann ist der Einsatz sinnvoll?
+- Dürfen Iconsets für die Challenge genutzt werden?
+
+## Frameworks
+- Was ist ein Framework?
+- Wann ist der Einsatz sinnvoll?
+- Dürfen Frameworks für die Challenge genutzt werden?
+
+## Preprozessoren
+- Was ist ein Preprozessor?
+- Wann ist der Einsatz sinnvoll?
+- Dürfen Preprozessoren für die Challenge genutzt werden?
+
+## Material
 - [Folien Web-Media](../../download/Chapter06-Web Media.pdf)
 - [Folien Managing State](../../download/Chapter13-ManagingState.pdf)
 - [Web Development Map](https://coggle.it/diagram/Vz9LvW8byvN0I38x)
