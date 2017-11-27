@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/challenge.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/favicon.ico">
+		<!--script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.2/showdown.min.js"></script-->
+</head>
+
+<body data-url="{{page.url}}">
+    <section class="hero is-info is-large">
+        <!-- Hero header: will stick at the top -->
+        <div class="hero-head">
+            <header class="nav">
+                <div class="container">
+                    <div class="nav-left">
+                        <a href="{{ site.baseurl }}/" class="nav-item"><img src="{{ site.avatar }}" /></a>
+                    </div>
+                    <span class="nav-toggle">
+										<span></span>
+                    <span></span>
+                    <span></span>
+                    </span>
+                    <div class="nav-right nav-menu">
+                        <a href="{{ site.baseurl }}/angebote/" class="nav-item">Veranstaltungen</a>
+                        <a href="{{ site.baseurl }}/" class="nav-item">zur Hauptseite</a>
+
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body is-header"  style="background-image: url(../assets/images/challenge-hero-3.png)">
+	        <div class="container ">
+		        <div class="columns">
+		        	<div class="column is-half is-offset-half">
+								<h1 class="title">WBA Challenge 2017</h1>
+								<h2 class="subtitle">Big Screens in Automotive Interiors</h2>
+		        	</div>
+		        </div>
+	        </div>
+        </div>
+    </section>
+
+{{content}}
+
+    <footer class="footer is-non-print">
+        <div class="container">
+            <!--ul class="menu-list">
+                <li><a href="{{ site.baseurl }}/angebote/" class="nav-item">Veranstaltungen</a></li>
+                <li><a href="{{ site.baseurl }}/timetable/" class="nav-item">Zeitplan</a></li>
+                <li><a href="{{ site.baseurl }}/links/" class="nav-item">Links</a></li>
+                <li><a href="{{ site.baseurl }}/faq/" class="nav-item">FAQ</a></li>
+                <li><a href="https://github.com/th-koeln/mi-bachelor-gdvk/issues/new" class="nav-item">Frage stellen</a></li>
+                <li><a href="https://github.com/th-koeln/mi-bachelor-wba1/wiki" class="nav-item">WBA1 Wiki</a></li>
+            </ul-->
+        </div>
+    </footer>
+		<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+    <script src="{{ site.baseurl }}/mi-2017.js"></script>
+
+</body>
+
+</html>
