@@ -184,9 +184,9 @@ if (!urlParams.has('media')) {
     panelTabs.func.init();
 }
 
-/* Zwischenstand Video */
 
-
+/* Zwischenstand Video
+------------------------------------------------------------------------------*/
 
 var modal = function(modalId) {
 
@@ -236,4 +236,24 @@ var modal = function(modalId) {
 
 modal("zwischenstand");
 modal("psso");
+
+
+
+/* Markdown Support
+------------------------------------------------------------------------------*/
+
+var markdown = {};
+markdown.converter = new showdown.Converter();
+markdown.convert = function( ele ){
+	ele.innerHTML = markdown.converter.makeHtml(ele.innerHTML);
+}
+markdown.init = function() {
+	document.querySelectorAll("[markdown]").forEach(function(ele){
+		markdown.convert(ele);
+	});
+}
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  markdown.init();
+});
 

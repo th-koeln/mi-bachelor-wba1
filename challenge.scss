@@ -52,9 +52,6 @@ html {
 		color: #fff;
 		margin-bottom: $bfs;
 		margin-bottom: $bfs * 1.5;
-		.fa{
-			padding-right: $bfs/2;
-		}
 	}
 	
 	.button{
@@ -98,14 +95,18 @@ html {
 .is-header {
 	
 	background-size: cover;
+	background-image: url(assets/images/challenge-hero-3.png);
 	
-    .title {
-        font-weight: 700;
-        font-size: $bfs * 3;
-        text-shadow: 0 0 10px rgba(0,0,0,0.3);
-    }
+  .title {
+      font-weight: 700;
+      font-size: $bfs * 3;
+      text-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
 }
 
+[data-url*="konzeptsite"] .is-header {
+	background-image: url(assets/images/challenge-hero-2.png);
+}
 
 /**************/
 /* Content    */
@@ -472,10 +473,21 @@ pre code {
 }
 
 
+
 /**************/
 /* Helper     */
 /**************/
 
+.fa{
+	padding-right: $bfs/2;
+}
+
 .has-margin{
 	margin-bottom: $bfs *2;
 }
+
+.has-seperator{
+	border-bottom: solid 1px $mi-lila;
+	padding-bottom: $bfs * 3;
+}
+
