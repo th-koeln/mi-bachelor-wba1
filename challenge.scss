@@ -47,8 +47,10 @@ html {
 .notification{
 	height: 100%;
 	margin-top: $bfs *1;
+	padding-top: $bfs * 1.5;
 	h3{
 		color: #fff;
+		margin-bottom: $bfs;
 		margin-bottom: $bfs * 1.5;
 		.fa{
 			padding-right: $bfs/2;
