@@ -451,6 +451,11 @@ pre code {
     position: absolute;
 }
 
+.fu{
+	padding-top: $bfs;
+	border-top: dotted 1px $mi-lila;
+}
+
 
 .box{
 	padding: $bfs *2;
