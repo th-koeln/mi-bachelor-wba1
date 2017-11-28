@@ -1,0 +1,481 @@
+---
+--- 
+//
+// IMPORTS
+//
+@import "variables";
+
+$fullhd: 960px;
+$widescreen: 960px;
+
+@import "bulma";
+@import "overrides";
+
+// Syntax highlighting @import is at the bottom of this file
+
+/**************/
+/* BASE RULES */
+/**************/
+
+.button {
+    font-size: $bfs;
+}
+
+body,
+html {
+
+}
+
+
+/*hr{
+	-moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #aaa -moz-use-text-color -moz-use-text-color;
+    border-image: none;
+    border-style: dotted none none;
+    border-width: 1px 0 0;
+    box-sizing: content-box;
+    height: 0;
+}*/
+
+/**************/
+/* Notification     */
+/**************/
+
+.notification{
+	height: 100%;
+	margin-top: $bfs *1;
+	padding-top: $bfs * 1.5;
+	h3{
+		color: #fff;
+		margin-bottom: $bfs;
+		margin-bottom: $bfs * 1.5;
+		.fa{
+			padding-right: $bfs/2;
+		}
+	}
+	
+	.button{
+		background-color: transparent;
+		color: #fff;
+		margin-top: $bfs;
+		border-radius: 4px;
+		transition: background-color 0.2s;
+		
+		&:hover{
+			background-color: rgba(255,255,255,0.3);
+		}
+	}
+}
+
+
+/**************/
+/* index     */
+/**************/
+
+
+/**************/
+/* Footer     */
+/**************/
+
+.footer {
+    border-top: solid 1px $mi-pink;
+    .menu-list {
+        a {
+            padding-left: 0;
+            font-size: $bfs * 0.8;
+        }
+    }
+}
+
+
+/**************/
+/* Header  */
+/**************/
+
+.is-header {
+	
+	background-size: cover;
+	
+    .title {
+        font-weight: 700;
+        font-size: $bfs * 3;
+        text-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+}
+
+
+/**************/
+/* Content    */
+/**************/
+
+* {
+    word-wrap: normal;
+    hyphens: auto;
+}
+
+.section {
+    padding-top: $bfs;
+}
+
+.section:nth-of-type(2) {
+    padding-top: $bfs *2;
+}
+
+.is-overview-item {
+    margin-bottom: $bfs *2;
+}
+
+.content {
+		
+		figure{
+			margin: 0;
+		}
+		
+    h1 {
+        font-size: $bfs * 1.6;
+        font-weight: 500;
+    }
+    h2 {
+        font-size: $bfs * 1.4;
+        font-weight: 500;
+    }
+    h3 {
+        font-size: $bfs;
+        font-weight: 600;
+    }
+    h4 {
+        font-size: $bfs;
+        font-weight: 600;
+    }
+    h5 {
+        font-size: $bfs;
+        font-weight: 600;
+    }
+    h6 {
+        font-size: $bfs;
+        font-weight: 600;
+    }
+    /*ul{
+		margin-left: 1em;
+	}*/
+    dl {
+        margin-bottom: $bfs;
+        dt {
+            display: block;
+            float: left;
+            min-width: 10px;
+            padding: $bfs /8 0;
+            font-weight: bold;
+            color: $info;
+        }
+        dd {
+            /*border-bottom: solid 1px $grey-light; */
+            padding: $bfs /8 0;
+            margin-left: 0;
+        }
+        dt::after {
+            content: ":";
+            display: inline-block;
+            padding-right: $bfs /4;
+        }
+    }
+    table {
+        a,
+        a:not(.button) {
+            border: none;
+        }
+        th {
+            font-weight: 600;
+        }
+        .no-border {
+            th,
+            td {
+                border: none;
+            }
+        }
+    }
+    table {
+        @extend .table;
+    }
+    table.tab-schwerpunktmodule {
+        th {
+            width: 40%;
+        }
+        th+th+th {
+            width: 20%;
+        }
+    }
+    .footnotes {
+        border-top: solid 1px #9313ce;
+        padding-bottom: $bfs;
+        border-bottom: solid 1px #9313ce;
+    }
+    .img-responsive {
+        width: 100%;
+    }
+    figure {
+        border-top: dotted 1px $mi-gruen;
+        padding-top: $bfs;
+        margin-top: $bfs;
+        figcaption {
+            display: block;
+            padding-bottom: $bfs /2;
+            padding-top: $bfs;
+            margin-bottom: $bfs;
+            font-style: normal;
+            color: $mi-gruen;
+            border-top: dotted 1px $mi-gruen;
+            text-align: left;
+        }
+    }
+    td.pm {
+        background-color: $mi-blau;
+    }
+    td.spp {
+        background-color: $mi-gruen;
+    }
+    td.spmw,
+    td.spm {
+        background-color: $mi-pink;
+    }
+    td.pm-grau,
+    td.wpm {
+        background-color: lighten($mi-black, 50%);
+    }
+    .lighten {
+        * {
+            color: #aaa;
+        }
+    }
+}
+
+.zweispalter {
+    h2 {
+        border-top: dotted 1px $grey-light;
+        padding-top: $bfs;
+    }
+    .content {
+        @media (min-width: 999px) {
+            > * {
+                margin-left: 50% !important;
+            }
+            h3 {
+                font-size: $bfs;
+                font-weight: 700;
+                color: $mi-black;
+                line-height: 130%;
+            }
+            &>h1,
+            &>h2,
+            &>h3 {
+                margin-left: 0 !important;
+                float: left;
+                width: 48%;
+                padding-left: 20%;
+                margin-top: 0 !important;
+                text-align: right;
+                hyphens: none;
+            }
+            &>h4,
+            &>h5,
+            &>h6 {
+                font-weight: 600;
+                margin-top: $bfs;
+                margin-bottom: $bfs /2;
+            }
+            &>h1,
+            &>h2 {
+                /*border-top: dotted 1px #aaa; */
+                padding-top: $bfs;
+                text-align: left;
+                padding-right: 10%;
+                padding-left: 0;
+            }
+            &>h1+p,
+            &>h2+p {
+                margin-top: $bfs * 4 !important;
+            }
+            &>h2:not(:first-child) {
+                margin-top: $bfs *3 !important;
+            }
+        }
+    }
+}
+
+.modulbeschreibung {
+    h2 {
+        border-top: dotted 1px $grey-light;
+        padding-top: $bfs;
+    }
+    .content {}
+}
+
+.faq {
+    clear: both;
+}
+
+.toc {
+    border-left: solid 1px $mi-pink;
+    .menu-list {
+        padding-left: $bfs *2;
+    }
+}
+
+.is-small {
+    font-size: 80%;
+}
+
+.is-less-important {
+    opacity: 0.7;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.more-button {
+    font-size: $bfs * 1.5 !important;
+    display: inline-block;
+    margin-left: $bfs /2;
+    transition: all 0.5s;
+    &:hover {
+        cursor: pointer;
+    }
+    &.active {
+        transform: rotate(180deg);
+    }
+}
+
+@media (max-width: 999px) {
+    html,
+    body {
+        /*font-size: 60%;
+		line-height: 110%;*/
+        .content {
+            h1 {
+                font-size: $bfs * 1.4;
+                font-weight: 500;
+            }
+            h2 {
+                font-size: $bfs * 1.2;
+                font-weight: 500;
+            }
+            h3 {
+                font-size: $bfs;
+                font-weight: 700;
+            }
+            h4 {
+                font-size: $bfs;
+                font-weight: 600;
+            }
+            h5 {
+                font-size: $bfs;
+                font-weight: 600;
+            }
+            h6 {
+                font-size: $bfs;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media print {
+    section.hero,
+    .is-non-print {
+        display: none;
+    }
+}
+
+@media screen {
+    .is-print {
+        display: none;
+    }
+}
+
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+//@import "highlights";
+@import "svg-icons";
+.highlight {
+    background-color: $mi-pink;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    margin: 20px 0;
+    overflow: auto;
+    padding: 7px 7px 7px 10px;
+}
+
+pre code {
+    background-color: transparent;
+    color: #fff;
+}
+
+
+/* Für die fianle Version werden ein paar Angaben nicht gezeigt */
+
+.bearbeiten,
+.doc-status {
+    display: none;
+}
+
+.js-video {
+    height: 0;
+    padding-top: 25px;
+    padding-bottom: 56.5%;
+    position: relative;
+    overflow: hidden;
+}
+
+.js-video.widescreen {
+    padding-bottom: 56.34%;
+}
+
+.js-video.vimeo {
+    padding-top: 0;
+}
+
+.js-video embed,
+.js-video iframe,
+.js-video object,
+.js-video video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+.box{
+	padding: $bfs *2;
+	background-color: $mi-lila;
+	color: #fff;
+	h2{
+		color: #fff;
+		font-weight: 700;
+	}
+}
+
+/**************/
+/* Pinterest  */
+/**************/
+
+.pinterest > span{
+	width: 100% !important;
+	max-width: 100% !important;
+
+}
+
+
+/**************/
+/* Helper     */
+/**************/
+
+.has-margin{
+	margin-bottom: $bfs *2;
+}
