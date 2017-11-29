@@ -4,7 +4,7 @@ kuerzel: p-challenge
 verantwortlich: alle
 typ: pruefung
 pflicht: true
-termine: 2017-12-07 09:00
+termine: 2017-12-07 09:00|3.102|http://bit.ly/2BwXQQo
 empfohlene-voraussetzungen:
 published: true
 anzahl: 120 Teilnehmer
