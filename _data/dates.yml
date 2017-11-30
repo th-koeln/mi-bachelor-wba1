@@ -46,3 +46,9 @@ week-8:
     start: "09:00"
     end: "22:00"
     name: Donnerstag
+week-9:
+  day-1:
+    datum: 2018-01-12
+    start: "09:00"
+    end: "18:00"
+    name: Freitag
