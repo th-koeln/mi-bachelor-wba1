@@ -11,4 +11,4 @@ dauer: 60
 info:
 ---
 
-Nach den Abschlusspräsentationen treffen wir uns auf ein Feierabendbier und eine Runde Kickern und Tischtennis spielen. Falls ihr mitmachen wollt, tragt euch bitte in die [Liste](http://bit.ly/2nrmLSl) ein, damit wir besser planen können.
+Nach den Abschlusspräsentationen treffen wir uns auf ein Feierabendbier und eine Runde Kickern und Tischtennis spielen. Falls ihr mitmachen wollt, tragt euch bitte in diese [Liste](http://bit.ly/2nrmLSl) ein, damit wir besser planen können.
