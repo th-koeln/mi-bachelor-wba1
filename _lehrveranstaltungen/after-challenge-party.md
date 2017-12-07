@@ -12,3 +12,5 @@ info:
 ---
 
 Nach den Abschlusspräsentationen treffen wir uns auf ein Feierabendbier und eine Runde Kickern und Tischtennis spielen. Falls ihr mitmachen wollt, tragt euch bitte in diese [Liste](http://bit.ly/2nrmLSl) ein, damit wir besser planen können.
+
+Wir würden Euch bitten [diesen Fragebogen auszufüllen][https://hackersthinkers.typeform.com/to/XwMV6M].
