@@ -4,11 +4,11 @@ kuerzel: t-klausurtraining
 verantwortlich: alle
 typ: training
 pflicht: false
-termine: 2018-01-12 14:30|3.216
+termine: 2018-01-12 14:30|3.216|http://bit.ly/2CDlzOW
 empfohlene-voraussetzungen:
 published: true
 dauer: 180
-anzahl: 60 Teilnehmer
+anzahl: beliebig viele Teilnehmer
 info: Im Training werden wir kurz die bisherigen Inhalte wiederholen und ein paar Übungsaufgaben bearbeiten, wie sie auch in der Klausur vorkommen könnten.
 ---
 
