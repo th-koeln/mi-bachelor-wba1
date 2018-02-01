@@ -4,7 +4,7 @@ kuerzel: w-d3
 verantwortlich: tm, jh
 typ: workshop
 pflicht: false
-termine: 2017-11-16 14:30|3.100|http://bit.ly/2zqFkIV|, 2017-11-23 11:00|3.100||
+termine: 2017-11-16 14:30|3.100|http://bit.ly/2zqFkIV|, 2017-11-23 11:00|3.100|http://bit.ly/2jJamrt|
 empfohlene-voraussetzungen: t-tooling, w-htmlbasics, w-htmlbadvanced, w-jsbasics, w-jsadvanced
 published: true
 dauer: 240
@@ -24,12 +24,24 @@ In dem Workshops wollen wir Daten mithilfe gängiger Webstandards zum Leben erwe
 ### Was muss ich mitbringen?
 Eigenen Laptop mit einem Editor, FTP-Client und aktuellen Webbrowser.
 
+### Was kann D3.js?
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rJp_GDtLKjo" frameborder="0" gesture="media" allowfullscreen></iframe>
+
+Galerie mit Beispielen die mit D3.js erstellt wurden: [https://bl.ocks.org/mbostock](https://bl.ocks.org/mbostock)
+
 ### Material
 - [D3.js Webseite](https://d3js.org/)
 - [D3.js Dokumentation](https://github.com/d3/d3/blob/master/API.md)
 - [Informationen zu SVG](https://developer.mozilla.org/en-US/docs/Web/SVG)
 - [D3.js Folien](https://th-koeln.github.io/mi-bachelor-wba1/slides/d3-workshop/index.html)
 - [Material](https://th-koeln.github.io/mi-bachelor-wba1/download/d3_material.zip)
+
+### Material zum Workshop am 23.11.2017
+- [Archiv Codes](https://th-koeln.github.io/mi-bachelor-wba1/download/Codes_D3_Workshop_23.11.2017.zip)
+
+#### Folgende Links können möglicherweise bei der Vorbereitung auf die Challenge hilfreich sein um die Grundkenntnisse in JavaScript zu verbessern:
+- [Anleitung sauberer JS Code](https://github.com/rwaldron/idiomatic.js/tree/master/translations/de_DE)
+- [JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
 
 ### Praxisprojekte
 

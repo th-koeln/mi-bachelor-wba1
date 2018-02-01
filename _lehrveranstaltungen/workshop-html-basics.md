@@ -75,6 +75,6 @@ Machen Sie die Seite jetzt über den ADV Server unter dem Verzeichnis **wba1/rhe
 
 ## Übung 5: Passwortschutz
 
-Schützen Sie die Seite jetzt mit Hilfe einer **.htaccess** Datei. Verwenden Sie bitte als Nutzername und Passwort **wba1**. Eine Hilfe dazu finden Sie auf der [Bingo e.V. Website](https://www.bingo-ev.de/~ub304/htaccess.htm)
+Schützen Sie die Seite jetzt mit Hilfe einer **.htaccess** Datei. Verwenden Sie bitte als Nutzername und Passwort **wba1**. Eine Hilfe dazu finden Sie auf der [Seite mit .htaccess schützen](http://forward-media.de/tutorial/seite-mit-htaccess-schuetzen)
 
 

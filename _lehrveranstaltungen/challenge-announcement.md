@@ -4,7 +4,7 @@ kuerzel: p-challengeannouncement
 verantwortlich: alle
 typ: vortrag
 pflicht: false
-termine: 2017-11-30 10:00
+termine: 2017-11-30 09:00
 empfohlene-voraussetzungen: 
 published: true
 anzahl: 120 Teilnehmer

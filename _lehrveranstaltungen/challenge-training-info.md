@@ -105,3 +105,4 @@ Wir werden am Trainingstag nicht alle Ergebnisse reviewen können und auch nicht
 ## Material
 - [What are the pre requisites to participating in a Hackathon?](https://www.quora.com/What-are-the-pre-requisites-to-participating-in-a-Hackathon?share=1)
 - [Vorlage für eine sinnvolles Projektverzeichnis](../../download/project-template.zip)
+- [Slides zum Challenge Training](../../slides/challenge-training/index.html)

@@ -4,7 +4,7 @@ kuerzel: w-rwd
 verantwortlich: df, mk
 typ: workshop
 pflicht: false
-termine: 2017-11-16 14:30|3.217|http://bit.ly/2yfh3nM|, 2017-11-23 11:00|3.217||
+termine: 2017-11-16 14:30|3.217|http://bit.ly/2yfh3nM|, 2017-11-23 11:00|3.217|http://bit.ly/2mM3Ilp|
 empfohlene-voraussetzungen: t-tooling, w-htmlbasics, w-htmlbadvanced, w-cssbasics, w-cssadvanced
 published: true
 dauer: 240
@@ -25,6 +25,9 @@ Eigener Rechner mit Browser (inkl. Web Development Tools, z.B. Chrome, Safari), 
 Sauberes semantisches HTML Markup aus den HTML Workshops.
 
 ### Material
+
+[Vorlesungs Slides](https://th-koeln.github.io/mi-bachelor-wba1/slides/Responsive-Workshop-Slides/index.html)
+
 [Verschiedene Responsive Designs auf einer Seite ](https://bradfrost.github.io/this-is-responsive/patterns.html)
 
 [Reponsive Design in einem Blick](https://www.responsive-webdesign.mobi/was-ist-responsive-webdesign/)
@@ -37,17 +40,13 @@ A3) Die Katze soll in der Mitte bleiben. Tipp:sie ist genau in der Mitte des Bil
 
 A4) Allgemein: Der Inhalt der Seite soll auf jeder Bildschirmgröße richtig angezeigt werden. Der Footer kann unsichtbar gemacht werden.
 
-Zum Herunterladen aller Aufgaben hier draufgehen:
-(https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/Aufgaben-Responsive.zip)
+[Zum Herunterladen aller Aufgaben hier draufgehen](https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/Aufgaben-Responsive.zip)
 
-Zip Datei für Code Beispiele: 
-(https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/Code-beispiele.zip)
+[Zip Datei für Code Beispiele](https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/Code-beispiele.zip)
 
-Die Zip Datei für die statische Website:
-(https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/desktop-static.zip)
+[Die Zip Datei für die statische Website](https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/desktop-static.zip)
 
-Die Zip Datei für die Mobile statische Ansicht:
-(https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/mobile-static.zip)
+[Die Zip Datei für die Mobile statische Ansicht](https://github.com/th-koeln/mi-bachelor-wba1/raw/master/download/Material-Responsive-Workshop/mobile-static.zip)
 
 
 
