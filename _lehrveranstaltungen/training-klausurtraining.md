@@ -12,8 +12,13 @@ anzahl: beliebig viele Teilnehmer
 info: Im Training werden wir kurz die bisherigen Inhalte wiederholen und ein paar Übungsaufgaben bearbeiten, wie sie auch in der Klausur vorkommen könnten.
 ---
 
-## An wen richtet sich das Training?
+### An wen richtet sich das Training?
 
 An alle, die in WBA1 die Klausur schreiben möchten.
 
+### Material
+
+[Aufgaben Klausurvorbereitung](../../download/wba1-klausurvorbereitung-2018.pdf)
+
+[Cheat Sheets](../../download/cheatsheets.pdf) (Werden bei der Klausur ausgeteilt und dürfen benutzt werden)
 
