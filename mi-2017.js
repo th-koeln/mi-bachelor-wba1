@@ -234,8 +234,8 @@ var modal = function(modalId) {
     }
 }
 
-modal("zwischenstand");
-modal("psso");
+// modal("zwischenstand");
+// modal("psso");
 
 
 

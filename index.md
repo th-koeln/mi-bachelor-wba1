@@ -9,11 +9,23 @@ titel: Über das Modul
 {% include functions/resolve-urls.html target="mi-wiki" %}
 {% assign wiki = link %}
 
-Hier finden Sie alle relevanten Informationen, Lernmaterialien, Ansprechpartner etc. zum Modul "Web-basierte Anwendungen 1: WWW-Technologien". Die Durchführung des Moduls ist ähnlich wie im Modul "Grundlagen der visuellen Kommunikation". Damit Sie sich mehr auf das jeweilige Modul konzentrieren können, haben wir den Workload der Module "Audiovisuelles Medienprojekt", "Medientechnik und -produktion" und "Web-basierte Anwendungen 1" zusammengelegt und wickeln die Module nacheinander, dafür jedoch mit doppeltem Zeitbudget ab.
+Zum Modul WBA1 wird seit der BPO4 keine Präsenzveranstaltung mehr angeboten. Die Prüfungen werden jedoch noch bis zum Wintersemester 2020/21 angeboten. Die Prüfung besteht aus einer Klausur, die in den üblichen Prüfungszeiträumen angeboten wird und einem Praxisteil, der nur einmal jährlich angeboten wird. 
 
-In der ersten Semesterhälfte wird das Modul "Web-basierte Anwendungen 1"(WBA1) durchgeführt. Die Veranstaltung findet in äußerst komprimierter Form und mit hohem Präsenzanteil statt. Sie läuft über acht Wochen und wir haben jeweils den kompletten Donnerstag zur Verfügung, so dass Sie parallel keine anderen Veranstaltungen an diesem Tag besuchen müssen und sollten. Die WBA1-Tage starten morgens um **9:00 Uhr** und enden etwa um **18:00 Uhr**. Das Konzept von WBA1 ist auf Anwesenheit und aktive Mitwirkung ausgelegt. Ein Fernstudium ist leider nicht möglich und wird in diesem Modul nicht unterstützt.
+Wenn Sie Fragen dazu haben kommen Sie bitte in meine [Sprechstunde](http://bit.ly/2PlWKxw) oder noch besser zur Infoveranstaltung am 29.11.2018 um 16:00 Uhr im Raum 3.216 (MI Studio). Hier schon mal die Termine.
 
-Die erste Veranstaltung ist am **19.10.2017** um **9:00 Uhr**. Der letzte Termin ist am **7.12.2017**.
+#### Infoveranstaltung zum Praxisteil (Challenge WS2019/20)
+29.11.2018 um 16:00 Uhr im Raum 3.216 (MI Studio)
+
+#### Anmeldung zur praktischen Prüfung (Challenge WS2019/20) im PSSO
+07.01.2019 bis 18.01.2019
+
+#### Themenausgabe für die praktische Prüfung (Challenge WS2019/20)
+24.01.2019 um 17:00 Uhr im Raum 3.216 (MI Studio)
+
+#### Praktische Prüfung (Challenge WS2019/20)
+31.01.2019 um 12:00 - 19:00 Uhr im Raum 3.216 (MI Studio)
+
+
 
 ## Worum geht es?
 
