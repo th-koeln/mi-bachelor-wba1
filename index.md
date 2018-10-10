@@ -15,16 +15,16 @@ Zum Modul WBA1 wird seit der BPO4 keine Präsenzveranstaltung mehr angeboten. Di
 
 Wenn Sie Fragen dazu haben kommen Sie bitte in meine [Sprechstunde](http://bit.ly/2PlWKxw) oder noch besser zur Infoveranstaltung am 29.11.2018 um 16:00 Uhr im Raum 3.216 (MI Studio). Hier schon mal die Termine.
 
-#### Infoveranstaltung zum Praxisteil (Challenge WS2019/20)
+#### Infoveranstaltung zum Praxisteil (Challenge 2018/19)
 29.11.2018 um 16:00 Uhr im Raum 3.216 (MI Studio)
 
-#### Anmeldung zur praktischen Prüfung (Challenge WS2019/20) im PSSO
+#### Anmeldung zur praktischen Prüfung (Challenge 2018/19) im PSSO
 07.01.2019 bis 18.01.2019
 
-#### Themenausgabe für die praktische Prüfung (Challenge WS2019/20)
+#### Themenausgabe für die praktische Prüfung (Challenge 2018/19)
 24.01.2019 um 17:00 Uhr im Raum 3.216 (MI Studio)
 
-#### Praktische Prüfung (Challenge WS2019/20)
+#### Praktische Prüfung (Challenge 2018/19)
 31.01.2019 um 12:00 - 19:00 Uhr im Raum 3.216 (MI Studio)
 
 
