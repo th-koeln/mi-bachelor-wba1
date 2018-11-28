@@ -13,7 +13,7 @@ titel: Über das Modul
 
 Zum Modul WBA1 wird seit der BPO4 keine Präsenzveranstaltung mehr angeboten. Die Prüfungen werden jedoch noch bis zum Wintersemester 2020/21 angeboten. Die Prüfung besteht aus einer Klausur, die in den üblichen Prüfungszeiträumen angeboten wird und einem Praxisteil, der nur einmal jährlich angeboten wird. 
 
-Wenn Sie Fragen dazu haben kommen Sie bitte in meine [Sprechstunde](http://bit.ly/2PlWKxw) oder noch besser zur Infoveranstaltung am 29.11.2018 um 16:00 Uhr im Raum 3.216 (MI Studio). Hier schon mal die Termine.
+Wenn Sie Fragen dazu haben kommen Sie bitte in meine [Sprechstunde](http://bit.ly/2PlWKxw) oder noch besser zur Infoveranstaltung am 29.11.2018 um 16:00 Uhr im Raum 3.216 (<del>MI Studio</del>3.100). Hier schon mal die Termine.
 
 #### Infoveranstaltung zum Praxisteil (Challenge 2018/19)
 29.11.2018 um 16:00 Uhr im Raum 3.216 (MI Studio)
