@@ -2,62 +2,62 @@
 <html lang="de">
 
 <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    <!--[if lt IE 9]>
+  <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/favicon.ico">
 
 </head>
 
 <body data-url="{{page.url}}">
-    <section class="hero is-info is-medium">
-        <!-- Hero header: will stick at the top -->
-        <div class="hero-head">
-            <header class="nav">
-                <div class="container">
-                    <div class="nav-left">
-                        <a href="{{ site.baseurl }}/" class="nav-item"><img src="{{ site.avatar }}" /></a>
-                    </div>
-                    <span class="nav-toggle">
-										<span></span>
-                    <span></span>
-                    <span></span>
-                    </span>
-                    <div class="nav-right nav-menu">
-                        <a href="{{ site.baseurl }}/angebote/" class="nav-item">Veranstaltungen</a>
-                        <a href="{{ site.baseurl }}/timetable/" class="nav-item">Zeitplan</a>
-                        <a href="{{ site.baseurl }}/challenge-2017/" class="nav-item">Challenge</a>
-                        <a href="{{ site.baseurl }}/links/" class="nav-item">Links</a>
-                        <a href="{{ site.baseurl }}/faq/" class="nav-item">FAQ</a>
-                        <a href="https://github.com/th-koeln/mi-bachelor-wba1/issues/new" class="nav-item">Frage stellen</a>
-                        <a href="https://github.com/th-koeln/mi-bachelor-wba1/wiki" class="nav-item">WBA1 Wiki</a>
+  <section class="hero is-info is-medium">
+    <!-- Hero header: will stick at the top -->
+    <div class="hero-head">
+      <header class="nav">
+        <div class="container">
+          <div class="nav-left">
+            <a href="{{ site.baseurl }}/" class="nav-item"><img src="{{ site.avatar }}" /></a>
+          </div>
+          <span class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <div class="nav-right nav-menu">
+            <a href="{{ site.baseurl }}/angebote/" class="nav-item">Veranstaltungen</a>
+            <a href="{{ site.baseurl }}/timetable/" class="nav-item">Zeitplan</a>
+            <a href="{{ site.baseurl }}/challenge-2019/" class="nav-item">Challenge</a>
+            <a href="{{ site.baseurl }}/links/" class="nav-item">Links</a>
+            <a href="{{ site.baseurl }}/faq/" class="nav-item">FAQ</a>
+            <a href="https://github.com/th-koeln/mi-bachelor-wba1/issues/new" class="nav-item">Frage stellen</a>
+            <a href="https://github.com/th-koeln/mi-bachelor-wba1/wiki" class="nav-item">WBA1 Wiki</a>
 
-                    </div>
-                </div>
-            </header>
+          </div>
         </div>
+      </header>
+    </div>
 
-        <!-- Hero content: will be in the middle -->
-        <div class="hero-body is-header">
-            <div class="container">
-                <h1 class="title is-1">
-                    {{ site.name }}
-                </h1>
-                <h2 class="subtitle is-3">
-                    {{ site.description }}
-                </h2>
-            </div>
-        </div>
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body is-header">
+      <div class="container">
+        <h1 class="title is-1">
+          {{ site.name }}
+        </h1>
+        <h2 class="subtitle is-3">
+          {{ site.description }}
+        </h2>
+      </div>
+    </div>
 
-        <!-- Hero footer: will stick at the bottom -->
-        <!--div class="hero-foot">
+    <!-- Hero footer: will stick at the bottom -->
+    <!--div class="hero-foot">
 	    <nav class="tabs is-boxed is-fullwidth">
 	      <div class="container">
 	        <ul>
@@ -71,72 +71,78 @@
 	      </div>
 	    </nav>
 	  </div-->
-    </section>
+  </section>
 
 
-    {{ content }}
+  {{ content }}
 
-    <footer class="footer is-non-print">
-	    <div class="container">
-	    	<div class="columns">
-		    	<div class="column">
-	          <ul class="menu-list">
-              <li><a href="{{ site.baseurl }}/angebote/" class="nav-item">Veranstaltungen</a></li>
-              <li><a href="{{ site.baseurl }}/timetable/" class="nav-item">Zeitplan</a></li>
-              <li><a href="{{ site.baseurl }}/challenge-2017/" class="nav-item">Challenge</a></li>
-              <li><a href="{{ site.baseurl }}/links/" class="nav-item">Links</a></li>
-              <li><a href="{{ site.baseurl }}/faq/" class="nav-item">FAQ</a></li>
-              <li><a href="https://github.com/th-koeln/mi-bachelor-gdvk/issues/new" class="nav-item">Frage stellen</a></li>
-              <li><a href="https://github.com/th-koeln/mi-bachelor-wba1/wiki" class="nav-item">WBA1 Wiki</a></li>
-            </ul>
-	        </div>
-					<div class="column">
-					<div class="content is-small">
-						<p markdown="1">Modulseite zum Modul "Web-basierte Anwendungen 1: WWW-Technologien" im [Studiengang Medieninformatik Bachelor](https://www.th-koeln.de/studium/medieninformatik-bachelor_2379.php) der [TH Köln](https://www.th-koeln.de/hochschule/impressum_8159.php).</p>
-						<p markdown="1">Verantwortlicher Dozent ist [Prof. Christian Noss](https://github.com/cnoss).</p>
-					</div>
-				</div>
-	    	</div>
-	    </div>
-    </footer>
-
-    <div id="zwischenstand" class="modal">
-        <div class="modal-background"></div>
-        <div class="modal-card">
-            <header class="modal-card-head">
-                <p class="modal-card-title">Kleine Halbzeitansprache</p>
-                <button class="delete" aria-label="close"></button>
-            </header>
-            <section class="modal-card-body js-video">
-                <iframe src="https://www.youtube.com/embed/vsXUIfeX5Oc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-            </section>
-            <footer class="modal-card-foot">
-                <p>
-                    Wir haben nahezu Halbzeit bei WBA1. Ich habe mal ein paar Eindrücke und Empfehlungen des Teams in ein Video gepackt. Bitte mal reinschauen. <i>cn</i><br><br>
-                </p>
-            </footer>
+  <footer class="footer is-non-print">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <ul class="menu-list">
+            <li><a href="{{ site.baseurl }}/angebote/" class="nav-item">Veranstaltungen</a></li>
+            <li><a href="{{ site.baseurl }}/timetable/" class="nav-item">Zeitplan</a></li>
+            <li><a href="{{ site.baseurl }}/challenge-2017/" class="nav-item">Challenge</a></li>
+            <li><a href="{{ site.baseurl }}/links/" class="nav-item">Links</a></li>
+            <li><a href="{{ site.baseurl }}/faq/" class="nav-item">FAQ</a></li>
+            <li><a href="https://github.com/th-koeln/mi-bachelor-gdvk/issues/new" class="nav-item">Frage stellen</a></li>
+            <li><a href="https://github.com/th-koeln/mi-bachelor-wba1/wiki" class="nav-item">WBA1 Wiki</a></li>
+          </ul>
         </div>
-    </div>
-    <div id="psso" class="modal">
-        <div class="modal-background"></div>
-        <div class="modal-card">
-            <header class="modal-card-head">
-                <p class="modal-card-title">Anmeldung zur finalen Challenge im PSSO</p>
-            </header>
-            <section class="modal-card-body">
-                <p class="is-medium">
-                    Bitte denken Sie daran sich zur finalen Challenge im PSSO anzumelden. Anmeldephase ist vom 13.11.2017 bis 24.11.2017 und die Abmeldephase vom 27.11.2017 bis 05.12.2017.
-                </p>
-                <hr>
-                <p class="is-medium">Als Vorbereitung zur finalen Challenge bieten wir am 16. November um 9:00 Uhr ein <a href="/mi-bachelor-wba1/lehrveranstaltungen/challenge-training-info/">Challenge Training</a> an. Das <a href="/mi-bachelor-wba1/lehrveranstaltungen/challenge-training-info/#die-aufgabe">Thema</a>                    können Sie bereits jetzt einsehen.</p>
-            </section>
-            <footer class="modal-card-foot">
-                <button class="button is-success" aria-label="close">Alles klar</button>
-            </footer>
+        <div class="column">
+          <div class="content is-small">
+            <p markdown="1">Modulseite zum Modul "Web-basierte Anwendungen 1: WWW-Technologien" im [Studiengang
+              Medieninformatik Bachelor](https://www.th-koeln.de/studium/medieninformatik-bachelor_2379.php) der [TH
+              Köln](https://www.th-koeln.de/hochschule/impressum_8159.php).</p>
+            <p markdown="1">Verantwortlicher Dozent ist [Prof. Christian Noss](https://github.com/cnoss).</p>
+          </div>
         </div>
+      </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.3/showdown.min.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/mi-2017.js"></script>
+  </footer>
+
+  <div id="zwischenstand" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Kleine Halbzeitansprache</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body js-video">
+        <iframe src="https://www.youtube.com/embed/vsXUIfeX5Oc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      </section>
+      <footer class="modal-card-foot">
+        <p>
+          Wir haben nahezu Halbzeit bei WBA1. Ich habe mal ein paar Eindrücke und Empfehlungen des Teams in ein Video
+          gepackt. Bitte mal reinschauen. <i>cn</i><br><br>
+        </p>
+      </footer>
+    </div>
+  </div>
+  <div id="psso" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Anmeldung zur finalen Challenge im PSSO</p>
+      </header>
+      <section class="modal-card-body">
+        <p class="is-medium">
+          Bitte denken Sie daran sich zur finalen Challenge im PSSO anzumelden. Anmeldephase ist vom 13.11.2017 bis
+          24.11.2017 und die Abmeldephase vom 27.11.2017 bis 05.12.2017.
+        </p>
+        <hr>
+        <p class="is-medium">Als Vorbereitung zur finalen Challenge bieten wir am 16. November um 9:00 Uhr ein <a href="/mi-bachelor-wba1/lehrveranstaltungen/challenge-training-info/">Challenge
+            Training</a> an. Das <a href="/mi-bachelor-wba1/lehrveranstaltungen/challenge-training-info/#die-aufgabe">Thema</a>
+          können Sie bereits jetzt einsehen.</p>
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success" aria-label="close">Alles klar</button>
+      </footer>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.3/showdown.min.js"></script>
+  <script type="text/javascript" src="{{ site.baseurl }}/mi-2017.js"></script>
 
 </body>
 

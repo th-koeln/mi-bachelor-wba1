@@ -2,83 +2,86 @@
 <html lang="de">
 
 <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    <!--[if lt IE 9]>
+  <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/challenge.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/favicon.ico">
-    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.2/showdown.min.js"></script-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/challenge.css" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/favicon.ico">
+  <!--script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.2/showdown.min.js"></script-->
 </head>
 
 <body data-url="{{page.url}}">
-    <section class="hero is-info is-large has-margin">
-        <!-- Hero header: will stick at the top -->
-        <div class="hero-head">
-            <header class="nav">
-                <div class="container">
-                    <div class="nav-left">
-                        <a href="{{ site.baseurl }}/" class="nav-item"><img src="{{ site.avatar }}" /></a>
-                    </div>
-                    <span class="nav-toggle">
-										<span></span>
-                    <span></span>
-                    <span></span>
-                    </span>
-                    <a href="{{ site.baseurl }}/challenge-2017/" class="nav-item">Challenge Home</a>
-                    <a href="{{ site.baseurl }}/challenge-2017-konzeptsite/" class="nav-item">Konzeptsite</a>
-                    <a href="{{ site.baseurl }}/challenge-2017-prototyp/" class="nav-item">Prototyp</a>
-                    <a href="https://github.com/th-koeln/mi-bachelor-wba1/issues/new" class="nav-item">Frage stellen</a>
-                    <a href="https://hackersthinkers.typeform.com/to/XwMV6M" class="nav-item">Feedback an uns!</a>
-                </div>
-            </header>
-        </div>
-
-        <!-- Hero content: will be in the middle -->
-        <div class="hero-body is-header">
-            <div class="container ">
-                <div class="columns">
-                    <div class="column is-half is-offset-half">
-                        <h1 class="title">WBA Challenge 2017</h1>
-                        <h2 class="subtitle">Big Screens in Automotive Interiors</h2>
-                        <a class="button is-outlined" href="https://hackersthinkers.typeform.com/to/XwMV6M">Wir freuen uns über Feedback zu der Prüfungs-Challenge</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    {{content}}
-
-    <footer class="footer is-non-print">
+  <section class="hero is-info is-large has-margin">
+    <!-- Hero header: will stick at the top -->
+    <div class="hero-head">
+      <header class="nav">
         <div class="container">
-            <div class="columns">
-                <div class="column is-8">
-                    <ul class="menu-list">
-                        <li><a href="{{ site.baseurl }}/challenge-2017/" class="nav-item">Challenge Home</a></li>
-                        <li><a href="{{ site.baseurl }}/challenge-2017-konzeptsite/" class="nav-item">Konzeptsite</a></li>
-                        <li><a href="{{ site.baseurl }}/challenge-2017-prototyp/" class="nav-item">Prototyp</a></li>
-                        <li><a href="https://github.com/th-koeln/mi-bachelor-wba1/issues/new" class="nav-item">Frage stellen</a></li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <div class="content is-small">
-                        <p markdown="1">Modulseite zum Modul "Web-basierte Anwendungen 1: WWW-Technologien" im [Studiengang Medieninformatik Bachelor](https://www.th-koeln.de/studium/medieninformatik-bachelor_2379.php) der [TH Köln](https://www.th-koeln.de/hochschule/impressum_8159.php).</p>
-                        <p markdown="1">Verantwortlicher Dozent ist [Prof. Christian Noss](https://github.com/cnoss).</p>
-                    </div>
-                </div>
-            </div>
+          <div class="nav-left">
+            <a href="{{ site.baseurl }}/" class="nav-item"><img src="{{ site.avatar }}" /></a>
+          </div>
+          <span class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <a href="{{ site.baseurl }}/challenge-2019/" class="nav-item">Challenge Home</a>
+          <a href="{{ site.baseurl }}/challenge-2019-konzeptsite/" class="nav-item">Konzeptsite</a>
+          <a href="{{ site.baseurl }}/challenge-2019-prototyp/" class="nav-item">Prototyp</a>
+          <a href="https://github.com/th-koeln/mi-bachelor-wba1/issues/new" class="nav-item">Frage stellen</a>
+          <a href="https://hackersthinkers.typeform.com/to/XwMV6M" class="nav-item">Feedback an uns!</a>
         </div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.3/showdown.min.js"></script>
-    <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
-    <script src="{{ site.baseurl }}/mi-2017.js"></script>
+      </header>
+    </div>
+
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body is-header">
+      <div class="container ">
+        <div class="columns">
+          <div class="column is-half is-offset-half">
+            <h1 class="title">WBA Challenge</h1>
+            <h2 class="subtitle">Big Screens in Automotive Interiors</h2>
+            <!--a class="button is-outlined" href="https://hackersthinkers.typeform.com/to/XwMV6M">Wir freuen uns über
+              Feedback zu der Prüfungs-Challenge</a-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  {{content}}
+
+  <footer class="footer is-non-print">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-8">
+          <ul class="menu-list">
+            <li><a href="{{ site.baseurl }}/challenge-2017/" class="nav-item">Challenge Home</a></li>
+            <li><a href="{{ site.baseurl }}/challenge-2017-konzeptsite/" class="nav-item">Konzeptsite</a></li>
+            <li><a href="{{ site.baseurl }}/challenge-2017-prototyp/" class="nav-item">Prototyp</a></li>
+            <li><a href="https://github.com/th-koeln/mi-bachelor-wba1/issues/new" class="nav-item">Frage stellen</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <div class="content is-small">
+            <p markdown="1">Modulseite zum Modul "Web-basierte Anwendungen 1: WWW-Technologien" im [Studiengang
+              Medieninformatik Bachelor](https://www.th-koeln.de/studium/medieninformatik-bachelor_2379.php) der [TH
+              Köln](https://www.th-koeln.de/hochschule/impressum_8159.php).</p>
+            <p markdown="1">Verantwortlicher Dozent ist [Prof. Christian Noss](https://github.com/cnoss).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.3/showdown.min.js"></script>
+  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+  <script src="{{ site.baseurl }}/mi-2017.js"></script>
 
 </body>
 
