@@ -22,10 +22,10 @@ Wenn Sie Fragen dazu haben kommen Sie bitte in meine [Sprechstunde](http://bit.l
 07.01.2019 bis 18.01.2019
 
 #### Themenausgabe für die praktische Prüfung (Challenge 2018/19)
-24.01.2019 um 17:00 Uhr im Raum 3.216 (MI Studio)
+24.01.2019 um 17:00 Uhr im Raum 3.217 (MI Pool)
 
 #### Praktische Prüfung (Challenge 2018/19)
-31.01.2019 um 12:00 - 19:00 Uhr im Raum 3.216 (MI Studio)
+31.01.2019 um 12:00 - 19:00 Uhr im Raum 0.502 im Ferchau Gebäude
 
 
 
